@@ -1,5 +1,4 @@
 package RECURSION;
-
  class SumOfDigitOfANumberUsingRecursion {
      static int  SumOfDigitUsingRecursion(int n) {
          if (n==0)
@@ -10,8 +9,6 @@ package RECURSION;
         52 5+2
         5  5+0
         0
-
-
         if want last number use digit.... %10
         if want to remove last number digit...../10
          */
@@ -20,6 +17,7 @@ package RECURSION;
          int input =123;
        int result  =  SumOfDigitUsingRecursion(input);
          System.out.println(result);
+
 
      }
 
