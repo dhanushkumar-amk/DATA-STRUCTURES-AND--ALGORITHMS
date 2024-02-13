@@ -19,5 +19,6 @@ class RecursiveFunctionToCheckIfAStringIsPalindrome {
         String str = "f";
         boolean ans= CheckPalindromeUsingRecursion(str,0,str.length()-1);
         System.out.println(ans?"Output : Yes \nReverse of "+str+" is also "+str+".":"Output : No \nReverse of "+str+" not "+str+".");
+        System.out.println();
     }
 }
