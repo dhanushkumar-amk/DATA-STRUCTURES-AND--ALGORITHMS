@@ -9,7 +9,6 @@ public class JosephusUsingRecursion {
         JosephusUsingRecursion(arr,n,k,i);
     }
     static void JosephusUsingRecursion(int arr[],int n,int k,int i) {
-
         if (n==1){
             System.out.println(arr[0]);
             return;
@@ -19,7 +18,6 @@ public class JosephusUsingRecursion {
         JosephusUsingRecursion(arr,n-1,k,i);
     }
     static void   leftShiftArray(int i, int arr[]) {
-
         for (;i< arr.length-1; i++){
             arr[i]=arr[i+1];
         }
