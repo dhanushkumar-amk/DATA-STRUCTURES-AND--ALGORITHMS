@@ -7,6 +7,8 @@ class CountNumberOfCoinsRequiredToMakeAGivenValueCoinChangeII {
         if (n == 0)
             return;
         CoinChange(coins, n - 1, sum, tempCount);
+        System.out.println();
+
         while (n >= 0 && tempCount < sum) {
             if (coins[n] == sum) {
                 occurence += 1;
@@ -24,7 +26,7 @@ class CountNumberOfCoinsRequiredToMakeAGivenValueCoinChangeII {
         int sum = 4;
         int[] coins = {1, 2, 3};
         CoinChange(coins, coins.length - 1, sum, 0);
-        // STOPSHIP: 13-11-2023
+        System.out.println("wel");
     }
 }
 

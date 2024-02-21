@@ -1,6 +1,5 @@
 package RECURSION;
 
-
 public class PalindromeCheckUsingRecursion {
     static String PalindromeUsingRecursion (String str, int i,String res) {
         if (i<0)
@@ -19,5 +18,6 @@ public class PalindromeCheckUsingRecursion {
         String res = PalindromeUsingRecursion(str,str.length()-1,"");
         boolean result =PalindromeUsingRecursion(str,0,str.length()-1,true);
         System.out.println(result);
+
     }
 }

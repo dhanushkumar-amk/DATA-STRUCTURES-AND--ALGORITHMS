@@ -1,7 +1,6 @@
 package ARRAYS;
-
-class LeadersInAnArray {
-    static void LeadersInAnArray1(int[] arr,int n) {
+ public   class LeadersInAnArray {
+     static void LeadersInAnArray1(int[] arr,int n) {
 
         for (int i=0; i<n; i++){
             int total=0;
