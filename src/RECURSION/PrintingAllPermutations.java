@@ -1,24 +1,25 @@
 package RECURSION;
-import java.util.Arrays;
 public class PrintingAllPermutations {
-    static void PrintAllPermutations(int arr[] ,int Fi, int end) {
-        if (Fi ==arr.length) {
-            System.out.println(Arrays.toString(arr));
+    static void PermutationsUsingRecursion(char arr[],int fi) {
+        if (fi==arr.length-1) {
+            System.out.print(arr);
+            System.out.print(" ");
             return;
         }
-        PrintAllPermutations(swap(arr,Fi,end),Fi,end+1);
-        PrintAllPermutations(swap(arr,Fi,end),Fi+1,end);
+        for (int i=fi; i< arr.length; i++){
+            swap(arr,i,fi);
+            PermutationsUsingRecursion(arr,fi+1);
+            swap(arr,i,fi);
+        }
     }
-    static int [] swap(int arr[],int Fi,int end) {
-        int temp =arr[Fi];
-        arr[Fi ]= arr[end];
-        arr[end] = temp;
+    static char  [] swap(char  arr[],int i,int fi) {
+        char  temp=arr[fi];
+        arr[fi]=arr[i];
+        arr[i]=temp;
         return arr;
     }
     public static void main(String[] args) {
-        int arr[] = {1,2,3};
-        int Fi =0;
-        int end =0;
-        PrintAllPermutations(arr,Fi,end);
+        char arr[] ={'A','B','C'};
+        PermutationsUsingRecursion(arr,0);
     }
 }
