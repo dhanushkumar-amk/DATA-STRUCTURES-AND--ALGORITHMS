@@ -1,7 +1,7 @@
 package ARRAYS;
 
 import java.util.Arrays;
-class FindSecondLargestElementInAnArray {
+class   FindSecondLargestElementInAnArray {
     static void findSecondLargestElement1(int[] arr) {
 
         if (arr.length <2){
@@ -20,22 +20,19 @@ class FindSecondLargestElementInAnArray {
             System.out.println("invalid input");
         }
         else {
-            for (int i=0; i< n; i++){
-                if (arr[i]>first){
-                    second=first;
-                    first=arr[i];
-                }
-                else if (arr[i]>second && arr[i]!=first){
-                    second=arr[i];
+            for (int i = 0; i < n; i++) {
+                if (arr[i] > first) {
+                    second = first;
+                    first = arr[i];
+                } else if (arr[i] > second && arr[i] != first) {
+                    second = arr[i];
                 }
             }
-            System.out.println("The second largest element  is "+second);
+            System.out.println("The second largest element  is " + first);
         }
-
     }
     public static void main(String[] args) {
-        int[] arr = {12,23};
-        findSecondLargestElement1(arr);
+        int[] arr = {12,23,23,1212121};
         findSecondLargestElement2(arr);
     }
 }

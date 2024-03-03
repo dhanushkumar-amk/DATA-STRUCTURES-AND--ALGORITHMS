@@ -18,9 +18,9 @@ public class TowerOfHanoiUsingRecursion {
     }
     public static void main(String[] args) {
         int n=2;
-        char a='A';
-        char b='B';
-        char c='C';
+        char a='1';
+        char b='2';
+        char c='3';
 long moves=   TowerOfHanoiUsingRecursion(n,a,b,c);
 
         System.out.println((long)Math.pow(2,n)-1);
