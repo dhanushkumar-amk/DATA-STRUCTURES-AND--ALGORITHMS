@@ -1,6 +1,9 @@
 package ARRAYS;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+
 class   FindSecondLargestElementInAnArray {
     static void findSecondLargestElement1(int[] arr) {
 
@@ -13,6 +16,7 @@ class   FindSecondLargestElementInAnArray {
         }
     }
     static void findSecondLargestElement2(int[] arr) {
+
         int first,second;
         first=second=Integer.MIN_VALUE;
         int n= arr.length;
