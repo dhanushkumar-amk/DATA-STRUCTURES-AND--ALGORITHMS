@@ -10,14 +10,6 @@ public class LongestEvenOddSubArray {
         int [] arr = {10,12,14,7,8};
         LongestEvenOddSubarray(arr);
 
-        System.out.println();
-        System.out.println();
-
-        System.out.println("Arunkumar");
-        System.out.println("Github");
-
-        System.out.println("Arunxx");
-        System.out.println("kumar welcome");
 
 
     }
