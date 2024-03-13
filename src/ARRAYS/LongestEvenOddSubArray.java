@@ -3,7 +3,7 @@ public class LongestEvenOddSubArray {
     static void LongestEvenOddSubarray (int [] arr){
         int n= arr.length;
         for (int i = 0; i < n; i++) {
-            
+
         }
     }
     public static void main(String[] args) {
@@ -14,5 +14,6 @@ public class LongestEvenOddSubArray {
         System.out.println(10);
         System.out.println("arun");
         System.out.println("arunkumar");
+        System.out.println();
     }
 }
