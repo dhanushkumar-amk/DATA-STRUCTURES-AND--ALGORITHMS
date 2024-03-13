@@ -12,9 +12,10 @@ public class LongestEvenOddSubArray {
 
         System.out.println();
         System.out.println();
-        System.out.println("welcome");
 
-        System.out.println("welcome Arunkumar");
-        System.out.println("Arunkumar T");
+        System.out.println("Arunkumar");
+
+
+
     }
 }
