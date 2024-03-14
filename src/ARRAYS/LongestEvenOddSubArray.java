@@ -9,13 +9,13 @@ public class LongestEvenOddSubArray {
         {
             if (sum>count) {
                 count = sum;
-                sum=0;
+                sum=1;
             }
             if (arr[i]%2==0 && arr[i-1]%2!=0 ||arr[i]%2!=0 &&arr[i-1]%2==0) {
                 sum++;
             }
             else {
-                sum = 0;
+                sum = 1;
             }
         }
             System.out.println(count);
