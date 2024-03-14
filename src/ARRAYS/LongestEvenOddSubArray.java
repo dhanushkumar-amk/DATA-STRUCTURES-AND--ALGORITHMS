@@ -8,14 +8,13 @@ public class LongestEvenOddSubArray {
         for(int i=1; i<n; i++)
         {
             if (sum>count)
-            {
                 count=sum;
-                sum=0;
-            }
-            if (arr[i]%2==0 && arr[i-1]%2!=0 ||arr[i]%2!=0 &&arr[i]%2==0) {
+            if (arr[i]%2==0 && arr[i-1]%2!=0 ||arr[i]%2!=0 &&arr[i-1]%2==0) {
                 sum++;
             }
-            else sum=0;
+            else {
+                sum = 0;
+            }
         }
             System.out.println(count);
         }
