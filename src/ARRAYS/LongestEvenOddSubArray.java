@@ -7,7 +7,7 @@ public class LongestEvenOddSubArray {
         if(arr.length>1){
         for(int i=1; i<n; i++)
         {
-            if (sum>count)
+            if (sum>=count)
             {
                 count=sum;
                 sum=0;
