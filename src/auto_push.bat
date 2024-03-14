@@ -7,5 +7,5 @@ if %errorlevel% == 0 (
     git commit -m "Automatic commit"
     git push origin master
 )
-timeout /t 10 > nul
+timeout /t 3 > nul
 goto loop
