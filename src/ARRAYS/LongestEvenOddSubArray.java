@@ -2,7 +2,7 @@ package ARRAYS;
 public class LongestEvenOddSubArray {
     static void LongestEvenOddSubarray (int [] arr){
         int n= arr.length;
-
+        
     }
     public static void main(String[] args) {
         int [] arr = {10,12,14,7,8};
