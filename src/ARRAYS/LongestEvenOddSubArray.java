@@ -15,6 +15,7 @@ public class LongestEvenOddSubArray {
             if (arr[i]%2==0 && arr[i-1]%2!=0 ||arr[i]%2!=0 &&arr[i]%2==0) {
                 sum++;
             }
+            else sum=0;
         }
             System.out.println(count);
         }
