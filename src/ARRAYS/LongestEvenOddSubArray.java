@@ -11,8 +11,6 @@ public class LongestEvenOddSubArray {
         LongestEvenOddSubarray(arr);
 
 
-
-
-        ok
+        
     }
 }
