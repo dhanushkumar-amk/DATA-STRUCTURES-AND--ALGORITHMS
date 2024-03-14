@@ -7,16 +7,13 @@ public class LongestEvenOddSubArray {
         if(arr.length>1){
         for(int i=1; i<n; i++)
         {
+            if (sum>count)
+            {
+                count=sum;
+                sum=0;
+            }
             if (arr[i]%2!=arr[i-1]%2) {
                 sum++;
-            }
-            else {
-                if (sum>count)
-                {
-                    count=sum;
-                    sum=0;
-                }
-
             }
         }
             System.out.println(count);
