@@ -19,6 +19,7 @@ public class LongestEvenOddSubArray {
 
             }
         }
+            System.out.println(count);
         }
         else System.out.println(arr[0]);
     }
