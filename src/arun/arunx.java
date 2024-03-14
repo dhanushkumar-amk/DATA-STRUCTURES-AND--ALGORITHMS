@@ -1,2 +1,4 @@
-package arun;public class arunx {
+package arun;
+
+public class arunx {
 }
