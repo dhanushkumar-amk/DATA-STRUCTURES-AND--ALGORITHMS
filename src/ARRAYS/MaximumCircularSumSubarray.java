@@ -1,6 +1,9 @@
 package ARRAYS;
-public class MaximumCircularSumSubarray {
+public class MaximumCircularSumSubArray {
+    static void MaxiMumCircularSumSubArray() {
+
+    }
     public static void main(String[] args) {
-        
+
     }
 }
