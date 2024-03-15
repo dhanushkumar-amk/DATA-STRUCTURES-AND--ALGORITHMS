@@ -9,9 +9,8 @@ public class MaximumCircularSumSubArray {
         {
             if (curPos>=0)
                 curPos+=arr[i];
-            else {
+            else
                 curPos=arr[i];
-            }
             curMax=Math.max(curPos,curMax);
         }
         System.out.println(curMax);
