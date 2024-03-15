@@ -10,17 +10,14 @@ public class MaximumCircularSumSubArray {
             if (curPos>=0)
                 curPos+=arr[i];
             else {
-                curPos = arr[i];
+                curPos=arr[i];
             }
-                if (curPos>curMax)
-                    curMax=curPos;
-
-
+            curMax=Math.max(curPos,curMax);
         }
         System.out.println(curMax);
     }
     public static void main(String[] args) {
-        int[] arr = {1,2,3,-2,5};
+        int[] arr = {5,-2,3,4};
         int n= arr.length;
         MaxiMumCircularSumSubArray(arr,n);
     }
