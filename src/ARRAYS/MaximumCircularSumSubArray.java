@@ -11,7 +11,7 @@ public class MaximumCircularSumSubArray {
                 curPos+=arr[i];
             else {
                 curMax=Math.max(curPos,curMax);
-                curPos=arr[i];
+                curPos=;
             }
         }
         System.out.println(curMax);
