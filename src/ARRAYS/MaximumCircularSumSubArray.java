@@ -6,12 +6,13 @@ public class MaximumCircularSumSubArray {
         int curMin=arr[0];
         int curNeg=arr[0];
         for (int i=1; i<n; i++)
-        { curMax=Math.max(curPos,curMax);
+        {
             if (curPos>=0)
                 curPos+=arr[i];
             else {
                 curPos=arr[i];
             }
+            curMax=Math.max(curPos,curMax);
         }
         System.out.println(curMax);
     }
