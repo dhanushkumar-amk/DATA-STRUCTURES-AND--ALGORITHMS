@@ -1,13 +1,14 @@
 package ARRAYS;
 public class MaximumCircularSumSubArray {
     static void MaxiMumCircularSumSubArray(int[] arr,int n) {
-        int curMax=0;
-        int curPos=0;
-        int curMin=0;
-        int curNeg=0;
-        for (int i=0; i<n; i++)
+        int curMax=arr[0];
+        int curPos=arr[0];
+        int curMin=arr[0];
+        int curNeg=arr[0];
+        for (int i=1; i<n; i++)
         {
-            if (curMax>=)
+            if (curPos>=0)
+                curMax+=arr[i];
         }
     }
     public static void main(String[] args) {
