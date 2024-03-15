@@ -8,8 +8,13 @@ public class MaximumCircularSumSubArray {
         for (int i=1; i<n; i++)
         {
             if (curPos>=0)
-                curMax+=arr[i];
+                curPos+=arr[i];
+            else {
+                curMax=Math.max(curPos,curMax);
+                curPos=0;
+            }
         }
+        System.out.println(curMax);
     }
     public static void main(String[] args) {
         int[] arr = {5,-2,3,4};
