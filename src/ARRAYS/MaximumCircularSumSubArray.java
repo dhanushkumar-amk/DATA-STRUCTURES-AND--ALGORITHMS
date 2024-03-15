@@ -14,7 +14,11 @@ public class MaximumCircularSumSubArray {
 
            if(curPos>curMax) curMax=curPos;
 
-          
+           if (curNeg<=0)
+               curNeg+=arr[i];
+           else
+               curNeg=0;
+           
         }
 
 
