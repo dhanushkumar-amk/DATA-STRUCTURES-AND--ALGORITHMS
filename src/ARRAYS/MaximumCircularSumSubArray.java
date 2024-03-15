@@ -21,8 +21,8 @@ public class MaximumCircularSumSubArray {
            if (curNeg<curMin)curMin=curNeg;
 
         }
-
-
+        int result=curMax-curMin;
+        System.out.println(result);
     }
     public static void main(String[] args) {
         int[] arr = {5,-2,3,4};
