@@ -25,7 +25,7 @@ public class MaximumCircularSumSubArray {
         System.out.println(result);
     }
     public static void main(String[] args) {
-        int[] arr = {5,-2,3,4};
+        int[] arr = {5,-3,-2,6,-1,4};
         int n= arr.length;
         MaxiMumCircularSumSubArray(arr,n);
     }
