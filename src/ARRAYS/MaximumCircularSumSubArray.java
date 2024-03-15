@@ -14,15 +14,10 @@ public class MaximumCircularSumSubArray {
 
            if(curPos>curMax) curMax=curPos;
 
-           if (curNeg<0)
-               curNeg-=arr[i];
-           else
-               curNeg=arr[i];
-
-           if(curNeg<curMin)  curMin=curNeg;
+          
         }
-        int result=curMax-curMin;
-        System.out.println(result);
+
+
     }
     public static void main(String[] args) {
         int[] arr = {5,-2,3,4};
