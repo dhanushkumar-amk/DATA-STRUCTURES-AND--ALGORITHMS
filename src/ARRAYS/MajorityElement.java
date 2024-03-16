@@ -32,7 +32,7 @@ public class MajorityElement {
         for (int j=0; j<n; j++)
         {
             if(arr[j]>n/2)
-                return j;
+                return j+1;
         }
         return -1;
     }
