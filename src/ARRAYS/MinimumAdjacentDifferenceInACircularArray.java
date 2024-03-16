@@ -11,9 +11,8 @@ public class MinimumAdjacentDifferenceInACircularArray {
             if(x<min)
                 min=x;
         }
-        if((arr[n-1]-arr[0])<min)
-            min=(arr[n-1]-arr[0]);
-        min=Math.abs(min);
+        if (Math.abs(arr[n-1]-arr[0])<min)
+            min=Math.abs(arr[n-1]-arr[0]);
         System.out.println(min);
     }
 }
