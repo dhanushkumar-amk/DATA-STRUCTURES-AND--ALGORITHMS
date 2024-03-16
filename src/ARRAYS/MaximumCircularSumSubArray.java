@@ -1,12 +1,12 @@
 package ARRAYS;
-public class MaximumCircularSumSubArray {
-    static void MaxiMumCircularSumSubArray(int[] arr,int n) {
+ class MaximumCircularSumSubArray {
+    static int MaxiMumCircularSumSubArrays(int[] arr,int n) {
         int max=Integer.MIN_VALUE;
         int min=Integer.MAX_VALUE;
         int Totalsum=0 ;
         int currMax=0;
-        int currMax=0;
-        for(int x:a)
+        int currMin=0;
+        for(int x:arr)
         {
             Totalsum+=x;
 
@@ -25,6 +25,7 @@ public class MaximumCircularSumSubArray {
     public static void main(String[] args) {
         int[] arr = {10,-3,-4,7,6,5,-4,-1};
         int n= arr.length;
-        MaxiMumCircularSumSubArray(arr,n);
+      int result=  MaxiMumCircularSumSubArrays(arr,n);
+        System.out.println(result);
     }
 }
