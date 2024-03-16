@@ -4,7 +4,7 @@ public class MajorityElement {
         int i=0;
         while(i<n)
         {
-            if(arr[i]<n)
+            if(arr[i]<0)
             {
                 i++;
                 continue;
