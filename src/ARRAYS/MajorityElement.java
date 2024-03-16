@@ -5,7 +5,7 @@ public class MajorityElement {
         for(int i=0; i<n; i++)
         {
           if(arr[i]>0 &&(arr[i]<n))
-              arr[arr[i]]-=-1;
+              arr[arr[i]]=-1;
         }
         for (int temp:arr)
             System.out.print(temp+" ");
