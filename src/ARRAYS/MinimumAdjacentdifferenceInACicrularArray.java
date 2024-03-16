@@ -1,2 +1,4 @@
-package ARRAYS;public class MinimumAdjacentdifferenceInACicrularArray {
+package ARRAYS;
+
+public class MinimumAdjacentDifferenceInACicrularArray {
 }
