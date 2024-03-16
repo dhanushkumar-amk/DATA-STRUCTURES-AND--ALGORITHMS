@@ -17,7 +17,7 @@ public class MajorityElement {
             if(arr[i]<n && arr[i]>0)
             {
                 int temp=arr[arr[i]-1];
-                arr[arr[i]-1]-=1;
+                arr[arr[i]-1]=-1;
                 arr[i]=temp;
             }
         }
