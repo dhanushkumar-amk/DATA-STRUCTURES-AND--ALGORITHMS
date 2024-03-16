@@ -9,6 +9,7 @@ public class MajorityElement {
                 }
                 else arr[arr[i]]=-1;
             }
+            else  arr[i]=0;
         }
         for (int temp:arr)
             System.out.print(temp+" ");
