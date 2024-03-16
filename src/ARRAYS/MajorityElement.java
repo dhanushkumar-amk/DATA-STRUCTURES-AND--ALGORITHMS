@@ -9,7 +9,7 @@ public class MajorityElement {
                 i++;
                 continue;
             }
-            if(arr[i]>n||arr[arr[i]]>n)
+            if(arr[i]>n)
             {
                 i++;
                 continue;
