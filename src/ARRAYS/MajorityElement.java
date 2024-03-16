@@ -29,6 +29,8 @@ public class MajorityElement {
             else arr[j]=0;
 
         }
+        for (int x:arr)
+            System.out.print(x+" ");
         return 1;
         }
 
