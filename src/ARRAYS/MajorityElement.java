@@ -34,6 +34,8 @@ public class MajorityElement {
             if(arr[j]>n/2)
                 return j+1;
         }
+        for (int x:arr)
+            System.out.print(x+" ");
         return -1;
     }
 
