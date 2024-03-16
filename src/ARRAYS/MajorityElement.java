@@ -29,9 +29,11 @@ public class MajorityElement {
             else arr[j]=0;
 
         }
-        for (int x:arr)
-            if(x>n/2)
-                return arr[x];
+        for (int j=0; j<n; j++)
+        {
+            if(arr[j]>n/2)
+                return arr[j];
+        }
         return -1;
     }
 
