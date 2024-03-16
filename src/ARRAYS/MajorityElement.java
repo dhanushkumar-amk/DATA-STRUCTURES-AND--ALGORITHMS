@@ -3,6 +3,7 @@ public class MajorityElement {
     static int MajorityElement (int [] arr ,int n) {
         int i=0;
         int N=n;
+        int last=arr[n-1];
         while(i<N)
         {
             if(arr[i]<=0||arr[i]>N)
@@ -30,15 +31,14 @@ public class MajorityElement {
         }
         for (int x:arr)
             System.out.print(x+" ");
-        for (int j=0; j<n; j++)
+        int j;
+        for (j=0; j<n; j++)
         {
             if(arr[j]>n/2)
-                return arr[j];
-            if(arr[j]>n/2)
                 return j+1;
-            
         }
-
+        if (j==n-1)
+            return last;
         return -1;
     }
 
