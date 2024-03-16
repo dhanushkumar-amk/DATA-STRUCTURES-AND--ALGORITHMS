@@ -40,7 +40,7 @@ public class MajorityElement {
     }
 
     public static void main(String[] args) {
-        int []arr = {4,5,4};
+        int []arr = {1,2,3};
        int res= MajorityElement(arr, arr.length);
 
         System.out.println(res);
