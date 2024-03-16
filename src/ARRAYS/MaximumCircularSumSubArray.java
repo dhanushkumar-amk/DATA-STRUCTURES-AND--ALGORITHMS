@@ -24,7 +24,7 @@ package ARRAYS;
      }
 
      public static void main(String[] args) {
-         int[] arr = {8,-8,9,-9,10,-11,12};
+         int[] arr = {1,-2,3,-2};
          int n = arr.length;
          int result = MaxiMumCircularSumSubArrays(arr, n);
          System.out.println(result);
