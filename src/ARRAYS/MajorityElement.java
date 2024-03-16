@@ -4,8 +4,12 @@ public class MajorityElement {
         int i=0;
         while(i<n)
         {
-
-            if(arr[i]>n||arr[arr[i]]>n||arr[i]<0)
+            if(arr[i]<n)
+            {
+                i++;
+                continue;
+            }
+            if(arr[i]>n||arr[arr[i]]>n)
             {
                 i++;
                 continue;
@@ -25,6 +29,6 @@ public class MajorityElement {
     public static void main(String[] args) {
         int []arr = {5,4,13,5,5,4,5};
        int res= MajorityElement(arr, arr.length);
-        System.out.println(res);
+
     }
 }
