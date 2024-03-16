@@ -10,8 +10,10 @@ public class MajorityElement {
                 continue;
             }
             int ind=arr[i]-1;
-            if(arr[ind]>0)
-                arr[i]=arr[ind];
+            if(arr[ind]>0) {
+                arr[i] = arr[ind];
+                arr[i] = -1;
+            }
             else{
             arr[ind]--;
             arr[i] = 0;
