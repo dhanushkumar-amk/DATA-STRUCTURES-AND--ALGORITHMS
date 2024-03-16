@@ -27,15 +27,15 @@ public class MajorityElement {
             if(arr[j]<0)
                 arr[j]=-arr[j];
             else arr[j]=0;
-
         }
+        for (int x:arr)
+            System.out.print(x+" ");
         for (int j=0; j<n; j++)
         {
             if(arr[j]>n/2)
                 return j+1;
         }
-        for (int x:arr)
-            System.out.print(x+" ");
+
         return -1;
     }
 
