@@ -5,6 +5,13 @@ public class MinimumAdjacentDifferenceInACircularArray {
         int n= arr.length;
         int curr=0;
         int min=Integer.MAX_VALUE;
-        
+        for (int i=1; i<n; i++)
+        {
+            if (Math.abs(arr[i]-arr[i-1])<min)
+                min=Math.abs(arr[i]-arr[i-1]);
+            else
+                min=Math.abs(arr[i-1]-arr[i]);
+        }
+        System.out.println(min);
     }
 }
