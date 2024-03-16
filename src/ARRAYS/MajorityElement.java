@@ -18,7 +18,7 @@ public class MajorityElement {
             }
         }
         for (int temp:arr)
-            System.out.print(temp-1+" ");
+            System.out.print(temp+" ");
 
         return 10;
     }
