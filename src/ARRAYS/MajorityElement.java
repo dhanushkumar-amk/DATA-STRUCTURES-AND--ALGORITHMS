@@ -17,7 +17,7 @@ public class MajorityElement {
             arr[i] = 0;
             i++;
         }
-        }z
+        }
         for (int temp:arr)
             System.out.print(temp+" ");
 
