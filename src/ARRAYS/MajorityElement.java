@@ -1,13 +1,20 @@
 package ARRAYS;
 public class MajorityElement {
     static int MajorityElement (int [] arr ,int n) {
+        int i=0;
+        while(i<n)
+        {
 
-        for(int i=0; i<n; i++) {
-            if (arr[i] > 0 && (arr[i] < n)) {
-                if (arr[arr[i]] < 0) {
-                    arr[arr[i]] -= 1;
-                }
-                else arr[arr[i]]=-1;
+            if(arr[i]>n||arr[arr[i]]>n||arr[i]<0)
+            {
+                i++;
+                continue;
+            }
+            if(arr[i]<n && arr[i]>0)
+            {
+                int temp=arr[arr[i]-1];
+                arr[arr[i]-1]-=1;
+                arr[i]=temp;
             }
         }
         for (int temp:arr)
