@@ -17,6 +17,8 @@ package ARRAYS;
              if (currMin < 0) min = currMin;
              if (currMin > 0) currMin = 0;
          }
+         System.out.println(max);
+         System.out.println(Totalsum-min);
          if (max < 0) return max;
          return Math.max(max, Totalsum - min);
      }
