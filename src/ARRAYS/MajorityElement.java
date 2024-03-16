@@ -4,21 +4,20 @@ public class MajorityElement {
         int i=0;
         while(i<n)
         {
-            if(arr[i]<0)
+            if(arr[i]<=0 || arr[i]>n)
             {
                 i++;
                 continue;
             }
-            if(arr[i]>n)
-            {
-                i++;
-                continue;
-            }
-                int temp=arr[arr[i]-1];
-                arr[arr[i]-1]--;
-                arr[i]=temp;
-
+            int ind=arr[i]-1;
+            if(arr[ind]>0)
+                arr[i]=arr[ind];
+            else{
+            arr[ind]--;
+            arr[i] = 0;
+            i++;
         }
+        }z
         for (int temp:arr)
             System.out.print(temp+" ");
 
