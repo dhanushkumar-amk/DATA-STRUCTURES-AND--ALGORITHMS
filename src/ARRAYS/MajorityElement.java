@@ -15,7 +15,7 @@ public class MajorityElement {
                 continue;
             }
                 int temp=arr[arr[i]-1];
-                arr[arr[i]-1]-=1;
+                arr[arr[i]-1]--;
                 arr[i]=temp;
 
         }
