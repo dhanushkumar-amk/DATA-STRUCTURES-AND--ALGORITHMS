@@ -16,9 +16,16 @@ public class MajorityElement {
                 arr[i] = 0;
                 i++;
             }
+
+
         }
-
-
+        for (int j = 0; j < n; j++) {
+            if (arr[j] < 0)
+                arr[j] = -arr[j];
+            else arr[j] = 0;
+        }
+            for (int temp : arr)
+                System.out.print(temp + " ");
             return 10;
         }
 
