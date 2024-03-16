@@ -34,7 +34,7 @@ public class MajorityElement {
         {
             if(arr[j]>n/2)
                 return j+1;
-            else if(arr[j]>n/2)
+            if(arr[j]>n/2)
                 return arr[j];
         }
 
