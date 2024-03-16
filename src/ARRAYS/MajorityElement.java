@@ -30,13 +30,15 @@ public class MajorityElement {
 
         }
         for (int x:arr)
-            System.out.print(x+" ");
-        return 1;
-        }
+            if(x>n/2)
+                return x;
+        return -1;
+    }
 
     public static void main(String[] args) {
         int []arr = {5,4,13,5,5,4,5};
        int res= MajorityElement(arr, arr.length);
 
+        System.out.println(res);
     }
 }
