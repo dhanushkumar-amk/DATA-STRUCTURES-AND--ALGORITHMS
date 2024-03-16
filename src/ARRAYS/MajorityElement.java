@@ -11,7 +11,7 @@ public class MajorityElement {
             }
         }
         for (int temp:arr)
-            System.out.print(temp+" ");
+            System.out.print(temp-1+" ");
         return 10;
     }
     public static void main(String[] args) {
