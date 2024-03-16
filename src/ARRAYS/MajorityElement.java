@@ -31,7 +31,7 @@ public class MajorityElement {
         }
         for (int x:arr)
             if(x>n/2)
-                return x;
+                return arr[x];
         return -1;
     }
 
