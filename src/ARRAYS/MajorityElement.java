@@ -9,6 +9,7 @@ public class MajorityElement {
         }
         for (int temp:arr)
             System.out.print(temp+" ");
+        return 10;
     }
     public static void main(String[] args) {
         int []arr = {5,4,13,5,5,4,5};
