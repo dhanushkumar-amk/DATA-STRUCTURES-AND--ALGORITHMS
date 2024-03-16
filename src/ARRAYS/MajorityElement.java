@@ -2,10 +2,12 @@ package ARRAYS;
 public class MajorityElement {
     static int MajorityElement (int [] arr ,int n) {
 
-        for(int i=0; i<n; i++)
-        {
-          if(arr[i]>0 &&(arr[i]<n))
-              arr[arr[i]]-=-1;
+        for(int i=0; i<n; i++) {
+            if (arr[i] > 0 && (arr[i] < n)) {
+                if (arr[arr[i]] < 0) {
+                    arr[arr[i]] -= 1;
+                }
+            }
         }
         for (int temp:arr)
             System.out.print(temp+" ");
