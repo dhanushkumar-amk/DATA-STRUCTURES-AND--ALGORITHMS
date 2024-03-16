@@ -43,6 +43,6 @@ public class MajorityElement {
         int []arr = {3,1,3,3,2};
        int res= MajorityElement(arr, arr.length);
 
-        System.out.println(res);
+        System.out.println("\n"+res);
     }
 }
