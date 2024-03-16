@@ -20,6 +20,7 @@ public class MajorityElement {
             i++;
         }
         }
+
         for (int temp:arr)
             System.out.print(temp+" ");
 
