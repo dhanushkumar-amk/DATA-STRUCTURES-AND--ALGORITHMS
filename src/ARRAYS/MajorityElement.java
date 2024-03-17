@@ -7,9 +7,6 @@ public class MajorityElement {
 
             if (arr[i] == arr[i + 1]) {
                  count++;
-                if (count > n / 2) {
-                    return majority;
-                }
 
             }
             else {
@@ -23,7 +20,9 @@ public class MajorityElement {
             }
 
         }
-
+        if (count > n / 2) {
+            return majority;
+        }
         return -1;
     }
         public static void main (String[]args){
