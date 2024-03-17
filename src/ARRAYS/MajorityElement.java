@@ -1,32 +1,31 @@
 package ARRAYS;
 public class MajorityElement {
-    static int MajorityElement(int[] arr, int n) {
-        int majority=0;
-        int count=0;
-        for (int i=1; i<n; i++)
-        {
-            if (count==0)
-            {
-                majority=arr[i];
-                count=1;
-            }
-             else if (majority == arr[i]) {
-                count++;
-            }
-            else {
-                count--;
-            }
+    static int MajorityElement(int[] a, int n) {
 
+        int maj=a[0];
+        int c=1;
+        for(int i=1; i<n; i++)
+        {
+            if(maj==a[i])
+                c++;
+            else{
+                c--;
+                if(c<0)
+                {
+                    maj=a[i];
+                    c=1;
+                }
+            }
         }
         int result=0;
-        for(int x:arr) {
-            if (x == majority)
+        for(int i=0; i<n;i++)
+        {
+            if(a[i]==maj)
                 result++;
         }
-        if (result>n/2)
-            return result;
+        if(result>n/2)
+            return maj;
         return -1;
-
     }
         public static void main (String[]args){
             int[] arr = {3,1,3,3,2};
