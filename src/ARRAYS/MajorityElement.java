@@ -18,9 +18,15 @@ public class MajorityElement {
             }
 
         }
-        if (count>n/2)
-            return count;
+        int result=0;
+        for(int x:arr) {
+            if (x == majority)
+                result++;
+        }
+        if (result>n/2)
+            return result;
         return -1;
+
     }
         public static void main (String[]args){
             int[] arr = {3,1,3,3,2};
