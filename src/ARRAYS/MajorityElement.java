@@ -3,26 +3,23 @@ public class MajorityElement {
     static int MajorityElement(int[] arr, int n) {
         int majority=arr[0];
         int count=1;
-        for (int i=0; i<n-1; i++) {
-
-            if (arr[i] == arr[i + 1]) {
-                 count++;
-
+        for (int i=1; i<n; i++)
+        {
+            if (arr[i-1]== arr[i]) {
+                count++;
+                continue;
             }
             else {
-               if(count>0) {
-                   count--;
-               }
-               else {
-                   majority=arr[i+1];
-                   count=1;
-               }
+                count--;
             }
-
+            if (count<1)
+            {
+                majority=arr[i];
+                count=1;
+            }
         }
-        if (count > n / 2) {
-            return majority;
-        }
+        if (count>n/2)
+            return count;
         return -1;
     }
         public static void main (String[]args){
