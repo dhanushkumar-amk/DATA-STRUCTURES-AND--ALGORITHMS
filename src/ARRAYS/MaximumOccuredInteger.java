@@ -51,7 +51,7 @@ class  MaximumOccuredInteger{
 //     int result=   MaximumOccuredInt(arr1,arr2,arr1.length);
      int result2 = MaxiOccured(arr1,arr2,arr1.length,15);
 //        System.out.println("\n"+result);
-        System.out.println(result2);
+        System.out.println(" \n"+result2);
 
     }
 }
