@@ -37,7 +37,7 @@ class  MaximumOccuredInteger{
         {
 
             if(freq[i]>maxoccurence) {
-                maxoccurence = freq[i];
+                maxoccurence += freq[i];
                 result=i;
             }
         }
