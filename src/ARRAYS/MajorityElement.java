@@ -5,7 +5,7 @@ public class MajorityElement {
         int count=1;
         for (int i=1; i<n; i++)
         {
-            if (majority== arr[i]) {
+            if (arr[i-1]== arr[i]) {
                 count++;
                 continue;
             }
