@@ -21,7 +21,7 @@ public class MajorityElement {
         return currMajor;
     }
         public static void main (String[]args){
-            int[] arr = {4,1,1,4,3,4};
+            int[] arr = {4,1,1,4,3,4,4};
             int res = MajorityElement(arr, arr.length);
             System.out.println(res);
         }
