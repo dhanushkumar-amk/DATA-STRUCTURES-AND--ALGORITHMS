@@ -30,14 +30,7 @@ class  MaximumOccuredInteger{
             freq[r[i]+1]-=1;
         }
         int maxx=0;
-        int maxoccurence=0;
-        for (int i=0; i<max; i++) {
-            if (freq[i] < 0)
-                break;
-            if(freq[i]>max)
-                maxx+=freq[i];
-
-        }
+        
         return maxx;
     }
     public static void main(String[] args) {
