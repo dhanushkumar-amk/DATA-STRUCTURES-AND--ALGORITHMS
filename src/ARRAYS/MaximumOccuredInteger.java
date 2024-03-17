@@ -1,23 +1,23 @@
 package ARRAYS;
 
+import java.util.HashMap;
+
 class  MaximumOccuredInteger{
     static int MaximumOccuredInt(int [] l,int [] r, int n) {
-        int leftMax=l[0];
-        int rightMin=r[0];
-
-        for (int i=1; i<n; i++)
+        HashMap<Integer,Integer> hashMap = new HashMap();
+        for (int i=0; i<n; i++)
         {
-            if (leftMax<l[i]&&l[i]<=rightMin)
-                leftMax=l[i];
-            if(rightMin>r[i]&&r[i]>=leftMax)
-                rightMin=r[i];
+            for (int j=l[i]; i<r[i];j++){
+                hashMap.put(l[j],l[j]);
+            }
         }
-        return leftMax;
+        System.out.println(hashMap);
+        return -1;
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
         int [] arr2={15,8,5,4};
      int result=   MaximumOccuredInt(arr1,arr2,arr1.length);
-        System.out.println(result);
+        System.out.println("\n"+result);
     }
 }
