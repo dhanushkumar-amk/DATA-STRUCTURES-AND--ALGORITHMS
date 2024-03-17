@@ -3,10 +3,10 @@ public class MajorityElement {
     static int MajorityElement(int[] arr, int n) {
         int majority=arr[0];
         int count=1;
-        for (int i=0; i<n; i++) {
+        for (int i=0; i<n-1; i++) {
 
             if (arr[i] == arr[i + 1]) {
-                count++;
+                 count++;
                 if (count > n / 2) {
                     return majority;
                 }
