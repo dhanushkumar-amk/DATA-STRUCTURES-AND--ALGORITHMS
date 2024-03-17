@@ -10,9 +10,8 @@ public class MajorityElement {
                 majority=arr[i];
                 count=1;
             }
-            if (majority == arr[i]) {
+             else if (majority == arr[i]) {
                 count++;
-                continue;
             }
             else {
                 count--;
