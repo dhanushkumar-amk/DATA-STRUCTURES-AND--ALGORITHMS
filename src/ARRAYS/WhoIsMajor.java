@@ -1,11 +1,11 @@
 package ARRAYS;
 
 public class WhoIsMajor {
-    static int Major(int[] arr,int n) {
+    static int Major(int[] arr,int x,int y) {
         int x1=0;
         int y1=0;
         int result=0;
-
+        int n= arr.length;
         for(int i=0; i<n; i++)
         {
 
@@ -15,13 +15,16 @@ public class WhoIsMajor {
             if(y==arr[i])
                 y1++;
         }
-        result=x1>y1?x:y
+        result=x1>y1?x:y;
         if(x1==y1)
             return Math.min(x,y);
         return result;
     }
     public static void main(String[] args) {
-        int [] arr ={}
-        Major()
+        int [] arr ={1,1,2,2,3,3,4,4,4,4,5};
+        int x=4;
+        int y=5;
+      int result=  Major(arr,x,y);
+        System.out.println(result);
     }
 }
