@@ -19,11 +19,10 @@ public class MajorityElement {
                }
             }
         }
-        System.out.println(majority);
         return -1;
     }
         public static void main (String[]args){
-            int[] arr = {};
+            int[] arr = {1,1,3};
             int res = MajorityElement(arr, arr.length);
             System.out.println(res);
         }
