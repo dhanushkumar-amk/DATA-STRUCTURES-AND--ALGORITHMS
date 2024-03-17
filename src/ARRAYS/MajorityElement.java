@@ -26,4 +26,3 @@ public class MajorityElement {
             System.out.println("\n" + res);
         }
     }
-}
