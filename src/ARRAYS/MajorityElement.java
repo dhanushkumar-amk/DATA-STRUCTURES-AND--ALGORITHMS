@@ -9,8 +9,6 @@ public class MajorityElement {
             if(arr[i]==arr[i+1])
                 count++;
 
-            if (count>n/2)
-                return majority;
             else {
                if(count>0) {
                    count--;
