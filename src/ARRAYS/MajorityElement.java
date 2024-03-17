@@ -10,7 +10,7 @@ public class MajorityElement {
                 if (count > n / 2) {
                     return majority;
                 }
-                
+
             }
             else {
                if(count>0) {
