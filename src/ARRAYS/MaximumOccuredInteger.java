@@ -29,15 +29,17 @@ class  MaximumOccuredInteger{
             freq[l[i]]+=1;
             freq[r[i]+1]-=1;
         }
-        int result=0;
-        for (int i=1; i<n; i++)
-        {
-            if(freq[i]<0)
+        int maxx=0;
+        int maxoccurence=0;
+        for (int i=0; i<n; i++) {
+            if (freq[i] < 0)
                 break;
-            else
-                result+=freq[i];
+            if(freq[i]>max)
+                max=freq[i];
+            if (maxx>maxoccurence)
+                maxoccurence=maxx;
         }
-        return result;
+        return maxoccurence;
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
