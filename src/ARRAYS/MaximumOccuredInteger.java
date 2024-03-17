@@ -1,2 +1,4 @@
-package ARRAYS;public class MaximumOccuredInteger {
+package ARRAYS;
+
+public class MaximumOccuredinteger {
 }
