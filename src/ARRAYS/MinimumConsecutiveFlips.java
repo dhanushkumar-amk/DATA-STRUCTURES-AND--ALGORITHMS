@@ -8,7 +8,6 @@ public class MinimumConsecutiveFlips {
             if(arr[i]==0)
                 Zeros++;
             else  Ones++;
-            if()
         }
         return -1;
     }
