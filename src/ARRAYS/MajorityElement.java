@@ -5,10 +5,12 @@ public class MajorityElement {
         int count=0;
         for (int i=0; i<n-1; i++)
         {
-            if (count>n/2)
-                return majority;
+
             if(arr[i]==arr[i+1])
                 count++;
+            
+            if (count>n/2)
+                return majority;
             else {
                if(count>0) {
                    count--;
@@ -19,7 +21,7 @@ public class MajorityElement {
                }
             }
         }
-        return -1;
+
     }
         public static void main (String[]args){
             int[] arr = {3,1,3,3,2};
