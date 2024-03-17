@@ -42,7 +42,7 @@ class  MaximumOccuredInteger{
                 result=i;
             }
         }
-        return result;
+        return l[result];
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
