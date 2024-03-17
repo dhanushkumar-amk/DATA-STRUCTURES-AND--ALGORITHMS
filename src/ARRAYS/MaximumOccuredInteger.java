@@ -23,13 +23,26 @@ class  MaximumOccuredInteger{
         return max;
     }
     static int MaxiOccured(int[] l,int []r,int n) {
-
+        int [] freq = new int[n+1];
+        for (int i=1 ;i<n; i++){
+            l[i]+=1;
+            r[i+1]-=1;
+        }
+        int result=0;
+        for (int i=1; i<n; i++)
+        {
+            if (freq[i]>0)
+                result+=freq[i];
+        }
+        return result;
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
         int [] arr2={15,8,5,4};
-     int result=   MaximumOccuredInt(arr1,arr2,arr1.length);
+//     int result=   MaximumOccuredInt(arr1,arr2,arr1.length);
      int result2 = MaxiOccured(arr1,arr2,arr1.length);
-        System.out.println("\n"+result);
+//        System.out.println("\n"+result);
+        System.out.println(result2);
+
     }
 }
