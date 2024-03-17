@@ -17,7 +17,7 @@ public class MajorityElement {
             }
         }
         System.out.println(count);
-        if (count<0)
+        if (count<=1)
             return -1;
         return currMajor;
     }
