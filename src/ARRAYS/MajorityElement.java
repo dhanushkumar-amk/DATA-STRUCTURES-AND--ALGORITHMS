@@ -16,7 +16,6 @@ public class MajorityElement {
                 count--;
             }
         }
-
         if (arr[n-1]==currMajor)
             return -1;
         return currMajor;
@@ -24,6 +23,6 @@ public class MajorityElement {
         public static void main (String[]args){
             int[] arr = {1,1,1,2,3,4};
             int res = MajorityElement(arr, arr.length);
-            System.out.println("\n" + res);
+            System.out.println(res);
         }
     }
