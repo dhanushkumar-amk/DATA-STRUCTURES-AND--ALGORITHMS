@@ -42,6 +42,8 @@ class  MaximumOccuredInteger{
                 result=i;
             }
         }
+        for (int x:freq)
+            System.out.print(x+" ");
         return result;
     }
     public static void main(String[] args) {
