@@ -18,6 +18,7 @@ public class MajorityElement {
             }
         }
         System.out.println(majority);
+        return -1;
     }
         public static void main (String[]args){
             int[] arr = {4,1,1,4,3,4,4};
