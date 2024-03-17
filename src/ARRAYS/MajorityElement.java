@@ -5,6 +5,11 @@ public class MajorityElement {
         int count=1;
         for (int i=1; i<n; i++)
         {
+            if (count==0)
+            {
+                majority=arr[i];
+                count=1;
+            }
             if (majority == arr[i]) {
                 count++;
                 continue;
@@ -12,11 +17,7 @@ public class MajorityElement {
             else {
                 count--;
             }
-            if (count==0)
-            {
-                majority=arr[i];
-                count=1;
-            }
+
         }
         if (count>n/2)
             return count;
