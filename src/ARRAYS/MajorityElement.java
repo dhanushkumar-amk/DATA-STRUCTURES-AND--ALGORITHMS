@@ -9,6 +9,8 @@ public class MajorityElement {
             if(arr[i]==arr[i+1])
                 count++;
 
+            if (count>n/2)
+                return majority;
             else {
                if(count>0) {
                    count--;
@@ -20,7 +22,7 @@ public class MajorityElement {
             }
 
         }
-        System.out.println(majority);
+       
         return -1;
     }
         public static void main (String[]args){
