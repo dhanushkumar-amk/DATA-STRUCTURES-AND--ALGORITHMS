@@ -15,8 +15,12 @@ class  MaximumOccuredInteger{
                 else hashMap.put(j, hashMap.get(j)+1);
             }
         }
-        System.out.println(hashMap);
-        return -1;
+        int max=0;
+        for (int x:hashMap.keySet())
+            if(x>max){
+                max=hashMap.get(x);
+            }
+        return max;
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
