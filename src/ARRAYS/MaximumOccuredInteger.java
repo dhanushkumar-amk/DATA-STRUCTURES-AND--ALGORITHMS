@@ -31,7 +31,7 @@ class  MaximumOccuredInteger{
         }
         int maxx=0;
         int maxoccurence=0;
-        for (int i=0; i<n; i++) {
+        for (int i=0; i<max; i++) {
             if (freq[i] < 0)
                 break;
             if(freq[i]>max)
