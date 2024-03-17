@@ -4,8 +4,7 @@ class  MaximumOccuredInteger{
     static int MaximumOccuredInt(int [] l,int [] r, int n) {
         int leftMax=l[0];
         int rightMin=r[0];
-        //
-        //
+
         for (int i=1; i<n; i++)
         {
             if (leftMax<l[i])
