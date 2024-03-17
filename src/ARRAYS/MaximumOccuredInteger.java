@@ -22,10 +22,14 @@ class  MaximumOccuredInteger{
             }
         return max;
     }
+    static int MaxiOccured(int[] l,int []r,int n) {
+
+    }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
         int [] arr2={15,8,5,4};
      int result=   MaximumOccuredInt(arr1,arr2,arr1.length);
+     int result2 = MaxiOccured(arr1,arr2,arr1.length);
         System.out.println("\n"+result);
     }
 }
