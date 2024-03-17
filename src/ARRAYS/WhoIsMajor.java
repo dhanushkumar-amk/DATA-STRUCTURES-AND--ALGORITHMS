@@ -21,7 +21,7 @@ public class WhoIsMajor {
         return result;
     }
     public static void main(String[] args) {
-        int [] arr ={1,1,2,2,3,3,4,4,4,4,5};
+        int [] arr ={1,2,3,4,5,6,7,8};
         int x=4;
         int y=5;
       int result=  Major(arr,x,y);
