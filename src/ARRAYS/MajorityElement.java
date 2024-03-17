@@ -5,14 +5,14 @@ public class MajorityElement {
         int count=1;
         for (int i=1; i<n; i++)
         {
-            if (majority== arr[i]) {
+            if (majority == arr[i]) {
                 count++;
                 continue;
             }
             else {
                 count--;
             }
-            if (count<1)
+            if (count==0)
             {
                 majority=arr[i];
                 count=1;
