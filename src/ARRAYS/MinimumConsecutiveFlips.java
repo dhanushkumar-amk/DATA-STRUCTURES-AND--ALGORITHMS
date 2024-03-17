@@ -1,21 +1,13 @@
 package ARRAYS;
 public class MinimumConsecutiveFlips {
     static int MinimumConsecutiveFlip(int [] arr,int n) {
-        int Zeros=0;
-        int Ones=0;
-        boolean LargeGroup=false;
-        for (int i=0; i<n; i++)
+        int ones=0;
+        int zeros=0;
+
+        for (int i=1; i<n; i++)
         {
-            if(arr[i]==0)
-                Zeros++;
-            else  Ones++;
-        }
-        LargeGroup=Zeros>Ones?false:true;
-        for (int i=1;i<n-1; i++)
-        {
-            if(LargeGroup==false)
-                if(arr[i]==0&& (arr[i+1]==1||arr[i-1]==1))
-                    System.out.println("From "+i+" to "+i);
+            if(arr[i]==arr[i-1])
+
         }
 
         return -1;
