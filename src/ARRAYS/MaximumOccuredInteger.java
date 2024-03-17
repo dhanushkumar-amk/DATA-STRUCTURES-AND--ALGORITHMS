@@ -17,7 +17,7 @@ class  MaximumOccuredInteger{
     }
     public static void main(String[] args) {
         int [] arr1={1,5,9,13,21};
-        int [] arr2={4,5,6,6,8};
+        int [] arr2={15,8,12,20,30};
         MaximumOccuredInt(arr1,arr2,arr1.length);
     }
 }
