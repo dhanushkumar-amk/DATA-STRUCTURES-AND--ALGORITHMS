@@ -35,7 +35,7 @@ class  MaximumOccuredInteger{
             if (freq[i] < 0)
                 break;
             if(freq[i]>max)
-                maxx=freq[i];
+                maxx+=freq[i];
 
         }
         return maxx;
