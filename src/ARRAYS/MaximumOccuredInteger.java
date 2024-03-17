@@ -32,7 +32,9 @@ class  MaximumOccuredInteger{
         int result=0;
         for (int i=1; i<n; i++)
         {
-            if (freq[i]>0)
+            if(freq[i]<0)
+                break;
+            else
                 result+=freq[i];
         }
         return result;
