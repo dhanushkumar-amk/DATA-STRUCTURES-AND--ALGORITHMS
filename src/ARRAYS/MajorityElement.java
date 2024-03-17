@@ -17,7 +17,7 @@ public class MajorityElement {
             }
         }
 
-        if (count<=1)
+        if (arr[n-1]==currMajor)
             return -1;
         return currMajor;
     }
