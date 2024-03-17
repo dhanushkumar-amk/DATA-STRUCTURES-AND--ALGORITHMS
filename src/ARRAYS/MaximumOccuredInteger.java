@@ -8,7 +8,7 @@ class  MaximumOccuredInteger{
         for (int i=0; i<n; i++)
         {
             for (int j=l[i]; j<r[i];j++){
-                hashMap.put(l[j],l[j]);
+                hashMap.put(j,j);
             }
         }
         System.out.println(hashMap);
