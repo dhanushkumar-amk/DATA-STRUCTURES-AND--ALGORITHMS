@@ -35,14 +35,12 @@ class  MaximumOccuredInteger{
             System.out.print(x+" ");
         for(int i=0; i<max+3; i++)
         {
-
             if(freq[i]>maxoccurence) {
                 maxoccurence = freq[i];
                 result=i;
             }
         }
-
-        return result;
+        return l[result];
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
