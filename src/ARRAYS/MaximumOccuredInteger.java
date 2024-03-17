@@ -33,8 +33,10 @@ class  MaximumOccuredInteger{
         int maxoccurence=0;
         for (int x:freq)
             System.out.print(x+" ");
-        for(int i=0; i<max+3; i++)
+        for(int i=0; i<=max+1; i++)
         {
+            if (freq[i]>0)
+                freq[i]=freq[i-1];
             if(freq[i]>maxoccurence) {
                 maxoccurence = freq[i];
                 result=i;
