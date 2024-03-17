@@ -1,4 +1,7 @@
 package ARRAYS;
 
-public class MaximumOccuredinteger {
+class  MaximumOccuredInteger{
+    public static void main(String[] args) {
+
+    }
 }
