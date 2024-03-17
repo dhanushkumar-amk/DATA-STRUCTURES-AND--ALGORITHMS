@@ -35,11 +35,10 @@ class  MaximumOccuredInteger{
             if (freq[i] < 0)
                 break;
             if(freq[i]>max)
-                max=freq[i];
-            if (maxx>maxoccurence)
-                maxoccurence=maxx;
+                maxx=freq[i];
+
         }
-        return maxoccurence;
+        return maxx;
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
