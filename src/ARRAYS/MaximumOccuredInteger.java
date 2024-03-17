@@ -7,7 +7,7 @@ class  MaximumOccuredInteger{
         HashMap<Integer,Integer> hashMap = new HashMap();
         for (int i=0; i<n; i++)
         {
-            for (int j=l[i]; j<r[i];j++){
+            for (int j=l[i]; j<=r[i];j++){
                 if (!hashMap.containsKey(j))
                 {
                     hashMap.put(j,1);
