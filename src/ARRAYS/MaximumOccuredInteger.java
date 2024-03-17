@@ -17,7 +17,7 @@ class  MaximumOccuredInteger{
         }
         int max=0;
         for (int x:hashMap.keySet())
-            if(x>max){
+            if(hashMap.get(x)>max){
                 max=hashMap.get(x);
             }
         return max;
