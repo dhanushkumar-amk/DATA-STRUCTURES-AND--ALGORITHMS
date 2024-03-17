@@ -23,7 +23,7 @@ class  MaximumOccuredInteger{
         return max;
     }
     static int MaxiOccured(int[] l,int []r,int n) {
-        int [] freq = new int[n+3];
+        int [] freq = new int[];
         for (int i=1 ;i<n; i++){
             freq[l[i]]+=1;
             freq[r[i]]-=1;
