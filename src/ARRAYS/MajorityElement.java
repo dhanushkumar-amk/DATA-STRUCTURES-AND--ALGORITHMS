@@ -1,6 +1,6 @@
 package ARRAYS;
 public class MajorityElement {
-    static int MajorityElement (int [] arr ,int n) {
+    static int MajorityElement(int[] arr, int n) {
 
         int currMajor = arr[0];
         int count = 1;
@@ -16,12 +16,14 @@ public class MajorityElement {
                 count--;
             }
         }
+        return currMajor;
     }
 
-    public static void main(String[] args) {
-        int []arr = {1,15};
-       int res= MajorityElement(arr, arr.length);
 
-        System.out.println("\n"+res);
+        public static void main (String[]args){
+            int[] arr = {1, 15};
+            int res = MajorityElement(arr, arr.length);
+            System.out.println("\n" + res);
+        }
     }
 }
