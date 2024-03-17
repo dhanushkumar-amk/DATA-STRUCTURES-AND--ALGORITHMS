@@ -11,7 +11,7 @@ public class MinimumConsecutiveFlips {
             else  Ones++;
         }
         LargeGroup=Zeros>Ones?false:true;
-        for (int i=0;i<n; i++)
+        for (int i=1;i<n-1; i++)
         {
             if(LargeGroup==false)
                 if(arr[i]==0&& (arr[i+1]==1||arr[i-1]==1))
