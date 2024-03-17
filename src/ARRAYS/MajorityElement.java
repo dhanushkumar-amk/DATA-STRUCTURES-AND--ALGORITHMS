@@ -2,20 +2,20 @@ package ARRAYS;
 public class MajorityElement {
     static int MajorityElement (int [] arr ,int n) {
 
-        int currMajor=arr[0];
-        int count=1;
-        for(int i=1;i<n; i++ )
-        {
-            if(count==0){
-                currMajor=arr[i];
-                count=1;
+        int currMajor = arr[0];
+        int count = 1;
+        for (int i = 1; i < n; i++) {
+            if (count == 0) {
+                currMajor = arr[i];
+                count = 1;
                 continue;
             }
-            if(currMajor==a[i])
+            if (currMajor == arr[i])
                 count++;
-            else{
+            else {
                 count--;
             }
+        }
     }
 
     public static void main(String[] args) {
