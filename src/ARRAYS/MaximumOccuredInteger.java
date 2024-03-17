@@ -29,13 +29,14 @@ class  MaximumOccuredInteger{
             freq[l[i]]+=1;
             freq[r[i]+1]-=1;
         }
-        int result=0;
-        for (int i=1; i<n; i++)
-        {
-            if(freq[i]<0)
-                break;
-            else
-                result+=freq[i];
+        int result = 0;
+        int maxOccurrence = 0;
+        for (int i = 1; i <= max + 2; i++) {
+            freq[i] += freq[i - 1]; // Calculate cumulative frequency
+            if (freq[i] > maxOccurrence) {
+                maxOccurrence = freq[i];
+                result = i;
+            }
         }
         return result;
     }
