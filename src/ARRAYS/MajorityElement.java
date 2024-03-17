@@ -20,7 +20,9 @@ public class MajorityElement {
                    count=1;
                }
             }
+
         }
+        System.out.println(majority);
         return -1;
     }
         public static void main (String[]args){
