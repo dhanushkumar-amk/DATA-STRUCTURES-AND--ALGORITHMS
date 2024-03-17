@@ -29,8 +29,8 @@ class  MaximumOccuredInteger{
             freq[l[i]]+=1;
             freq[r[i]+1]-=1;
         }
-        int maxx=0;
         
+
         return maxx;
     }
     public static void main(String[] args) {
