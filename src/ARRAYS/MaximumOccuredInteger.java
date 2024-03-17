@@ -12,12 +12,12 @@ class  MaximumOccuredInteger{
             if(rightMin>r[i]&&r[i]>=leftMax)
                 rightMin=r[i];
         }
-        System.out.println(leftMax);
-        return -1;
+        return leftMax;
     }
     public static void main(String[] args) {
         int [] arr1={1,4,3,1};
         int [] arr2={15,8,5,4};
-        MaximumOccuredInt(arr1,arr2,arr1.length);
+     int result=   MaximumOccuredInt(arr1,arr2,arr1.length);
+        System.out.println(result);
     }
 }
