@@ -12,7 +12,7 @@ class  MaximumOccuredInteger{
             if(rightMin>r[i])
                 rightMin=r[i];
         }
-        System.out.println(leftMax+" "+rightMin);
+        System.out.println(leftMax);
         return -1;
     }
     public static void main(String[] args) {
