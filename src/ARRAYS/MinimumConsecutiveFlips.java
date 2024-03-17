@@ -6,7 +6,7 @@ public class MinimumConsecutiveFlips {
 
         for (int i=1; i<n; i++)
         {
-              
+
         }
 
         return -1;
