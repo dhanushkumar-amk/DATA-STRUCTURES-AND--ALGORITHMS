@@ -8,9 +8,9 @@ class  MaximumOccuredInteger{
         //
         for (int i=1; i<n; i++)
         {
-            if (leftMax<l[i]&&rightMin<=l[i])
+            if (leftMax<l[i])
                 leftMax=l[i];
-            if(rightMin>r[i]&&leftMax>=r[i])
+            if(rightMin>r[i])
                 rightMin=r[i];
         }
         System.out.println(leftMax+" "+rightMin);
