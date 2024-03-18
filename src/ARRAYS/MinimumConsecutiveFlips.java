@@ -10,11 +10,12 @@ public class MinimumConsecutiveFlips {
                     ones++;
             else zeros++;
         }
-
+        if(ones==zeros)
+            return zeros;
         return  Math.min(ones,zeros);
     }
     public static void main(String[] args) {
-        int [] arr ={0,1,0,0};
+        int [] arr ={0,1,0,1};
         int n= arr.length;
       int result=  MinimumConsecutiveFlip(arr,n);
         System.out.println(result);
