@@ -15,7 +15,7 @@ public class MinimumConsecutiveFlips {
         }
         if (ones == zeros)
             consBool = false;
-        if (ones > zeros)
+        if (ones < zeros)
             consBool = true;
         else consBool = false;
         int ind = 0;
