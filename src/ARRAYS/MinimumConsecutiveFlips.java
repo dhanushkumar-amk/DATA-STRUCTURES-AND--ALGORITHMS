@@ -33,13 +33,12 @@ public class MinimumConsecutiveFlips {
 
         for(int i=1; i<n;i++)
         {
-            if(bin==true)
-            {
+
                 if(arr[i]!=arr[i-1])
                     if(arr[i]!=arr[0])
                         System.out.print(i+" ");
 
-            }
+            
         }
         return 0;
     }
