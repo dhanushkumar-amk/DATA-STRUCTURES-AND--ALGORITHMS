@@ -15,7 +15,7 @@ public class MinimumConsecutiveFlips {
         }
         System.out.println(ones);
         System.out.println(zeros);
-        System.out.println(consBool);
+//        System.out.println(consBool);
 
 return 0;
     }
