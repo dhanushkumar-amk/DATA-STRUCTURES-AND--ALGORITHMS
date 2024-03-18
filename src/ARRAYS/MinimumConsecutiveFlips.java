@@ -19,10 +19,10 @@ public class MinimumConsecutiveFlips {
                     ones++ ;
                 else zeros++;
         }
+        for(int i=0 ;i<n; i++)
+        {
 
-
-        System.out.println(ones);
-        System.out.println(zeros);
+        }
         return 0;
     }
     public static void main(String[] args) {
