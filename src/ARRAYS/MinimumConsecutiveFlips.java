@@ -17,7 +17,7 @@ public class MinimumConsecutiveFlips {
             if(i==n-1)
                 if(arr[n-1]==1) {
                     ones++;
-                    oness+=i;
+                    oness+=i+"";
                 }
                 else {
                     zeros++;
