@@ -5,32 +5,28 @@ public class MinimumConsecutiveFlips {
         int ones = 0;
         int zeros = 0;
         int previous=0;
-        String oness="";
-        String zeross="";
+
         for (int i = 1; i < n; i++) {
             previous=arr[i-1];
             if (arr[i]!=previous) {
                 if (previous == 1) {
                     ones++;
-                    oness+=i+" ";
+
                 }
                 else {
                     zeros++;
-                    zeross+=i+" ";
                 }
             }
             if(i==n-1) {
                 if (arr[n - 1] == 1) {
                     ones++;
-                    oness += i + " ";
+
                 } else {
                     zeros++;
-                    zeross += i + " ";
                 }
             }
         }
-        System.out.println(zeross);
-        System.out.println(oness);
+       
         boolean Binary=ones>zeros?false:true;
         int start=0;
         for(int i=0 ;i<n-1; i++)
