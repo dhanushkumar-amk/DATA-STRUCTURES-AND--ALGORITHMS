@@ -1,2 +1,4 @@
-package ARRAYS;public class Boopathi {
+package ARRAYS;
+
+public class Boopathi {
 }
