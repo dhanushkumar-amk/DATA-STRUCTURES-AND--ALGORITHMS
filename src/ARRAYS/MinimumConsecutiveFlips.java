@@ -29,7 +29,7 @@ public class MinimumConsecutiveFlips {
                 }
             }
         }
-        System.out.println();
+        System.out.println(start);
         return 0;
     }
     public static void main(String[] args) {
