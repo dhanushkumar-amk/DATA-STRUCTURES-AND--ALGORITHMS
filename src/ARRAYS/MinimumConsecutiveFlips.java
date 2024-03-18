@@ -38,7 +38,7 @@ public class MinimumConsecutiveFlips {
                     if(arr[i]!=arr[0])
                         System.out.print(i+" ");
 
-            
+             
         }
         return 0;
     }
