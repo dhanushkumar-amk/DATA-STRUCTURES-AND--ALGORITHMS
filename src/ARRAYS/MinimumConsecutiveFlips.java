@@ -17,11 +17,12 @@ public class MinimumConsecutiveFlips {
         }
         System.out.println(ones);
         System.out.println(zeros);
+        return 0;
     }
     public static void main(String[] args) {
         int [] arr ={1,0};
         int n= arr.length;
       int result=  MinimumConsecutiveFlip(arr,n);
-        System.out.println(result);
+//        System.out.println(result);
     }
 }
