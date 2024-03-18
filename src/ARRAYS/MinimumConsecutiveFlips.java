@@ -27,12 +27,12 @@ public class MinimumConsecutiveFlips {
                     ind=i;
                 }
             }
-                else {
-                    if (arr[i - 1] != arr[i]) {
-                        System.out.println("From "+ind+" to "+(i-1));
-                        ind=i;
-                    }
-                }
+//                else {
+//                    if (arr[i - 1] != arr[i]) {
+//                        System.out.println("From "+ind+" to "+(i-1));
+//                        ind=i;
+//                    }
+//                }
 
         }
     return -1;
