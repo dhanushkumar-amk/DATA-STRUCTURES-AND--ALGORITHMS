@@ -30,11 +30,12 @@ public class MinimumConsecutiveFlips {
             }
         }
         boolean bin=ones>zeros?false:true;
-        System.out.println(bin);
-//        for(int i=0; i<n;i++)
-//        {
-//            if()
-//        }
+
+        for(int i=0; i<n;i++)
+        {
+            if(bin==true)
+                
+        }
         return 0;
     }
     public static void main(String[] args) {
