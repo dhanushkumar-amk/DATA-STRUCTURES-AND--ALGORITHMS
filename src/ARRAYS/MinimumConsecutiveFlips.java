@@ -7,16 +7,18 @@ public class MinimumConsecutiveFlips {
         int ones = 0;
         int zeros = 0;
         int previous=0;
-
+        String start="";
+        String end="";
         for (int i = 1; i < n; i++) {
             previous = arr[i - 1];
             if (arr[i] != previous) {
                 if (previous == 1) {
                     ones++;
-
+                    start+=i;
                 } else {
                     zeros++;
                 }
+
             }
             if (i == n - 1) {
                 if (arr[n - 1] == 1) {
@@ -27,7 +29,7 @@ public class MinimumConsecutiveFlips {
                 }
             }
         }
-        
+        System.out.println();
         return 0;
     }
     public static void main(String[] args) {
