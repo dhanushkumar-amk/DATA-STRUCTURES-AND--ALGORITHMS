@@ -25,15 +25,16 @@ public class MinimumConsecutiveFlips {
 
                 if (arr[i - 1] != arr[i]) {
                     System.out.println("From "+ind+" to "+(i-1));
-                    ind=i;
+
                 }
             }
-                else if(consBool=false&&arr[i-1]==0||arr[i]==0){// false
+                else if(consBool=false&&(arr[i-1]==0||arr[i]==0)){// false
                     if (arr[i - 1] != arr[i]) {
                         System.out.println("From "+ind+" to "+(i-1));
-                        ind=i;
+
                     }
                 }
+                ind++;
 
         }
     return -1;
