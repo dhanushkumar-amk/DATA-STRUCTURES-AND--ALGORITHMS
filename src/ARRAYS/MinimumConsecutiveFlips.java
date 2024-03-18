@@ -20,10 +20,21 @@ public class MinimumConsecutiveFlips {
                 else zeros++;
         }
         boolean Binary=ones>zeros?false:true;
-        System.out.println(Binary);
-        for(int i=0 ;i<n; i++)
+        int start=0;
+        for(int i=0 ;i<n-1; i++)
         {
-
+            if(Binary==true) {
+                if(arr[i]!=arr[i+1]) {
+                    System.out.println("from " + start + " to " + i);
+                    start=i+1;
+                }
+            }
+            if(Binary==false) {
+                if(arr[i]!=arr[i+1]) {
+                    System.out.println("from " + start + " to " + i);
+                    start=i+1;
+                }
+            }
         }
         return 0;
     }
