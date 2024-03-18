@@ -12,7 +12,7 @@ class  MaximumOccuredInteger{
                 if (!hashMap.containsKey(j))
                 {
                     hashMap.put(j,1);
-                    
+
                 }
                 else hashMap.put(j, hashMap.get(j)+1);
             }
