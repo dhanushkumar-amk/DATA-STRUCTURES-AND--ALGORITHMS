@@ -1,5 +1,7 @@
 package ARRAYS;
 
+import com.sun.security.auth.NTSidGroupPrincipal;
+
 public class MinimumConsecutiveFlips {
     static int MinimumConsecutiveFlip(int[] arr, int n) {
         int ones = 0;
@@ -28,6 +30,9 @@ public class MinimumConsecutiveFlips {
         }
 
         boolean Binary=ones>zeros?false:true;
+        if(Binary== true)
+            System.out.println("Ones");
+        else System.out.println("Zeros");
         int start=0;
         for(int i=0 ;i<n-1; i++)
         {
