@@ -9,10 +9,9 @@ public class MinimumConsecutiveFlips {
         for(int i=1; i<n-1;i++)
                 if(arr[i]!=arr[i-1])
                     if (arr[i] != arr[0])
-                        s+=i;
+                        System.out.print("From "+i+" to ");
                        else
-                           e+=i-1;
-        System.out.println("From "+s+" to "+e);
+                           System.out.print((i-1));
         return 0;
     }
     public static void main(String[] args) {
