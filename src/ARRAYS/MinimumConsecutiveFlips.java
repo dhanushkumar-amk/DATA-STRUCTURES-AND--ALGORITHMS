@@ -8,10 +8,11 @@ public class MinimumConsecutiveFlips {
         int zeros = 1;
         boolean consBool = false;
         for (int i = 1; i < n; i++) {
-            if (arr[i] != arr[i - 1])
+            if (arr[i] != arr[i - 1]) {
                 if (arr[i - 1] == 1)
                     ones++;
                 else zeros++;
+            }
         }
         System.out.println(ones);
         System.out.println(zeros);
