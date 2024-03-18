@@ -43,7 +43,7 @@ class  MaximumOccuredInteger{
                 result=i;
             }
         }
-
+        System.out.println("Arunkumar");
         for (int x:freq)
             System.out.print(x+" ");
         return result;
