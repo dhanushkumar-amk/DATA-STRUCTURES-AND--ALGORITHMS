@@ -10,9 +10,14 @@ public class MinimumConsecutiveFlips {
         for (int i = 1; i < n; i++) {
             previous=arr[i-1];
             if (arr[i]!=previous) {
-                if (previous == 1)
+                if (previous == 1) {
                     ones++;
-                else zeros++;
+                    oness+=i+"";
+                }
+                else {
+                    zeros++;
+                    zeross+=i+"";
+                }
             }
             if(i==n-1) {
                 if (arr[n - 1] == 1) {
