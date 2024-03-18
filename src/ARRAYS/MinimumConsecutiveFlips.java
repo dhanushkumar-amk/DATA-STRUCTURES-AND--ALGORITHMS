@@ -1,8 +1,8 @@
 package ARRAYS;
 public class MinimumConsecutiveFlips {
     static int MinimumConsecutiveFlip(int [] arr,int n) {
-        int ones=0;
-        int zeros=0;
+        int ones=1;
+        int zeros=1;
         for (int i=1; i<n; i++)
         {
             if(arr[i]!=arr[i-1])
