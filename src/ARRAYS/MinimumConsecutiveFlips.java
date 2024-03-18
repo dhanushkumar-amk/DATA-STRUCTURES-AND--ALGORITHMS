@@ -13,12 +13,8 @@ public class MinimumConsecutiveFlips {
                     ones++;
                 else zeros++;
         }
-        if (ones == zeros)
-            consBool = false;
-        if (ones > zeros)
-            consBool = true;
-        else consBool = false;
-
+        System.out.println(ones);
+        System.out.println(zeros);
         System.out.println(consBool);
 
 return 0;
