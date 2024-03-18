@@ -9,17 +9,16 @@ public class MinimumConsecutiveFlips {
         int previous=0;
 
         for (int i = 1; i < n; i++) {
-            previous=arr[i-1];
-            if (arr[i]!=previous) {
+            previous = arr[i - 1];
+            if (arr[i] != previous) {
                 if (previous == 1) {
                     ones++;
 
-                }
-                else {
+                } else {
                     zeros++;
                 }
             }
-            if(i==n-1) {
+            if (i == n - 1) {
                 if (arr[n - 1] == 1) {
                     ones++;
 
@@ -28,27 +27,7 @@ public class MinimumConsecutiveFlips {
                 }
             }
         }
-
-        boolean Binary=ones>zeros?false:true;
-        if(Binary== true)
-            System.out.println("Ones");
-        else System.out.println("Zeros");
-//        int start=0;
-//        for(int i=0 ;i<n-1; i++)
-//        {
-//            if(Binary==true) {
-//                if(arr[i]!=arr[i+1]) {
-//                    System.out.println("from " + start + " to " + i);
-//                    start=i+1;
-//                }
-//            }
-//            if(Binary==false) {
-//                if(arr[i]!=arr[i+1]) {
-//                    System.out.println("from " + start + " to " + i);
-//                    start=i+1;
-//                }
-//            }
-//        }
+        
         return 0;
     }
     public static void main(String[] args) {
