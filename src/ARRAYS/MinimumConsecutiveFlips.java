@@ -21,7 +21,7 @@ public class MinimumConsecutiveFlips {
                 }
                 else {
                     zeros++;
-                    zeross+=i;
+                    zeross+=i+"";
                 }
         }
         System.out.println(zeross);
