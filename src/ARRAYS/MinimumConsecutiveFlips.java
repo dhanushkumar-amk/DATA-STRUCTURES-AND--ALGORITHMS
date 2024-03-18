@@ -1,12 +1,12 @@
 package ARRAYS;
 
-import com.sun.security.auth.NTSidGroupPrincipal;
-
 public class MinimumConsecutiveFlips {
     static int MinimumConsecutiveFlip(int[] arr, int n) {
         int ones = 0;
         int zeros = 0;
         int previous=0;
+        String oness="";
+        String zeross="";
         for (int i = 1; i < n; i++) {
             previous=arr[i-1];
             if (arr[i]!=previous) {
@@ -15,10 +15,16 @@ public class MinimumConsecutiveFlips {
                 else zeros++;
             }
             if(i==n-1)
-                if(arr[n-1]==1)
-                    ones++ ;
-                else zeros++;
+                if(arr[n-1]==1) {
+                    ones++;
+                    oness+=i;
+                }
+                else {
+                    zeros++;
+                    zeross+=i;
+                }
         }
+        System.out.println(zeross);
         boolean Binary=ones>zeros?false:true;
         int start=0;
         for(int i=0 ;i<n-1; i++)
