@@ -16,7 +16,7 @@ public class MinimumConsecutiveFlips {
                             System.out.print(i);
                         else
                             System.out.print((i - 1) + " ");
-                        
+
                     }
         return 0;
     }
