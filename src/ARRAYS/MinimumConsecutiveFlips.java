@@ -34,7 +34,7 @@ public class MinimumConsecutiveFlips {
 
                     }
                 }
-                ind=i;
+
         }
     return -1;
 
