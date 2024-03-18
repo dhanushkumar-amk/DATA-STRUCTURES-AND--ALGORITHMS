@@ -12,20 +12,20 @@ public class MinimumConsecutiveFlips {
             if (arr[i]!=previous) {
                 if (previous == 1) {
                     ones++;
-                    oness+=i+"";
+                    oness+=i+" ";
                 }
                 else {
                     zeros++;
-                    zeross+=i+"";
+                    zeross+=i+" ";
                 }
             }
             if(i==n-1) {
                 if (arr[n - 1] == 1) {
                     ones++;
-                    oness += i + "";
+                    oness += i + " ";
                 } else {
                     zeros++;
-                    zeross += i + "";
+                    zeross += i + " ";
                 }
             }
         }
