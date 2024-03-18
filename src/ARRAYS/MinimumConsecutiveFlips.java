@@ -33,22 +33,22 @@ public class MinimumConsecutiveFlips {
         if(Binary== true)
             System.out.println("Ones");
         else System.out.println("Zeros");
-        int start=0;
-        for(int i=0 ;i<n-1; i++)
-        {
-            if(Binary==true) {
-                if(arr[i]!=arr[i+1]) {
-                    System.out.println("from " + start + " to " + i);
-                    start=i+1;
-                }
-            }
-            if(Binary==false) {
-                if(arr[i]!=arr[i+1]) {
-                    System.out.println("from " + start + " to " + i);
-                    start=i+1;
-                }
-            }
-        }
+//        int start=0;
+//        for(int i=0 ;i<n-1; i++)
+//        {
+//            if(Binary==true) {
+//                if(arr[i]!=arr[i+1]) {
+//                    System.out.println("from " + start + " to " + i);
+//                    start=i+1;
+//                }
+//            }
+//            if(Binary==false) {
+//                if(arr[i]!=arr[i+1]) {
+//                    System.out.println("from " + start + " to " + i);
+//                    start=i+1;
+//                }
+//            }
+//        }
         return 0;
     }
     public static void main(String[] args) {
