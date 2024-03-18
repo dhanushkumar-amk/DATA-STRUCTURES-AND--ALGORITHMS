@@ -31,10 +31,13 @@ public class MinimumConsecutiveFlips {
         }
         boolean bin=ones>zeros?false:true;
 
-        for(int i=0; i<n;i++)
+        for(int i=1; i<n;i++)
         {
             if(bin==true)
-                
+            {
+                if(arr[i]!=arr[i-1])  
+
+            }
         }
         return 0;
     }
