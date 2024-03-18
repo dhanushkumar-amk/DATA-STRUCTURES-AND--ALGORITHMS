@@ -19,6 +19,7 @@ public class MinimumConsecutiveFlips {
             consBool = true;
         else consBool = false;
         int ind = 0;
+        System.out.println(consBool);
         for (int i = 1; i < n; i++) {
             if (consBool == true) {
 
