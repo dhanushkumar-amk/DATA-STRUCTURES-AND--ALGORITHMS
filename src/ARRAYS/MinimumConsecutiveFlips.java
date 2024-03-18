@@ -18,26 +18,10 @@ public class MinimumConsecutiveFlips {
         if (ones > zeros)
             consBool = true;
         else consBool = false;
-        int ind = 0;
+
         System.out.println(consBool);
-        for (int i = 1; i < n; i++) {
-            if (consBool==true&&(arr[i-1]==1||arr[i]==1)) {// true
 
-                if (arr[i - 1] != arr[i]) {
-                    System.out.println("From "+ind+" to "+(i-1));
-
-                }
-            }
-                else if(consBool=false&&(arr[i-1]==0||arr[i]==0)){// false
-                    if (arr[i - 1] != arr[i]) {
-                        System.out.println("From "+ind+" to "+(i-1));
-
-                    }
-                }
-
-        }
-    return -1;
-
+return 0;
     }
     public static void main(String[] args) {
         int [] arr ={1,1,0,0,0,1,0,0,1,1,0,1};
