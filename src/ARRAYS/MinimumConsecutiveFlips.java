@@ -11,11 +11,12 @@ public class MinimumConsecutiveFlips {
                     if (arr[i] != arr[0]) {
                         System.out.print("From " + i + " to ");
                     }
-                       else 
-                        if(i==n-1)
-                        System.out.print(i);
-                     else {
-                        System.out.print((i - 1)+" ");
+                       else {
+                        if (i == n - 1)
+                            System.out.print(i);
+                        else {
+                            System.out.print((i - 1) + " ");
+                        }
                     }
         return 0;
     }
