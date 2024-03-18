@@ -8,12 +8,12 @@ public class MinimumConsecutiveFlips {
         int e=0;
         for(int i=1; i<n-1;i++)
                 if(arr[i]!=arr[i-1])
-                    if (arr[i] != arr[0])
-                        System.out.print("From "+i+" to ");
+                    if (arr[i] != arr[0]) {
+                        System.out.print("From " + i + " to ");
+                    }
                        else if(i==n-1){
                         System.out.print(i);
-                    }
-                           else {
+                    } else {
                         System.out.print((i - 1)+" ");
                     }
         return 0;
