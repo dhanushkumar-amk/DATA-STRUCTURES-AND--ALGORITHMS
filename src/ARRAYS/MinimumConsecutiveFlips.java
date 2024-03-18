@@ -19,6 +19,8 @@ public class MinimumConsecutiveFlips {
                     ones++ ;
                 else zeros++;
         }
+        boolean Binary=ones>zeros?false:true;
+        System.out.println(Binary);
         for(int i=0 ;i<n; i++)
         {
 
