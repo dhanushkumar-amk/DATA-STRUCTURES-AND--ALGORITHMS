@@ -4,17 +4,19 @@ import com.sun.security.auth.NTSidGroupPrincipal;
 
 public class MinimumConsecutiveFlips {
     static int MinimumConsecutiveFlip(int[] arr, int n) {
-        int ones = 1;
-        int zeros = 1;
+        int ones = 0;
+        int zeros = 0;
+        int previous=0;
         for (int i = 1; i < n; i++) {
-            if (arr[i] != arr[i - 1]) {
-                if (arr[i - 1] == 1)
+            previous=arr[i-1];
+            if (arr[i]!=previous) {
+                if (previous == 1)
                     ones++;
                 else zeros++;
             }
         }
-        return Math.min(ones,zeros);
-
+        System.out.println(ones);
+        System.out.println(zeros);
     }
     public static void main(String[] args) {
         int [] arr ={1,0};
