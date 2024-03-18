@@ -15,10 +15,10 @@ public class MinimumConsecutiveFlips {
                 else zeros++;
             }
         }
-        if(n-1==1)
+        if(n-1==0)
             ones++ ;
         else zeros++;
-        
+
         System.out.println(ones);
         System.out.println(zeros);
         return 0;
