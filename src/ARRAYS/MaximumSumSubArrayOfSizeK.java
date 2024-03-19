@@ -34,7 +34,7 @@ public class MaximumSumSubArrayOfSizeK {
         for (int j=K; j<N-K/2; j++)
         {
 
-            cSum-=Arr[j-(K-1)];
+            cSum-=Arr[j-K];
 
             cSum+=Arr[j];
 
