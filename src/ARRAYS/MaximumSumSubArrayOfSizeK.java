@@ -1,5 +1,8 @@
 package ARRAYS;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MaximumSumSubArrayOfSizeK {
     static void MaxiMumSumSubArrKNaiveApproach() {
         int curSum=0;
@@ -40,9 +43,30 @@ public class MaximumSumSubArrayOfSizeK {
         return -1;
 
     }
+    static long maximumSumSubarray(int K, ArrayList<Integer> Arr,int N){
+        long cSum=0;
+        long mSum=Integer.MIN_VALUE;
+        for(int i=0; i<N; i++)
+        {
+            cSum=Arr.get((int)i);
+        }
+        for(int i=K; i<N; i++)
+        {
+            cSum-=Arr.get((int)i-K)+Arr.get((int)i);
+            mSum= Math.max(cSum,mSum);
+        }
+        return mSum;
+
+    }
     public static void main(String[] args) {
         int [] arr ={2,9,31,-4,21,7};
         int n= arr.length;
         MaxiMumSumArraySizeOfK(arr,n,3);
+        ArrayList<Integer> integerArrayList =new ArrayList<>();
+        integerArrayList.add(100);
+        integerArrayList.add(200);
+        integerArrayList.add(300);
+        integerArrayList.add(400);
+        maximumSumSubarray(3,integerArrayList,n);
     }
 }
