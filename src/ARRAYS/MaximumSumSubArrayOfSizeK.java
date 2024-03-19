@@ -8,7 +8,7 @@ public class MaximumSumSubArrayOfSizeK {
         int n=arr.length;
         int k=3;
         int count=0;
-        for (int i=0; i<n-k;)
+        for (int i=0; i<=n-k;)
         {
 
             curSum+=arr[(i)+count++];
