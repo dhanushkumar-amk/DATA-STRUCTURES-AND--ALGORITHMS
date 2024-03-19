@@ -12,7 +12,7 @@ public class FractionTrouble {
     }
 
     // method to find the largest fraction less than or equal to a given fraction n/d
-    public int[] LargestFraction(int n, int d) {
+    static int[] LargestFraction(int n, int d) {
         // initialize variables to store numerator and denominator of the largest fraction found
         int r = 0, s = 1;
 
@@ -47,6 +47,8 @@ public class FractionTrouble {
         return res;
     }
     public static void main(String[] args) {
-
+        int n=5;
+        int d=2;
+        LargestFraction(n,d);
     }
 }
