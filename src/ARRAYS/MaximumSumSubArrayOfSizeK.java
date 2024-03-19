@@ -44,6 +44,8 @@ public class MaximumSumSubArrayOfSizeK {
 
     }
     public static void main(String[] args) {
-
+        int [] arr ={2,9,31,-4,21,7};
+        int n= arr.length;
+        MaxiMumSumArraySizeOfK(arr,n,3);
     }
 }
