@@ -20,6 +20,6 @@ public class MaximumSumSubArrayOfSizeK {
         }
         if(k>n)
             System.out.println("Invalid");
-        System.out.println(maxSum);
+       else System.out.println(maxSum);
     }
 }
