@@ -50,11 +50,10 @@ public class MaximumSumSubArrayOfSizeK {
         {
             cSum+=Arr.get(i);
         }
-        for (int i = K; i <= N; i++) {
-            mSum = Math.max(cSum, mSum);
-            if (i < N) {
-                cSum = cSum - Arr.get(i - K) + Arr.get(i);
-            }
+        for(int i=K; i<N; i++)
+        {
+            cSum=cSum-Arr.get(i-K)+Arr.get(i);
+            mSum= Math.max(cSum,mSum);
         }
         System.out.println(mSum);
         return mSum;
