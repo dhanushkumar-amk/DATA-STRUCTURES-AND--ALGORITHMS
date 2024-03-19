@@ -17,6 +17,7 @@ public class MaximumSumSubArrayOfSizeK {
             if(count==k) {
                 i++;
                 count=0;
+                curSum=0;
             }
 
 
