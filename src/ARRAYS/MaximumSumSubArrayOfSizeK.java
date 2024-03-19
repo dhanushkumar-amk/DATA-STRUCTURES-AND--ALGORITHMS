@@ -33,7 +33,7 @@ public class MaximumSumSubArrayOfSizeK {
         mSum=Math.max(cSum,mSum);
         for (int j=K; j<N; j++)
         {
-            cSum-=Arr[j-K]+Arr[j];
+            cSum=cSum-Arr[j-K]+Arr[j];
             mSum=Math.max(cSum,mSum);
             j++;
 
