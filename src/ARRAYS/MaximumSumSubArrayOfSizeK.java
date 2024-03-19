@@ -12,11 +12,12 @@ public class MaximumSumSubArrayOfSizeK {
         {
 
             curSum+=arr[count++];
+            v
             if(count==k) {
                 i++;
                 count=i;
             }
-            maxSum=Math.max(curSum,maxSum);
+
 
         }
         System.out.println(maxSum);
