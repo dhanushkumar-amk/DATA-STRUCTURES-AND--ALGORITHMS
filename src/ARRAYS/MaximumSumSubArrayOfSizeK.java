@@ -35,6 +35,8 @@ public class MaximumSumSubArrayOfSizeK {
             cSum+=Arr[i];
 
             cSum+=Arr[i+(K-1)];
+            mSum=cSum;
+            
 
         System.out.println(mSum);
         return -1;
