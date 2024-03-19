@@ -60,9 +60,9 @@ public class MaximumSumSubArrayOfSizeK {
 
     }
     public static void main(String[] args) {
-        int [] arr ={2,9,31,-4,21,7};
+        int [] arr ={100 ,200, 300 ,400};
         int n= arr.length;
-        MaxiMumSumArraySizeOfK(arr,n,3);
+        MaxiMumSumArraySizeOfK(arr,n,2);
         ArrayList<Integer> integerArrayList =new ArrayList<>();
         integerArrayList.add(100);
         integerArrayList.add(200);
