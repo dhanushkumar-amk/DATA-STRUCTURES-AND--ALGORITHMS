@@ -18,6 +18,8 @@ public class MaximumSumSubArrayOfSizeK {
                 curSum=0;
             }
         }
+        if(k>n)
+            System.out.println("Invalid");
         System.out.println(maxSum);
     }
 }
