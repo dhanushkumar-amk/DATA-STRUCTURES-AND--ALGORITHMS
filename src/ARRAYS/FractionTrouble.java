@@ -49,6 +49,7 @@ public class FractionTrouble {
     public static void main(String[] args) {
         int n=5;
         int d=2;
-        LargestFraction(n,d);
+        for (int x:LargestFraction(n,d))
+            System.out.print(x+" ");
     }
 }
