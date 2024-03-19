@@ -62,7 +62,7 @@ public class MaximumSumSubArrayOfSizeK {
     public static void main(String[] args) {
         int [] arr ={100 ,200, 300 ,400};
         int n= arr.length;
-//        MaxiMumSumArraySizeOfK(arr,n,2);
+        MaxiMumSumArraySizeOfK(arr,n,2);
         ArrayList<Integer> integerArrayList =new ArrayList<>();
         integerArrayList.add(100);
         integerArrayList.add(200);
