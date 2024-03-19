@@ -68,6 +68,6 @@ public class MaximumSumSubArrayOfSizeK {
         integerArrayList.add(200);
         integerArrayList.add(300);
         integerArrayList.add(400);
-        maximumSumSubarray(3,integerArrayList,integerArrayList.size());
+        maximumSumSubarray(2,integerArrayList,integerArrayList.size());
     }
 }
