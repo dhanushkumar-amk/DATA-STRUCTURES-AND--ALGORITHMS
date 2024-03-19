@@ -4,9 +4,9 @@ public class MaximumSumSubArrayOfSizeK {
     public static void main(String[] args) {
         int curSum=0;
         int maxSum=Integer.MIN_VALUE;
-        int [] arr ={2,3};
+        int arr[] = {10, -7, 8, -6, 13, 5, 12, -9, 4, -3, 15, -2, 7};
         int n=arr.length;
-        int k=3;
+        int k=5;
         int count=0;
         for (int i=0; i<=n-k;)
         {
