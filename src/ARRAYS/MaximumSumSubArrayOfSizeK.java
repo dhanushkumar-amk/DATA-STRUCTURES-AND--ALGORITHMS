@@ -22,10 +22,28 @@ public class MaximumSumSubArrayOfSizeK {
             System.out.println("Invalid");
         else System.out.println(maxSum);
     }
-    static int MaxiMumSumArraySizeOfK() {
+    static int MaxiMumSumArraySizeOfK(int[] Arr,int N,int K) {
+        int cSum=0;
+        int mSum=Integer.MIN_VALUE;
+        int i=0;
+        while (i<K) {
+            cSum += Arr[i];
+            i++;
+        }
+        for (int j=K; j<N-1; j++)
+        {
+            cSum-=Arr[j-K];
+            cSum+=Arr[j];
+            cSum+=Arr[j+K];
+            j++;
+
+            mSum=Math.max(cSum,mSum);
+        }
+        System.out.println(mSum);
+        return -1;
 
     }
     public static void main(String[] args) {
-        
+
     }
 }
