@@ -25,10 +25,9 @@ public class MaximumSumSubArrayOfSizeK {
     static int MaxiMumSumArraySizeOfK(int[] Arr,int N,int K) {
         int cSum=0;
         int mSum=Integer.MIN_VALUE;
-        int i=0;
-        while (i<K) {
-            cSum += Arr[i];
-            i++;
+        for(int i=0; i<K; i++)
+        {
+            cSum+=Arr[i];
         }
         mSum=Math.max(cSum,mSum);
         for (int j=K; j<N; j++)
