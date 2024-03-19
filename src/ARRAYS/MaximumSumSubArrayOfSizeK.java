@@ -12,8 +12,8 @@ public class MaximumSumSubArrayOfSizeK {
         {
 
             curSum+=arr[count++];
-            maxSum=Math.max(curSum,maxSum);
-            if(count==k) {
+
+            if(count==(k-1)) {
                 i++;
                 count=i;
             }
