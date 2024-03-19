@@ -10,8 +10,9 @@ public class MaximumSumSubArrayOfSizeK {
         int count=0;
         for (int i=0; i<n-k;)
         {
-            curSum+=arr[count++];
             maxSum=Math.max(curSum,maxSum);
+            curSum+=arr[count++];
+
             if(count==k) {
                 i++;
                 count=i;
