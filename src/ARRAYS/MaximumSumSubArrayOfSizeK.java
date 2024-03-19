@@ -10,13 +10,14 @@ public class MaximumSumSubArrayOfSizeK {
         int count=0;
         for (int i=0; i<n-k;)
         {
-            if(curSum>maxSum)
-                maxSum=curSum;
+
             curSum+=arr[count++];
             if(count==3) {
                 i++;
                 count=0;
             }
+            if(curSum>maxSum)
+                maxSum=curSum;
         }
         System.out.println(maxSum);
     }
