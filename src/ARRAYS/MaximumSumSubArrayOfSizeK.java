@@ -46,7 +46,7 @@ public class MaximumSumSubArrayOfSizeK {
     static long maximumSumSubarray(int K, ArrayList<Integer> Arr,int N){
         long cSum=0;
         long mSum=Integer.MIN_VALUE;
-        for(int i=0; i<N; i++)
+        for(int i=0; i<K; i++)
         {
             cSum+=Arr.get(i);
         }
