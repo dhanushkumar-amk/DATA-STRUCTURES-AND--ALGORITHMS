@@ -1,7 +1,7 @@
 package ARRAYS;
 
 public class MaximumSumSubArrayOfSizeK {
-    public static void main(String[] args) {
+    static void MaxiMumSumSubArrKNaiveApproach() {
         int curSum=0;
         int maxSum=Integer.MIN_VALUE;
         int arr[] = {2, 1, 5, 1, 3, 2};
@@ -20,6 +20,12 @@ public class MaximumSumSubArrayOfSizeK {
         }
         if(k>n)
             System.out.println("Invalid");
-       else System.out.println(maxSum);
+        else System.out.println(maxSum);
+    }
+    static int MaxiMumSumArraySizeOfK() {
+
+    }
+    public static void main(String[] args) {
+        
     }
 }
