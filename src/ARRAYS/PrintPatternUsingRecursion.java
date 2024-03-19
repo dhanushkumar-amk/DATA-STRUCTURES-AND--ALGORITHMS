@@ -6,7 +6,6 @@ import java.util.Arrays;
 public class PrintPatternUsingRecursion {
     static void pattern(int N, ArrayList<Integer> arrayList) {
         if(N<0) {
-            arrayList.add(N-5);
             return;
         }
         arrayList.add(N);
