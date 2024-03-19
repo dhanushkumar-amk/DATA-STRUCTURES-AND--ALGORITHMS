@@ -6,7 +6,7 @@ public class MaximumSumSubArrayOfSizeK {
         int maxSum=Integer.MIN_VALUE;
         int arr[] = {1, 4, 2, 10, 23, 3, 1, 0, 20};
         int n=arr.length;
-        int k=3;
+        int k=4;
         int count=0;
         for (int i=0; i<=n-k;)
         {
