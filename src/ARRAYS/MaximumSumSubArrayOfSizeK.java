@@ -7,14 +7,14 @@ public class MaximumSumSubArrayOfSizeK {
         int [] arr ={2,9,31,-4,21,7};
         int n=arr.length;
         int k=3;
-        int count=0;
+        int count=1;
         for (int i=0; i<n-k;)
         {
 
             curSum+=arr[count];
             count++;
             maxSum=Math.max(curSum,maxSum);
-            if(count==(k-1)) {
+            if(count==k) {
                 i++;
                 count=i;
             }
