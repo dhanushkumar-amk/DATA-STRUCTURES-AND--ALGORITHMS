@@ -18,10 +18,12 @@ public class SubArrayWithGivenSum {
             }
             if(cSum<s)
             {
-                cSum+=arr[];
+                cSum+=arr[j++];
             }
             else {
                 arrayList.clear();
+                i++;
+                j=i;
             }
         }
         if(arrayList.size()==0)
