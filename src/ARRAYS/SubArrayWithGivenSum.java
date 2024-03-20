@@ -14,7 +14,7 @@ public class SubArrayWithGivenSum {
         {
             if(cSum==s) {
                 arrayList.add(i+1);
-                arrayList.add(j);
+                arrayList.add(j+1);
                 break;
             }
             if(cSum>s||j==n-1){
@@ -36,9 +36,9 @@ public class SubArrayWithGivenSum {
 
     }
     public static void main(String[] args) {
-        int [] arr ={1,0};
+        int [] arr ={1,2,3};
         int n= arr.length;;
-        int s=0;
+        int s=3;
      for(int x:   subarraySum(arr,n,s)){
          System.out.print(x+" ");
      }
