@@ -24,7 +24,7 @@ public class SubArrayWithGivenSum {
         return -1;
     }
     public static void main(String[] args) {
-        int [] arr ={1,2,3};
+        int [] arr ={1,9,1};
         int n= arr.length;;
         int s=3;
         SubArrayWithGivenSum(arr,n,s);
