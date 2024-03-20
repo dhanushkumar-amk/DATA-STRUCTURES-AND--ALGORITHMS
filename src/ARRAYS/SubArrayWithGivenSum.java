@@ -10,29 +10,29 @@ public class SubArrayWithGivenSum {
         int i=0;
         int cSum=0;
         int j=i;
-        while (i<n)
-        {
-            if(cSum==s) {
+        while (i<n) {
+
+            if (cSum > s) {
+                i++;
+                j = i;
+                cSum = 0;
+                continue;
+            }
+            cSum += arr[j];
+            j++;
+
+            if (arrayList.size() == 0) {
+                arrayList.add(-1);
+                return arrayList;
+
+            }
+            if (cSum == s) {
                 arrayList.add(i);
                 arrayList.add(j);
                 break;
             }
-            if(cSum>s){
-                i++;
-                j=i;
-                cSum=0;
-                continue;
-            }
-            cSum+=arr[j];
-            j++;
-
         }
-        if(arrayList.size()==0){
-            arrayList.add(-1);
             return arrayList;
-
-        }
-        return arrayList;
 
     }
     public static void main(String[] args) {
