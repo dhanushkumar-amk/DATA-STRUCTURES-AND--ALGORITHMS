@@ -30,7 +30,7 @@ public class SubArrayWithGivenSum {
         arrayList.add(-1);
         return arrayList;
     }
-    
+
     public static void main(String[] args) {
         int [] arr ={10};
         int n= arr.length;;
