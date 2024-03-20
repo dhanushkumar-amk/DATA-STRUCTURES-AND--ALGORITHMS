@@ -1,6 +1,12 @@
 package ARRAYS;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class SubArrayWithGivenSum {
-    static int  SubArrayWithGivenSum(int [] arr,int n ,int s) {
+    static ArrayList<Integer> subarraySum(int[] arr, int n, int s)
+    {
+        ArrayList<Integer> arrayList = new ArrayList();
         int i=0;
         int cSum=0;
         int j=i;
@@ -16,17 +22,26 @@ public class SubArrayWithGivenSum {
             cSum+=arr[j];
             j++;
             if(cSum==s) {
-                System.out.println(i+1+ " " + j);
+                arrayList.add(i+1);
+                arrayList.add(j);
                 break;
             }
         }
-        return -1;
+        if(arrayList.size()==0){
+            arrayList.add(-1);
+            return arrayList;
+
+        }
+        return arrayList;
+
     }
     public static void main(String[] args) {
         int [] arr ={1,9,1};
         int n= arr.length;;
         int s=3;
-        SubArrayWithGivenSum(arr,n,s);
+     for(int x:   subarraySum(arr,n,s)){
+         System.out.print(x+" ");
+     }
 
     }
 }
