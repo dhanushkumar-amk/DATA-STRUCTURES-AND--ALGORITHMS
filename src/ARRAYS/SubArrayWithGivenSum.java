@@ -26,7 +26,7 @@ public class SubArrayWithGivenSum {
                 j=i;
             }
         }
-        if(arrayList.size()==1)
+        if(arrayList.size()==0)
         {
             arrayList.add(-1);
             return arrayList;
