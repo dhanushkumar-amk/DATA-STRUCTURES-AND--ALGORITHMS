@@ -26,6 +26,8 @@ public class SubArrayWithGivenSum {
             if(sum>s)
             {
                 sum-=arr[i];
+                i++;
+                continue;
             }
         }
         return arrayList;
