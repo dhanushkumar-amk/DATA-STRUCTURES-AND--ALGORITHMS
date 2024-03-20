@@ -10,6 +10,7 @@ public class SubArrayWithGivenSum {
                 i++;
                 j=i;
                 cSum=Integer.MIN_VALUE;
+                continue;
             }
             cSum+=arr[j];
             j++;
