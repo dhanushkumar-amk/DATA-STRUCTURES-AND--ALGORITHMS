@@ -21,6 +21,7 @@ public class SubArrayWithGivenSum {
             {
                 j++;
                 sum+=arr[j];
+                continue;
             }
             if(sum>s)
             {
