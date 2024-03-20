@@ -18,7 +18,7 @@ public class SubArrayWithGivenSum {
             }
             if(cSum<s)
             {
-                cSum+=arr[j++];
+                cSum+=arr[];
             }
             else {
                 arrayList.clear();
