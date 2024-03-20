@@ -11,7 +11,7 @@ public class SubArrayWithGivenSum {
             if(cSum>s||j==n-1){
                 i++;
                 j=i;
-                cSum=Integer.MIN_VALUE;
+                cSum=0;
                 continue;
             }
             cSum+=arr[j];
