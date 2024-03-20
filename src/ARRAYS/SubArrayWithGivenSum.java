@@ -19,7 +19,6 @@ public class SubArrayWithGivenSum {
             {
                 sum-=arr[left];
                 left++;
-
             }
             if(sum==s&& left<=right)
             {
