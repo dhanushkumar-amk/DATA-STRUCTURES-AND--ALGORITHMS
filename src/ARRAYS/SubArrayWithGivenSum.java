@@ -11,7 +11,11 @@ public class SubArrayWithGivenSum {
         int cSum=0;
         int j=i;
         while (i<n) {
-
+            if (cSum == s) {
+                arrayList.add(i);
+                arrayList.add(j);
+                break;
+            }
             if (cSum > s) {
                 i++;
                 j = i;
@@ -20,11 +24,7 @@ public class SubArrayWithGivenSum {
             }
             cSum += arr[j];
             j++;
-            if (cSum == s) {
-                arrayList.add(i);
-                arrayList.add(j);
-                break;
-            }
+
 
         }
             return arrayList;
