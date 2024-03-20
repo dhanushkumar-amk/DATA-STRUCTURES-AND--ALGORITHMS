@@ -19,7 +19,7 @@ public class SubArrayWithGivenSum {
             if(cSum<s)
             {
                 j++;
-                cSum+=arr[j++];
+                cSum+=arr[j];
             }
             else {
                 arrayList.clear();
