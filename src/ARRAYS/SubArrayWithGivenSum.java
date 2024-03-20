@@ -15,6 +15,7 @@ public class SubArrayWithGivenSum {
             cSum+=arr[j];
             j++;
         }
+        System.out.println(cSum);
         return -1;
     }
     public static void main(String[] args) {
