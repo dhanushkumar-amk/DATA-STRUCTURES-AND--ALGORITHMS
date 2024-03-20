@@ -14,10 +14,9 @@ public class SubArrayWithGivenSum {
                 continue;
             }
             cSum+=arr[j];
+            j++;
             if(cSum==s)
                 System.out.println(i+" "+j);
-            j++;
-
         }
         System.out.println(cSum);
         return -1;
