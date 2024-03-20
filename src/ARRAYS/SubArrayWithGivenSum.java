@@ -11,8 +11,8 @@ public class SubArrayWithGivenSum {
                 j=i;
                 cSum=Integer.MIN_VALUE;
             }
-            cSum+=arr[j++];
-
+            cSum+=arr[j];
+            j++;
         }
         return -1;
     }
