@@ -20,17 +20,12 @@ public class SubArrayWithGivenSum {
             }
             cSum += arr[j];
             j++;
-
-            if (arrayList.size() == 0) {
-                arrayList.add(-1);
-                return arrayList;
-
-            }
             if (cSum == s) {
                 arrayList.add(i);
                 arrayList.add(j);
                 break;
             }
+
         }
             return arrayList;
 
