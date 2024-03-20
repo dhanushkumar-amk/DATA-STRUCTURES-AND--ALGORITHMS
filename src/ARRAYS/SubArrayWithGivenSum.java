@@ -12,8 +12,8 @@ public class SubArrayWithGivenSum {
                 j=i;
                 cSum=Integer.MIN_VALUE;
             }
-            if(cSum<s) {
-                cSum += arr[j++];
+            if(cSum<s&& j<n) {
+                cSum += arr[j];
                 if(cSum==s) {
                     System.out.println(i+" "+j);
                     break;
