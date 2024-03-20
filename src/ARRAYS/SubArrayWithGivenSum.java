@@ -12,8 +12,8 @@ public class SubArrayWithGivenSum {
         int j=i;
         while (i<n) {
             if (cSum == s) {
-                arrayList.add(i);
-                arrayList.add(j);
+                arrayList.add(i+1);
+                arrayList.add(j+1);
                 return arrayList;
             }
             if (cSum > s) {
