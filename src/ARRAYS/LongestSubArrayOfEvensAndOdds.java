@@ -16,8 +16,8 @@ public class LongestSubArrayOfEvensAndOdds {
         return -1;
     }
     public static void main(String[] args) {
-        int [] arr ={4,6};
-        //            e e  e  o e
+        int [] arr ={3,2,5,4};
+        //           o e o e
         int n= arr.length;
         LongestSubArrayEvenAndOdd(arr,n);
     }
