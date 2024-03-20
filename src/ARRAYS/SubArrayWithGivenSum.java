@@ -33,7 +33,7 @@ public class SubArrayWithGivenSum {
         return arrayList;
     }
     public static void main(String[] args) {
-        int [] arr ={1,0};
+        int [] arr ={10};
         int n= arr.length;;
         int s=0;
      for(int x:   subarraySum(arr,n,s)){
