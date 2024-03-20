@@ -6,6 +6,8 @@ public class SubArrayWithGivenSum {
         int j=i;
         while (i<n)
         {
+            if(cSum==s)
+                break;
             if(cSum>s||j==n-1){
                 i++;
                 j=i;
