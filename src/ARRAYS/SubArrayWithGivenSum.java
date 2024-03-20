@@ -42,6 +42,5 @@ public class SubArrayWithGivenSum {
      for(int x:   subarraySum(arr,n,s)){
          System.out.print(x+" ");
      }
-
     }
 }
