@@ -18,7 +18,10 @@ public class BettingGame {
             {
                 balance-=bet;
                 bet*=2;
-            }
+            }if(balance<bet&&i<result.length()-1) {
+            System.out.println(-1);
+            break;
+        }
         }
         System.out.println(balance);
     }
