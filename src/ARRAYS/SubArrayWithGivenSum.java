@@ -28,7 +28,6 @@ public class SubArrayWithGivenSum {
             {
                 sum-=arr[i];
                 i++;
-                continue;
             }
         }
         return arrayList;
