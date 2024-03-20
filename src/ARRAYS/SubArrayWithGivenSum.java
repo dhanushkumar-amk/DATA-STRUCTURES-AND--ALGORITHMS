@@ -2,7 +2,7 @@ package ARRAYS;
 public class SubArrayWithGivenSum {
     static int  SubArrayWithGivenSum(int [] arr,int n ,int s) {
         int i=0;
-        int cSum=Integer.MIN_VALUE;
+        int cSum=0;
         int j=i;
         while (i<n)
         {
