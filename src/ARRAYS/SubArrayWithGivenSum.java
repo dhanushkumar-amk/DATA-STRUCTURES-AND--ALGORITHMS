@@ -20,7 +20,6 @@ public class SubArrayWithGivenSum {
                 break;
             }
         }
-        System.out.println(cSum);
         return -1;
     }
     public static void main(String[] args) {
