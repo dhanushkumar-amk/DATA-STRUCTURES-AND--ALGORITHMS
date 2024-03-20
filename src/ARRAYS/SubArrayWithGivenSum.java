@@ -6,19 +6,13 @@ public class SubArrayWithGivenSum {
         int j=i;
         while (i<n)
         {
-            if(cSum>s)
-            {
+            if(cSum>s||j==n-1){
                 i++;
                 j=i;
                 cSum=Integer.MIN_VALUE;
             }
-            if(cSum<s&& j<n) {
-                cSum += arr[j];
-                if(cSum==s) {
-                    System.out.println(i+" "+j);
-                    break;
-                }
-            }
+            cSum+=arr[j++];
+
         }
         return -1;
     }
