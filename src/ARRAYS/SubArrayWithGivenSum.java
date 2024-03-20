@@ -9,7 +9,7 @@ public class SubArrayWithGivenSum {
         ArrayList<Integer> arrayList = new ArrayList();
         int i=0;
         int cSum=arr[0];
-        int j=i;
+        int j=0;
         while (i<n) {
             if (cSum == s) {
                 arrayList.add(i+1);
@@ -18,6 +18,7 @@ public class SubArrayWithGivenSum {
             }
             if(cSum<s)
             {
+                j++;
                 cSum+=arr[j++];
             }
             else {
