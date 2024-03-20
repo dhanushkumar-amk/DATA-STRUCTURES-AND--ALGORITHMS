@@ -12,17 +12,20 @@ public class SubArrayWithGivenSum {
                 j=i;
                 cSum=Integer.MIN_VALUE;
             }
-            if(cSum<s)
-            {
-                cSum+=arr[j];
+            if(cSum<s) {
+                cSum += arr[j];
+                if(cSum==s)
+                    break;
             }
-
         }
+        System.out.println(cSum);
+        return -1;
     }
     public static void main(String[] args) {
         int [] arr ={1,2,3,7,5};
         int n= arr.length;;
         int s=12;
         SubArrayWithGivenSum(arr,n,s);
+
     }
 }
