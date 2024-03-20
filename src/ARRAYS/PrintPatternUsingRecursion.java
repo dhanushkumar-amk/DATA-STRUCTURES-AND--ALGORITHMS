@@ -1,8 +1,5 @@
 package ARRAYS;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-
 public class PrintPatternUsingRecursion {
     static void pattern(int N, ArrayList<Integer> arrayList) {
         if(N<0) {
@@ -12,7 +9,6 @@ public class PrintPatternUsingRecursion {
         arrayList.add(N);
         pattern(N-5,arrayList);
        arrayList.add(N);
-
     }
     public static void main(String[] args) {
          int n=16;
