@@ -14,11 +14,11 @@ public class SubArrayWithGivenSum {
             }
             if(cSum<s) {
                 cSum += arr[j];
-                if(cSum==s)
-                    break;
+                if(cSum==s) {
+                    System.out.println(i+" "+j);
+                }
             }
         }
-        System.out.println(cSum);
         return -1;
     }
     public static void main(String[] args) {
