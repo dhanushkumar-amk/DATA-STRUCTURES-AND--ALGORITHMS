@@ -13,7 +13,7 @@ public class SubArrayWithGivenSum {
         while (i<n)
         {
             if(cSum==s) {
-                arrayList.add(i);
+                arrayList.add(i+1);
                 arrayList.add(j);
                 break;
             }
