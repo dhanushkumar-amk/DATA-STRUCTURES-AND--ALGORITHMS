@@ -20,6 +20,7 @@ public class SubArrayWithGivenSum {
             {
                 j++;
                 cSum+=arr[j];
+                continue;
             }
             else {
                 arrayList.clear();
