@@ -11,7 +11,7 @@ public class SubArrayWithGivenSum {
         int i=0;
         int j=0;
         int sum=arr[0];
-        while (i<n)
+        while (j<n)
         {
             if(sum==s) {
                 arrayList.add(i + 1);
