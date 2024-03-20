@@ -16,7 +16,7 @@ public class SubArrayWithGivenSum {
             cSum+=arr[j];
             j++;
             if(cSum==s) {
-                System.out.println(i + " " + j);
+                System.out.println(i+1+ " " + j);
                 break;
             }
         }
