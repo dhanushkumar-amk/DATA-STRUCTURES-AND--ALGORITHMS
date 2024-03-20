@@ -13,7 +13,7 @@ public class SubArrayWithGivenSum {
                 cSum=Integer.MIN_VALUE;
             }
             if(cSum<s) {
-                cSum += arr[j++];
+                cSum += arr[j];
                 if(cSum==s) {
                     System.out.println(i+" "+j);
                     break;
