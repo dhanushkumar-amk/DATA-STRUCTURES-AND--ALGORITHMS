@@ -36,7 +36,7 @@ public class SubArrayWithGivenSum {
 
     }
     public static void main(String[] args) {
-        int [] arr ={1,9,1};
+        int [] arr ={1,2,3};
         int n= arr.length;;
         int s=3;
      for(int x:   subarraySum(arr,n,s)){
