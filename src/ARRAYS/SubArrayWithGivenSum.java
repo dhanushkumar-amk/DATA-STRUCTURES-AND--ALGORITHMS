@@ -14,7 +14,7 @@ public class SubArrayWithGivenSum {
         {
             if(cSum==s) {
                 arrayList.add(i+1);
-                arrayList.add(j);
+                arrayList.add(j-1);
                 break;
             }
             if(cSum>s||j==n-1){
