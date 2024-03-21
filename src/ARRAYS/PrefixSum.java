@@ -11,12 +11,18 @@ public class PrefixSum {
         return  prefixSum;
     }
     static int prefixSum (int [] arr) {
-
+        System.out.println(sum(arr,0,2));
     }
-    static int sum() {
-
+    static int sum(int [] arr,int i,int j) {
+        int sum=0;
+        for (;i<=j;i++)
+        {
+         sum+=arr[i]+arr[j];
+        }
+        return sum;
     }
     public static void main(String[] args) {
-int arr[]  =
+int arr[]  ={2,8,3,9,6,5,4};
+
     }
 }
