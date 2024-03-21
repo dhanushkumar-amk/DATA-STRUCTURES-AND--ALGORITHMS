@@ -8,7 +8,7 @@ public class PrefixSum {
         {
             arr[i]=arr[i-1]+arr[i];
         }
-        sum(2,6,arr);
+        sum(0,1,arr);
     }
     static void  sum(int i,int j,int [] arr) {
         if(i==0)
@@ -19,6 +19,8 @@ public class PrefixSum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
      int arr[]  = new int[scanner.nextInt()];
+     for (int x:arr)
+         System.out.print(x+" ");
      
      prefixSumAdding(arr);
     }
