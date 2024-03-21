@@ -33,7 +33,9 @@ public class GeekAndNew {
             if(x>=65 && x<=90)
                 uppercase=true;
         }
-        
+        if(numeric==true && lowercase==true&& uppercase==true)
+            System.out.println("YES");
+        else System.out.println("NO");
     }
     public static void main(String[] args) {
 
