@@ -30,9 +30,10 @@ public class GeekAndNew {
                 numeric=true;
             if(x>=97 && x<=122)
                 lowercase=true;
-            if(x>)
+            if(x>=65 && x<=90)
+                uppercase=true;
         }
-
+        
     }
     public static void main(String[] args) {
 
