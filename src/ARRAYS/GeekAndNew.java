@@ -52,7 +52,6 @@ public class GeekAndNew {
             if(PasswordCheck(string))
                 System.out.println("YES");
             else System.out.println("NO");
-            scan.close();
         }
 
     }
