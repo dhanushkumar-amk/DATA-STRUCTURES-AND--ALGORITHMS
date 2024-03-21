@@ -18,9 +18,12 @@ public class PrefixSum {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-     int arr[]  = new int[scanner.nextInt()];
-
+     int arr[]  = new int[10];
+     for (int i=0; i<10; i++)
+         arr[i]=scanner.nextInt();
+     
      for (int x:arr)
+
          System.out.print(x+" ");
 
      prefixSumAdding(arr);
