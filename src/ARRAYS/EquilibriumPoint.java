@@ -19,7 +19,7 @@ public class EquilibriumPoint {
                 Equ = (l / 2) + 1;
                 break;
             }
-            
         }
+        System.out.println(Equ);
     }
 }
