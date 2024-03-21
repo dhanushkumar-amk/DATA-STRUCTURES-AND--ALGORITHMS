@@ -17,8 +17,7 @@ public class PrefixSum {
         int sum=0;
         for (;i<=j;i++)
         {
-         sum+=arr[i]+arr[j];
-            System.out.println(sum);
+         sum+=arr[i];
         }
         return sum;
     }
