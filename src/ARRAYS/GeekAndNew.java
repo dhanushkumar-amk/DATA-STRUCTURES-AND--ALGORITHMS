@@ -19,12 +19,15 @@ public class GeekAndNew {
         }
     }
     static void PasswordCheck(String str) {
-        boolean numeric=true;
-        boolean lowercase=true;
-        boolean uppercase=true;
-        
+        boolean numeric=false;
+        boolean lowercase=false;
+        boolean uppercase=false;
+
         for (int i=0; i<str.length(); i++)
         {
+            int x=str.charAt(i);
+            if(x>=48 && x<=57)
+                numeric=true;
             if()
         }
     }
