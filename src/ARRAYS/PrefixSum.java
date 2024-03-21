@@ -9,7 +9,7 @@ public class PrefixSum {
     }
     static void  sum(int i,int j,int [] arr) {
         if(i==0)
-            System.out.println(arr[i]);
+            System.out.println(arr[j]);
         else System.out.println(arr[j]-arr[i-1]);
     }
 
