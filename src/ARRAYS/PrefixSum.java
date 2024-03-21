@@ -1,4 +1,7 @@
 package ARRAYS;
+
+import java.util.Scanner;
+
 public class PrefixSum {
     static  void prefixSumAdding(int[]arr) {
         for (int i=1; i< arr.length;++i)
@@ -14,7 +17,9 @@ public class PrefixSum {
     }
 
     public static void main(String[] args) {
-     int arr[]  ={2,8,3,9,6,5,4};
+        Scanner scanner = new Scanner(System.in);
+     int arr[]  = new int[scanner.nextInt()];
+     
      prefixSumAdding(arr);
     }
 }
