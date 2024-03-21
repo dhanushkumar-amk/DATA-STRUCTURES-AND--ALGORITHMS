@@ -3,7 +3,7 @@ package ARRAYS;
 import java.util.Scanner;
 
 public class GeekAndNew {
-    static void StringCheck(String str) {
+    static boolean StringCheck(String str) {
         int n=str.length();
         boolean valid=true;
 
@@ -17,8 +17,9 @@ public class GeekAndNew {
             }
             else valid=true;
         }
+        return valid;
     }
-    static void PasswordCheck(String str) {
+    static boolean PasswordCheck(String str) {
         boolean numeric=false;
         boolean lowercase=false;
         boolean uppercase=false;
@@ -34,13 +35,16 @@ public class GeekAndNew {
                 uppercase=true;
         }
         if(numeric==true && lowercase==true&& uppercase==true)
-            System.out.println("YES");
-        else System.out.println("NO");
+            return true;
+        else return false;
     }
     public static void main(String[] args) {
 
         Scanner scan =new Scanner(System.in);
         int T=scan.nextInt();
-        
+        String string = scan.next();
+        if(StringCheck(string)&&PasswordCheck(string)==true)
+            System.out.println("YES");
+        else System.out.println("NO");
     }
 }
