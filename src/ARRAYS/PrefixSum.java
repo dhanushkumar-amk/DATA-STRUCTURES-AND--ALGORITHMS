@@ -1,2 +1,6 @@
-package ARRAYS;public class PrefixSum {
+package ARRAYS;
+public class PrefixSum {
+    public static void main(String[] args) {
+        
+    }
 }
