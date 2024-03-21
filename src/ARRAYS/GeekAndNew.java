@@ -1,21 +1,33 @@
 package ARRAYS;
 
+import java.util.Scanner;
+
 public class GeekAndNew {
-    public static void main(String[] args) {
-        int T= 2;
-        String str="Gee1k";
+    static void StringCheck(String str) {
         int n=str.length();
-        boolean flag=true;
-        for(int i=0; i<n; i++) {
-            int x = str.charAt(i);
-            if (x < 64) {
-                flag = false;
+        boolean valid=true;
+
+        for (int i=0; i<n; i++)
+        {
+            int x=str.charAt(i);
+            if(x<64)
+            {
+                valid=false;
                 break;
             }
+            else valid=true;
         }
-        if(flag==true)
-            System.out.println("YES");
-        else System.out.println("NO");
+    }
+    static void PasswordCheck(String str) {
+        int 
+        for (int i)
+    }
+    public static void main(String[] args) {
+
+        Scanner scan =new Scanner(System.in);
+        int T=scan.nextInt();
+        String stringCheck=scan.next();
+        String passwordCheck=scan.next();
 
     }
 }
