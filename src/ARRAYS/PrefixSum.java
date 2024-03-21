@@ -1,10 +1,14 @@
 package ARRAYS;
 public class PrefixSum {
     static  void prefixSumAdding(int[]arr) {
-        for (int i=0; i< arr.length;++i)
+        for (int i=1; i< arr.length;++i)
         {
-            
+            arr[i]=arr[i-1]+arr[i];
         }
+
+    }
+    static void  sum() {
+
     }
 
     public static void main(String[] args) {
