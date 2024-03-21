@@ -45,12 +45,9 @@ public class GeekAndNew {
         for (int i=0 ;i<T;i++)
         {
             String string =scan.next();
-            if(StringCheck(string)) {
+            if (PasswordCheck(string)){
                 System.out.println("YES");
             }
-            else System.out.println("NO");
-            if(PasswordCheck(string))
-                System.out.println("YES");
             else System.out.println("NO");
         }
 
