@@ -9,7 +9,7 @@ public class PrefixSum {
         for (int x:arr)
             System.out.print(x+" ");
         System.out.println();
-        System.out.println(arr[3]-arr[0]);
+        System.out.println(arr[2]-arr[0]);
         return arr;
     }
     static  void prefixSum (int [] arr) {
