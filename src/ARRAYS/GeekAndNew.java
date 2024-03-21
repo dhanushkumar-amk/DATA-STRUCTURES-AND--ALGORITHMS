@@ -41,8 +41,9 @@ public class GeekAndNew {
 
         Scanner scan =new Scanner(System.in);
         int T=scan.nextInt();
-        String stringCheck=scan.next();
-        String passwordCheck=scan.next();
-
+        for (int i=0 ;i<T; i++)
+        {
+            String s = new String();
+        }
     }
 }
