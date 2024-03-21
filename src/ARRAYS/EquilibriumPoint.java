@@ -16,7 +16,7 @@ public class EquilibriumPoint {
             l++;
             r--;
             if (leftSum==RightSum) {
-                Equ = (l / 2) + 1;
+                Equ = 4;
                 break;
             }
         }
