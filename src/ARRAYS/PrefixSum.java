@@ -6,10 +6,10 @@ public class PrefixSum {
         prefixSum[0]=arr[0];
         for (int i=1; i< arr.length; ++i)
         {
-            prefixSum[i]+=prefixSum[i-1]+arr[i];
+            prefixSum[i]=prefixSum[i]+prefixSum[i-1]+arr[i];
         }
         for (int x:prefixSum)
             System.out.print(x+" ");
-        
+
     }
 }
