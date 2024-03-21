@@ -28,8 +28,11 @@ public class GeekAndNew {
             int x=str.charAt(i);
             if(x>=48 && x<=57)
                 numeric=true;
-            if()
+            if(x>=97 && x<=122)
+                lowercase=true;
+            if(x>)
         }
+
     }
     public static void main(String[] args) {
 
