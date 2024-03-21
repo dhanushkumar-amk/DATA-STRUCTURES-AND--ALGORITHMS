@@ -12,6 +12,8 @@ public class PrefixSum {
     }
     static  void prefixSum (int [] arr) {
         System.out.println(sum(arr,0,2));
+        System.out.println(sum(arr,1,3));
+        System.out.println(sum(arr,2,6));
     }
     static int sum(int [] arr,int i,int j) {
         int sum=0;
