@@ -1,25 +1,21 @@
 package ARRAYS;
 public class EquilibriumPoint {
     public static void main(String[] args) {
-        int [] arr ={3,4,8,-9,20,6};
-        int i=1;
-        int n= arr.length;
-        int l=0;
-        int r=n-1;
-        int leftSum=0;
-        int RightSum=0;
-        int Equ=0;
-        while (l<r)
-        {
-            leftSum+=arr[l]+arr[l+1];
-            RightSum+=arr[r]+arr[r-1];
-            l++;
-            r--;
-            if (leftSum==RightSum) {
-                Equ = 4;
-                break;
-            }
-        }
-        System.out.println(Equ);
+        int []arr  ={5,2,2,4,3,4,2};
+       int sum=0;
+       for (int i=0; i< arr.length; i++)
+       {
+           sum+=arr[i];
+       }
+       int sum2=0;
+       for (int i= arr.length-1; i>=0; i--)
+       {
+           sum2+=arr[i];
+           sum=sum-arr[i];
+           if(sum2==sum) {
+               System.out.println(i);
+               break;
+           }
+       }
     }
 }
