@@ -21,7 +21,7 @@ public class PrefixSum {
      int arr[]  = new int[10];
      for (int i=0; i<10; i++)
          arr[i]=scanner.nextInt();
-
+     
      for (int x:arr)
 
          System.out.print(x+" ");
