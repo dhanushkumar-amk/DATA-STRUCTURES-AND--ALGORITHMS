@@ -41,9 +41,6 @@ public class GeekAndNew {
 
         Scanner scan =new Scanner(System.in);
         int T=scan.nextInt();
-        for (int i=0 ;i<T; i++)
-        {
-            String s = new String();
-        }
+        
     }
 }
