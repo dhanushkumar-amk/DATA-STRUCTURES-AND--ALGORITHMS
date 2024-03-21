@@ -10,7 +10,7 @@ public class PrefixSum {
         }
         return  prefixSum;
     }
-    static int prefixSum (int [] arr) {
+    static  void prefixSum (int [] arr) {
         System.out.println(sum(arr,0,2));
     }
     static int sum(int [] arr,int i,int j) {
@@ -22,7 +22,7 @@ public class PrefixSum {
         return sum;
     }
     public static void main(String[] args) {
-int arr[]  ={2,8,3,9,6,5,4};
-
+     int arr[]  ={2,8,3,9,6,5,4};
+     prefixSum(arr);
     }
 }
