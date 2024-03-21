@@ -18,6 +18,7 @@ public class PrefixSum {
         for (;i<=j;i++)
         {
          sum+=arr[i]+arr[j];
+            System.out.println(sum);
         }
         return sum;
     }
