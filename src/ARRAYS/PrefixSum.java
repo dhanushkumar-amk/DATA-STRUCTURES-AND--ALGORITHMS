@@ -5,10 +5,12 @@ public class PrefixSum {
         {
             arr[i]=arr[i-1]+arr[i];
         }
-
+        sum();
     }
-    static void  sum() {
-
+    static void  sum(int i,int j,int [] arr) {
+        if(i==0)
+            System.out.println(0+arr[j]);
+        else System.out.println(arr[j]-arr[i-1]);
     }
 
     public static void main(String[] args) {
