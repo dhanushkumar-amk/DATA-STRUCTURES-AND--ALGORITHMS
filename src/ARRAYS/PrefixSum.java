@@ -5,7 +5,7 @@ public class PrefixSum {
         {
             arr[i]=arr[i-1]+arr[i];
         }
-        sum();
+        sum(0,2,arr);
     }
     static void  sum(int i,int j,int [] arr) {
         if(i==0)
