@@ -8,14 +8,10 @@ public class EquilibriumPoint {
            sum+=arr[i];
        }
        int sum2=0;
-       for (int i= arr.length-1; i>=0; i--)
+       for (int i=0; i< arr.length; i++)
        {
-           sum2+=arr[i];
-           sum=sum-arr[i];
-           if(sum2==sum) {
-               System.out.println(i);
-               break;
-           }
+           sum-=arr[i];
+           
        }
     }
 }
