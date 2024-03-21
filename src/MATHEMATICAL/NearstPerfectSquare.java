@@ -8,6 +8,6 @@ public class NearstPerfectSquare {
             first=n-1;
         if(n+1%2==0)
             second=n+1;
-        return Math.max(first,second);
+        System.out.println(Math.max(first,second));
     }
 }
