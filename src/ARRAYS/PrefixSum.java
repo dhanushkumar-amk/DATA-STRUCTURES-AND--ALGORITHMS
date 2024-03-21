@@ -10,8 +10,13 @@ public class PrefixSum {
         }
         return  prefixSum;
     }
-    static int 
-    public static void main(String[] args) {
+    static int prefixSum (int [] arr) {
 
+    }
+    static int sum() {
+
+    }
+    public static void main(String[] args) {
+int arr[]  =
     }
 }
