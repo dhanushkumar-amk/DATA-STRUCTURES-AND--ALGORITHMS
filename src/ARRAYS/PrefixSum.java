@@ -5,7 +5,7 @@ public class PrefixSum {
         {
             arr[i]=arr[i-1]+arr[i];
         }
-        sum(0,6,arr);
+        sum(2,3,arr);
     }
     static void  sum(int i,int j,int [] arr) {
         if(i==0)
@@ -14,7 +14,7 @@ public class PrefixSum {
     }
 
     public static void main(String[] args) {
-     int arr[]  ={2,8,3,9,6,5,4};
+     int arr[]  ={3, 6, 2, 8, 9, 2};
      prefixSumAdding(arr);
     }
 }
