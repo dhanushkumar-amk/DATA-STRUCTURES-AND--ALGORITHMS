@@ -26,5 +26,6 @@ public class PrefixSum {
     public static void main(String[] args) {
      int arr[]  ={2,8,3,9,6,5,4};
      prefixSum(arr);
+     prefixSumAdding();
     }
 }
