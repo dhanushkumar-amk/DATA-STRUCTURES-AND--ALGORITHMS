@@ -43,8 +43,6 @@ public class GeekAndNew {
         Scanner scan =new Scanner(System.in);
         int T=scan.nextInt();
         String string = scan.next();
-        if(StringCheck(string)&&PasswordCheck(string)==true)
-            System.out.println("YES");
-        else System.out.println("NO");
+        
     }
 }
