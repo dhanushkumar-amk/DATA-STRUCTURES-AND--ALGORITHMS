@@ -10,7 +10,7 @@ public class BinarySearch {
 
         int mid=r/2;
 
-        int key =10;
+        int key =24;
 
         while (l<r)
         {
