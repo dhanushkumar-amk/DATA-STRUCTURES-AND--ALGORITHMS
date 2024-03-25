@@ -22,7 +22,10 @@ public class BinarySearch {
             else if(arr[mid]>key)
                 r=mid;
             else if(arr[mid]<key) l=mid;
-                else System.out.println(-1);
+                else {
+                System.out.println(-1);
+                return;
+            }
         }
     }
 }
