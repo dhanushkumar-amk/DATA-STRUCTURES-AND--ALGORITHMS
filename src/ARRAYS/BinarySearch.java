@@ -18,16 +18,18 @@ public class BinarySearch {
                 System.out.println("Index  Of "+key+" is "+mid);
                 return;
             }
-            if(arr[mid]>key)
+             else if(arr[mid]>key)
             {
                 r=mid;
                 mid=r/2;
             }
-            if(arr[mid]<key)
+           else  if(arr[mid]<key)
             {
                 l=mid;
                 mid=l+((r-l)/2);
             }
+
+           else System.out.println("-1");
         }
     }
 }
