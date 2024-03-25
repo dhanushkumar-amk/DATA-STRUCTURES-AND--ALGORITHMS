@@ -5,8 +5,11 @@ public class BinarySearch {
         int l=0;
         int r= arr.length-1;
         int mid=r/2;
-        int key =12;
-       
+        int key =10;
 
+        while (l<r)
+        {
+            
+        }
     }
 }
