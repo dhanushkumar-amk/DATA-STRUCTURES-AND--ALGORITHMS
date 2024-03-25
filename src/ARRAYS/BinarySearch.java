@@ -1,9 +1,8 @@
 package ARRAYS;
 public class BinarySearch {
-    static  int  binarySearch(int [] arr) {
+    static  int  binarySearch(int [] arr,int key) {
         int l=0;
         int r= arr.length-1;
-        int key =63;
         while (l<=r) {
             int mid = (l + r) / 2;
             if (arr[mid] == key) {
@@ -18,7 +17,8 @@ public class BinarySearch {
     }
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,7,8};
-       int res= binarySearch(arr);
+        int key=3;
+       int res= binarySearch(arr,key);
         System.out.println(res);
 
     }
