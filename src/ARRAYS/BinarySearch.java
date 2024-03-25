@@ -12,12 +12,16 @@ public class BinarySearch {
                 System.out.println(l);
                 return;
             }
-            if(arr[mid]>key)
+            if(arr[mid]>key) {
                 r = mid;
+                mid=r/2;
+            }
 
-            if(arr[mid]<key)
-                l=mid;
+            if(arr[mid]<key) {
+                l = mid;
+                mid=r/2;
+            }
         }
-        
+
     }
 }
