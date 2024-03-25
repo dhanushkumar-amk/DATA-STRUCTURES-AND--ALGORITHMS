@@ -14,12 +14,15 @@ public class BinarySearch {
 
         while (l<r)
         {
+            mid=(l+r)/2;
             if(arr[mid]==key) {
                 System.out.println(arr[mid]);
                 return;
             }
-            else if(arr[mid]>)
-
+            else if(arr[mid]>key)
+                r=mid;
+            else if(arr[mid]<key) l=mid;
+                else System.out.println(-1);
         }
     }
 }
