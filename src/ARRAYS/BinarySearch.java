@@ -14,22 +14,12 @@ public class BinarySearch {
 
         while (l<r)
         {
-            if (key==arr[mid]) {
-                System.out.println("Index  Of "+key+" is "+mid);
+            if(arr[mid]==key) {
+                System.out.println(arr[mid]);
                 return;
             }
-             else if(arr[mid]>key)
-            {
-                r=mid;
-                mid=r/2;
-            }
-           else  if(arr[mid]<key)
-            {
-                l=mid;
-                mid=l+((r-l)/2);
-            }
+            else if(arr[mid]>)
 
-           else System.out.println("-1");
         }
     }
 }
