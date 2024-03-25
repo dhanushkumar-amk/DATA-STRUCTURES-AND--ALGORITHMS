@@ -20,7 +20,7 @@ public class NearstPerfectSquare {
        Math.max(first, second);
         System.out.println(Math.max(first,second));
 
-        
+
         int result = fun(5);
         System.out.println("Result: " + result);
     }
