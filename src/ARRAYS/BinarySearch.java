@@ -1,2 +1,6 @@
-package ARRAYS;public class BinarySearch {
+package ARRAYS;
+public class BinarySearch {
+    public static void main(String[] args) {
+        
+    }
 }
