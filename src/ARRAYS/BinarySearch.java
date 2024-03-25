@@ -4,7 +4,7 @@ public class BinarySearch {
         int [] arr ={7,10};
         int l=0;
         int r= arr.length-1;
-        int key =0;
+        int key =6;
         while (l<r)
         {
           int   mid=(l+r)/2;
