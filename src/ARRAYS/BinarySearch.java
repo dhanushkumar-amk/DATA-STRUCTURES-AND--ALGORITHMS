@@ -15,7 +15,7 @@ public class BinarySearch {
         while (l<r)
         {
             if (key==arr[mid]) {
-                System.out.println("Index  Of "+key+" "+mid);
+                System.out.println("Index  Of "+key+" is "+mid);
                 return;
             }
             if(arr[mid]>key)
