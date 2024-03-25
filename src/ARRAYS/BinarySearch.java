@@ -2,7 +2,7 @@ package ARRAYS;
 public class BinarySearch {
     public static void main(String[] args) {
 
-        int [] arr ={7,10,12,16,22,24,32,40};
+        int [] arr ={7,10};
 
         int l=0;
 
