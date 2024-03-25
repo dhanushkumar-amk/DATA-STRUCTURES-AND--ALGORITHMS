@@ -10,7 +10,7 @@ public class BinarySearch {
           int   mid=(l+r)/2;
             if(arr[mid]==key) {
                 System.out.println(mid);
-                return;
+                break;
             }
             else if(arr[mid]>key)
                 r=mid;
@@ -18,7 +18,7 @@ public class BinarySearch {
                 l=mid;
             else {
                 System.out.println(-1);
-                return;
+                break;
             }
         }
     }
