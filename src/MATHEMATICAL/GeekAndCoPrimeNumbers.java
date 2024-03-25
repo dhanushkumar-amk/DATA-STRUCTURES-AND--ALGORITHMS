@@ -10,5 +10,6 @@ public class GeekAndCoPrimeNumbers {
         System.out.println(n);
         System.out.println(m);
         System.out.println(n+m);
+
     }
 }
