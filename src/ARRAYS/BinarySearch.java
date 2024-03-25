@@ -18,7 +18,7 @@ public class BinarySearch {
                 l=mid+1;
             else {
                 System.out.println(-1);
-                break;
+                
             }
         }
     }
