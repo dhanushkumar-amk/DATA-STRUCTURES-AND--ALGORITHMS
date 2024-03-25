@@ -15,7 +15,7 @@ public class BinarySearch {
         while (l<r)
         {
             if (key==arr[mid]) {
-                System.out.println();
+                System.out.println(arr[mid]);
                 return;
             }
             if(arr[mid]>key)
@@ -25,7 +25,8 @@ public class BinarySearch {
             }
             if(arr[mid]<key)
             {
-
+                l=mid;
+                mid=l+((r-l)/2);
             }
         }
     }
