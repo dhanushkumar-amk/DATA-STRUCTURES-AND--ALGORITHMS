@@ -8,13 +8,12 @@ public class BinarySearch {
 
         int r= arr.length-1;
 
-        int mid=0;
 
         int key =24;
 
         while (l<r)
         {
-            mid=(l+r)/2;
+          int   mid=(l+r)/2;
             if(arr[mid]==key) {
                 System.out.println(arr[mid]);
                 return;
