@@ -8,7 +8,7 @@ public class BinarySearch {
 
         int r= arr.length-1;
 
-        int mid=r/2;
+        int mid=0;
 
         int key =24;
 
