@@ -6,7 +6,7 @@ public class BinarySearch {
         int r= arr.length-1;
         int mid=r/2;
         int key =12;
-        while(l<=r)
+        while(l<r)
         {
             if(arr[mid]==key) {
                 System.out.println(l);
