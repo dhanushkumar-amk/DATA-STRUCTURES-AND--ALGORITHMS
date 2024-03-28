@@ -6,9 +6,8 @@ public class MajorityElement {
         int i=0;
         while (i<n){
             if(arr[i]>0) {
-                int x = arr[arr[i]];
+                int x = arr[arr[i]-1];
                 arr[arr[i]] -= 1;
-                arr[i]=x;
             }else
             {
                 i++;
