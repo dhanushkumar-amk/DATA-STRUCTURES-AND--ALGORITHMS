@@ -1,4 +1,4 @@
-package ARRAYS;
+package SEARCHING;
 public class BinarySearch {
     static  int  binarySearch(int [] arr,int key) {
         int l=0;
@@ -12,6 +12,7 @@ public class BinarySearch {
             } else if (arr[mid] < key) {
                 l = mid + 1;
             }
+            
         }
         return -1;
     }
