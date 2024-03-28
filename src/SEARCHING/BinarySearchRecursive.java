@@ -6,9 +6,9 @@ public class BinarySearchRecursive {
         int mid=(l+r)/2;
         if(arr[mid]==key)
             return mid;
-        if(arr[mid]>key)
+       else  if(arr[mid]>key)
             BinaryRecursive(l, mid-1,  arr, key);
-         BinaryRecursive(mid+1,r,arr,key);
+        else  BinaryRecursive(mid+1,r,arr,key);
         return -1;
     }
     public static void main(String[] args) {
