@@ -13,7 +13,7 @@ public class BinarySearchRecursive {
     }
     public static void main(String[] args) {
         int [] arr = {7,10,12,16,22,24,32,40};
-        int key=10;
+        int key=12;
         int n= arr.length;
        int res= BinaryRecursive(0,n-1,arr,key);
         System.out.println(res);
