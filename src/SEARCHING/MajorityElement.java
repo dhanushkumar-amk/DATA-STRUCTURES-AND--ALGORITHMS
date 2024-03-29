@@ -10,7 +10,6 @@ public class MajorityElement {
                 arr[arr[i]] -= 1;
                 if(arr[i]==x) {
                     arr[i] = 0;
-                    continue;
                 }
                 else arr[i]=x;
             }else
@@ -20,13 +19,5 @@ public class MajorityElement {
         }
         for (int x:arr)
             System.out.print(x+" ");
-        for (int j=0; j<n; j++)
-        {
-            if(arr[j]<0)
-                arr[j]+=arr[j];
-            else arr[j]=0;
-        }
-        for (int xx:arr)
-            System.out.print(xx+" ");
     }
 }
