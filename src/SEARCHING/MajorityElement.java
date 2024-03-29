@@ -22,7 +22,7 @@ public class MajorityElement {
             System.out.print(x+" ");
         for (int j=0; j<n; j++)
         {
-            if(arr[j]>0)
+            if(arr[j]<0)
                 arr[j]+=arr[j];
             else arr[j]=0;
         }
