@@ -8,6 +8,9 @@ public class MajorityElement {
             if(arr[i]>0) {
                 int x = arr[arr[i]-1];
                 arr[arr[i]] -= 1;
+                if(arr[i]==x)
+                    arr[i]=0;
+                else arr[i]=x;
             }else
             {
                 i++;
