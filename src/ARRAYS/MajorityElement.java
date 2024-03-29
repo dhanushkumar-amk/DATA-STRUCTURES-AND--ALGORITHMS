@@ -17,7 +17,7 @@ public class MajorityElement {
                 }
             }
         }
-        int result=0; 
+        int result=0;
         for(int i=0; i<n;i++)
         {
             if(a[i]==maj)
@@ -28,7 +28,7 @@ public class MajorityElement {
         return -1;
     }
         public static void main (String[]args){
-            int[] arr = {3,1,3,3,2};
+            int[] arr = {15};
             int res = MajorityElement(arr, arr.length);
             System.out.println(res);
         }
