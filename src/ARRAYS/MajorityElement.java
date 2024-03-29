@@ -17,7 +17,7 @@ public class MajorityElement {
                 }
             }
         }
-        int result=0;
+        int result=0; 
         for(int i=0; i<n;i++)
         {
             if(a[i]==maj)
