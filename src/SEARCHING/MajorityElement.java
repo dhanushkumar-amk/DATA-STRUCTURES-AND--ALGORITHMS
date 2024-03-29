@@ -23,7 +23,7 @@ public class MajorityElement {
         for (int j=0; j<n; j++)
         {
             if(arr[j]<0)
-                arr[j]+=arr[j];
+                arr[j]-=arr[j];
             else arr[j]=0;
         }
         for (int xx:arr)
