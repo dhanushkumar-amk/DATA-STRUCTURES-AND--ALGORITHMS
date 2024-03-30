@@ -6,6 +6,7 @@ public class IndexOfFirstOccurrenceInSorted {
         int n= arr.length;
         int l=0;
         int r=n-1;
+        int x=10;
         for (int i=0; i<n; i++)
         {
             int mid=(l+r)/2;
