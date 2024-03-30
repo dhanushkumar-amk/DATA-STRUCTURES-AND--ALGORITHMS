@@ -9,7 +9,7 @@ public class IndexOfFirstOccurrenceInSorted {
         int x=20;
         int pos=-1;
        while (l<=r)
-        {  
+        {
             int mid=(l+r)/2;
             if(arr[mid]==x)
             {
