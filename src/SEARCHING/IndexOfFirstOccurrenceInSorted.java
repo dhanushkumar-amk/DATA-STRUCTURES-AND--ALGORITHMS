@@ -11,7 +11,7 @@ public class IndexOfFirstOccurrenceInSorted {
        while (l<=r)
         {
             int mid=(l+r)/2;
-            
+
             if(arr[mid]==x)
             {
                 pos=mid;
