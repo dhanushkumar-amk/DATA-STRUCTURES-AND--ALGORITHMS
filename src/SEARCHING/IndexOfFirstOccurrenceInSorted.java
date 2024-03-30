@@ -12,12 +12,7 @@ public class IndexOfFirstOccurrenceInSorted {
             int mid=(l+r)/2;
             if(arr[mid]==x)
             {
-                if(mid!=0) {
-                    if (arr[mid] == arr[mid - 1]) {
-                        r=mid-1;
-                        continue;
-                    }
-                }else return mid;
+                
             }
             else if(arr[mid]>x)
                 r=mid-1;
