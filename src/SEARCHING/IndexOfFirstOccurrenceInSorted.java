@@ -15,6 +15,7 @@ public class IndexOfFirstOccurrenceInSorted {
                 if(mid!=0) {
                     if (arr[mid] == arr[mid - 1]) {
                         r=mid-1;
+                        continue;
                     }
                 }else return mid;
             }
