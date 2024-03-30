@@ -1,7 +1,7 @@
 package SEARCHING;
 
 public class IndexOfFirstOccurrenceInSorted {
-    static int binarySearch() {
+    static int IndexOffFirstOccurrenceInSorted() {
         int [] arr ={1,10,10,10,20,20,40};
         int n= arr.length;
         int l=0;
@@ -22,9 +22,8 @@ public class IndexOfFirstOccurrenceInSorted {
         }
         return pos;
     }
-    public static void main(String[] args) {
-     int res=  binarySearch();
+     public static void main(String[] args) {
+        int res=  IndexOffFirstOccurrenceInSorted();
         System.out.println(res);
     }
-
 }
