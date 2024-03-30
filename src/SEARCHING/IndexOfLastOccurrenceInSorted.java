@@ -4,7 +4,7 @@ public class IndexOfLastOccurrenceInSorted {
         int [] arr ={10,15,20,20,40,40};
         int l=0;
         int r= arr.length-1;
-        int x=20;
+        int x=40;
         int pos=-1;
         while (l<=r)
         {
