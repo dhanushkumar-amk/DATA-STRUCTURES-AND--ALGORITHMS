@@ -20,7 +20,7 @@ public class IndexOfFirstOccurrenceInSorted {
                 r=mid-1;
             else l=mid+1;
         }
-        return -1;
+        return pos;
     }
     public static void main(String[] args) {
      int res=  binarySearch();
