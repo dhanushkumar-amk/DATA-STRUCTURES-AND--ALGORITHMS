@@ -6,7 +6,7 @@ public class IndexOfFirstOccurrenceInSorted {
         int n= arr.length;
         int l=0;
         int r=n-1;
-        int x=10;
+        int x=20;
         int pos=-1;
        while (l<=r)
         {
