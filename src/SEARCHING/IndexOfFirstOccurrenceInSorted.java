@@ -8,7 +8,7 @@ public class IndexOfFirstOccurrenceInSorted {
         int r=n-1;
         int x=10;
         int pos=0;
-        for (int i=0; i<n; i++)
+       while (l<=r)
         {
             int mid=(l+r)/2;
             if(arr[mid]==x)
