@@ -16,8 +16,8 @@ public class SquareRoot {
             }
          else r=mid-1;
         }
-        return mid;
-    }w
+        return res;
+    }
     public static void main(String[] args) {
         float x=23;
      int  res= (int)SquareRoot(x);
