@@ -11,7 +11,7 @@ public class SquareRoot {
             if(mid*mid==x)
                 return mid;
          else if(mid*mid<x) {
-                l = mid - 1;
+                l = mid + 1;
                 res=mid;
             }
          else r=mid-1;
