@@ -1,6 +1,5 @@
 package SEARCHING;
 
-import INTERVAL_TREE.INTERVAL_TREE;
 
 import java.util.HashMap;
 
