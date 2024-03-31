@@ -10,9 +10,9 @@ public class CountMoreThanNDivideByKOccurences {
         int [] arr ={3,1,2,2,1,2,3,3};
         int n= arr.length;
         int k=4;
-        for (int x:arr)
+        for (int i =0; i<n; i++)
         {
-            integerHashMap.put(x,integerHashMap.getOrDefault(,0)+1);
+            integerHashMap.put(i,integerHashMap.getOrDefault(i,0)+1);
         }
         int c=0;
         for (int i=0; i< arr.length; i++)
