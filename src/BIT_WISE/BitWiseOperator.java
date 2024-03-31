@@ -7,10 +7,9 @@ public class BitWiseOperator {
         System.out.println(x); // -6
   /*
  Decimal value of 5 in binary represent
- 00000000000000000000000000101
- 00000000000000000000000000101
+ 00000000000000000000000000101     =5
  ~ (invert operator) result 👇
- 11111111111111111111111111111010
+ 11111111111111111111111111111010  =-6
  Inverted valueWill be converted to decimal automatically
  during run time it results -6 in decimal value as we know
  every decimal values are stored in binary format in computer
