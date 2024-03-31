@@ -18,7 +18,7 @@ public class SquareRoot {
         return mid;
     }
     public static void main(String[] args) {
-        int x=23;
+        float x=23;
      float res= SquareRoot(x);
         System.out.println(res);
     }
