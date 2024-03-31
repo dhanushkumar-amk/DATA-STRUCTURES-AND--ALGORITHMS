@@ -21,7 +21,7 @@ public class CountOnesInSortedBinaryArray {
     static int last(int[] arr,int n,int x) {
         int l=0;
         int r=n-1;
-        int pos=1;
+        int pos=-1;
         while(l<=r)
         {
             int mid=(l+r)/2;
