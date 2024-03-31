@@ -1,2 +1,6 @@
-package SEARCHING;public class SquareRoot {
+package SEARCHING;
+public class SquareRoot {
+    public static void main(String[] args) {
+        
+    }
 }
