@@ -1,9 +1,8 @@
 package SEARCHING;
 public class SquareRoot {
-    static float SquareRoot(int x) {
-        int l=0;
-        int r=x/2;
-        int res=0;
+    static float SquareRoot(float x) {
+        float l=0;
+        float r=x/2;
         float mid=0;
         while (l<=r)
         {
