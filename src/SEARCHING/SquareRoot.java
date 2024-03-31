@@ -19,7 +19,7 @@ public class SquareRoot {
     }
     public static void main(String[] args) {
         int x=23;
-       int res= SquareRoot(x);
+     float res= SquareRoot(x);
         System.out.println(res);
     }
 }
