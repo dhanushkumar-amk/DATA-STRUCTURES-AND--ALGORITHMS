@@ -43,7 +43,7 @@ public class CountOnesInSortedBinaryArray {
       int first=first(arr,n,x);
       int last=last(arr,n,x);
         System.out.println(first+1);
-        System.out.println(last+1);
+        System.out.println(last-1);
 
     }
 }
