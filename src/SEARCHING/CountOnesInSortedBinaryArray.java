@@ -37,12 +37,12 @@ public class CountOnesInSortedBinaryArray {
         return pos;
     }
     public static void main(String[] args) {
-        int [] arr ={0,1};
+        int [] arr ={1 ,1 ,1 ,1, 1 ,0 ,0 ,0};
         int n= arr.length;
         int x=1;
       int first=first(arr,n,x);
       int last=last(arr,n,x);
-        
+
         System.out.println(last-(first-1));
 
     }
