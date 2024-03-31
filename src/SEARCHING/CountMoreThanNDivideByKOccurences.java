@@ -12,7 +12,7 @@ public class CountMoreThanNDivideByKOccurences {
         int k=4;
         for (int x:arr)
         {
-            integerHashMap.put(x,integerHashMap.getOrDefault(x,0)+1);
+            integerHashMap.put(x,integerHashMap.getOrDefault(,0)+1);
         }
         int c=0;
         for (int i=0; i< arr.length; i++)
