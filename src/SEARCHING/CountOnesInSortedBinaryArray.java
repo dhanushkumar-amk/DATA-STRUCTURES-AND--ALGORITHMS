@@ -1,2 +1,7 @@
-package SEARCHING;public class CountOnesInSortedBinaryArray {
+package SEARCHING;
+
+public class CountOnesInSortedBinaryArray {
+    public static void main(String[] args) {
+        
+    }
 }
