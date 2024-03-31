@@ -23,5 +23,13 @@ public class CountOccurencesInSorted {
         int n= arr.length;
         int res=CountOccurSorted(arr,n,x);
         System.out.println(res);
+        int count=0;
+        for (int i=res; i<n; i++)
+        {
+            if(arr[i]==x)
+                count++;
+            else break;
+        }
+        System.out.println(count);
     }
 }
