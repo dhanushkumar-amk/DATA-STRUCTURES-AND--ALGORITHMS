@@ -24,6 +24,6 @@ public class CountOnesInSortedBinaryArray {
         int x=0;
       int first=firstAndLastIndexUsingBinarySearch(arr,n,x);
       int last=firstAndLastIndexUsingBinarySearch(arr,n,x+1);
-        System.out.println(first-last);
+        System.out.println(last-first);
     }
 }
