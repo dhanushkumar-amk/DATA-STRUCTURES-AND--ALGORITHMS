@@ -10,8 +10,8 @@ public class SquareRoot {
             if(mid*mid==x)
              return mid;
          else if(mid*mid>x)
-             r=mid;
-         else l=mid;
+             r=mid-1;
+         else l=mid+1;
         }
         return -1;
     }
