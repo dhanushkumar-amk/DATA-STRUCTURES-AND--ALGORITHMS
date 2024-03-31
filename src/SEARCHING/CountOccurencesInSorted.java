@@ -25,7 +25,7 @@ public class CountOccurencesInSorted {
         int count=0;
         if(res==-1)
             System.out.println("0");
-        else 
+        els
         for (int i=res; i<n; i++)
         {
             if(arr[i]==x)
