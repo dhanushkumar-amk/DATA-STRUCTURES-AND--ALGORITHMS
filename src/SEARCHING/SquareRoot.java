@@ -15,7 +15,7 @@ public class SquareRoot {
         return -1;
     }
     public static void main(String[] args) {
-        int x=25;
+        int x=23;
        int res= SquareRoot(x);
         System.out.println(res);
     }
