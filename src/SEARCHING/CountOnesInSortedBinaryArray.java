@@ -16,7 +16,7 @@ public class CountOnesInSortedBinaryArray {
         return 0;
     }
     public static void main(String[] args) {
-        int [] arr ={ 0,0,0,0,0};
+        int [] arr ={ 1,0,0,0,0};
         int n= arr.length;
         int x=1;
         int res=last(arr,n);
