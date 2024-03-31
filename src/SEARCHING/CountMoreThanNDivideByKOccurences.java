@@ -16,7 +16,8 @@ public class CountMoreThanNDivideByKOccurences {
         int c = 0;
         for (int key : integerHashMap.keySet()) {
             if (integerHashMap.get(key) > n / k)
-                System.out.println(c);
+                c++;
         }
+        System.out.println(c);
     }
 }
