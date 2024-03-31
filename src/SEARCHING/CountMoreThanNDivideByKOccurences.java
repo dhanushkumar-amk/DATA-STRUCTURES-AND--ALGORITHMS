@@ -14,7 +14,7 @@ public class CountMoreThanNDivideByKOccurences {
         }
         for (int i=0; i< arr.length; i++)
         {
-            System.out.println(integerHashMap.get(i));
+            System.out.println(integerHashMap.);
         }
     }
 }
