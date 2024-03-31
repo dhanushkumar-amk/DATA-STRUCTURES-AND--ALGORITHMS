@@ -69,5 +69,10 @@ public class CountOccurencesInSorted {
             else break;
         }
         System.out.println(count);
+        int lef=firstIndex(arr,n,x);
+        int right=LastIndex(arr,n,x);
+        if((lef|right)==-1)
+            System.out.println(0);
+        else System.out.println(right-lef+1);
     }
 }
