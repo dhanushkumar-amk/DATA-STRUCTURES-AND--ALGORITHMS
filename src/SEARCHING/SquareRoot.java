@@ -2,11 +2,10 @@ package SEARCHING;
 public class SquareRoot {
     static int SquareRoot(int x) {
         int l=0;
-        int r=x;
-        int range=x/2;
+        int r=x/2;
         while (l<=r)
         {
-            int mid=range/2;
+            int mid=(l+r)/2;
             if(mid*mid==x)
              return mid;
          else if(mid*mid>x)
