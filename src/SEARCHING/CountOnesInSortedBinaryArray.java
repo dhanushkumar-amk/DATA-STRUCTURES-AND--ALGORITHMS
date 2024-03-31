@@ -22,8 +22,7 @@ public class CountOnesInSortedBinaryArray {
         int x=1;
       int first=firstAndLastIndexUsingBinarySearch(arr,n,x);
       int last=firstAndLastIndexUsingBinarySearch(arr,n,x+1)-1;
-        System.out.println(first);
-        System.out.println(last);
-        System.out.println(Math.abs(last)-Math.abs(first)+1);
+        int res =last-first+1;
+        System.out.println(Math.abs(res));
     }
 }
