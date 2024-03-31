@@ -45,7 +45,7 @@ public class CountOnesInSortedBinaryArray {
 
         System.out.println(first);
         System.out.println(last);
-        System.out.println(last-(first-1));
+//        System.out.println(last-(first-1));
 
     }
 }
