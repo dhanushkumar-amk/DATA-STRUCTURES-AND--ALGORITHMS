@@ -33,6 +33,6 @@ public class SmallestMissingPositive {
         int[] arr = {2,3,1,-3,8,2};
         int n = arr.length;
         int res = missingNumber(arr, n);
-//        System.out.println(res);
+        System.out.println(res);
     }
 }
