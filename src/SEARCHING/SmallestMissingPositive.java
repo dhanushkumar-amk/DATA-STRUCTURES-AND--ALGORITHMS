@@ -6,7 +6,7 @@ public class SmallestMissingPositive {
         for (int i=0; i<n;i++) {
                 int ele=arr[i];
                 int pos=ele-1;
-            if (arr[i] >=1 && arr[i] <=n) {
+            if (ele>=1 && ele <=n) {
                 if (ele != pos) {
                     int x = arr[arr[i] - 1];
                     arr[arr[i] - 1] = arr[i];
