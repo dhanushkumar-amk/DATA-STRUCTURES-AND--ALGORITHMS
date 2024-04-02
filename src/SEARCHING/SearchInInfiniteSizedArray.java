@@ -1,21 +1,8 @@
 package SEARCHING;
 public class SearchInInfiniteSizedArray {
-    static int  InfiniteSearch(int [] arr,int n,int key) {
-        int l=0;
-        int r=1;
-        while(l<=r){
-            int mid=(r+l)/2;
-
-            if(arr[mid]>key)
-             return    binarySearch(arr,n,l,mid,key);
-            else {
-                l=r+1;
-                if(r*r>n)
-                    r=Math.min(r*r,n-1);
-            }
-        }
-        return -1;
-    }
+//    static int  InfiniteSearch(int [] arr,int n,int key) {
+//
+//    }
     static int binarySearch(int [] arr,int n,int l,int r,int key) {
         while(l<=r)
         {
@@ -30,7 +17,9 @@ public class SearchInInfiniteSizedArray {
     }
     public static void main(String[] args) {
         int arr[]  ={ 1,10,12,14,15,40,90,100,120,500};
-      int res=  InfiniteSearch(arr,arr.length,120);
+//      int res=  InfiniteSearch(arr,arr.length,120);
+        int res=binarySearch(arr,arr.length,0,arr.length-1,120);
         System.out.println(res);
+
     }
 }
