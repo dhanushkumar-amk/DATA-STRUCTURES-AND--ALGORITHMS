@@ -10,6 +10,8 @@ public class SmallestMissingPositive {
             if(arr[i]<0 || arr[i]>n)
                 arr[i]=1;
         }
+        for (int x:arr)
+            System.out.println(x);
         if(miss==0)
             return 1;
         return -1;
