@@ -21,7 +21,7 @@ public class SmallestMissingPositive {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,3,1,-3,8,2};
+        int[] arr = {1,2,3};
         int n = arr.length;
         int res = missingNumber(arr, n);
         System.out.println(res);
