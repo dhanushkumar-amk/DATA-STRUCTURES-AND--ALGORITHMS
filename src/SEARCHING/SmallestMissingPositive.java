@@ -11,6 +11,7 @@ public class SmallestMissingPositive {
             }
         }
         for (int x:arr) System.out.print(x+" ");
+        return -1;
     }
 
     public static void main(String[] args) {
