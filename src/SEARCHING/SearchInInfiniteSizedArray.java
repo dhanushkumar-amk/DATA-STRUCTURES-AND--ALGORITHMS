@@ -24,7 +24,7 @@ public class SearchInInfiniteSizedArray {
     }
     public static void main(String[] args) {
         int arr[]  ={ 1,10,12,14,15,40,90,100,120,500};
-      int res=  InfiniteSearch(arr,arr.length,120);
+      int res=  InfiniteSearch(arr,arr.length,500);
         System.out.println(res);
     }
 }
