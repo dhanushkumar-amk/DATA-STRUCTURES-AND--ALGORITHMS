@@ -12,17 +12,9 @@ public class SmallestMissingPositive {
         }
         if(miss==0)
             return 1;
-
-        for (int i=0; i<n; i++)
-        {
-
-        }
         for (int i=0; i<n; i++)
         {
             arr[arr[i]-1]=arr[i];
-        }
-        for (int i=0; i<n; i++)
-        {
             if(arr[i]!=i+1)
                 return i+1;
         }
