@@ -4,10 +4,11 @@ public class SmallestMissingPositive {
         int n=size;
 
         for (int i=0; i<n;i++) {
-            if (arr[i] >=1 && arr[i] <=n) {
+
                 int ele=arr[i];
                 int pos=ele-1;
-                if(ele!=pos) {
+            if (arr[i] >=1 && arr[i] <=n) {
+                if (ele != pos) {
                     int x = arr[arr[i] - 1];
                     arr[arr[i] - 1] = arr[i];
                     arr[i] = x;
