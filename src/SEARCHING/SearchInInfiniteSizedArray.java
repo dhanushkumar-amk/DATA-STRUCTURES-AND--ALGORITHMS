@@ -10,7 +10,8 @@ public class SearchInInfiniteSizedArray {
              return    binarySearch(arr,n,l,mid,key);
             else {
                 l=r+1;
-                r=(r*2)%n;
+                if(r*r>n)
+                    r=Math.min(r*r,n);
             }
         }
         return -1;
