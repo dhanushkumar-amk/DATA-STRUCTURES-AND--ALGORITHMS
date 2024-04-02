@@ -32,11 +32,11 @@ public class SearchInInfiniteSizedArray {
         int maxSize = 1000000; // Adjust the size of the array as needed
         int[] arr = new int[maxSize];
         for (int i = 0; i < maxSize; i++) {
-            arr[i] = rand.nextInt(10000000); // Generate random numbers up to 10 million
+            arr[i] = rand.nextInt(Integer.MAX_VALUE); // Generate random numbers up to 10 million
         }
         Arrays.sort(arr); // Sorting the array for binary search to work correctly
-        int key = rand.nextInt(10000000); // Generate a random key to search for
-        int res = InfiniteSearch(arr, 1000000);
+        int key = rand.nextInt((int) Math.random()); // Generate a random key to search for
+        int res = InfiniteSearch(arr,key);
         System.out.println("Key: " + key + ", Found at index: " + res);
     }
 }
