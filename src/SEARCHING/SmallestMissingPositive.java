@@ -17,7 +17,7 @@ public class SmallestMissingPositive {
             if (arr[i]!=i+1)
                 return i+1;
         }
-        return -1;
+        return n+1;
     }
 
     public static void main(String[] args) {
