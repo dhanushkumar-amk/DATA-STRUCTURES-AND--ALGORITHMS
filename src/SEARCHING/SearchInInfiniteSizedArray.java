@@ -36,7 +36,7 @@ public class SearchInInfiniteSizedArray {
         }
         Arrays.sort(arr); // Sorting the array for binary search to work correctly
         int key = rand.nextInt(10000000); // Generate a random key to search for
-        int res = InfiniteSearch(arr, 100);
+        int res = InfiniteSearch(arr, 1000000);
         System.out.println("Key: " + key + ", Found at index: " + res);
     }
 }
