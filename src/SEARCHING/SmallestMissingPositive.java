@@ -9,11 +9,10 @@ public class SmallestMissingPositive {
                 arr[arr[i]-1]=arr[i];
                 arr[i]=x;
             }
+            if(arr[i]!=i+1)
+                return i+1;
         }
-        for (int x:arr)
-            System.out.print(x+" ");
-        return 1;
-
+        return n+1;
     }
 
     public static void main(String[] args) {
