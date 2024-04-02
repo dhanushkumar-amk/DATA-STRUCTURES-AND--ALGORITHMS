@@ -11,7 +11,7 @@ public class SearchInInfiniteSizedArray {
             else {
                 l=r+1;
                 if(r*r>n)
-                    r=Math.min(r*r,n);
+                    r=Math.min(r*r,n-1);
             }
         }
         return -1;
