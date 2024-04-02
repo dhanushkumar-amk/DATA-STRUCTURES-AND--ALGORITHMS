@@ -3,7 +3,7 @@ public class SearchInInfiniteSizedArray {
     static int  InfiniteSearch(int [] arr,int n,int key) {
         int l=0;
         int r=1;
-        while(r>=l){
+        while(l<=r){
             int mid=(r+l)/2;
             if(arr[mid]>key)
                 binarySearch(arr,n,l,mid,key);
