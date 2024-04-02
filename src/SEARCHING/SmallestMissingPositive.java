@@ -7,7 +7,7 @@ public class SmallestMissingPositive {
         {
             if(arr[i]==1)
                 miss=1;
-            if(arr[i]<=0 || arr[i]>=n)
+            if(arr[i]<=0 || arr[i]>n)
                 arr[i]=1;
         }
         if(miss==0)
