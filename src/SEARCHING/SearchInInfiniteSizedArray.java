@@ -17,7 +17,7 @@ public class SearchInInfiniteSizedArray {
         while(l<=r)
         {
             int mid=(l+r)/2;
-            if(arr[mid]==)
+            if(arr)
         }
     }
     public static void main(String[] args) {
