@@ -8,7 +8,7 @@ public class SearchInInfiniteSizedArray {
             if(arr[start]<key && arr[end]>key)
               return   binarySearch(arr,n,start,end,key);
             start=end+1;
-            end=start*2; 
+            end=start*2;
         }
         return -1;
     }
@@ -26,7 +26,7 @@ public class SearchInInfiniteSizedArray {
     }
     public static void main(String[] args) {
         int arr[]  ={ 1,10,12,14,15,40,90,100,120,500};
-      int res=  InfiniteSearch(arr,arr.length,120);
+      int res=  InfiniteSearch(arr,arr.length,10);
         System.out.println(res);
     }
 }
