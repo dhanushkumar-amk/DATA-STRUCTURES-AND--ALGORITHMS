@@ -9,6 +9,7 @@ public class SmallestMissingPositive {
                     int x = arr[arr[i] - 1];
                     arr[arr[i] - 1] = arr[i];
                     arr[i] = x;
+                    i--;
                 }
             }
         }
