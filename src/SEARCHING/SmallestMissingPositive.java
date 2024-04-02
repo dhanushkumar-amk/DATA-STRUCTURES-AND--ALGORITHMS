@@ -8,7 +8,7 @@ public class SmallestMissingPositive {
                 break;
             }
         }
-        if(MissingNumber!=1)
+        if(MissingNumber==0)
             return 1;
         return -1;
     }
