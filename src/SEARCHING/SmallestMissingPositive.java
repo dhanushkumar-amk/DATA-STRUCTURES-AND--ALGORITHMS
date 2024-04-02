@@ -11,6 +11,14 @@ public class SmallestMissingPositive {
             }
         }
         for (int x:arr) System.out.print(x+" ");
+        System.out.println();
+        for (int i=0; i<n;i++)
+        {
+            if (arr[i]!=i+1) {
+                System.out.println(i + 1);
+                break;
+            }
+        }
         return -1;
     }
 
