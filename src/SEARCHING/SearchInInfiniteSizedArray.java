@@ -1,7 +1,12 @@
 package SEARCHING;
 public class SearchInInfiniteSizedArray {
     static int  InfiniteSearch(int [] arr,int n,int key) {
-        
+        int l=0;
+        int r=1;
+        while(r>=l){
+            int mid=(r+l)/2;
+            if(arr[mid])
+        }
     }
     static int binarySearch(int [] arr,int n) {
 
