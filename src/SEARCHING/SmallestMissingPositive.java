@@ -14,9 +14,7 @@ public class SmallestMissingPositive {
             return 1;
         for (int i=0; i<n; i++)
         {
-            arr[arr[i]-1]=arr[i];
-            if(arr[i]!=i+1)
-                return i+1;
+            arr[arr[i]-1]
         }
         return n+1;
 
