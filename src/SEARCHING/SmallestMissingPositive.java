@@ -30,7 +30,7 @@ public class SmallestMissingPositive {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,3,1,-3,8,2};
+        int[] arr = {0,-10,1,3,-20};
         int n = arr.length;
         int res = missingNumber(arr, n);
         System.out.println(res);
