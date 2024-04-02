@@ -7,8 +7,10 @@ public class SearchInInfiniteSizedArray {
         {
             int x=start;
             start=end+1;
-            int len =
+            int len = end -x;
+            end=(len*2)+end;
         }
+       return binarySearch(arr,n,start,end,key);
     }
     static int binarySearch(int [] arr,int n,int l,int r,int key) {
         while(l<=r)
