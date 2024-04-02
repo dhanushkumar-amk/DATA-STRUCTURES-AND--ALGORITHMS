@@ -35,8 +35,7 @@ public class SearchInInfiniteSizedArray {
             arr[i] = rand.nextInt(Integer.MAX_VALUE); // Generate random numbers up to 10 million
         }
         Arrays.sort(arr); // Sorting the array for binary search to work correctly
-        int key = rand.nextInt((int) Math.abs(Math.random()));// Generate a random key to search for
-        System.out.println(key);
+        int key = rand.nextInt();// Generate a random key to search for
         int res = InfiniteSearch(arr,key);
         System.out.println("Key: " + key + ", Found at index: " + res);
     }
