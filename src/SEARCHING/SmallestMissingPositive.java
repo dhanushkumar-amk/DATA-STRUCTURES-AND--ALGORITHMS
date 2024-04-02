@@ -1,22 +1,13 @@
 package SEARCHING;
 public class SmallestMissingPositive {
     static int missingNumber(int arr[], int size) {
-        int miss = 0;
         int n=size;
-        for (int i = 0; i < n; i++)
-        {
-            if(arr[i]==1)
-                miss=1;
-            if(arr[i]<=0 || arr[i]>n)
-                arr[i]=1;
+
+        for (int i=0; i<n; i++) {
+            if (arr[i] > 0 || arr[i] <=n) {
+                arr[arr[i]-1]=arr[]
+            }
         }
-        if(miss==0)
-            return 1;
-        for (int i=0; i<n; i++)
-        {
-           int x= arr[(arr[i]-1)];
-        }
-        return n+1;
 
     }
 
