@@ -5,13 +5,10 @@ public class SmallestMissingPositive {
 
         for (int i=0; i<n;) {
             if (arr[i] > 0 && arr[i] <=n) {
-                int x=arr[i];
-                arr[i]=arr[arr[i]-1];
-                arr[arr[i]-1]=x;
-                if(arr[i]==i+1)
-                    i++;
+                int x=arr[arr[i]-1];
+                arr[arr[i]-1]=arr[i];
+                arr[i]=x;
             }
-
         }
         for (int x:arr)
             System.out.print(x+" ");
