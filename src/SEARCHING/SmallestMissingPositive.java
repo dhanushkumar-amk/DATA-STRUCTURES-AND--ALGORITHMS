@@ -3,7 +3,7 @@ public class SmallestMissingPositive {
     static int missingNumber(int arr[], int size) {
         int n=size;
 
-        for (int i=0; i<n;) {
+        for (int i=0; i<n;i++) {
             if (arr[i] > 0 && arr[i] <=n) {
                 int x=arr[arr[i]-1];
                 arr[arr[i]-1]=arr[i];
