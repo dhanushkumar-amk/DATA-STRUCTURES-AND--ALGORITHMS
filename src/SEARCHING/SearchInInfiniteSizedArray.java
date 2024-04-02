@@ -5,8 +5,10 @@ public class SearchInInfiniteSizedArray {
         int end=1;
         while (key>arr[end])
         {
+            int x=start;
             start=end+1;
-            end=end*2;
+            int len = end -x;
+            end=(len*2)+end;
         }
        return binarySearch(arr,n,start,end,key);
     }
@@ -24,7 +26,7 @@ public class SearchInInfiniteSizedArray {
     }
     public static void main(String[] args) {
         int arr[]  ={ 1,10,12,14,15,40,90,100,120,500};
-      int res=  InfiniteSearch(arr,arr.length,500);
+      int res=  InfiniteSearch(arr,arr.length,10);
         System.out.println(res);
     }
 }
