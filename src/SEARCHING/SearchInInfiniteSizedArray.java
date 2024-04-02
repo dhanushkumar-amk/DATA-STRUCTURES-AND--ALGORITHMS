@@ -5,11 +5,11 @@ public class SearchInInfiniteSizedArray {
         int r=1;
         while(r>=l){
             int mid=(r+l)/2;
-            if(mid>key)
+            if(arr[mid]>key)
                 binarySearch(arr,n,l,mid,key);
             else if(arr[mid]<key)
                 r=r*2;
-            else l=mid-1;
+            else l=r-1;
         }
         return -1;
     }
@@ -17,8 +17,13 @@ public class SearchInInfiniteSizedArray {
         while(l<=r)
         {
             int mid=(l+r)/2;
-            if(arr)
+            if(arr[mid]==key)
+                return mid;
+            else if(arr[mid]>key)
+                r=mid-1;
+            else l=mid+1;
         }
+        return -1;
     }
     public static void main(String[] args) {
         int arr[]  ={ 1,10,12,14,15,40,90,100,120,500};
