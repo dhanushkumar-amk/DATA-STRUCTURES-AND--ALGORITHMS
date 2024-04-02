@@ -9,7 +9,7 @@ public class SearchInInfiniteSizedArray {
               return   binarySearch(arr,n,start,end,key);
             start=end+1;
             int endPoint=end-start+1;
-            end=endPoint*2+endPoint;
+            end=endPoint*2+end;
         }
         return -1;
     }
