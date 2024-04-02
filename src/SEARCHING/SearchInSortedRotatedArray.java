@@ -1,2 +1,6 @@
-package SEARCHING;public class SearchInSortedRotatedArray {
+package SEARCHING;
+public class SearchInSortedRotatedArray {
+    public static void main(String[] args) {
+        
+    }
 }
