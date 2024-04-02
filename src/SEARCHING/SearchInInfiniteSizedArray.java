@@ -8,7 +8,7 @@ public class SearchInInfiniteSizedArray {
             if(arr[start]<key && arr[end]>key)
               return   binarySearch(arr,n,start,end,key);
             start=end+1;
-            int endPoint=end-start;
+            int endPoint=end-start+1;
             end=endPoint*2+endPoint;
         }
         return -1;
