@@ -7,7 +7,10 @@ public class SearchInInfiniteSizedArray {
             int mid=(r+l)/2;
             if(arr[mid]>key)
                 binarySearch(arr,n,l,mid,key);
-            else if(arr[mid])
+            else {
+                l=r;
+                r*=2;
+            }
         }
         return -1;
     }
