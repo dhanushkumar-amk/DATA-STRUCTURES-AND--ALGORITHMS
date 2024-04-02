@@ -6,7 +6,8 @@ public class SearchInInfiniteSizedArray {
         while(l<=r){
             int mid=(r+l)/2;
             if(arr[mid]>key)
-                binarySearch(arr,n,l,mid,key);
+//                binarySearch(arr,n,l,mid,key);
+                System.out.println("yes");
             else {
                 l=r+1;
                 r*=2;
