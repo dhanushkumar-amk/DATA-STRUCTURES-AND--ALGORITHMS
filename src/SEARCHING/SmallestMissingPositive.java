@@ -8,8 +8,9 @@ public class SmallestMissingPositive {
                 break;
             }
         }
-        if(MissingNumber==1)
-
+        if(MissingNumber!=1)
+            return 1;
+        return -1;
     }
 
     public static void main(String[] args) {
