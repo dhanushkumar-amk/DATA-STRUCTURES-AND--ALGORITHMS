@@ -5,6 +5,8 @@ public class SearchInInfiniteSizedArray {
         int r=1;
         while(l<=r){
             int mid=(r+l)/2;
+            if(r>n-1)
+                return -1;
             if(arr[mid]>key)
              return    binarySearch(arr,n,l,mid,key);
             else {
@@ -15,8 +17,6 @@ public class SearchInInfiniteSizedArray {
         return -1;
     }
     static int binarySearch(int [] arr,int n,int l,int r,int key) {
-        if(r>n)
-            return -1;
         while(l<=r)
         {
             int mid=(l+r)/2;
