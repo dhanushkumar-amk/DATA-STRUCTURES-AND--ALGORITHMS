@@ -29,7 +29,7 @@ public class SearchInInfiniteSizedArray {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int maxSize = 1000000; // Adjust the size of the array as needed
+        int maxSize = 1000000;
         int[] arr = new int[maxSize];
         for (int i = 0; i < maxSize; i++) {
             arr[i] = rand.nextInt(Integer.MAX_VALUE); // Generate random numbers up to 10 million
