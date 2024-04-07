@@ -20,7 +20,7 @@ public class MinimumNumberInSortedRotatedArray {
                 ans=Math.min(ans,arr[mid]);
             }
         }
-        return -1;
+        return ans;
 
     }
     public static void main(String[] args) {
