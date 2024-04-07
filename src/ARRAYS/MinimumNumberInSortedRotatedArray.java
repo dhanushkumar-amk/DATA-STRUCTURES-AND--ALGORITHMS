@@ -2,7 +2,7 @@ package ARRAYS;
 
 public class MinimumNumberInSortedRotatedArray {
     static int binarySearch() {
-        int [] arr ={7,8,1,2,3,4,5,6};
+        int [] arr ={4,5,1,2,3};
         int l=0;
         int r= arr.length-1;
         int ans=Integer.MAX_VALUE;
