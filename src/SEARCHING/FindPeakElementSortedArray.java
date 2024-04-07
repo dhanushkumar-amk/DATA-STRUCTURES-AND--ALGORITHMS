@@ -8,10 +8,7 @@ public class FindPeakElementSortedArray{
         int n= arr.length;
         while(l<=r){
             int mid=(l+r)/2;
-
-            if(mid>0 && mid<n) {
-               
-            }
+            if(mid==0 || arr[mid-1]<=arr[mid] && arr[mid+1]<=arr[mid])
         }
         return ans;
     }
