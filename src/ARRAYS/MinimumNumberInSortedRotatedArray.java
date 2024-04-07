@@ -12,12 +12,11 @@ public class MinimumNumberInSortedRotatedArray {
                 return mid;
             else if(arr[l]<=arr[mid] )
             {
-                ans=Math.min(ans,arr[mid]);
                 l=mid+1;
             }
             else {
                 r = mid - 1;
-                ans=Math.min(ans,arr[mid]);
+                
             }
         }
         return ans;
