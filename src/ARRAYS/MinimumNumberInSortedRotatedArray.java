@@ -10,11 +10,11 @@ public class MinimumNumberInSortedRotatedArray {
             int mid=(l+r)/2;
             if(arr[l]<=arr[r])
                 return mid;
-            else if(arr[l]<arr[mid] )
+            else if(arr[l]<=arr[mid] )
             {
                 l=mid+1;
             }
-            else if (arr[mid] > arr[r]){
+            else if (arr[mid] >= arr[r]){
                 r = mid - 1;
             }
             else
