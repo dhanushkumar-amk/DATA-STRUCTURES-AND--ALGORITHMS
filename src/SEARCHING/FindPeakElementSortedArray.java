@@ -12,7 +12,7 @@ public class FindPeakElementSortedArray{
               return   ans=arr[mid]>arr[mid+1]?0:ans;
             if(mid==n-1)
               return   ans=arr[mid]>arr[mid-1]?n-1:ans;
-            if(arr[mid]>=arr[mid-1] && arr[mid]>=arr[mid+1])
+            if(arr[mid-1]<=arr[mid] && arr[mid+1]<=arr[mid])
                 return ans=mid;
             if(arr[mid]<arr[mid-1]) {
                 r = mid - 1;
