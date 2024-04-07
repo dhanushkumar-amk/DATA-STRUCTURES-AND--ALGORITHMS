@@ -14,11 +14,11 @@ public class FindPeakElementSortedArray{
               return   ans=arr[mid]>arr[mid-1]?n-1:ans;
             if(arr[mid-1]<=arr[mid] && arr[mid+1]<=arr[mid])
                 return ans=mid;
-            if(arr[mid]<arr[mid-1]) {
+            if(arr[mid-1]>arr[mid]) {
                 r = mid - 1;
                 ans=Math.max(ans,mid);
             }
-            else if(arr[mid]<arr[mid+1]) {
+            else if(arr[mid+1]>arr[mid]) {
                 l = mid + 1;
                 ans=Math.max(ans,mid);
             }
