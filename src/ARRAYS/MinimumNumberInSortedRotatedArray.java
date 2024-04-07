@@ -8,9 +8,8 @@ public class MinimumNumberInSortedRotatedArray {
         int ans=Integer.MAX_VALUE;
         while(l<=r) {
             int mid=(l+r)/2;
-            if(arr[l]<=arr[r])
-                return arr[0];
-            else if(arr[l]<=arr[mid] )
+
+            if(arr[l]<=arr[mid] )
             {
                 l=mid+1;
                 ans=Math.min(ans,arr[mid]);
