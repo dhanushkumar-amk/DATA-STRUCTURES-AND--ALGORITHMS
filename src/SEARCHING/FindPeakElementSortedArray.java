@@ -26,7 +26,7 @@ public class FindPeakElementSortedArray{
         return ans;
     }
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5,7,8,11,2,10};
+        int [] arr = {1, 2, 3};
       int res=  peak(arr);
         System.out.println(res);
     }
