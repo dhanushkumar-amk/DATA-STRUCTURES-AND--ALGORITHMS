@@ -19,8 +19,7 @@ public class MinimumNumberInSortedRotatedArray {
                 r = mid - 1;
                 ans=Math.min(ans,arr[mid]);
             }
-            else
-                return ans;
+
         }
         return -1;
     }
