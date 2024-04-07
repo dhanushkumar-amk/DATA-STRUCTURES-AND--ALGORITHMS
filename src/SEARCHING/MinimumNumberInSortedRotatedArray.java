@@ -1,4 +1,4 @@
-package ARRAYS;
+package SEARCHING;
 
 public class MinimumNumberInSortedRotatedArray {
     static int binarySearch() {
