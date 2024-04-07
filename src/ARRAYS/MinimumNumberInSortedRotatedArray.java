@@ -17,6 +17,8 @@ public class MinimumNumberInSortedRotatedArray {
             else if (arr[mid] >= arr[r]){
                 r = mid - 1;
             }
+            else
+                return mid;
         }
         return ans;
 
