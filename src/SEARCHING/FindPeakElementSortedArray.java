@@ -12,15 +12,17 @@ public class FindPeakElementSortedArray{
               return   ans=arr[mid]>arr[mid+1]?0:ans;
             if(mid==n-1)
               return   ans=arr[mid]>arr[mid-1]?n-1:ans;
-            if(arr[mid-1]<=arr[mid] && arr[mid+1]<=arr[mid])
-                return ans=mid;
-            if(arr[mid-1]>arr[mid]) {
-                r = mid - 1;
-                ans=Math.max(ans,mid);
-            }
-            else  {
-                l = mid + 1;
-                ans=Math.max(ans,mid);
+            if(mid>0 && mid<n) {
+                if (arr[mid - 1] <= arr[mid] && arr[mid + 1] <= arr[mid])
+                    return ans = mid;
+
+                if (arr[mid - 1] > arr[mid]) {
+                    r = mid - 1;
+                    ans = Math.max(ans, mid);
+                } else {
+                    l = mid + 1;
+                    ans = Math.max(ans, mid);
+                }
             }
         }
         return ans;
