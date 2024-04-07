@@ -15,7 +15,7 @@ public class MinimumNumberInSortedRotatedArray {
                 l=mid+1;
                 ans=Math.min(ans,arr[mid]);
             }
-            else if (arr[mid] >= arr[r]){
+            else if (arr[mid] <= arr[r]){
                 r = mid - 1;
                 ans=Math.min(ans,arr[mid]);
             }
