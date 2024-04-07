@@ -5,12 +5,12 @@ public class FindPeakElementSortedArray{
         int l=0;
         int r=arr.length-1;
         int ans=Integer.MIN_VALUE;
-        int n= arr.length;;
+        int n= arr.length;
         while(l<=r){
             int mid=(l+r)/2;
-            if(arr[mid]==0)
+            if(mid==0)
               return   ans=arr[mid]>arr[mid+1]?arr[0]:ans;
-            if(arr[mid]==n-1)
+            if(mid==n-1)
               return   ans=arr[mid]>arr[mid-1]?arr[n-1]:ans;
             if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
                 return ans=arr[mid];
