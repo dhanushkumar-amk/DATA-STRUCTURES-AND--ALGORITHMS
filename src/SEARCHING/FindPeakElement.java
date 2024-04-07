@@ -11,7 +11,7 @@ public class FindPeakElement {
                 if (arr[i] > arr[i + 1])
                     p = arr[i];
             }
-            if (arr[i]>=arr[i-1] && arr[i] >=arr[i+1])
+            else if (arr[i]>=arr[i-1] && arr[i] >=arr[i+1])
                 p=arr[i];
         }
         return p;
