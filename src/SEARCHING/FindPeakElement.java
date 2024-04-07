@@ -1,2 +1,6 @@
-package SEARCHING;public class FindPeakElement {
+package SEARCHING;
+public class FindPeakElement {
+    public static void main(String[] args) {
+
+    }
 }
