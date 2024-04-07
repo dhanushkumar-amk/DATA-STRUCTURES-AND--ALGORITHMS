@@ -9,7 +9,7 @@ public class MinimumNumberInSortedRotatedArray {
         while(l<=r) {
             int mid=(l+r)/2;
             if(arr[l]<=arr[r])
-                return ans;
+                return arr[0];
             else if(arr[l]<=arr[mid] )
             {
                 l=mid+1;
