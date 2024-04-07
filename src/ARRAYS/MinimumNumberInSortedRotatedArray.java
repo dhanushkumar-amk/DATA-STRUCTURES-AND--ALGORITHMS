@@ -9,7 +9,7 @@ public class MinimumNumberInSortedRotatedArray {
         while(l<=r) {
             int mid=(l+r)/2;
             if(arr[l]<=arr[r])
-                return l;
+                return arr[l];
             else if(arr[l]<=arr[mid] )
             {
                 l=mid+1;
@@ -20,7 +20,7 @@ public class MinimumNumberInSortedRotatedArray {
                 ans=Math.min(ans,arr[mid]);
             }
             else
-                return mid;
+                return ans;
         }
         return -1;
     }
