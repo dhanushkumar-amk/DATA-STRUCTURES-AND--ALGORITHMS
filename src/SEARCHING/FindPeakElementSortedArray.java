@@ -10,7 +10,7 @@ public class FindPeakElementSortedArray{
             int mid=(l+r)/2;
 
             if(mid>0 && mid<n) {
-                if (arr[mid - 1] <= arr[mid] && arr[mid + 1] <= arr[mid])
+                if (arr[mid - 1] > arr[mid] && arr[mid + 1] > arr[mid])
                     return  mid;
 
                 if (arr[mid - 1] > arr[mid]) {
