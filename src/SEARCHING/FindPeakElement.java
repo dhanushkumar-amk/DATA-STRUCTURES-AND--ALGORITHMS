@@ -5,8 +5,12 @@ public class FindPeakElement {
         if (n<=2)
             return arr[0];
         int p=-1;
-        for (int i=1; i<n; i++)
+        for (int i=0; i<n; i++)
         {
+            if(i==0) {
+                if (arr[i] > arr[i + 1])
+                    p = arr[i];
+            }
             if (arr[i]>=arr[i-1] && arr[i] >=arr[i+1])
                 p=arr[i];
         }
