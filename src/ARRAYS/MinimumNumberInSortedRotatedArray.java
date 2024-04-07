@@ -21,7 +21,7 @@ public class MinimumNumberInSortedRotatedArray {
             }
 
         }
-        return -1;
+        return ans;
     }
     public static void main(String[] args) {
         System.out.println(binarySearch());
