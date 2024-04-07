@@ -17,7 +17,7 @@ public class FindPeakElementSortedArray{
                 if(arr[mid]>arr[mid-1])
                     return arr[mid];
             }
-            if (arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
+            if (mid>0&& mid< arr.length-1 && arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
                 ans=Math.max(ans,arr[mid]);
             if(arr[mid]>arr[mid-1]) {
                 r = mid - 1;
