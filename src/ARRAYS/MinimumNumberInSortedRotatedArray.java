@@ -14,11 +14,16 @@ public class MinimumNumberInSortedRotatedArray {
            int mid=(l+r)/2;
            if(l<=r)
                System.out.println(mid);
-           else if(arr[l]<arr[mid] )
+           else if(arr[l]<=arr[mid] )
            {
                ans=Math.min(ans,arr[mid]);
-               
+               l=mid+1;
+           }
+           else {
+               r = mid - 1;
+               ans=Math.min(ans,arr[mid]);
            }
        }
+       
     }
 }
