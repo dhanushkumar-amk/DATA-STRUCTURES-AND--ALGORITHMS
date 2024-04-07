@@ -10,8 +10,11 @@ public class FindPeakElementSortedArray{
             int mid=(l+r)/2;
             if((mid==0 || arr[mid-1]<=arr[mid]) && (arr[mid+1]<=arr[mid])|| mid==n-1)
                 return mid;
+            else if(arr[mid-1]>arr[mid])
+                r=mid-1;
+            else l=mid+1;
         }
-        return ans;
+        return -1;
     }
     public static void main(String[] args) {
         int [] arr = {1,2,3};
