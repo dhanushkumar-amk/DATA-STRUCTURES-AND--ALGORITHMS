@@ -21,7 +21,7 @@ public class FindIndexesOfsubArrayWithSum {
             if(arr[right]+sum<s) {
                 sum += arr[right];
                 right++;
-                continue;
+                
             }
             else {
                 sum-=arr[left];
