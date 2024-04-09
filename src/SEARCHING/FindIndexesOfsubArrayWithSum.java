@@ -31,7 +31,6 @@ public class FindIndexesOfsubArrayWithSum {
     }
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6,7,8,9,10};
-       ArrayList<Integer> arrayList = new ArrayList<>();
-        System.out.println(arrayList);
+        System.out.println(subarraySum(arr, arr.length, 12));
     }
 }
