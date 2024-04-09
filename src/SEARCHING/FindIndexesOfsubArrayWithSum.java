@@ -8,23 +8,19 @@ public class FindIndexesOfsubArrayWithSum {
         // Your code here\
         ArrayList<Integer> arrl = new ArrayList<Integer>();
         int sum=0;
-        int j=0;
-        sum=arr[j];
-        int i=1;
-        while(i<n)
+        int left=0;
+        int right=0;
+        while(right<n)
         {
-            if(sum==s){
-                arrl.add(i);
-                arrl.add(j);
-                return arrl;
-            }
-            if(arr[i]+arr[j]<=s){
-                sum+=arr[i];
-                i++;
+            if(arr[right]+sum<s) {
+                sum += arr[right];
+                right++;
+                continue;
             }
             else {
-                sum-=arr[j];
-                j++;
+                sum-=arr[left];
+                sum+=arr[right];
+                left++;
             }
         }
         return arrl;
