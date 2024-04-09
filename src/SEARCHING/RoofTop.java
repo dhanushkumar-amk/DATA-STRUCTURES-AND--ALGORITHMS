@@ -8,7 +8,7 @@ public class RoofTop {
         {
             if(arr[i+1]>arr[i])
                 c++;
-          if(c>res) {
+          if(c>res && arr[i+1]<arr[i]) {
               res = Math.max(c, res);
               c=0;
           }
