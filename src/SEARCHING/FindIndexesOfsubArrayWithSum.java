@@ -12,15 +12,15 @@ public class FindIndexesOfsubArrayWithSum {
         int right=0;
         while(right<n)
         {
-
-            if(arr[right]+sum<s) {
-                sum += arr[right];
-                right++;
-            }else  if(arr[right]+sum ==s)
+            if(arr[right]+sum ==s)
             {
                 arrl.add(left+1);
                 arrl.add(right+1);
                 return arrl;
+            }
+            if(arr[right]+sum<s) {
+                sum += arr[right];
+                right++;
             }
             else {
                 sum-=arr[left];
