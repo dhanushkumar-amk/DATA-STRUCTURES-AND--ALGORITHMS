@@ -35,6 +35,6 @@ public class FindIndexesOfsubArrayWithSum {
     }
     public static void main(String[] args) {
         int [] arr = {1,2,3,4};
-        System.out.println(subarraySum(arr, arr.length, 0));
+        System.out.println(subarraySum(arr, arr.length, 3));
     }
 }
