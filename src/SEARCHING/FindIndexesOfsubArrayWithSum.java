@@ -16,7 +16,7 @@ public class FindIndexesOfsubArrayWithSum {
             if(arr[right]+sum<s) {
                 sum += arr[right];
                 right++;
-            }else  if(sum==s)
+            }else  if(arr[right]+sum ==s)
             {
                 arrl.add(left+1);
                 arrl.add(right+1);
