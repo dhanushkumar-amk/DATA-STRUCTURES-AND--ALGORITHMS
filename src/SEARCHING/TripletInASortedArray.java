@@ -6,7 +6,7 @@ public class TripletInASortedArray {
         int left=0;
         int center=1;
         int right=n-1;
-        int sum=6;
+        int sum=12;
         while(left<right){
             while(center<right){
                 if (arr[left]+arr[center]+arr[right]==sum)
