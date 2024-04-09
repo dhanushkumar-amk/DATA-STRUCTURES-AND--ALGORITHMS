@@ -10,6 +10,7 @@ public class RoofTop {
                 c++;
           if(arr[i]>arr[i+1]) {
               res = Math.max(c, res);
+              c=0;
           }
         }
         System.out.println(res);
