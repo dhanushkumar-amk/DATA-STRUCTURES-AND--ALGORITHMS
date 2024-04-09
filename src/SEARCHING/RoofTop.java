@@ -8,12 +8,12 @@ public class RoofTop {
         {
             if(arr[i]<arr[i+1]) {
                 c++;
-                if(arr[i]>arr[i+1]) {
-                    res = Math.max(c, res);
-                    c=0;
-                }
+               res= Math.max(c,res);
             }
-
+          if(arr[i]>arr[i+1]) {
+              res = Math.max(c, res);
+              c=0;
+          }
         }
         System.out.println(res);
     }
