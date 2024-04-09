@@ -9,7 +9,10 @@ public class FindIndexesOfsubArrayWithSum {
         int sum=0;
         int left=0;
         int right =0;
-
+        if (s==0) {
+            indexes.add(-1);
+            return indexes;
+        }
         while (right < n) {
             sum += arr[right];
 
@@ -26,7 +29,7 @@ public class FindIndexesOfsubArrayWithSum {
 
             right++;
         }
-     
+
         indexes.add(-1);
         return indexes;
     }
