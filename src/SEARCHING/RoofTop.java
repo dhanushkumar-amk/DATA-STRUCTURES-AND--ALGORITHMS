@@ -5,11 +5,11 @@ public class RoofTop {
         int c=0;
         int res=0;
         for (int i=0;i< arr.length-1; i++)
-        {res=Math.max(c,res);
+        {
           if(arr[i]<arr[i+1])
               c++;
           else c--;
-
+            res=Math.max(c,res);
         }
         System.out.println(res);
     }
