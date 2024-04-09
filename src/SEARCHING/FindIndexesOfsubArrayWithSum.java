@@ -19,7 +19,6 @@ public class FindIndexesOfsubArrayWithSum {
             }
             else {
                 sum-=arr[left];
-                
                 left++;
             }
         }
