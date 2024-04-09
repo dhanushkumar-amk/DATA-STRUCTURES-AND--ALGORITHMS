@@ -11,7 +11,7 @@ public class TripletInASortedArray {
             while(center<right){
                 if (arr[left]+arr[center]+arr[right]==sum)
                 {
-                    System.out.println(left+" "+center+" "+right);
+                    System.out.println(left+1+" "+center+1+" "+right+1);
                     break;
                 }
                 center++;
