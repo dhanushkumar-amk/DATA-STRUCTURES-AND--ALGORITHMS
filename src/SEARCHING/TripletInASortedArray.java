@@ -21,6 +21,7 @@ public class TripletInASortedArray {
                 left+=1;
                 center=left+1;
             }
+            left++;
         }
     }
 }
