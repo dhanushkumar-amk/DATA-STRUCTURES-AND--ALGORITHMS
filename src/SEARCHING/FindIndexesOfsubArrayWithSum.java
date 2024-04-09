@@ -10,25 +10,23 @@ public class FindIndexesOfsubArrayWithSum {
         int left=0;
         int right =0;
 
-        while(right<n)
-        {
+        while (right < n) {
+            sum += arr[right];
 
-            if(arr[right]+sum<s)
-            {
-                sum+=arr[right];
-                right++;
-            }else  if(arr[right]+sum==s)
-            {
-                indexes.add(left+1);
-                indexes.add(right+1);
-                return indexes;
-            }
-            else {
-                sum-=arr[left];
+            while (sum > s) {
+                sum -= arr[left];
                 left++;
             }
+
+            if (sum == s) {
+                indexes.add(left + 1); // Adjust for 1-based indexing
+                indexes.add(right + 1); // Adjust for 1-based indexing
+                return indexes;
+            }
+
+            right++;
         }
-        indexes.add(-1);
+     
         indexes.add(-1);
         return indexes;
     }
