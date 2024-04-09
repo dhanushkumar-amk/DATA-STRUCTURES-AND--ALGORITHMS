@@ -27,6 +27,7 @@ public class FindIndexesOfsubArrayWithSum {
                 left++;
             }
         }
+        arrl.add(-1);
         return arrl;
     }
     public static void main(String[] args) {
