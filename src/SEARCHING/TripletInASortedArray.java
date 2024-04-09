@@ -1,15 +1,20 @@
 package SEARCHING;
 public class TripletInASortedArray {
     public static void main(String[] args) {
-        int [] arr = {2,3,4,8,9,20,40};
+        int [] arr = {1,3,4,6,9,12};
         int n= arr.length;
         int left=0;
         int center=1;
         int right=n-1;
-        int sum=32;
+        int sum=25;
         while(left<center){
             while(center<right){
                 if (arr[left]+arr[center]+arr[right]==sum)
+                {
+                    System.out.println(left+" "+center+" "+right);
+                    break;
+                }
+                center++;
             }
             if(center==right)
             {
