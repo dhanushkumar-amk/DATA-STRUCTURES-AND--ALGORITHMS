@@ -7,7 +7,7 @@ public class TripletInASortedArray {
         int center=1;
         int right=n-1;
         int sum=25;
-        while(left<center){
+        while(left<right){
             while(center<right){
                 if (arr[left]+arr[center]+arr[right]==sum)
                 {
