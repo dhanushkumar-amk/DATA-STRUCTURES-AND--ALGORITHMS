@@ -6,10 +6,9 @@ public class RoofTop {
         int res=0;
         for (int i=0;i< arr.length-1; i++)
         {
-          if(arr[i]<arr[i+1])
+          if(arr[i+1]-arr[i]>0)
               c++;
-          else c--;
-            res=Math.max(c,res);
+          else res=Math.max(res,c);
         }
         System.out.println(res);
     }
