@@ -8,7 +8,6 @@ public class Recursion1ToNAndNto1 {
         Recursion(n - 1);
         System.out.print(n + " ");
     }
-
     public static void main(String[] args) {
         Recursion(3);
     }
