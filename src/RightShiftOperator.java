@@ -3,6 +3,5 @@ public class RightShiftOperator {
         int x =100;//
         int y =2;  //
         System.out.println(x>>y);
-
     }
 }
