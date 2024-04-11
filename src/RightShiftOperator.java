@@ -1,6 +1,6 @@
 public class RightShiftOperator {
     public static void main(String[] args) {
-                           int x=5;//1000100000000000000000000000000
+                           int x=5;//
         System.out.println(x >> 2);//
     }
 }
