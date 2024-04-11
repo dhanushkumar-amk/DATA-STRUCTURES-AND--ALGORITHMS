@@ -18,5 +18,6 @@ public class BitWiseOperator {
   0 's are converted to 1's
   1's are converted to 0's
          */
+        System.out.println(5&1);
     }
 }
