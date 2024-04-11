@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class RightShiftOperator {
+public class RightShiftOperator {
+    public static void main(String[] args) {
+        
+    }
 }
