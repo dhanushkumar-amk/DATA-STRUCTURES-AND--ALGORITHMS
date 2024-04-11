@@ -14,6 +14,6 @@ public class RoofTop {
           res=Math.max(res,c);
         }
         System.out.println(res);
-        System.out.println(3<<31);
+        System.out.println(3<<32);
     }
 }
