@@ -20,6 +20,8 @@ public class MedianOfTwoSortedArrays {
             }
         }
         int n=arr3.length;
+        for (int x:arr3)
+            System.out.print(x+" ");
         if ((n&1)==1)
             return arr3[((n-1)/2)];
         return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
