@@ -38,7 +38,8 @@ public class MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         int [] arr1 ={1,2};
         int [] arr2 ={3,4};
-      int res =MedianOfTwoSorted(arr1, arr2);
+      do res =MedianOfTwoSorted(arr1, arr2);
+      }
         System.out.println(res);
     }
 }
