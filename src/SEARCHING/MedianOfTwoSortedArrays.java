@@ -38,7 +38,7 @@ public class MedianOfTwoSortedArrays {
 //            j++;
 //        }
 //        int n=arr3.length;
-
+        return -1;
     }
     public static void main(String[] args) {
         int [] arr1 ={1,2};
