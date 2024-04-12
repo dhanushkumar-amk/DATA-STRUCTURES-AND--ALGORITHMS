@@ -20,15 +20,19 @@ public class MedianOfTwoSortedArrays {
                 j++;
             }
         }
-
-        int n=arr3.length;
-        if(ind==n/2)
+        while(i<arr1.length)
         {
-            if ((n&1)==1)
-                return arr3[((n-1)/2)];
-            return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
+            arr3[ind]=arr1[i];
+            ind++;
+            i++;
         }
-        return -1;
+        while(j<arr2.length) {
+            arr3[ind]=arr2[j];
+            ind++;
+            j++;
+        }
+        int n=arr3.length;
+
     }
     public static void main(String[] args) {
         int [] arr1 ={1,2};
