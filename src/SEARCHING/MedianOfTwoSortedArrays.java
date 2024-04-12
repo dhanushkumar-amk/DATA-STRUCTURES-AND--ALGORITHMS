@@ -36,7 +36,7 @@ public class MedianOfTwoSortedArrays {
             ind++;
             j++;
         }
-
+        int n=arr3.length;
         if ((n&1)==1)
             return arr3[((n-1)/2)];
         return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
