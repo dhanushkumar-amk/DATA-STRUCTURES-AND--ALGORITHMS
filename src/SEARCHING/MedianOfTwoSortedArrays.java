@@ -33,7 +33,7 @@ public class MedianOfTwoSortedArrays {
         int n=arr3.length;
         if ((n&1)==1)
             return arr3[((n-1)/2)];
-        return arr3[((n-1)/2)]+arr3[((n-1)/2)+1];
+        return ( arr3[(n-1)/2]+arr3[((n)/2)])/2;
     }
     public static void main(String[] args) {
         int [] arr1 ={1,2};
