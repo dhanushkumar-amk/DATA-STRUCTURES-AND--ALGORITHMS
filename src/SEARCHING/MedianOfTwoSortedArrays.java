@@ -8,12 +8,7 @@ public class MedianOfTwoSortedArrays {
         int n=arr3.length;
         while(i<arr1.length && j<arr2.length)
         {
-            if(ind==n/2)
-            {
-                if ((n&1)==1)
-                    return arr3[((n-1)/2)];
-                return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
-            }
+
             if(arr1[i]<arr2[j])
             {
                 arr3[ind]=arr1[i];
@@ -24,6 +19,12 @@ public class MedianOfTwoSortedArrays {
                 arr3[ind]=arr2[j];
                 ind++;
                 j++;
+            }
+            if(ind==n/2)
+            {
+                if ((n&1)==1)
+                    return arr3[((n-1)/2)];
+                return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
             }
         }
 //        while(i<arr1.length)
