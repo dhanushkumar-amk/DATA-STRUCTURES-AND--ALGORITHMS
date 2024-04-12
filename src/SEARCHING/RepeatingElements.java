@@ -6,9 +6,7 @@ public class RepeatingElements {
         for (int x:arr)
             ans^=x;
         int ans2=ans;
-        for (int y:arr)
-            ans2^=y;
         System.out.println(ans);
-        System.out.println(ans2);
+
     }
 }
