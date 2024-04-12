@@ -3,7 +3,7 @@ public class TripletInASortedArray {
     public static void main(String[] args) {
         int [] arr = {1,3,4,6,9,12};
         int n= arr.length;
-        int sum=25;
+        int sum=29;
         for (int i=0; i<n-2; i++)
         {
             int j=i+1;
