@@ -45,6 +45,6 @@ public class MedianOfTwoSortedArrays {
         int [] arr1 ={1,2};
         int [] arr2 ={3,4};
       double res =MedianOfTwoSorted(arr1, arr2);
-        System.out.println(res);
+//        System.out.println(res);
     }
 }
