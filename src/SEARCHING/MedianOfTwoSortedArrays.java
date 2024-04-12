@@ -1,6 +1,6 @@
 package SEARCHING;
 public class MedianOfTwoSortedArrays {
-    static int  MedianOfTwoSorted(int [] arr1,int [] arr2) {
+    static double  MedianOfTwoSorted(int [] arr1,int [] arr2) {
         int i=0;
         int j=0;
         int ind=0;
@@ -33,7 +33,7 @@ public class MedianOfTwoSortedArrays {
         int n=arr3.length;
         if ((n&1)==1)
             return arr3[((n-1)/2)];
-        return ( arr3[(n-1)/2]+arr3[((n)/2)])/2;
+        return double( arr3[(n-1)/2]+arr3[((n)/2)])/2;
     }
     public static void main(String[] args) {
         int [] arr1 ={1,2};
