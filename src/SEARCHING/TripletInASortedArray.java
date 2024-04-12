@@ -7,10 +7,10 @@ public class TripletInASortedArray {
         int j=i+1;
         int k=j+1;
         int sum=25;
-        for (;i<n-3;i++)
+        for (;i<n-2;i++)
         {
             int s=sum-arr[i];
-            while(j<n-2){
+            while(j<n-1){
                 if (k==n-1||arr[j]+arr[k]>s)
                 {
                     j++;
