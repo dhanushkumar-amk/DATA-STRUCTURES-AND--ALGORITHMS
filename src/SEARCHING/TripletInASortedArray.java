@@ -1,7 +1,7 @@
 package SEARCHING;
 public class TripletInASortedArray {
     public static void main(String[] args) {
-        int [] arr = {1 ,4 ,45, 6 ,10, 8};
+        int [] arr = {1 ,2,4,3,6};
         int n= arr.length;
         int sum=13;
         for (int i=0; i<n-2; i++)
