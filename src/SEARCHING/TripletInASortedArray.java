@@ -12,8 +12,7 @@ public class TripletInASortedArray {
             {
                 if (arr[i]+arr[j]+arr[k]==sum) {
                     System.out.println(i + " " + j + " " + k);
-                    j++;
-                    k--;
+                   break;
                 }
                 else if(arr[i]+arr[j]+arr[k]<sum)
                     j++;
