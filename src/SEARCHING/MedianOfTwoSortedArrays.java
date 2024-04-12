@@ -8,7 +8,7 @@ public class MedianOfTwoSortedArrays {
         int n=arr3.length;
         while(i<arr1.length && j<arr2.length)
         {
-            if(ind==n/2+1)
+            if(ind==n/2)
             {
                 if ((n&1)==1)
                     return arr3[((n-1)/2)];
