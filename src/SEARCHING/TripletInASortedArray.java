@@ -17,7 +17,6 @@ public class TripletInASortedArray {
                     System.out.println(i + " " + j + " " + k);
                    break;
                 }
-                
             }
         }
 
