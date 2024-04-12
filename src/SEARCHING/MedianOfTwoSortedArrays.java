@@ -5,7 +5,7 @@ public class MedianOfTwoSortedArrays {
         int j=0;
         int ind=0;
         int [] arr3= new int[arr1.length+arr2.length];
-        while(i<(arr1.length)/2 && j<(arr2.length/2))
+        while((i<(arr1.length) && j<(arr2.length))&& ind<=arr3.length/2)
         {
 
             if(arr1[i]<arr2[j])
