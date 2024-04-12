@@ -4,8 +4,8 @@ public class TripletInASortedArray {
         int [] arr = {1,3,4,6,9,12};
         int n= arr.length;
         int i=0;
+        int j=i+1;
         int k=i+1;
-        int j=k+1;
         int sum=25;
         for (;i<n-3;i++)
         {
