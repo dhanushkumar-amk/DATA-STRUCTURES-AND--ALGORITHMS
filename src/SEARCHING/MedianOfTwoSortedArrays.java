@@ -30,16 +30,14 @@ public class MedianOfTwoSortedArrays {
             ind++;
             j++;
         }
-        for (int x:arr3)
-            System.out.print(x+" ");
         int n=arr3.length;
         if ((n&1)==1)
             return arr3[((n-1)/2)];
         return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
     }
     public static void main(String[] args) {
-        int [] arr1 ={1,2};
-        int [] arr2 ={3,4};
+        int [] arr1 ={1,2,5,9,10,14};
+        int [] arr2 ={14,67,98};
       double res =MedianOfTwoSorted(arr1, arr2);
         System.out.println(res);
     }
