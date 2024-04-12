@@ -19,12 +19,6 @@ public class MedianOfTwoSortedArrays {
                 j++;
             }
         }
-//        int n=arr3.length;
-//        for (int x:arr3)
-//            System.out.print(x+" ");
-//        if ((n&1)==1)
-//            return arr3[((n-1)/2)];
-//        return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
         while(i<arr1.length && ind<=arr3.length/2)
         {
             arr3[ind]=arr1[i];
@@ -36,6 +30,8 @@ public class MedianOfTwoSortedArrays {
             ind++;
             j++;
         }
+        for (int x:arr3)
+            System.out.print(x+" ");
         int n=arr3.length;
         if ((n&1)==1)
             return arr3[((n-1)/2)];
