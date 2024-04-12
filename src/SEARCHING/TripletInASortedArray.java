@@ -1,7 +1,5 @@
 package SEARCHING;
-
 import java.util.Arrays;
-
 public class TripletInASortedArray {
     public static void main(String[] args) {
         int [] arr = {1 ,2,4,3,6};
