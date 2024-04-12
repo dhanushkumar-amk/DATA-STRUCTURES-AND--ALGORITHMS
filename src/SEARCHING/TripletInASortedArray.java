@@ -10,13 +10,13 @@ public class TripletInASortedArray {
             int k=n-1;
             while(j<k)
             {
-                if(arr[i]+arr[j]+arr[k]<sum)
-                    j++;
-                else k--;
+
                 if (arr[i]+arr[j]+arr[k]==sum) {
                     System.out.println(i + " " + j + " " + k);
                    break;
-                }
+                }if(arr[i]+arr[j]+arr[k]<sum)
+                j++;
+            else k--;
             }
         }
 
