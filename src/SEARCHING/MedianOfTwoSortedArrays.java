@@ -25,13 +25,13 @@ public class MedianOfTwoSortedArrays {
 //        if ((n&1)==1)
 //            return arr3[((n-1)/2)];
 //        return ((double) arr3[(n - 1) / 2] + (double)arr3[((n) / 2)]) / 2;
-        while(i<arr1.length)
+        while(i<arr1.length && ind<=arr3.length/2)
         {
             arr3[ind]=arr1[i];
             ind++;
             i++;
         }
-        while(j<arr2.length) {
+        while(j<arr2.length && ind<=arr3.length/2) {
             arr3[ind]=arr2[j];
             ind++;
             j++;
