@@ -30,9 +30,9 @@ public class MedianOfTwoSortedArrays {
             ind++;
             j++;
         }
-        for (int x:arr3)
-            System.out.print(x+" ");
-        return 10;
+        if((arr3.length&1)==1)
+            return arr3[arr3.length-1/2];
+        return arr3[((arr3.length-1)/2)-1]+arr3[arr3.length-1/2];
     }
     public static void main(String[] args) {
         int [] arr1 ={1,2};
