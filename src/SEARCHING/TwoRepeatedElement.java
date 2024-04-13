@@ -21,6 +21,7 @@ public class TwoRepeatedElement {
             else {
                 arr[arr[i]-1]--;
                 arr[i]=0;
+                i++;
             }
         }
         for (int x:arr)
