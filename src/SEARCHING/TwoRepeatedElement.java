@@ -17,14 +17,14 @@ public class TwoRepeatedElement {
             if (arr[arr[i] - 1] > 0) {
                 arr[i] = arr[arr[i] - 1];
                 arr[arr[i] - 1] = -1;
-                if(arr[i]==-2)
-                    arrs[j]=arr[i];
+                if(arr[i]==-2&& j<2)
+                    arrs[j++]=arr[i];
             } else {
                 arr[arr[i] - 1]--;
                 arr[i] = 0;
                 i++;
-                if(arr[i]==-2)
-                    arrs[j]=arr[i];
+                if(arr[i]==-2 && j<2)
+                    arrs[j++]=arr[i];
             }
 
         }
