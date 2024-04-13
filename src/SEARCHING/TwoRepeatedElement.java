@@ -6,7 +6,6 @@ public class TwoRepeatedElement {
         int n = arr.length;
         int i = 0;
         int j=0;
-        int [] arrs =new int[2];
         while (i < n) {
 
             if (arr[i] <= 0 || arr[i] > n) {
@@ -22,10 +21,9 @@ public class TwoRepeatedElement {
                 arr[arr[i] - 1]--;
                 arr[i] = 0;
                 i++;
-                
             }
-
         }
-
+        for (int x:arr)
+            System.out.print(x+" ");
     }
 }
