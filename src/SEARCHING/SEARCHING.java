@@ -37,7 +37,7 @@ class Test {
     public static void main(String args[])
     {
         Integer array[]
-                = new Integer[] { 2,2, 3, 5, 6 };
+                = new Integer[] { 1,2,3,4,5,7,8,8,8};
 
         // Function call
         Point p
