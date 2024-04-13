@@ -30,6 +30,6 @@ public class SEARCHING {
     }
 
     public static void main(String[] args) {
-        findRepeating()
+        
     }
 }
