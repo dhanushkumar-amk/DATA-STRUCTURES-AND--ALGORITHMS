@@ -8,10 +8,7 @@ public class TwoRepeatedElement {
         int j=0;
         int [] arrs =new int[2];
         while (i < n) {
-            if(arr[i]==-2)
-            {
-                arrs[j++]=i+1;
-            }
+
             if (arr[i] <= 0 || arr[i] > n) {
                 i++;
                 continue;
@@ -25,17 +22,9 @@ public class TwoRepeatedElement {
                 arr[i] = 0;
                 i++;
             }
-            if(arr[i]==-2)
-            {
-                arrs[j++]=i+1;
-            }
+
         }
         for (int x : arrs)
             System.out.print(x + " ");
-//        for (int j=0;j<n; j++)
-//        {
-//            if(Math.abs(arr[j])==2)
-//                System.out.print((j+1)+" ");
-//        }
     }
 }
