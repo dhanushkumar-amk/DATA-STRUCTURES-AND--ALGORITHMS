@@ -24,10 +24,10 @@ public class TwoRepeatedElement {
                 i++;
             }
         }
-        for (int x:arr)
+        for (int j=0;j<n; j++)
         {
-            if(Math.abs(x)==2)
-                System.out.print(x+" ");
+            if(Math.abs(arr[j])==2)
+                System.out.print(j+" ");
         }
     }
 }
