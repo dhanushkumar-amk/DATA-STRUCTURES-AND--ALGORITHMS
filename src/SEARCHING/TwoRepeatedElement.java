@@ -2,23 +2,26 @@ package SEARCHING;
 
 public class TwoRepeatedElement {
     public static void main(String[] args) {
-        int arr[] = {1,2,1,3,4,3};
+        int arr[] = {2,3,4,5,9};
         int n=arr.length;
         int i=0;
         while(i<n)
         {
-            while(arr[i]>0 && arr[i]<=n ){
-                int temp=arr[arr[i]-1];
-                if(arr[arr[i]-1]<0){
-                    arr[arr[i]-1]-=1;
-
-                }
-                else {
-                    arr[arr[i] - 1] = -1;
-                    arr[i]=temp;
-                }
+            if(arr[i]<=0|| arr[i]>n)
+            {
+                i++;
+                continue;
             }
-            i++;
+
+            if(arr[arr[i]-1]>0)
+            {
+                arr[i]=arr[arr[i]-1];
+                arr[arr[i]-1]=-1;
+            }
+            else {
+                arr[arr[i]-1]--;
+                arr[i]=0;
+            }
         }
         for (int x:arr)
             System.out.print(x);
