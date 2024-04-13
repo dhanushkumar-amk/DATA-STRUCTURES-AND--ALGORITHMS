@@ -25,6 +25,10 @@ public class TwoRepeatedElement {
                 arr[i] = 0;
                 i++;
             }
+            if(arr[i]==-2)
+            {
+                arrs[j++]=i+1;
+            }
         }
         for (int x : arrs)
             System.out.print(x + " ");
