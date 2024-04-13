@@ -23,7 +23,5 @@ public class TwoRepeatedElement {
                 i++;
             }
         }
-        for (int x:arr)
-            System.out.print(Math.abs(x)==2?Math.abs(x):"");
     }
 }
