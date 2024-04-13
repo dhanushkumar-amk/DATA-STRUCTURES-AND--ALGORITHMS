@@ -17,7 +17,7 @@ public class TwoRepeatedElement {
             if (arr[arr[i] - 1] > 0) {
                 arr[i] = arr[arr[i] - 1];
                 arr[arr[i] - 1] = -1;
-                
+
             } else {
                 arr[arr[i] - 1]--;
                 arr[i] = 0;
@@ -29,7 +29,6 @@ public class TwoRepeatedElement {
             }
 
         }
-        for (int x : arrs)
-            System.out.print(x + " ");
+        
     }
 }
