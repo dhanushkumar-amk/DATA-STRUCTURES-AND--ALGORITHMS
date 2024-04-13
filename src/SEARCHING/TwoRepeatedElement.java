@@ -11,6 +11,7 @@ public class TwoRepeatedElement {
                 int temp=arr[arr[i]-1];
                 if(arr[arr[i]-1]<0){
                     arr[arr[i]-1]-=1;
+                    arr[i]=-1;
                 }
                 else {
                     arr[arr[i] - 1] = -1;
