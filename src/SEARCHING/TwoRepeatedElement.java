@@ -16,5 +16,5 @@ public class TwoRepeatedElement {
         }
         for (int x:res) System.out.print(x+" ");
         }
-    }
+
 }
