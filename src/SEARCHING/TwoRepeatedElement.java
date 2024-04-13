@@ -8,12 +8,12 @@ public class TwoRepeatedElement {
         int j=0;
         int [] arrs =new int[2];
         while (i < n) {
-
+            if(arr[i]==-2 && j<2)
+            {
+                arrs[j++]=i+1;
+            }
             if (arr[i] <= 0 || arr[i] > n) {
-                if(arr[i]==-2 && j<2)
-                {
-                    arrs[j++]=i+1;
-                }
+
                 i++;
                 continue;
             }
