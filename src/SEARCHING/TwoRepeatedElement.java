@@ -6,7 +6,7 @@ public class TwoRepeatedElement {
         int n = arr.length;
         int i = 0;
         int j=0;
-        int [] arrs =new int[4];
+        int [] arrs =new int[2];
         while (i < n) {
             if(arr[i]==-2)
             {
