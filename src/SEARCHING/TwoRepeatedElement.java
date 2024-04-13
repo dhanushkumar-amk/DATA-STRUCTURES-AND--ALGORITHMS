@@ -19,7 +19,7 @@ public class TwoRepeatedElement {
                 arr[arr[i] - 1] = -1;
                 if(arr[i]==-2 && j<2)
                 {
-                    arrs[j++]=arr[i];
+                    arrs[j++]=i+1;
                 }
             } else {
                 arr[arr[i] - 1]--;
@@ -27,7 +27,7 @@ public class TwoRepeatedElement {
                 i++;
                 if(arr[i]==-2 && j<2)
                 {
-                    arrs[j++]=arr[i];
+                    arrs[j++]=i+1;
                 }
             }
 
