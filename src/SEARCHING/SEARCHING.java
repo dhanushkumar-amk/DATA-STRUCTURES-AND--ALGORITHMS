@@ -1,57 +1,49 @@
-package SEARCHING;
+package SEARCHING;// Java program to find the only repeated element
+// and number of times it appears
 
-public class SEARCHING {
-    // Pair Class
-    static class Pair{
-        long x;
-        long y;
+import java.awt.Point;
+import java.util.Arrays;
+import java.util.Vector;
 
-        Pair(long x, long y){
-            this.x = x;
-            this.y = y;
-        }
-    }
-    //Function to find repeated element and its frequency.
-    public static Pair findRepeating(Long arr[],int n)
+class Test {
+    // Assumptions : vector a is sorted, max-difference
+    // of two adjacent elements is 1
+    static Point sequence(Vector<Integer> a)
     {
+        if (a.size() == 0)
+            return new Point(0, 0);
 
+        int s = 0;
+        int e = a.size() - 1;
+        while (s < e) {
+            int m = (s + e) / 2;
 
-//User function Template for Java
+            // if a[m] = m + a[0], there is no
+            // repeating character in [s..m]
+            if (a.get(m) >= m + a.get(0))
+                s = m + 1;
 
-        class Solution
-        {
-            // Pair Class
-            static class Pair{
-                long x;
-                long y;
-
-                Pair(long x, long y){
-                    this.x = x;
-                    this.y = y;
-                }
-            }
-            //Function to find repeated element and its frequency.
-            public static Pair findRepeating(Long arr[], int n) {
-                for (int i = 0; i < n - 1; i++) {
-                    // If current element is equal to next element, it is the repeating element
-                    if (arr[i].equals(arr[i + 1])) {
-                        // Count the frequency of the repeating element
-                        int frequency = 1;
-                        int j = i + 1;
-                        while (j < n && arr[i].equals(arr[j])) {
-                            frequency++;
-                            j++;
-                        }
-                        return new Pair(arr[i], frequency);
-                    }
-                }
-                // If no repeating element found, return {-1, -1}
-                return new Pair(-1, -1);
-            }
-        };
+                // if a[m] < m + a[0], there is a
+                // repeating character in [s..m]
+            else
+                e = m;
+        }
+        return new Point(
+                a.get(s),
+                a.size() - (a.get(a.size() - 1) - a.get(0)));
     }
 
-    public static void main(String[] args) {
+    // Driver code
+    public static void main(String args[])
+    {
+        Integer array[]
+                = new Integer[] { 1, 2, 3, 4, 4, 4, 5, 6 };
 
+        // Function call
+        Point p
+                = sequence(new Vector<>(Arrays.asList(array)));
+        System.out.println("Repeated element is " + p.x
+                + ", it appears " + p.y
+                + " times");
     }
 }
