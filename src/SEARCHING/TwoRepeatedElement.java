@@ -22,13 +22,10 @@ public class TwoRepeatedElement {
                 arr[arr[i] - 1]--;
                 arr[i] = 0;
                 i++;
-                if(arr[i]==-2)
-                {
-
-                }
+                
             }
 
         }
-        
+
     }
 }
