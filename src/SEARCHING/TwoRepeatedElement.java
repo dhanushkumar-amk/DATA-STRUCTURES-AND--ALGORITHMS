@@ -6,10 +6,11 @@ public class TwoRepeatedElement {
         int n = arr.length;
         int i = 0;
         int j=0;
-        int [] arrs = new int[2];
+        int [] arrs =new int[2];
         while (i < n) {
 
             if (arr[i] <= 0 || arr[i] > n) {
+
                 i++;
                 continue;
             }
@@ -17,18 +18,12 @@ public class TwoRepeatedElement {
             if (arr[arr[i] - 1] > 0) {
                 arr[i] = arr[arr[i] - 1];
                 arr[arr[i] - 1] = -1;
-                if(arr[i]==-1 && j<2)
-                {
-                    arrs[j++]=i+1;
-                }
+
             } else {
                 arr[arr[i] - 1]--;
                 arr[i] = 0;
                 i++;
-                if(arr[i]==-1 && j<2)
-                {
-                    arrs[j++]=i+1;
-                }
+
             }
 
         }
