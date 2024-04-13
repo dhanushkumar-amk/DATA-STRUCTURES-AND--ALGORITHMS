@@ -27,7 +27,7 @@ public class TwoRepeatedElement {
         for (int j=0;j<n; j++)
         {
             if(Math.abs(arr[j])==2)
-                System.out.print(j+" ");
+                System.out.print((j+1)+" ");
         }
     }
 }
