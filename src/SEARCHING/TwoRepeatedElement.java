@@ -12,7 +12,10 @@ public class TwoRepeatedElement {
                 if(arr[arr[i]-1]<0){
                     arr[arr[i]-1]-=1;
                 }
-                else arr[arr[i]-1]=-1;
+                else {
+                    arr[arr[i] - 1] = -1;
+                    arr[i]=temp;
+                }
             }
             i++;
         }
