@@ -5,8 +5,8 @@ public class TwoRepeatedElement {
         int arr[] = {1,2,1,3,4,3};
         int j=0;
         int res[]= new int [2];
-        int freq[] = new int [n];
-        for(int i=0;i<n;i++)
+        int freq[] = new int [arr.length];
+        for(int i=0;i< arr.length;i++)
         {
             freq[arr[i]]++;
             if(freq[arr[i]]==2){
