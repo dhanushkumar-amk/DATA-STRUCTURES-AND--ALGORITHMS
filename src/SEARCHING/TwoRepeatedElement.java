@@ -2,7 +2,7 @@ package SEARCHING;
 
 public class TwoRepeatedElement {
     public static void main(String[] args) {
-        int arr[] = {1, 2, 2, 1};
+        int arr[] = {3,4,5,3,4};
         int n = arr.length;
         int i = 0;
         int j = 0;
