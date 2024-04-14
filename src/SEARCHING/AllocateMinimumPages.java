@@ -1,7 +1,7 @@
 package SEARCHING;
 
 public class AllocateMinimumPages {
-    static int recursive(int [] arr,int n,int student) {
+    static int recursive(int [] arr,int n,int student){
 
     }
     public static void main(String[] args) {
