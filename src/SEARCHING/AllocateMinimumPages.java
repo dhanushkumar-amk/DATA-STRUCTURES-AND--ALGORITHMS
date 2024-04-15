@@ -5,7 +5,11 @@ public class AllocateMinimumPages {
 //return 1;
 //    }
     public static void main(String[] args) {
-        int [] arr ={12,34,67,90};
+//        int [] arr ={12,34,67,90};
+        int[] arr = new int[100000];
+        for (int i = 0; i < 100000; i++) {
+            arr[i] = i % 10000 + 1;
+        }
 
         int left=0;
         int leftMid= (arr.length/2)-1;
