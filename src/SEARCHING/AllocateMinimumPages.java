@@ -20,7 +20,7 @@ public class AllocateMinimumPages {
         }
         long endTime2 = System.nanoTime();
         double elapsedTime2 = (endTime2 - startTime2) / 1_000_000.0; // Convert nanoseconds to milliseconds
-        System.out.println("Time taken by second solution: " + elapsedTime2 + " milliseconds");
+        System.out.println("Time taken by first solution: " + elapsedTime2 + " milliseconds");
         long startTime1 = System.nanoTime();
         long sum=0;
         int left=0;
@@ -33,7 +33,7 @@ public class AllocateMinimumPages {
         }
         long endTime1 = System.nanoTime();
         double elapsedTime1 = (endTime1 - startTime1) / 1_000_000.0; // Convert nanoseconds to milliseconds
-        System.out.println("Time taken by first solution: " + elapsedTime1 + " milliseconds");
+        System.out.println("Time taken by second solution: " + elapsedTime1 + " milliseconds");
 
     }
 }
