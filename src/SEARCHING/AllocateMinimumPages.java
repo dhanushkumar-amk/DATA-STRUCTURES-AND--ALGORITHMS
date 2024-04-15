@@ -32,7 +32,7 @@ public class AllocateMinimumPages {
 //            sum+=arr[left++]+arr[leftMid--]+arr[right--]+arr[rightMid++];
 //        }
         while(left<=right)
-            sum+=arr[leftMid++]+arr[right--];
+            sum+=arr[left++]+arr[right--];
         long endTime1 = System.nanoTime();
         double elapsedTime1 = (endTime1 - startTime1) / 1_000_000.0; // Convert nanoseconds to milliseconds
         System.out.println("Time taken by second solution: " + elapsedTime1 + " milliseconds");
