@@ -7,7 +7,7 @@ public class AllocateMinimumPages {
 //return 1;
 //    }
     public static void main(String[] args) {
-        int[] arr = new int[100000];
+        int[] arr = new int[1000000000];
         Arrays.fill(arr, 32); // Fill the array with a constant value for simplicity
 
         // Measure the time taken by the first solution
