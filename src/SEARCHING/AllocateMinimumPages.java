@@ -18,10 +18,5 @@ public class AllocateMinimumPages {
            sum+=arr[left++]+arr[leftMid--]+arr[right--]+arr[rightMid++];
        }
         System.out.println(sum);
-       int sums=0;
-        for (int i=0; i<arr.length; i++) {
-            sums+=arr[i];
-        }
-        System.out.println(sums);
     }
 }
