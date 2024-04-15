@@ -14,7 +14,7 @@ public class AllocateMinimumPages {
         long startTime1 = System.nanoTime();
         long sum=0;
         int left=0;
-        int right= arr.length;
+        int right= arr.length-1;
         while(left<right)
         {
             sum+=arr[left++]+arr[right--];
