@@ -17,6 +17,6 @@ return 1;
        {
            sum+=arr[left++]+arr[leftMid--]+arr[right--]+arr[rightMid++];
        }
-       
+        System.out.println(sum);
     }
 }
