@@ -17,6 +17,9 @@ public class AllocateMinimumPages {
        {
            sum+=arr[left++]+arr[leftMid--]+arr[right--]+arr[rightMid++];
        }
+      else while(left<right){
+          sum+=arr[left++]+arr[right--];
+      }
         System.out.println(sum);
     }
 }
