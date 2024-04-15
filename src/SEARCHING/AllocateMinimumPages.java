@@ -11,6 +11,6 @@ return 1;
         int left=0;
         int leftMid= arr.length/3;
         int right= arr.length;
-        System.out.println(leftMid);
+        System.out.println(right);
     }
 }
