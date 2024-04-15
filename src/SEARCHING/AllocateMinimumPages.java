@@ -12,9 +12,11 @@ return 1;
         int leftMid= (arr.length/2)-1;
         int rightMid=( arr.length/2);
         int right= arr.length-1;
-        System.out.println(left);
-        System.out.println(leftMid);
-        System.out.println(rightMid);
-        System.out.println(right);
+        int sum=0;
+       while(left<leftMid && right>rightMid)
+       {
+           sum+=arr[left++]+arr[leftMid--]+arr[right--]+arr[rightMid++];
+       }
+       
     }
 }
