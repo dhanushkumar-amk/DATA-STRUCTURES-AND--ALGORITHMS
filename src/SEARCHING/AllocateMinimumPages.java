@@ -11,7 +11,7 @@ public class AllocateMinimumPages {
         Arrays.fill(arr, 1); // Fill the array with a constant value for simplicity
 
         // Measure the time taken by the first solution
-        long startTime1 = System.currentTimeMillis();
+        long startTime1 = System.nanoTime();
         int sum1 = 0;
         int left1 = 0;
         int leftMid1 = (arr.length / 2) - 1;
@@ -26,16 +26,17 @@ public class AllocateMinimumPages {
                 sum1 += arr[left1++] + arr[right1--];
             }
         }
-        long endTime1 = System.currentTimeMillis();
-        System.out.println("Time taken by first solution: " + (endTime1 - startTime1) + " milliseconds");
+        long endTime1 = System.nanoTime();
+        double elapsedTime1 = (endTime1 - startTime1) / 1_000_000.0; // Convert nanoseconds to milliseconds
+        System.out.println("Time taken by first solution: " + elapsedTime1 + " milliseconds");
 
         // Measure the time taken by the second solution
-        long startTime2 = System.currentTimeMillis();
+        long startTime2 = System.nanoTime();
         int sum2 = 0;
         for (int i = 0; i < arr.length; i++) {
             sum2 += arr[i];
         }
-        long endTime2 = System.currentTimeMillis();
-        System.out.println("Time taken by second solution: " + (endTime2 - startTime2) + " milliseconds");
-    }
+        long endTime2 = System.nanoTime();
+        double elapsedTime2 = (endTime2 - startTime2) / 1_000_000.0; // Convert nanoseconds to milliseconds
+        System.out.println("Time taken by second solution: " + elapsedTime2 + " milliseconds");}
 }
