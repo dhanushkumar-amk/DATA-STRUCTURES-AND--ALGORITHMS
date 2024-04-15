@@ -13,7 +13,7 @@ public class AllocateMinimumPages {
         int rightMid=( arr.length/2);
         int right= arr.length-1;
         int sum=0;
-       while(left<leftMid && right>rightMid)
+      if(arr.length>=4) while(left<leftMid && right>rightMid)
        {
            sum+=arr[left++]+arr[leftMid--]+arr[right--]+arr[rightMid++];
        }
