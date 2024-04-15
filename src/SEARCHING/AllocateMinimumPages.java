@@ -9,7 +9,7 @@ return 1;
         int res= recursive(arr, arr.length,4);
         System.out.println(res);
         int left=0;
-        int leftMid=( arr.length/3)-1;
+        int leftMid=( arr.length/2)-1;
         int right= arr.length;
         System.out.println(leftMid);
     }
