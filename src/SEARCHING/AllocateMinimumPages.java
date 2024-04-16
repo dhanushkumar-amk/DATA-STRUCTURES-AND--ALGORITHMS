@@ -37,10 +37,10 @@ public class AllocateMinimumPages {
             if(sum+arr[i]<=mid)
                 sum+=arr[i];
             else {
-                if(s<=students) {
-                    sum = arr[i];
-                    s++;
-                }
+                s++;
+                if(s>students)
+                    return false;
+                sum=arr[i];
                 return false;
             }
         }
