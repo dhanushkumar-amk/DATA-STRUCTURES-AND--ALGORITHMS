@@ -5,15 +5,13 @@ public class AllocateMinimumPages {
         int left=0;
         int right=n-1;
         int Min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
-        int MaxSum=0;
-        while(left<right) {
-            if (arr[left]  < Min) Min = arr[left];
-            MaxSum+=arr[left]+arr[right];
-            left++;
-            right--;
+        int l=arr[0];
+        int r=0;
+        for (int i=0; i<n; i++)
+        {
+            if(arr[0]<l) l=arr[i];
+            r+=arr[i];
         }
-        int l=Min;
-        int r=MaxSum;
         int res=arr[0];
         while(l<=r)
         {
