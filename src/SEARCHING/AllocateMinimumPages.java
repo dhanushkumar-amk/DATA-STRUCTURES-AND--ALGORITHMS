@@ -12,15 +12,20 @@ public class AllocateMinimumPages {
             left++;
             right--;
         }
-//        int l=;
-//        int r=;
-//        while()
-        System.out.println(Min);
-        System.out.println(MaxSum);
+        int l=Min;
+        int r=MaxSum;
+        while(l<=r)
+        {
+            int mid=(l+r)/2;
+            if(isPossible(arr,n,mid))
+            {
+
+            }
+        }
         return -1;
     }
-    static int isPossible(int[] arr,int n) {
-        return -1;
+    static int isPossible(int[] arr,int n,int mid) {
+        for (int i=0;)
     }
 
     public static void main(String[] args) {
