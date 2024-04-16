@@ -47,7 +47,7 @@ public class AllocateMinimumPages {
     }
 
     public static void main(String[] args) {
-        int [] arr ={12,34,67,90};
+        int [] arr ={15,17,20};
         int students=2;
         int res=binarySearch(arr, arr.length,students);
         System.out.println(res);
