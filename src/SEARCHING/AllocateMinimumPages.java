@@ -15,7 +15,7 @@ public class AllocateMinimumPages {
         int l=Min;
         int r=MaxSum;
         int res=arr[0];
-        while(l<=r)
+        while(l<r)
         {
             int mid=(l+r)/2;
             if(isPossible(arr,n,mid,students))
