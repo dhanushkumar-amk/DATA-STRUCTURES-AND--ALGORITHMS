@@ -7,6 +7,7 @@ public class AllocateMinimumPages {
         int Min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
         while(left<right) {
             if (arr[left] < Min) Min = arr[left];
+            if (arr[right] > max) max = arr[right];
         }
         int l=;
         int r=;
