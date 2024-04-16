@@ -14,21 +14,35 @@ public class AllocateMinimumPages {
         }
         int l=Min;
         int r=MaxSum;
+        int res=arr[0];
         while(l<=r)
         {
             int mid=(l+r)/2;
             if(isPossible(arr,n,mid,students))
             {
-
+                res=mid;
+                r=mid-1;
             }
+            else l=mid+1;
         }
-        return -1;
+        return res;
     }
-    static int isPossible(int[] arr,int n,int mid,int students) {
+    static boolean isPossible(int[] arr,int n,int mid,int students) {
+        int sum=0;
+        int s=1;
         for (int i=0;i<n;i++)
         {
-            
+            if(sum+arr[i]<=mid)
+                sum+=arr[i];
+            else {
+                if(s<students) {
+                    sum = arr[i];
+                    s++;
+                }
+                return false;
+            }
         }
+        return true;
     }
 
     public static void main(String[] args) {
