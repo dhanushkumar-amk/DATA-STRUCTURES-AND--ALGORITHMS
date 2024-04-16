@@ -41,7 +41,6 @@ public class AllocateMinimumPages {
                 if(s>students)
                     return false;
                 sum=arr[i];
-                return false;
             }
         }
         return true;
