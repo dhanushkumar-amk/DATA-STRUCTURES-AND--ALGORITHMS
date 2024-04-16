@@ -16,7 +16,7 @@ public class AllocateMinimumPages {
 //        int r=;
 //        while()
         System.out.println(Min);
-        System.out.println(max);
+        System.out.println(MaxSum);
         return -1;
     }
     static int isPossible(int[] arr,int n) {
