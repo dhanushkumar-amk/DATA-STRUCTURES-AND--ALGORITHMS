@@ -32,6 +32,8 @@ public class AllocateMinimumPages {
         int s=1;
         for (int i=0;i<n;i++)
         {
+            if(arr[i]>mid)
+                return false;
             if(sum+arr[i]<=mid)
                 sum+=arr[i];
             else {
