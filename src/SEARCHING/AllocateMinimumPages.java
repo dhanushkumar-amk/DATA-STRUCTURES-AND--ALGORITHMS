@@ -19,7 +19,7 @@ public class AllocateMinimumPages {
         return -1;
     }
     static int isPossible(int[] arr,int n) {
-
+        return -1;
     }
 
     public static void main(String[] args) {
