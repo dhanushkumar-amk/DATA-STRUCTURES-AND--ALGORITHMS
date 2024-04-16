@@ -1,2 +1,4 @@
-package SEARCHING;public class MaximumWaterBetweenTwoBuildings {
+package SEARCHING;
+
+public class MaximumWaterBetweenTwoBuildings {
 }
