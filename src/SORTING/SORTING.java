@@ -4,8 +4,6 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import java.util.*;
-
 public class SORTING {
     static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
@@ -62,10 +60,6 @@ public class SORTING {
         long duration = (endTime - startTime) / 1000000; // Convert nanoseconds to milliseconds
 
         // Print sorted array
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-
         // Print sorting time
         System.out.println("\nSorting time: " + duration + " milliseconds");
     }
