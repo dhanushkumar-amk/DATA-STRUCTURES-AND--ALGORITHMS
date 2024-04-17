@@ -1,7 +1,8 @@
 package SEARCHING;
 public class MaximumWaterBetweenTwoBuildings {
     public static void main(String[] args) {
-        int [] height = {}
+        int [] height = {2,1,3,4,6,5};
+        int n=height.length;
         int left=0;
         int right=n-1;
         int sum=0;
