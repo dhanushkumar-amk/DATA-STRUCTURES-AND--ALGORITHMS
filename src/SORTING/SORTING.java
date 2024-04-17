@@ -19,6 +19,11 @@ public class SORTING {
                 System.out.println(num); // Output the unique random number
             }
         }
+        quickSort(array, 0, array.length - 1);
+
+        // Print sorted array
+        for (int num : array) {
+            System.out.print(num + " ");
 
     }
 }
