@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class SORTING {
     public static void main(String[] args) {
-        int n = Integer.MAX_VALUE/5;// Maximum range
+        int n = Integer.MAX_VALUE/500;// Maximum range
         int[] arr = new int[n];
         Arrays.fill(arr, 0);// Initialize all elements to 0
         Random rand = new Random();
