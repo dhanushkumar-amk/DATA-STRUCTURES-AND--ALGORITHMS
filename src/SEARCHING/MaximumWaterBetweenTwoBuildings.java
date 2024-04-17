@@ -7,11 +7,19 @@ public class MaximumWaterBetweenTwoBuildings {
         int right=n-1;
         int sum=0;
         int max=0;
+        int diff=n-2;
         while(left<right)
         {
-            max=Math.max((left+right)*Math.min(left,right),max);
-                left++;
-                right--;
+            int area=(right-left)*diff;
+            max=Math.max(area,max);
+                if(height[left]<height[right]) {
+                    left++;
+                    diff--;
+                }
+                else {
+                    right--;
+                    diff--;
+                }
         }
         System.out.println(max);
     }
