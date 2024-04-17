@@ -58,9 +58,6 @@ public class SORTING {
         // Measure time after sorting
         long endTime = System.nanoTime();
         long duration = (endTime - startTime) / 1000000; // Convert nanoseconds to milliseconds
-
-        // Print sorted array
-        // Print sorting time
         System.out.println("\nSorting time: " + duration + " milliseconds");
     }
 }
