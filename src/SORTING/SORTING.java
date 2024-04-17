@@ -19,6 +19,7 @@ public class SORTING {
                 System.out.println(num); // Output the unique random number
             }
         }
-        
+        for (int x:arr)
+            System.out.println(x);
     }
 }
