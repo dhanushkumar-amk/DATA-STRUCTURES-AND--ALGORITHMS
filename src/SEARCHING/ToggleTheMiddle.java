@@ -19,7 +19,7 @@ public class ToggleTheMiddle {
         for (int i=0; i<n; i++) {
             if ((len & 1) == 1 && i + 1 == len / 2)
                 strs += '0';
-            else if ((len & 1) == 0 && (i == len / 2) || (i + 1 == len / 2))
+             if ((len & 1) == 0 && (i == len / 2) || (i + 1 == len / 2))
                 strs += "1";
             else {
                 strs += n % 2;
