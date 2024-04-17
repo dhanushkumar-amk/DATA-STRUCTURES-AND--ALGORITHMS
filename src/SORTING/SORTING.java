@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+import java.util.*;
+
 public class SORTING {
     static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
@@ -36,7 +38,7 @@ public class SORTING {
     }
 
     public static void main(String[] args) {
-        int n = Integer.MAX_VALUE/500; // Maximum range
+        int n = 1000000; // Maximum range
         int[] arr = new int[n];
         Set<Integer> set = new HashSet<>();
         Random rand = new Random();
@@ -50,11 +52,22 @@ public class SORTING {
             }
         }
 
+        // Measure time before sorting
+        long startTime = System.nanoTime();
+
         quickSort(arr, 0, arr.length - 1);
+
+        // Measure time after sorting
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime) / 1000000; // Convert nanoseconds to milliseconds
 
         // Print sorted array
         for (int num : arr) {
             System.out.print(num + " ");
         }
+
+        // Print sorting time
+        System.out.println("\nSorting time: " + duration + " milliseconds");
     }
 }
+
