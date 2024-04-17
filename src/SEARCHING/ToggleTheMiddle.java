@@ -15,13 +15,11 @@ public class ToggleTheMiddle {
         recursion(n);
         System.out.println(str);
         int len = str.length();
-        int left = 0;
-        int right = len;
         String strs = "";
         for (int i = 0; i < len; i++) {
-            if ((len & 1) == 1 && i == len / 2)
+            if (len % 2 == 1 && i == len / 2)
                 strs += '0';
-            else if ((len & 1) == 0 && (i == len / 2 - 1) || (i == len / 2))
+            else if (len % 2 == 0 && (i == len / 2 - 1 || i == len / 2))
                 strs += "1";
             else {
                 strs += str.charAt(i);
