@@ -36,7 +36,7 @@ public class SORTING {
     }
 
     public static void main(String[] args) {
-        int n = 1000000; // Maximum range
+        int n =23490; // Maximum range
         int[] arr = new int[n];
         Set<Integer> set = new HashSet<>();
         Random rand = new Random();
