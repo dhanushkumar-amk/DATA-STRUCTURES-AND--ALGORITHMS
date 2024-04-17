@@ -1,7 +1,8 @@
 package SORTING;
 
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 public class SORTING {
     static int partition(int[] arr, int low, int high) {
@@ -33,27 +34,27 @@ public class SORTING {
             quickSort(arr, pi + 1, high);
         }
     }
-}
+
     public static void main(String[] args) {
-        int n = 43434334;// Maximum range
+        int n = Integer.MAX_VALUE/500; // Maximum range
         int[] arr = new int[n];
-        Arrays.fill(arr, 0);// Initialize all elements to 0
+        Set<Integer> set = new HashSet<>();
         Random rand = new Random();
         int count = 0;
         // Generate unique random numbers
         while (count < n) {
             int num = rand.nextInt(n) + 1; // Generate a random number between 1 and n
-            if (arr[num - 1] == 0) { // Check if the number is not yet generated
-                arr[num - 1] = num; // Mark the number as generated
-                count++;
-               // Output the unique random number
+            if (!set.contains(num)) { // Check if the number is not yet generated
+                arr[count++] = num; // Mark the number as generated
+                set.add(num);
             }
         }
+
         quickSort(arr, 0, arr.length - 1);
 
         // Print sorted array
         for (int num : arr) {
             System.out.print(num + " ");
         }
-
+    }
 }
