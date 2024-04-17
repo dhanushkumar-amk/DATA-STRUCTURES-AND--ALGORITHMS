@@ -1,44 +1,6 @@
 package SORTING;
-import org.openjdk.jmh.annotations.*;
-
-@State(Scope.Thread)
-public class MyBenchmark {
-
-    private int[] array;
-
-    @Setup(Level.Trial)
-    public void setup() {
-        // Initialize the array with some sample data
-        array = new int[100000];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = i;
-        }
-    }
-
-    @Benchmark
-    public int[] benchmarkMethod() {
-        // Code to benchmark
-        int[] sortedArray = array.clone(); // Clone the array to avoid modifying the original
-        bubbleSort(sortedArray);
-        return sortedArray;
-    }
-
-    // Example of a simple bubble sort implementation
-    private void bubbleSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n-1; i++) {
-            for (int j = 0; j < n-i-1; j++) {
-                if (arr[j] > arr[j+1]) {
-                    // Swap arr[j] and arr[j+1]
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-        }
-    }
-
-    public static void main(String[] args) throws Exception {
-        org.openjdk.jmh.Main.main(args);
+public class SORTING {
+    public static void main(String[] args) {
+        
     }
 }
