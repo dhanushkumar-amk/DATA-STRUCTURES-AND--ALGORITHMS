@@ -15,6 +15,6 @@ public class MaximumWaterBetweenTwoBuildings {
             if(height[right]>height[right-1])
                 right--;
         }
-        return max;
+        System.out.println(max);
     }
 }
