@@ -35,7 +35,7 @@ public class SORTING {
     }
 }
     public static void main(String[] args) {
-        int n = Integer.MAX_VALUE/500;// Maximum range
+        int n = 43434334;// Maximum range
         int[] arr = new int[n];
         Arrays.fill(arr, 0);// Initialize all elements to 0
         Random rand = new Random();
@@ -55,5 +55,5 @@ public class SORTING {
         for (int num : arr) {
             System.out.print(num + " ");
         }
-    
+
 }
