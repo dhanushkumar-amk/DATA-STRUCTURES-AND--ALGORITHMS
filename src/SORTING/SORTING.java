@@ -10,8 +10,8 @@ class  SORTING {
                 if(arr[j]>arr[j+1])
                 {
                     int temp=arr[j];
-                    arr[j]=arr[i];
-                    arr[i]=temp;
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
                 }
             }
         }
