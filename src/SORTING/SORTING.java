@@ -1,7 +1,7 @@
 package SORTING;
 class  SORTING {
     public static void main(String[] args) {
-        int [] arr ={23,432,5,42};
+        int [] arr ={23,2};
         int n= arr.length;
         for (int i=0; i<n-1; i++)
         {
