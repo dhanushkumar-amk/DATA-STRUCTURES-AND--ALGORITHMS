@@ -17,6 +17,6 @@ class  SORTING {
             }
         }
         for (int temp:arr)
-            System.out.print(temp );
+            System.out.print(temp +" ");
     }
 }
