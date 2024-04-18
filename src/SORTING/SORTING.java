@@ -7,7 +7,7 @@ class  SORTING {
         {
             for (int j=i+1;j<n; j++ )
             {
-                if(j>=n)
+                if(j==n-1)
                     n=n-1;
                 if(arr[i]>arr[j]){
                     int temp=arr[i];
