@@ -1,2 +1,6 @@
-package SORTING;public class SelectionSort {
+package SORTING;
+public class SelectionSort {
+    public static void main(String[] args) {
+        
+    }
 }
