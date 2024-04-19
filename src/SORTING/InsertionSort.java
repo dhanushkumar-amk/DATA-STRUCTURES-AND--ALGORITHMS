@@ -12,7 +12,7 @@ public class InsertionSort {
                 arr[j+1]=arr[j];
                 j--;
             }
-            arr[j]=insertKey;
+            arr[j+1]=insertKey;
         }
     }
     public static void main(String[] args) {
