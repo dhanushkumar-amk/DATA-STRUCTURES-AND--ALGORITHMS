@@ -11,7 +11,8 @@ public class InsertionSort {
         }
     }
     public static void main(String[] args) {
-        int [] arr ={}
-        insert();
+        int [] arr ={4,1,3,9,7};
+        insert(arr, arr.length);
+        for (int x:arr) System.out.print(x+" ");
     }
 }
