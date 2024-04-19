@@ -2,9 +2,9 @@ package SORTING;
 
 public class InsertionSort {
     static void shift(int [] arr,int n,int end,int start) {
-        for (int k=end;k>start; start--)
+        for (int i=end;i>start;i--)
         {
-            arr[start]=arr[start-1];
+            arr[i-1]=arr[i];
         }
     }
     static void insert(int []arr,int n) {
