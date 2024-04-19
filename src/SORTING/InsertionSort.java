@@ -8,21 +8,7 @@ public class InsertionSort {
         }
     }
     static void insert(int []arr,int n) {
-        for (int i=1; i<n;i++)
-        {
-            if(arr[i]<arr[i-1])
-            {
-                int min=arr[i-1];
-                int temp=arr[i];
-                for (int j=i;j>=0 ;j--)
-                {
-                    if(arr[i]<arr[j])
-                        min=j;
-                }
-                shift(arr,n,i,min);
-                arr[min]=temp;
-            }
-        }
+        
     }
     public static void main(String[] args) {
         int [] arr ={1,2,3,4};
