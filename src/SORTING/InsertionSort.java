@@ -7,7 +7,7 @@ public class InsertionSort {
         {
             int insertKey=arr[i];
             int j=i-1;
-            while(j>=0 && insertKey>arr[j])
+            while(j>=0 && arr[j]>insertKey)
             {
                 arr[j+1]=arr[j];
                 j--;
@@ -16,8 +16,9 @@ public class InsertionSort {
         }
     }
     public static void main(String[] args) {
-        int [] arr ={4 ,1 ,3 ,9 ,7};
+        int [] arr ={3,432,1,23};
         insert(arr, arr.length);
         for (int x:arr) System.out.print(x+" ");
+
     }
 }
