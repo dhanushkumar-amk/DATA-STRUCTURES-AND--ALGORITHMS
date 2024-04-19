@@ -25,7 +25,7 @@ public class InsertionSort {
         }
     }
     public static void main(String[] args) {
-        int [] arr ={1,2,3};
+        int [] arr ={0,1,0};
         insert(arr, arr.length);
         for (int x:arr) System.out.print(x+" ");
     }
