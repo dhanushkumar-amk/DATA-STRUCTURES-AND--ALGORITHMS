@@ -5,9 +5,13 @@ public class InsertionSort {
 
     }
     static void insert(int []arr,int n) {
-        for (int i=0; i<n;i++)
-        {
-
+        int i=1;
+        int j=i-1;
+        while(i<n){
+            if(arr[i]<arr[j])
+            {
+                
+            }
         }
     }
     public static void main(String[] args) {
