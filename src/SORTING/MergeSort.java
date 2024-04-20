@@ -1,26 +1,18 @@
 package SORTING;
 
+import java.util.ArrayList;
+
 public class MergeSort {
 
-   static void merge(int [] arr,int l,int mid,int r) {
-       int [] temp =new int[arr.length];
+   static void merge(int [] arr,int low,int mid,int high) {
+       ArrayList<Integer> arrayList = new ArrayList<>();
        int k=0;
-       while(l<=mid && mid+1<=r)
+       int left=low;
+       int right=mid+1;
+       while(left<=mid &&right<=high)
        {
-           if(arr[l]<arr[mid+1])
-           {
-               temp[k++]=arr[l++];
-           }
-           else {
-               temp[k++]=arr[mid+1];
-               mid++;
-           }
-       }
-       while(l<=mid)
-           temp[k++]=arr[l++];
-       while(mid+1<=r) {
-           temp[k++] = arr[mid + 1];
-           mid++;
+           if(arr[left]<arr[right])
+               
        }
 
 
