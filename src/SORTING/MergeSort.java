@@ -11,17 +11,16 @@ public class MergeSort {
                dup[k++]=arr[j++];
        }
        while(i<n)
-           dup[i]=arr[i++];
+           dup[k++]=arr[i++];
        while(j<n)
-           dup[i]=arr[j++];
-
+           dup[k++]=arr[j++];
     }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
             int mid = (l + r) / 2;
             mergeSort(arr, l, mid);
             mergeSort(arr, mid + 1, r);
-            shift(arr, arr.length, l, r-mid);
+            shift(arr, arr.length, l, r-mid+1);
         }
     }
     public static void main(String[] args) {
