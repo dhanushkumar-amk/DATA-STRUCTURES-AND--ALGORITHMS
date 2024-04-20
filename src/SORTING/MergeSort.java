@@ -11,7 +11,7 @@ public class MergeSort {
        int right=mid+1;
        while(left<=mid &&right<=high)
        {
-           if(arr[left]<arr[right])
+           if(arr[left]<=arr[right])
                arrayList.add(arr[left++]);
            else arrayList.add(arr[right++]);
        }
