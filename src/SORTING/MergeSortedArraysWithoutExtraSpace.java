@@ -21,7 +21,7 @@ public class MergeSortedArraysWithoutExtraSpace {
         int arr2[]={3,4,5,28,37,42,43,46};
         int lastPointer= arr1.length-1;
         int firstPointer= 0;
-        while(arr1[lastPointer]>arr2[firstPointer] && lastPointer>=0 && firstPointer<arr2.length) {
+        while(arr1[lastPointer]>arr2[firstPointer] ) {
             int temp=arr2[firstPointer];
             arr2[firstPointer]=arr1[lastPointer];
             arr1[lastPointer]=temp;
