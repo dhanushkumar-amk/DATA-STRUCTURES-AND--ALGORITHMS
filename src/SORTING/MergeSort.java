@@ -11,9 +11,9 @@ public class MergeSort {
                dup[k++]=arr[j++];
        }
        while(i<n)
-           dup[k++]=arr[i++];
+           dup[i]=arr[i++];
        while(j<n)
-           dup[k++]=arr[j++];
+           dup[i]=arr[j++];
 
     }
     static void mergeSort(int [] arr,int l,int r) {
