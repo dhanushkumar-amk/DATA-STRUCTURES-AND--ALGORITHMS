@@ -23,7 +23,7 @@ public class MergeSort {
            arrayList.add(arr[right++]);
 
        for (int i=low;i<=high;i++)
-           arr[i]= arrayList.get(i);
+           arr[i]= arrayList.get(i-low);
    }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
