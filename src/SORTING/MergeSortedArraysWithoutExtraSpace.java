@@ -6,8 +6,13 @@ public class MergeSortedArraysWithoutExtraSpace {
         int right[]={2,3,5,7,9};
         int lastPointer= left.length;;
         int firstPointer= right.length;
-        while() {
-
+        while(left[lastPointer]>right[firstPointer]) {
+            int temp=right[firstPointer];
+            right[firstPointer]=left[lastPointer];
+            left[lastPointer]=temp;
+            lastPointer--;
+            firstPointer++;
         }
+        
     }
 }
