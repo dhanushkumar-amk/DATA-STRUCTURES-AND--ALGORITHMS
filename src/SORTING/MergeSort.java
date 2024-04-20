@@ -9,7 +9,7 @@ public class MergeSort {
        {
            if(arr[l]<=arr[mid+1])
            {
-               temp[k++]=arr[l];
+               temp[k++]=arr[l++];
            }
            else {
                temp[k++]=arr[mid+1];
@@ -17,9 +17,11 @@ public class MergeSort {
            }
        }
        while(l<=mid)
-           temp[k++]=arr[l];
-       while(mid+1<=r)
-           temp[k++]=arr[mid+1];
+           temp[k++]=arr[l++];
+       while(mid+1<=r) {
+           temp[k++] = arr[mid + 1];
+           mid++;
+       }
 
 
    }
