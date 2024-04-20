@@ -59,7 +59,6 @@ class MergeSortedArraysWithoutExtraSpace {
                 lastPointer--;
                 firstPointer++;
             }
-
             mergeSort(arr1, 0, arr1.length - 1);
             mergeSort(arr1, 0, arr1.length - 1);
 
