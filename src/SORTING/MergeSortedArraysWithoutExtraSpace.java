@@ -14,6 +14,7 @@ public class MergeSortedArraysWithoutExtraSpace {
             firstPointer++;
         }
         for (int x:left) System.out.print(x+" ");
+        System.out.println();
         for (int x:right) System.out.print(x+" ");
     }
 }
