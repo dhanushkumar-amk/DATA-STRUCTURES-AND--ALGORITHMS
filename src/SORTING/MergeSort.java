@@ -1,7 +1,5 @@
 package SORTING;
 
-import java.util.Arrays;
-
 public class MergeSort {
 
    static void merge(int [] arr,int l,int mid,int r) {
@@ -34,6 +32,6 @@ public class MergeSort {
     public static void main(String[] args) {
         int [] arr ={5,4,3,2,1};
         mergeSort(arr,0, arr.length-1);
-        for (int d :dup) System.out.print(d+" ");
+        for (int x:arr) System.out.print(x+" ");
     }
 }
