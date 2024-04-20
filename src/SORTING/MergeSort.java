@@ -31,16 +31,13 @@ public class MergeSort {
         if(l<r) {
             int mid = (l + r) / 2;
             mergeSort(arr, l, mid);
-            count++;
             mergeSort(arr, mid + 1, r);
-            count++;
             merge(arr,l,mid,r);
-            count++;
         }
     }
     public static void main(String[] args) {
         // Define the size of the array
-        int size = 100_234; // 100 million
+        int size = 10; // 100 million
 
         // Create the array
         int[] largeArray = new int[size];
