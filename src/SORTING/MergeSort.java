@@ -34,8 +34,21 @@ public class MergeSort {
         }
     }
     public static void main(String[] args) {
-       int [] arr={1,2,30,0};
-        mergeSort(arr,0, arr.length-1);
-        for (int x:arr) System.out.print(x+" ");
+        // Define the size of the array
+        int size = 100_000_000; // 100 million
+
+        // Create the array
+        int[] largeArray = new int[size];
+
+        // Fill the array with unique values
+        for (int i = 0; i < size; i++) {
+            largeArray[i] = i;
+        }
+
+        // Shuffle the array to randomize the order
+        shuffleArray(largeArray);
+
+        // Display a message indicating successful creation
+        System.out.println("Array of size " + size + " with unique numbers created successfully.");
     }
 }
