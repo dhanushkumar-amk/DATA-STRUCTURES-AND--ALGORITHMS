@@ -45,8 +45,7 @@ class MergeSortedArraysWithoutExtraSpace {
             j++;
             k++;
         }
-        static void print(int[] arr){
-            for (int x : arr) System.out.print(x + " ");
+
         }
         public static void main (String[]args){
             int arr1[] = {12, 42};
@@ -63,8 +62,7 @@ class MergeSortedArraysWithoutExtraSpace {
 
             mergeSort(arr1, 0, arr1.length - 1);
             mergeSort(arr1, 0, arr1.length - 1);
-            print(arr1);
-            print(arr2);
+
         }
     }
 }
