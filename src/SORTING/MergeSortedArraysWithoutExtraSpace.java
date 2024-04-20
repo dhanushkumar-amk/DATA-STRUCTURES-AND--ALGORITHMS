@@ -23,10 +23,8 @@ public class MergeSortedArraysWithoutExtraSpace {
         int firstPointer= 0;
         while(left[lastPointer]>right[firstPointer]) {
             int temp=right[firstPointer];
-            right[firstPointer]=left[lastPointer];
-            left[lastPointer]=temp;
-            lastPointer--;
-            firstPointer++;
+            right[firstPointer++]=left[lastPointer];
+            left[lastPointer--]=temp;
         }
         insertionSort(left, left.length);
         insertionSort(right, right.length);
