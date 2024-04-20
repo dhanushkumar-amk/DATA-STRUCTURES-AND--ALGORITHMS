@@ -1,6 +1,6 @@
 package SORTING;
 public class MergeSort {
-    static int [] dup = new int[6];
+    static int [] dup = new int[5];
     static int k=0;
    static void shift(int [] arr,int n,int i,int j) {
        while(i<n && j<n)
