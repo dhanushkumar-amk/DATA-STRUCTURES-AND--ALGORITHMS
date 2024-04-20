@@ -20,7 +20,7 @@ public class MergeSort {
            temp[k++]=arr[l];
        while(mid+1<=r)
            temp[k++]=arr[mid+1];
-      
+
 
    }
     static void mergeSort(int [] arr,int l,int r) {
@@ -33,7 +33,7 @@ public class MergeSort {
     }
     public static void main(String[] args) {
         int [] arr ={5,4,3,2,1};
-        mergeSort(arr,0, arr.length-1);
+        mergeSort(arr,0, arr.length);
         for (int x:arr) System.out.print(x+" ");
     }
 }
