@@ -1,6 +1,7 @@
 package SORTING;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class MergeSort {
 
@@ -51,6 +52,15 @@ public class MergeSort {
         // Display a message indicating successful creation
         System.out.println("Array of size " + size + " with unique numbers created successfully.");
     }
+    private static void shuffleArray(int[] array) {
+        ThreadLocalRandom rand = ThreadLocalRandom.current();
+        for (int i = array.length - 1; i > 0; i--) {
+            int index = rand.nextInt(i + 1);
+            // Swap elements
+            int temp = array[index];
+            array[index] = array[i];
+            array[i] = temp;
+        }
     private static void shuffleArray(int[] array) {
         ThreadLocalRandom rand = ThreadLocalRandom.current();
         for (int i = array.length - 1; i > 0; i--) {
