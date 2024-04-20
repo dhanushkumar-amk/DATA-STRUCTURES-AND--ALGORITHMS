@@ -19,7 +19,7 @@ public class MergeSort {
            arrayList.add(arr[left++] );
        while(right<=high)
            arrayList.add(arr[right++]);
-       for (int i=0; i<arrayList.size();i++)
+       for (int i=0; i<=arrayList.size();i++)
            arr[i]=arrayList.get(i);
    }
     static void mergeSort(int [] arr,int l,int r) {
