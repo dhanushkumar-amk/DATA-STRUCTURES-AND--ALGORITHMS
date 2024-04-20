@@ -1,8 +1,27 @@
 package SORTING;
+
+import java.util.Arrays;
+
 public class MergeSort {
 
    static void merge(int [] arr,int l,int mid,int r) {
-       
+       int [] temp =new int[arr.length];
+       int k=0;
+       while(l<=mid && mid+1<=r)
+       {
+           if(arr[l]<arr[mid+1])
+           {
+               temp[k++]=arr[l];
+           }
+           else {
+               temp[k++]=arr[mid+1];
+               mid++;
+           }
+       }
+       while(l<=mid)
+           temp[k++]=arr[l];
+       while(mid+1<=r)
+           temp[k++]=arr[mid+1];
    }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
