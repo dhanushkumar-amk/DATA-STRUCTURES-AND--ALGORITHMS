@@ -33,7 +33,7 @@ public class MergeSort {
     }
     public static void main(String[] args) {
         int [] arr ={5,4,3,2,1};
-        mergeSort(arr,0, arr.length);
+        mergeSort(arr,0, arr.length-1);
         for (int x:arr) System.out.print(x+" ");
     }
 }
