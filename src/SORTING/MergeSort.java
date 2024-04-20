@@ -36,7 +36,7 @@ public class MergeSort {
     }
     public static void main(String[] args) {
         // Define the size of the array
-        int size = 100_000_000; // 100 million
+        int size = 100_000; // 100 million
 
         // Create the array
         int[] largeArray = new int[size];
