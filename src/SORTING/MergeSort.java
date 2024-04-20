@@ -51,7 +51,7 @@ public class MergeSort {
 
         // Display a message indicating successful creation
         System.out.println("Array of size " + size + " with unique numbers created successfully.");
-        mergeSort(largeArray,0, largeArray.length-1);
+//        mergeSort(largeArray,0, largeArray.length-1);
         for (int x:largeArray) System.out.println(x+" ");
     }
     private static void shuffleArray(int[] array) {
