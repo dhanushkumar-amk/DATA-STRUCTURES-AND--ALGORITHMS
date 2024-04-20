@@ -61,13 +61,5 @@ public class MergeSort {
             array[index] = array[i];
             array[i] = temp;
         }
-    private static void shuffleArray(int[] array) {
-        ThreadLocalRandom rand = ThreadLocalRandom.current();
-        for (int i = array.length - 1; i > 0; i--) {
-            int index = rand.nextInt(i + 1);
-            // Swap elements
-            int temp = array[index];
-            array[index] = array[i];
-            array[i] = temp;
-        }
+    }
 }
