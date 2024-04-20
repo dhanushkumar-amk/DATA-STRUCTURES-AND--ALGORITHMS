@@ -19,7 +19,8 @@ public class MergeSort {
            arrayList.add(arr[left++] );
        while(right<=high)
            arrayList.add(arr[right++]);
-       
+       for (int i=0; i<arrayList.size();i++)
+           arr[i]=arrayList.get(i);
    }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
@@ -32,6 +33,6 @@ public class MergeSort {
     public static void main(String[] args) {
         int [] arr ={5,4,3,2,1};
         mergeSort(arr,0, arr.length-1);
-        for (int x:arr) System.out.print(x+" ");
+
     }
 }
