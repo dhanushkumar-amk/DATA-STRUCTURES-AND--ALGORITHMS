@@ -17,7 +17,9 @@ public class MergeSortedArraysWithoutExtraSpace {
         for (int x:arr) System.out.print(x+" ");
     }
     public static void main(String[] args) {
-        int arr1[] = {1,4,8,12};
+        int arr1[] = {2, 8}
+        12 42
+        3 4 5 28 37 42 43 46
         int arr2[]={2,3,5,7,9};
         int lastPointer= arr1.length-1;
         int firstPointer= 0;
