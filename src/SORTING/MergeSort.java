@@ -13,7 +13,7 @@ public class MergeSort {
        {
            if(arr[left]<=arr[right])
                arrayList.add(arr[left++]);
-           
+
            else arrayList.add(arr[right++]);
        }
        while(left<=mid)
@@ -22,8 +22,8 @@ public class MergeSort {
        while(right<=high)
            arrayList.add(arr[right++]);
 
-       for (int i=0; i<arrayList.size();i++)
-           arr[i]=arrayList.get(i);
+       for (int i=low;i<=high;i++)
+           arr[i]= arrayList.get(i);
    }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
