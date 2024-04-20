@@ -20,8 +20,8 @@ public class MergeSort {
            temp[k++]=arr[l];
        while(mid+1<=r)
            temp[k++]=arr[mid+1];
-       for (int i=0; i< temp.length;i++)
-           
+      
+
    }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
