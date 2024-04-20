@@ -26,7 +26,6 @@ public class MergeSort {
        for (int i=low;i<=high;i++)
            arr[i]= arrayList.get(i-low);
    }
-   static int count=0;
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
             int mid = (l + r) / 2;
@@ -54,7 +53,7 @@ public class MergeSort {
         System.out.println("Array of size " + size + " with unique numbers created successfully.");
         mergeSort(largeArray,0, largeArray.length-1);
         for (int x:largeArray) System.out.println(x+" ");
-        System.out.println("Total recursive call"+ count);
+
     }
     private static void shuffleArray(int[] array) {
         ThreadLocalRandom rand = ThreadLocalRandom.current();
