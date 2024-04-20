@@ -21,7 +21,7 @@ public class MergeSort {
             int mid = (l + r) / 2;
             mergeSort(arr, l, mid);
             mergeSort(arr, mid + 1, r);
-            shift(arr, arr.length, l, r);
+            shift(arr, arr.length, l, r-mid);
         }
     }
     public static void main(String[] args) {
