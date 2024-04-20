@@ -13,12 +13,15 @@ public class MergeSort {
        {
            if(arr[left]<=arr[right])
                arrayList.add(arr[left++]);
+           
            else arrayList.add(arr[right++]);
        }
        while(left<=mid)
            arrayList.add(arr[left++] );
+
        while(right<=high)
            arrayList.add(arr[right++]);
+
        for (int i=0; i<arrayList.size();i++)
            arr[i]=arrayList.get(i);
    }
