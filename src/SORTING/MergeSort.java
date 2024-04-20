@@ -12,10 +12,14 @@ public class MergeSort {
        while(left<=mid &&right<=high)
        {
            if(arr[left]<arr[right])
-               
+               arrayList.add(arr[left++]);
+           else arrayList.add(arr[right++]);
        }
-
-
+       while(left<=mid)
+           arrayList.add(arr[left++] );
+       while(right<=high)
+           arrayList.add(arr[right++]);
+       
    }
     static void mergeSort(int [] arr,int l,int r) {
         if(l<r) {
