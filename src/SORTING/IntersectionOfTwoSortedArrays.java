@@ -37,6 +37,7 @@ public class IntersectionOfTwoSortedArrays {
     public static void main(String[] args) {
         int arr1[] = {1, 2, 3, 4};
         int arr2 [] = {2, 4, 6, 7, 8};
-        printIntersection(arr1,arr2,arr1.length,arr2.length);
+      ArrayList<Integer> arrayList =  printIntersection(arr1,arr2,arr1.length,arr2.length);
+        System.out.println(arrayList);
     }
 }
