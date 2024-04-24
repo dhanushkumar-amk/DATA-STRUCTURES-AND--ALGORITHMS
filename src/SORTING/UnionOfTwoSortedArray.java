@@ -31,10 +31,10 @@ public class UnionOfTwoSortedArray {
             }
         }
         while(i<len1)
-            if(i>0 && arr1[i]!=arr1[i-1])
+            if(i==0 || arr1[i]!=arr1[i-1])
             ans[k++]=arr1[i++];
         while(j<len2)
-            if(j>0 && arr2[j]!=arr2[j-1])
+            if(j==0 || arr2[j]!=arr2[j-1])
                 ans[k++]=arr2[k++];
         for (int x:ans) System.out.print(x+" ");
     }
