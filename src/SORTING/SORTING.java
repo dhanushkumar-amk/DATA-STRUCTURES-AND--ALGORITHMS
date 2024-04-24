@@ -47,9 +47,10 @@ class SORTING
         method(A,C);
         method(B,C);
         ArrayList<Integer> arrayList = new ArrayList();
-        for (int i=0; i<arrayList.size(); i++)
-            System.out.print(arrayList.get(i)+" ");
-
+        for (int x :A)arrayList.add(x);
+        for (int x :B)arrayList.add(x);
+        for (int x :C)arrayList.add(x);
+        for (int y:arrayList) System.out.print(y+" ");
         return arrayList;
     }
 
@@ -58,6 +59,5 @@ class SORTING
         int [] B={1 ,2 ,3, 4, 5};
         int [] C ={1, 2, 3, 4, 5, 6};
         merge3sorted(A,B,C);
-
     }
 }
