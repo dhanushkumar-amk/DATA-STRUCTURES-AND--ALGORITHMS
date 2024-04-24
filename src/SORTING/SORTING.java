@@ -53,7 +53,8 @@ class SORTING
     public static void main(String[] args) {
         int [] A ={1 ,2, 3 ,4};
         int [] B={1 ,2 ,3, 4, 5};
-        int [] C ={};
-        merge3sorted()
+        int [] C ={1, 2, 3, 4, 5, 6};
+        merge3sorted(A,B,C);
+        
     }
 }
