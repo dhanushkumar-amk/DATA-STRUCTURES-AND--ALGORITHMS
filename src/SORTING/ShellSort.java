@@ -5,7 +5,7 @@ public class ShellSort {
         int gap= arr.length-1/2;
         for (int i=0; i<=gap; i=gap/2)
         {
-            for (int j=0;j<=i; j++)
+            for (int j=0;j<i; j++)
             {
                 if(arr[j]>arr[j+i])
                 {
