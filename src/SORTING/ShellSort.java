@@ -12,7 +12,10 @@ public class ShellSort {
             int right=gap;
             while(right<len)
             {
-                
+                if(left<arr1.length)
+                {
+                    
+                }
             }
         }
     }
