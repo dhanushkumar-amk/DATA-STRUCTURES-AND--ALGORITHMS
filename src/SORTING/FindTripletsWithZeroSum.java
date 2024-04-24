@@ -2,7 +2,7 @@ package SORTING;
 
 public class FindTripletsWithZeroSum {
     public static void main(String[] args) {
-        int [] arr ={0,-1,2,-3,1};
+        int [] arr ={1, 2, 3};
         int n= arr.length;
         int i=0;
         int j=i+1;
