@@ -18,9 +18,14 @@ public class ShellSort {
                 {
                     if(arr1[left]>arr2[right])
                     {
-                        
+                        int temp = arr1[left];
+                        arr1[left]=arr2[right];
+                        arr2[right]=temp;
+                        left++;
+                        right++;
                     }
                 }
+                else 
             }
         }
     }
