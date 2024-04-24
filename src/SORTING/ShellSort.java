@@ -16,7 +16,10 @@ public class ShellSort {
             {
                 if(left<len1 && right>=len1)
                 {
-                    
+                    if(arr1[left]>arr2[right])
+                    {
+                        
+                    }
                 }
             }
         }
