@@ -10,7 +10,7 @@ public class UnionOfTwoSortedArray {
         while(l<=r)
         {
             int mid=(l+r)/2;
-            if()
+            if(x.indexOf())
         }
         return 0;
     }
