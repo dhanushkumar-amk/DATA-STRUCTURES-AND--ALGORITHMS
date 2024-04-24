@@ -14,7 +14,12 @@ public class ShellSort {
             {
                 if(left<arr1.length && right<arr1.length)
                 {
-                    if(arr1[left])
+                    if(arr1[left]>arr1[right])
+                    {
+                        int temp=arr1[left];
+                        arr1[left]=arr1[right];
+                        arr1[right]=temp;
+                    }
                 }
                 if(left>arr1.length && right>arr1.length)
                 {
