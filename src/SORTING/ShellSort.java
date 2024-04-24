@@ -1,5 +1,10 @@
 package SORTING;
 public class ShellSort {
+    private  static void swap(int [] first,int [] second,int l,int r) {
+            int temp = first[l];
+            first[l]=second[r];
+            second[r]=temp;
+    }
     public static void main(String[] args) {
         int [] arr1 ={1,3,5,7};
         int [] arr2 ={0,2,6,8,9};
@@ -17,16 +22,18 @@ public class ShellSort {
                 if(left<len1 && right>=len1)
                 {
                     if(arr1[left]>arr2[right])
-                    {
-                        int temp = arr1[left];
-                        arr1[left]=arr2[right];
-                        arr2[right]=temp;
-                        left++;
-                        right++;
-                    }
+                        swap(arr1,arr2,left,right);
+                    left++; right++;
                 }
                 else if(left>=len1){
-
+                    if(arr2[left]>arr2[right])
+                        swap(arr2,arr2,left,right);
+                    left++; right++;
+                }
+                else {
+                    if (arr1[left] > arr1[right])
+                        swap(arr1, arr1, left, right);
+                    left++; right++;
                 }
             }
         }
