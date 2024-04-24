@@ -1,6 +1,7 @@
 package  SORTING;
 
-import com.sun.jdi.PathSearchingVirtualMachine;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 class SORTING
 {
@@ -46,8 +47,9 @@ class SORTING
         method(A,B);
         method(A,C);
         method(B,C);
-        ArrayList<Integer> arrayList = new ArrayList():
-        arrayList.add(Arrays.asList(A));
+        ArrayList<Integer> arrayList = new ArrayList(Arrays.asList(A,B,C));
+        for (int x:arrayList) System.out.print( x+" ");
+        return arrayList;
     }
 
     public static void main(String[] args) {
@@ -55,6 +57,6 @@ class SORTING
         int [] B={1 ,2 ,3, 4, 5};
         int [] C ={1, 2, 3, 4, 5, 6};
         merge3sorted(A,B,C);
-        
+
     }
 }
