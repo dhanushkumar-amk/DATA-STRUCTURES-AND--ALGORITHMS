@@ -25,7 +25,9 @@ public class ShellSort {
                         right++;
                     }
                 }
-                else 
+                else {
+                    
+                }
             }
         }
     }
