@@ -34,7 +34,7 @@ class IntersectionOfTwoSortedArrays {
                 lis.add(nums1[i]);
         }
         int [] ans =  new int [lis.size()];
-        for(int i=0; i<lis.size(); i++)
+        for(int i=0; i<=lis.size(); i++)
             ans[i]=lis.get(i);
         return ans;
     }
