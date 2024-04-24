@@ -1,7 +1,7 @@
 package SORTING;
 public class ShellSort {
     private  static void swap(int [] first,int [] second,int l,int r) {
-        if(first[l]>first[r]) {
+        if(first[l]>second[r]) {
             int temp = first[l];
             first[l] = second[r];
             second[r] = temp;
@@ -22,7 +22,6 @@ public class ShellSort {
             {
                 if(left<len1 && right>=len1)
                 {
-
                         swap(arr1,arr2,left,right-len1);
 
                 }
