@@ -4,7 +4,7 @@ public class UnionOfTwoSortedArray {
 
     public static void main(String[] args) {
         int [] arr1 =  new int[] {1, 2, 3, 4, 5}   ;
-        int [] arr2 =new int[] {1, 1, 2, 3, 4};
+        int [] arr2 =new int[]{1, 2, 3, 6, 7};
         int [] ans = new int[arr1.length+arr2.length];
         int i=0;
         int j=0;
