@@ -23,7 +23,7 @@ public class UnionOfTwoSortedArray {
             }
             if(arr1[i]<arr2[j])
                 ans[k++]=arr1[i++];
-            else if(arr1[i]>arr1[j])
+            else if(arr1[i]>arr2[j])
                 ans[k++]=arr2[j++];
             else {
                 i++;
