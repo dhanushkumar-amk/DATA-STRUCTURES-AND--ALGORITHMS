@@ -10,8 +10,11 @@ public class ShellSort {
                 if(arr[j]>arr[j+i])
                 {
                     int temp=arr[j];
+                    arr[j]=arr[j+i];
+                    arr[j+i]=temp;
                 }
             }
         }
+        for (int x:arr) System.out.print(x+" ");
     }
 }
