@@ -1,7 +1,6 @@
 package  SORTING;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 class SORTING
 {
@@ -47,10 +46,10 @@ class SORTING
         method(A,B);
         method(A,C);
         method(B,C);
-        ArrayList<Integer> arrayList = new ArrayList(Arrays.asList(A,B,C));
+        ArrayList<Integer> arrayList = new ArrayList();
         for (int i=0; i<arrayList.size(); i++)
             System.out.print(arrayList.get(i)+" ");
-        
+
         return arrayList;
     }
 
