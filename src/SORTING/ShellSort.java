@@ -1,2 +1,6 @@
-package SORTING;public class ShellSort {
+package SORTING;
+public class ShellSort {
+    public static void main(String[] args) {
+        
+    }
 }
