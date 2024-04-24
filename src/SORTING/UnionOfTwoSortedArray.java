@@ -26,7 +26,6 @@ public class UnionOfTwoSortedArray {
             else if(arr1[i]>arr2[j])
                 ans[k++]=arr2[j++];
             else {
-                ans[k++]=arr1[i];
                 i++;
                 j++;
             }
