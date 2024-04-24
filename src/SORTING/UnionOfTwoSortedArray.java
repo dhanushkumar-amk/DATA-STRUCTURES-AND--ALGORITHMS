@@ -41,6 +41,6 @@ public class UnionOfTwoSortedArray {
             j++;
         }
         for (int ss=0; ss<=k; ss++)
-            System.out.print(ans[ss]);
+            System.out.print(ans[ss]+" ");
     }
 }
