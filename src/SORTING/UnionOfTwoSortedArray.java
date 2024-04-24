@@ -40,7 +40,7 @@ public class UnionOfTwoSortedArray {
                 ans[k++] = arr2[j];
             j++;
         }
-        for (int s=0; i<k; s++)
+        for (int s=0; i<=k; s++)
             System.out.println(ans[s]+" ");
     }
 }
