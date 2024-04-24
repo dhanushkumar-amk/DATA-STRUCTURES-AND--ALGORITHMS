@@ -13,9 +13,14 @@ public class UnionOfTwoSortedArray {
         int k=0;
         while(i<len1 && j<len2)
         {
-            if(i>0 && arr1[i]==arr1[i-1])i++;
-
-            if(j>0 && arr2[j]==arr2[j-1])j++;
+            if(i>0 && arr1[i]==arr1[i-1]) {
+                i++;
+                continue;
+            }
+            if(j>0 && arr2[j]==arr2[j-1]){
+                j++;
+                continue;
+            }
             if(arr1[i]<arr2[j])
                 ans[k++]=arr1[i++];
             else if(arr1[i]>arr1[j])
