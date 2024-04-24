@@ -23,6 +23,8 @@ public class FindTripletsWithZeroSum {
                     System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
                     j++;
                     k--;
+                    while(arr[j]==arr[j-1])j++;
+                    while(arr[k]==arr[k+1])k--;
                 }
             }
         }
