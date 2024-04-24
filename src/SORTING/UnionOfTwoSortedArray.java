@@ -39,5 +39,6 @@ public class UnionOfTwoSortedArray {
             if(listOne.get(i)==listTwo.get(ind))
                 ans.add(listOne.get(i));
         }
+        for (int y:ans) System.out.print(y+" ");
     }
 }
