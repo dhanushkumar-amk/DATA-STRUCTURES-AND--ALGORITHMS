@@ -36,7 +36,7 @@ public class ShellSort {
                 }
                 left++;right++;
             }if(gap==1) break;
-            gap= (int) Math.ceil(gap/2);
+            gap=(gap/2)+(gap%2);
         }
         for (int x:arr1) System.out.print(x+" ");
         System.out.println();
