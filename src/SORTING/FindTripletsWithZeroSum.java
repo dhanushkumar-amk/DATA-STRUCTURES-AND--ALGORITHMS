@@ -21,6 +21,8 @@ public class FindTripletsWithZeroSum {
                     k--;
                 else {
                     System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
+                    j++;
+                    k--;
                 }
             }
         }
