@@ -23,18 +23,18 @@ public class ShellSort {
                 {
                     if(arr1[left]>arr2[right])
                         swap(arr1,arr2,left,right);
-                    left++; right++;
+
                 }
                 else if(left>=len1){
                     if(arr2[left]>arr2[right])
                         swap(arr2,arr2,left,right);
-                    left++; right++;
+
                 }
                 else {
                     if (arr1[left] > arr1[right])
                         swap(arr1, arr1, left, right);
-                    left++; right++;
                 }
+                left++;right++;
             }
         }
     }
