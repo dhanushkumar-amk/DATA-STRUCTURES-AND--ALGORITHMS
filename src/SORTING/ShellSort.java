@@ -1,9 +1,11 @@
 package SORTING;
 public class ShellSort {
     private  static void swap(int [] first,int [] second,int l,int r) {
+        if(first[l]>first[r]) {
             int temp = first[l];
-            first[l]=second[r];
-            second[r]=temp;
+            first[l] = second[r];
+            second[r] = temp;
+        }
     }
     public static void main(String[] args) {
         int [] arr1 ={1,3,5,7};
@@ -20,17 +22,17 @@ public class ShellSort {
             {
                 if(left<len1 && right>=len1)
                 {
-                    if(arr1[left]>arr2[right])
+
                         swap(arr1,arr2,left,right-len1);
 
                 }
                 else if(left>=len1){
-                    if(arr2[left]>arr2[right])
+
                         swap(arr2,arr2,left-len1,right-len1);
 
                 }
                 else {
-                    if (arr1[left] > arr1[right])
+
                         swap(arr1, arr1, left, right);
                 }
                 left++;right++;
