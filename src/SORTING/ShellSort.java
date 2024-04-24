@@ -16,7 +16,7 @@ public class ShellSort {
         {
             int left=0;
              gap=gap/2;
-            int right=gap;
+            int right=left+gap;
             while(right<len)
             {
                 if(left<len1 && right>=len1)
