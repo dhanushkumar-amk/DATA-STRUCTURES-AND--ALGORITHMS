@@ -19,15 +19,34 @@ public class ShellSort {
                         int temp=arr1[left];
                         arr1[left]=arr1[right];
                         arr1[right]=temp;
+                        left++;
+                        right++;
+                        continue;
                     }
                 }
                 if(left>arr1.length && right>arr1.length)
                 {
-
+                    if(arr2[left]>arr2[right])
+                    {
+                        int temp=arr2[left];
+                        arr2[left]=arr2[right];
+                        arr2[right]=temp;
+                        left++;
+                        right++;
+                        continue;
+                    }
                 }
                 if(left<arr1.length && right<arr2.length )
                 {
-
+                    if(arr1[left]>arr2[right])
+                    {
+                        int temp=arr1[left];
+                        arr1[left]=arr2[right];
+                        arr2[right]=temp;
+                    }
+                    left++;
+                    right++;
+                    continue;
                 }
             }
         }
