@@ -15,7 +15,6 @@ public class ShellSort {
         while(gap>=1)
         {
             int left=0;
-             gap=gap/2;
             int right=left+gap;
             while(right<len)
             {
@@ -35,7 +34,8 @@ public class ShellSort {
                         swap(arr1, arr1, left, right);
                 }
                 left++;right++;
-            }
+            }if(gap==1) break;
+            gap=(gap/2)+(gap%2);
         }
     }
 }
