@@ -27,7 +27,7 @@ public class ShellSort {
                 }
                 else if(left>=len1){
                     if(arr2[left]>arr2[right])
-                        swap(arr2,arr2,left,right-len1);
+                        swap(arr2,arr2,left-len1,right-len1);
 
                 }
                 else {
