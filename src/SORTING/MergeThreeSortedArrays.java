@@ -50,6 +50,6 @@ public class MergeThreeSortedArrays {
         return arrayList;
     }
     public static void main(String[] args) {
-        
+
     }
 }
