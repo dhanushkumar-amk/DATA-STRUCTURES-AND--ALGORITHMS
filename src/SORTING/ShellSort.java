@@ -25,8 +25,8 @@ public class ShellSort {
                         right++;
                     }
                 }
-                else {
-                    
+                else if(left>=len1){
+
                 }
             }
         }
