@@ -26,6 +26,6 @@ public class UnionOfTwoSortedArray {
         TreeSet<Integer> setOne= new TreeSet();
         for(int x:arr1)setOne.add(x);
         for (int y:arr2)setOne.add(y);
-        for (int x:setOne) System.out.print(x+" ");
+
     }
 }
