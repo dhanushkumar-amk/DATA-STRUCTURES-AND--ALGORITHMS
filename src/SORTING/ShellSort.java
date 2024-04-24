@@ -14,7 +14,10 @@ public class ShellSort {
             int right=gap;
             while(right<len)
             {
-                if()
+                if(left<len1 && right>=len1)
+                {
+                    
+                }
             }
         }
     }
