@@ -1,51 +1,41 @@
 package SORTING;
-
 public class ShellSort {
-    private static void swap(int[] first, int[] second, int l, int r) {
-        int temp = first[l];
-        first[l] = second[r];
-        second[r] = temp;
+    private  static void swap(int [] first,int [] second,int l,int r) {
+            int temp = first[l];
+            first[l]=second[r];
+            second[r]=temp;
     }
-
     public static void main(String[] args) {
-        int[] arr1 = {1, 3, 5, 7};
-        int[] arr2 = {0, 2, 6, 8, 9};
-        int len1 = arr1.length;
-        int len2 = arr2.length;
-        int len = len1 + len2;
+        int [] arr1 ={1,3,5,7};
+        int [] arr2 ={0,2,6,8,9};
+        int gap=(arr1.length+arr2.length)/2+(arr1.length+arr2.length)%2;
+        int len=arr1.length+arr2.length;
+        int len1=arr1.length;
+        int len2=arr2.length;
+        while(gap>=1)
+        {
+            int left=0;
+            int right=left+gap;
+            while(right<len)
+            {
+                if(left<len1 && right>=len1)
+                {
+                    if(arr1[left]>arr2[right])
+                        swap(arr1,arr2,left,right-len1);
 
-        // Calculate initial gap
-        int gap = len / 2;
-
-        while (gap > 0) {
-            for (int i = gap; i < len; i++) {
-                int temp;
-                if (i < len1) {
-                    for (int j = i - gap; j >= 0 && arr1[j] > arr1[j + gap]; j -= gap) {
-                        swap(arr1, arr1, j, j + gap);
-                    }
-                } else {
-                    temp = i - len1;
-                    for (int j = temp - gap; j >= 0 && arr2[j] > arr2[j + gap]; j -= gap) {
-                        swap(arr2, arr2, j, j + gap);
-                    }
                 }
-            }
-            // Reduce the gap
-            gap = gap / 2;
-            if (gap % 2 == 1 && gap > 1) {
-                gap++; // Make sure gap is always even except for the last iteration
-            }
-        }
+                else if(left>=len1){
+                    if(arr2[left]>arr2[right])
+                        swap(arr2,arr2,left-len1,right-len1);
 
-        // Print sorted arrays
-        System.out.println("Sorted arr1:");
-        for (int num : arr1) { 
-            System.out.print(num + " ");
-        }
-        System.out.println("\nSorted arr2:");
-        for (int num : arr2) {
-            System.out.print(num + " ");
+                }
+                else {
+                    if (arr1[left] > arr1[right])
+                        swap(arr1, arr1, left, right);
+                }
+                left++;right++;
+            }if(gap==1) break;
+            gap=(gap/2)+(gap%2);
         }
     }
 }
