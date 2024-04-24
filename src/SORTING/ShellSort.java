@@ -12,7 +12,7 @@ public class ShellSort {
             int right=gap;
             while(right<len)
             {
-                if(left<arr1.length && right<arr1.length)
+                if(left<arr1.length && right<=arr1.length)
                 {
                     if(arr1[left]>arr1[right])
                     {
@@ -24,7 +24,7 @@ public class ShellSort {
                         continue;
                     }
                 }
-                if(left>arr1.length && right>arr1.length)
+                if(left>arr1.length && right>=arr1.length)
                 {
                     if(arr2[left]>arr2[right])
                     {
@@ -36,7 +36,7 @@ public class ShellSort {
                         continue;
                     }
                 }
-                if(left<arr1.length && right<arr2.length )
+                if(left<arr1.length && right<=arr2.length )
                 {
                     if(arr1[left]>arr2[right])
                     {
