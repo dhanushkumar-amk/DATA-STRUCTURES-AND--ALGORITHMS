@@ -27,7 +27,7 @@ public class UnionOfTwoSortedArray {
                 ans[k++]=arr2[j++];
             else {
                 i++;
-                k++;
+                j++;
             }
         }
         while(i<len1)
