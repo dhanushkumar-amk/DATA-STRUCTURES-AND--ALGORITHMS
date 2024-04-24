@@ -36,7 +36,7 @@ public class ShellSort {
                 }
                 left++;right++;
             }if(gap==1) break;
-            gap=(gap/2)+(gap%2);
+            gap= (int) Math.ceil(gap/2);
         }
     }
 }
