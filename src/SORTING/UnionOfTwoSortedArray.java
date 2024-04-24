@@ -30,9 +30,9 @@ public class UnionOfTwoSortedArray {
                 j++;
             }
         }
-        while (i < len1)
-            if (i == 0 || arr1[i] != arr1[i - 1])
-                ans[k++] = arr1[i++];
+//        while (i < len1)
+//            if (i == 0 || arr1[i] != arr1[i - 1])
+//                ans[k++] = arr1[i++];
         while (j < len2)
             if (j == 0 || arr2[j] != arr2[j - 1])
                 ans[k++] = arr2[j++];
