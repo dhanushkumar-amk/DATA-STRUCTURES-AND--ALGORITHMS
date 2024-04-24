@@ -2,6 +2,7 @@ package  SORTING;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 
 class SORTING
 {
@@ -48,7 +49,7 @@ class SORTING
         method(A,C);
         method(B,C);
         ArrayList<Integer> arrayList = new ArrayList(Arrays.asList(A,B,C));
-        for (int x:arrayList) System.out.print( x+" ");
+        for (Object x:arrayList) System.out.print( x+" ");
         return arrayList;
     }
 
