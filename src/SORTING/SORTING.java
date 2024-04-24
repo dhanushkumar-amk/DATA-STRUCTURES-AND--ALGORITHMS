@@ -50,7 +50,6 @@ class SORTING
         for (int x :A)arrayList.add(x);
         for (int x :B)arrayList.add(x);
         for (int x :C)arrayList.add(x);
-        for (int y:arrayList) System.out.print(y+" ");
         return arrayList;
     }
 
