@@ -3,7 +3,7 @@ package SORTING;
 public class UnionOfTwoSortedArray {
 
     public static void main(String[] args) {
-        int [] arr1 =  new int[]{3,8,8};
+        int [] arr1 =  new int[]{2, 2, 3, 4, 5}  ;
         int [] arr2 =new int[]{2,8,8,10,15};
         int [] ans = new int[arr1.length+arr2.length];
         int i=0;
