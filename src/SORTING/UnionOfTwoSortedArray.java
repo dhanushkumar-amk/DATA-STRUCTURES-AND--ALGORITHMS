@@ -37,6 +37,7 @@ public class UnionOfTwoSortedArray {
             if (j == 0 || arr2[j] != arr2[j - 1])
                 ans[k++] = arr2[j++];
 
+
         for (int x:ans) System.out.print(x+" ");
     }
 }
