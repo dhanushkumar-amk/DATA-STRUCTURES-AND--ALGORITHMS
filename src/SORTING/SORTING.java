@@ -52,5 +52,7 @@ import java.util.ArrayList;
         public static void main(String[] args) {
             long [] arr ={2,4,1,3,5};
             inversionCount(arr, arr.length);
+            for (long x:arr) System.out.println(x+" ");
+            System.out.println(count);
         }
     }
