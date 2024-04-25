@@ -18,7 +18,6 @@ public class CountInversions {
                 }
             }
             list.add(temp);
-            temp.clear();
         }
         for (int i=0; i<list.size(); i++)
         {
