@@ -22,7 +22,7 @@ import java.util.ArrayList;
             while(left<=mid) list.add((int)arr[left++]);
             while(right<=high)list.add((int)arr[right++]);
             for(int i=low; i<=high; i++)
-                arr[i]=list.get(i-low);
+                arr[i] = list.get(i - low);
 
         }
         static void merge(long arr[],int l,int r) {
