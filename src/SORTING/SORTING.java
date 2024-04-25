@@ -23,7 +23,7 @@ import java.util.ArrayList;
                 }
                 else {
                     list.add(arr[right++]);
-
+                    count++;
                 }
             }
             while(left<=mid) list.add(arr[left++]);
