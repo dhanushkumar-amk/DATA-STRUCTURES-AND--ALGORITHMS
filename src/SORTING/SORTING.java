@@ -5,25 +5,31 @@ import java.util.ArrayList;
 
     class SORTING
     {
-        // arr[]: Input Array
-        // N : Size of the Array arr[]
-        //Function to count inversions in the array.
-        static void mergeSort(long[] arr,int low,int mid,int high) {
-            int left=low;
+        static long count=0;
+        static void  mergeSort(long []arr,int low,int mid,int high) {
+            int left=0;
             int right=mid+1;
-            ArrayList<Integer> list = new ArrayList();
+            ArrayList<Long> list = new ArrayList();
+
             while(left<=mid && right <=high)
             {
-                if(arr[left]<=arr[right])
-                    list.add((int) arr[left++]);
-                else
-                    list.add((int)arr[right++]);
-            }
-            while(left<=mid) list.add((int)arr[left++]);
-            while(right<=high)list.add((int)arr[right++]);
-            for(int i=low; i<=high; i++)
-                arr[i] = list.get(i - low);
+                if(arr[left]<arr[right]){
+                    list.add(arr[left++]);
 
+                }
+                else if(arr[left]>arr[(int)right]){
+                    list.add(arr[right++]);
+                    count++;
+                }
+                else {
+                    list.add(arr[right++]);
+
+                }
+            }
+            while(left<=mid) list.add(arr[left++]);
+            while(right<=high)list.add(arr[right++]);
+            for(int i=low; i<=high; i++)
+                arr[i]=list.get(i-low);
         }
         static void merge(long arr[],int l,int r) {
             if(l<r)
@@ -35,8 +41,16 @@ import java.util.ArrayList;
             }
         }
 
+        static long inversionCount(long arr[], int N)
+        {
+            // Your Code Here
+            long ans=0;
+            merge(arr,0,(int)N);
+            return ans;
+        }
+
         public static void main(String[] args) {
             long [] arr ={2,4,1,3,5};
-            merge(arr,0, arr.length-1);
+            inversionCount(arr, arr.length);
         }
     }
