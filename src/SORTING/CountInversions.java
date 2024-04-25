@@ -15,9 +15,10 @@ public class CountInversions {
                 if(arr[i]>arr[j]) {
                     temp.add(arr[i]);
                     temp.add(arr[j]);
+                    list.add(temp);
                 }
             }
-            list.add(temp);
+
         }
         for (int i=0; i<list.size(); i++)
         {
