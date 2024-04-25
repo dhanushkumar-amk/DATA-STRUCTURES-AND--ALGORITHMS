@@ -45,7 +45,7 @@ import java.util.ArrayList;
         {
             // Your Code Here
             long ans=0;
-            merge(arr,0,(int)N);
+            merge(arr,0,(int)N-1);
             return ans;
         }
 
