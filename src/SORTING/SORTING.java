@@ -9,7 +9,7 @@ import java.util.ArrayList;
         // N : Size of the Array arr[]
         //Function to count inversions in the array.
         static void mergeSort(long[] arr,int low,int mid,int high) {
-            int left=0;
+            int left=low;
             int right=mid+1;
             ArrayList<Integer> list = new ArrayList();
             while(left<=mid && right <=high)
