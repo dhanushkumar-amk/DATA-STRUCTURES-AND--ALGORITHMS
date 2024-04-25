@@ -7,7 +7,7 @@ import java.util.ArrayList;
     {
         static long count=0;
         static void  mergeSort(long []arr,int low,int mid,int high) {
-            int left=0;
+            int left=low;
             int right=mid+1;
             ArrayList<Long> list = new ArrayList();
 
