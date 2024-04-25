@@ -39,7 +39,7 @@ import java.util.ArrayList;
 
 
         public static void main(String[] args) {
-            long [] arr = {2, 3, 4, 5, 6};
+            long [] arr = {2,4,1,3,5};
             merge(arr, 0,arr.length-1);
             for (long x:arr) System.out.print(x+" ");
             System.out.println();
