@@ -14,7 +14,7 @@ import java.util.ArrayList;
             ArrayList<Integer> list = new ArrayList();
             while(left<=mid && right <=high)
             {
-                if(arr[left]<arr[right])
+                if(arr[left]<=arr[right])
                     list.add((int) arr[left++]);
                 else
                     list.add((int)arr[right++]);
