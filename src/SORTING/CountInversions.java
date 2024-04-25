@@ -9,9 +9,10 @@ public class CountInversions {
 
         for (int i=0; i< arr.length; i++)
         {
-            ArrayList<Integer> temp=new ArrayList<>();
+
             for (int j=i+1; j< arr.length; j++)
             {
+                ArrayList<Integer> temp=new ArrayList<>();
                 if(arr[i]>arr[j]) {
                     temp.add(arr[i]);
                     temp.add(arr[j]);
