@@ -17,10 +17,6 @@ import java.util.ArrayList;
                     list.add(arr[left++]);
 
                 }
-                else if(arr[left]>arr[(int)right]){
-                    list.add(arr[right++]);
-                    count++;
-                }
                 else {
                     list.add(arr[right++]);
                     count++;
