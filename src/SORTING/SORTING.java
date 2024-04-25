@@ -42,6 +42,7 @@ import java.util.ArrayList;
             long [] arr = {2, 3, 4, 5, 6};
             merge(arr, 0,arr.length-1);
             for (long x:arr) System.out.print(x+" ");
+            System.out.println(count);
 
         }
     }
