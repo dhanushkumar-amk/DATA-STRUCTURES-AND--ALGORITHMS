@@ -19,9 +19,9 @@ import java.util.ArrayList;
                 else
                     list.add((int)arr[right++]);
             }
-            while(left<=mid) list.add((int)arr[left++]);
-            while(right<=high)list.add((int)arr[right++]);
-            for(int i=low; i<=high; i++)
+            while (left <= mid) list.add((int)arr[left++]);
+            while (right <= high) list.add((int)arr[right++]);
+            for (int i = low; i <= high; i++)
                 arr[i] = list.get(i - low);
 
         }
