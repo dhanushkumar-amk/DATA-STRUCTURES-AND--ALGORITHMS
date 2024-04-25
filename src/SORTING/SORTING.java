@@ -12,7 +12,8 @@ class SORTING {
             if (arr[left] <= arr[right]) {
                 list.add(arr[left++]);
             } else {
-                list.add(arr[right++]);// Increment count by the number of remaining elements in left half
+                list.add(arr[right++]);
+                count += mid - left + 1; // Increment count by the number of remaining elements in left half
             }
         }
         while (left <= mid) list.add(arr[left++]);
