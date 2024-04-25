@@ -16,13 +16,8 @@ import java.util.ArrayList;
             {
                 if(arr[left]<arr[right])
                     list.add((int) arr[left++]);
-                else if(arr[left]>arr[right])
+                else 
                     list.add((int)arr[right++]);
-                else {
-                    list.add((int)arr[left]);
-                    left++;
-                    right++;
-                }
             }
             while(left<=mid) list.add((int)arr[left++]);
             while(right<=high)list.add((int)arr[right++]);
