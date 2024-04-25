@@ -37,17 +37,10 @@ import java.util.ArrayList;
             }
         }
 
-        static long inversionCount(long arr[], int N)
-        {
-            // Your Code Here
-            long ans=0;
-            merge(arr,0,(int)N-1);
-            return ans;
-        }
 
         public static void main(String[] args) {
             long [] arr = {2, 3, 4, 5, 6};
-            inversionCount(arr, arr.length);
+            merge(arr, 0,arr.length-1);
             for (long x:arr) System.out.print(x+" ");
 
         }
