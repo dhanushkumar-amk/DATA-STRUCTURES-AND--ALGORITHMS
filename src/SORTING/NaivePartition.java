@@ -2,7 +2,7 @@ package SORTING;
 
 public class NaivePartition {
     public static void main(String[] args) {
-        int [] arr ={3,8,6,12,10,7};
+        int [] arr ={5,13,6,9,12,11,8};
 
         int [] temp= new int[arr.length];
         int p=5;
@@ -19,7 +19,7 @@ public class NaivePartition {
         for (int j=0; j< arr.length;j++)
             if(arr[j]>arr[p])
                 temp[k++]=arr[j];
-        
+
         for (int x:temp) System.out.print(x+" ");
     }
 
