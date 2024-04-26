@@ -1,5 +1,3 @@
-package SORTING;
-
 import java.util.Random;
 
  class TestNaivePartition {
@@ -17,12 +15,16 @@ import java.util.Random;
                 arr[i] = random.nextInt(100); // Generate random integers between 0 and 99
             }
 
-            // Print the original array
-            System.out.println("Test Case " + testCase + ": Original Array");
+            // Select pivot element (the digit used for partitioning)
+            int pivotIndex = random.nextInt(size);
+            int pivot = arr[pivotIndex];
+
+            // Print the original array and the pivot element
+            System.out.println("Test Case " + testCase + ": Original Array with Pivot Element " + pivot);
             printArray(arr);
 
             // Call partition method to partition the array
-            partition(arr);
+            partition(arr, pivotIndex);
 
             // Print the partitioned array
             System.out.println("Partitioned Array:");
@@ -33,20 +35,20 @@ import java.util.Random;
     }
 
     // Helper method to partition an array
-    public static void partition(int[] arr) {
+    public static void partition(int[] arr, int pivotIndex) {
         int[] temp = new int[arr.length];
-        int p = arr.length - 1;
+        int pivot = arr[pivotIndex];
         int k = 0;
 
         for (int i = 0; i < arr.length; i++)
-            if (arr[i] < arr[p])
+            if (arr[i] < pivot)
                 temp[k++] = arr[i];
 
-        temp[k] = arr[p];
+        temp[k] = pivot;
         k += 1;
 
         for (int j = 0; j < arr.length; j++)
-            if (arr[j] > arr[p])
+            if (arr[j] > pivot)
                 temp[k++] = arr[j];
 
         System.arraycopy(temp, 0, arr, 0, arr.length);
