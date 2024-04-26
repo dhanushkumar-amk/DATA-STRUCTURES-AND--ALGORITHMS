@@ -43,7 +43,7 @@ public class countInversion {
     {
         // Your Code Here
         merge(arr,0,(int)N-1);
-        for(long x:arr)System.out.println(x);
+        for(long x:arr)System.out.print(x+" ");
         return -1;
     }
 
