@@ -32,12 +32,12 @@ public class countInversion {
         }
     }
     static void merge(long [] arr,int low,int high) {
-        if(low<=high) return;
-        int mid=(low+high)/2;
-
-        merge(arr,low,mid);
-        merge(arr,mid+1,high);
-        mergeSort(arr,low,mid,high);
+        if(low<high) {
+            int mid = (low + high) / 2;
+            merge(arr, low, mid);
+            merge(arr, mid + 1, high);
+            mergeSort(arr, low, mid, high);
+        }
     }
     static long inversionCount(long arr[], long N)
     {
