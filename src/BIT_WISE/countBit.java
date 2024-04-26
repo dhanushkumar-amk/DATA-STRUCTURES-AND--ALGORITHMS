@@ -15,6 +15,7 @@ public class countBit {
         return count;
     }
     public static void main(String[] args) {
-        setBits(6);
+      int ans=  setBits(6);
+        System.out.println(ans);
     }
 }
