@@ -3,7 +3,7 @@ package BIT_WISE;
 public class countBit {
     static int setBits(int N) {
         // code here
-        int count=0;
+        int count=0;//2
 
         while(N>0)
         {
@@ -19,4 +19,5 @@ public class countBit {
         System.out.println(ans);
     }
 }
-//00000000000000000000000000000001
+//00000000000000000000000000000011   = 6
+//00000000000000000000000000000001   = 1
