@@ -1,6 +1,6 @@
 package SORTING;
 
-public class NaviPartition {
+public class NaivePartition {
     public static void main(String[] args) {
         int [] arr ={3,8,6,12,10,7};
 
