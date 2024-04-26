@@ -4,7 +4,7 @@ public class NaviPartition {
     public static void main(String[] args) {
         int [] arr ={10,9,8,7,6,5,4,3,2,1};
         int [] temp= new int[arr.length];
-        int p=4;
+        int p=3;
         int k=0;
         for (int i=0; i< arr.length; i++)
         {
