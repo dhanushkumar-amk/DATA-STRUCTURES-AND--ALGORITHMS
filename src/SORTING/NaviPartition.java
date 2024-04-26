@@ -2,7 +2,7 @@ package SORTING;
 
 public class NaviPartition {
     public static void main(String[] args) {
-        int [] arr ={10,9,8,7,6,5,4,3,2,1};
+        int [] arr ={3,8,6,12,10,7};
         int [] temp= new int[arr.length];
         int p=3;
         int k=0;
