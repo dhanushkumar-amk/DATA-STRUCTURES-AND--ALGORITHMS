@@ -6,37 +6,35 @@ import java.util.Random;
     public static void main(String[] args) {
         Random random = new Random();
 
-        // Loop for 100 test cases
+
         for (int testCase = 1; testCase <= 1112; testCase++) {
-            // Generate random array size between 5 and 20
+
             int size = random.nextInt(16) + 5;
             int[] arr = new int[size];
 
-            // Fill the array with random integers
+
             for (int i = 0; i < size; i++) {
-                arr[i] = random.nextInt(100); // Generate random integers between 0 and 99
+                arr[i] = random.nextInt(100);
             }
 
-            // Select pivot element (the digit used for partitioning)
             int pivotIndex = random.nextInt(size);
             int pivot = arr[pivotIndex];
 
-            // Print the original array and the pivot element
+
             System.out.println("Test Case " + testCase + ": Original Array with Pivot Element " + pivot);
             printArray(arr);
 
-            // Call partition method to partition the array
             partition(arr, pivotIndex);
 
-            // Print the partitioned array
+
             System.out.println("Partitioned Array:");
             printArray(arr);
 
-            System.out.println(); // Add a newline for better readability
+            System.out.println();
         }
     }
 
-    // Helper method to partition an array
+
     public static void partition(int[] arr, int pivotIndex) {
         int[] temp = new int[arr.length];
         int pivot = arr[pivotIndex];
