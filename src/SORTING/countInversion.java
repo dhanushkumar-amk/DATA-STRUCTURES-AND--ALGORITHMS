@@ -1,2 +1,4 @@
-package SORTING;public class countInversion {
+package SORTING;
+
+public class countInversion {
 }
