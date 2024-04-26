@@ -5,7 +5,7 @@ import java.util.Random;
         Random random = new Random();
 
         // Loop for 100 test cases
-        for (int testCase = 1; testCase <= 1000; testCase++) {
+        for (int testCase = 1; testCase <= 100; testCase++) {
             // Generate random array size between 5 and 20
             int size = random.nextInt(16) + 5;
             int[] arr = new int[size];
