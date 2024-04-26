@@ -1,14 +1,8 @@
 package SORTING;
+
 import java.util.Random;
-public class NaivePartition {
-    st
-    public static void main(String[] args) {
-    }
 
-}
-
-
-public class TestNaivePartition  extends  SORTING{
+ class TestNaivePartition {
     public static void main(String[] args) {
         Random random = new Random();
 
@@ -27,13 +21,35 @@ public class TestNaivePartition  extends  SORTING{
             System.out.println("Test Case " + testCase + ": Original Array");
             printArray(arr);
 
-            // Call NaivePartition to partition the array
-            System.out.println("Partitioned Array:");
+            // Call partition method to partition the array
             partition(arr);
+
+            // Print the partitioned array
+            System.out.println("Partitioned Array:");
             printArray(arr);
 
             System.out.println(); // Add a newline for better readability
         }
+    }
+
+    // Helper method to partition an array
+    public static void partition(int[] arr) {
+        int[] temp = new int[arr.length];
+        int p = arr.length - 1;
+        int k = 0;
+
+        for (int i = 0; i < arr.length; i++)
+            if (arr[i] < arr[p])
+                temp[k++] = arr[i];
+
+        temp[k] = arr[p];
+        k += 1;
+
+        for (int j = 0; j < arr.length; j++)
+            if (arr[j] > arr[p])
+                temp[k++] = arr[j];
+
+        System.arraycopy(temp, 0, arr, 0, arr.length);
     }
 
     // Helper method to print an array
