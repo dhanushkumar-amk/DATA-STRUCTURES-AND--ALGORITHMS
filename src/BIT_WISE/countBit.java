@@ -15,6 +15,6 @@ public class countBit {
         return count;
     }
     public static void main(String[] args) {
-        setBits()
+        setBits(6);
     }
 }
