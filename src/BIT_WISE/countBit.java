@@ -19,3 +19,4 @@ public class countBit {
         System.out.println(ans);
     }
 }
+//00000000000000000000000000000001
