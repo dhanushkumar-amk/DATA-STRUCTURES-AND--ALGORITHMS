@@ -48,7 +48,7 @@ public class countInversion {
     }
 
     public static void main(String[] args) {
-        long [] arr ={}
-        inversionCount()
+        long [] arr = {2, 4, 1, 3, 5};
+        inversionCount(arr, arr.length-1);
     }
 }
