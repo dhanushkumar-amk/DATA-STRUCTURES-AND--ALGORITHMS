@@ -11,7 +11,8 @@ public class NaviPartition {
             if(arr[i]<arr[p])
                 temp[k++]=arr[i];
         }
-        arr[k]=arr[p];
+        System.out.println(arr[k]);
+//        arr[k]=arr[p];
         for (int j=0; j< arr.length;j++)
         {
             if(arr[j]>arr[p])
