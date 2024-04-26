@@ -1,3 +1,5 @@
+package SORTING;
+
 import java.util.Random;
 
  class TestNaivePartition {
