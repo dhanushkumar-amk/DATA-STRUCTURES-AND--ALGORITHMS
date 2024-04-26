@@ -28,7 +28,7 @@ public class countInversion {
         }
         for(int i=low;i<=high; i++)
         {
-            arr[i]=(long)list.get(low-i);
+            arr[i]=(long)list.get(i-low);
         }
     }
     static void merge(long [] arr,int low,int high) {
