@@ -5,7 +5,7 @@ public class NaivePartition {
         int [] arr ={5,13,6,9,12,11,8};
 
         int [] temp= new int[arr.length];
-        int p=5;
+        int p= arr.length-1;
 
         int k=0;
 
