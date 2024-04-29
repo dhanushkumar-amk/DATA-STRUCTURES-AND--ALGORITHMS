@@ -7,7 +7,7 @@ public class LomutoPartition {
         int pivot=n-1;
         int j=0;
         int i=0;
-        for (; j<pivot; j++)
+        for (;j<n; j++)
         {
             if(arr[j]<=arr[pivot])
             {
@@ -15,16 +15,9 @@ public class LomutoPartition {
                 arr[i]=arr[j];
                 arr[j]=x;
                 i++;
-                j++;
             }
-            else {
-                j++;
-            }
+            else j++;
         }
-//        int temp=arr[i];
-//        arr[i]=arr[pivot];
-//        arr[pivot]=temp;
-
         for (int x:arr) System.out.print(x+" ");
     }
 }
