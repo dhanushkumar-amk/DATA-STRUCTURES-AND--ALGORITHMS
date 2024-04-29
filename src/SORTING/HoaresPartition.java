@@ -1,9 +1,7 @@
 package SORTING;
 
 public class HoaresPartition {
-    public static void main(String[] args) {
-        int [] arr ={5,3,8,4,2,7,1,10};
-        int n= arr.length-1;
+    static void hores(int [] arr,int n) {
         int start=-1;
         int end=n+1;
         int pivot=arr[4];
@@ -20,6 +18,11 @@ public class HoaresPartition {
             arr[start]=arr[end];
             arr[end]=x;
         }
-        for(int temp:arr) System.out.print(temp);
+    }
+    public static void main(String[] args) {
+        int [] arr ={5,3,8,4,2,7,1,10};
+        int n= arr.length-1;
+        hores(arr,n);
+        for (int x:arr) System.out.print(x);
     }
 }
