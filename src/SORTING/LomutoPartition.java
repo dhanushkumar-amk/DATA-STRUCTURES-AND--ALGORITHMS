@@ -21,8 +21,8 @@ public class LomutoPartition {
             else j++;
         }
         int x= arr[i+1];
-        arr[i+1]=arr[n-1];
-        arr[n-1]=x;
+        arr[i+1]=arr[ind];
+        arr[ind]=x;
         for (int xx:arr) System.out.print(xx+" ");
     }
 }
