@@ -21,6 +21,7 @@ public class HoaresPartition {
                 int temp=arr[right];
                 arr[right]=arr[left];
                 arr[right]=temp;
+                right--;
             }
         }
         if(arr[left]>arr[pivot])
