@@ -6,7 +6,7 @@ public class LomutoPartition {
         int n=arr.length;
         int pivot=n-1;
         int j=0;
-        for (int i=0; i<pivot; j++)
+        for (int i=0; j<pivot; j++)
         {
             if(arr[j]<arr[pivot]) {
                 i++;
