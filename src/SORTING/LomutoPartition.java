@@ -2,6 +2,23 @@ package SORTING;
 
 public class LomutoPartition {
     public static void main(String[] args) {
-        System.out.println("2".concat("23"));
+        int [] arr= new int[] {10,80,30,90,40,50,70};
+        int n=arr.length;
+        int pivot=n-1;
+        int j=0;
+        for (int i=0; i<pivot; j++)
+        {
+            if(arr[j]<arr[pivot]) {
+                i++;
+                j++;
+            }
+            else {
+                int x=arr[i];
+                arr[i]=arr[j];
+                arr[j]=x;
+                j++;
+            }
+        }
+        for (int x:arr) System.out.print(x+" ");
     }
 }
