@@ -36,7 +36,7 @@ public class LomutoPartition {
 
     // Driver code to test partition algorithm
     public static void main(String[] args) {
-        int[] arr = {5,1,0,2,3};
+        int[] arr = {36,34,43,11,15,20,28,45,27,32};
         int n = arr.length;
         int pivotIndex = partition(arr, 0, n - 1);
         System.out.println("Pivot element: " + arr[pivotIndex]);
