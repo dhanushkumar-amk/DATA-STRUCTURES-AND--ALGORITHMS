@@ -9,13 +9,13 @@ public class LomutoPartition {
         for (int i=0; j<pivot; j++)
         {
             if(arr[j]<=arr[pivot]) {
-                i++;
-                j++;
-            }
-            else {
                 int x=arr[i];
                 arr[i]=arr[j];
                 arr[j]=x;
+                j++;
+            }
+            else {
+                i++;
                 j++;
             }
         }
