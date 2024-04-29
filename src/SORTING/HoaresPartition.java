@@ -20,12 +20,12 @@ public class HoaresPartition {
                 arr[right]=x;
             }
         }
-        if(arr[left]>arr[pivot])
-        {
-            int t=arr[left];
-            arr[left]=arr[pivot];
-            arr[pivot]=t;
-        }
+//        if(arr[left]>arr[pivot])
+//        {
+//            int t=arr[left];
+//            arr[left]=arr[pivot];
+//            arr[pivot]=t;
+//        }
         for (int x:arr) System.out.print(x+" ");
     }
 }
