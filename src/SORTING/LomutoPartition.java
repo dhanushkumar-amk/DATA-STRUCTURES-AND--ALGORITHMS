@@ -3,10 +3,8 @@ package SORTING;
 public class LomutoPartition {
     public static void main(String[] args) {
         int [] arr= new int[] {12,9,7,15,10};
-        int index=2;
         int n=arr.length;
-        int pivot=arr[index];
-        int ind=index;
+        int pivot=arr[n-1];
         int j=0;
         int i=0;
         for (;j<=n-1; j++)
@@ -21,8 +19,8 @@ public class LomutoPartition {
             else j++;
         }
         int x= arr[i+1];
-        arr[i+1]=arr[ind];
-        arr[ind]=x;
+        arr[i+1]=arr[n-1];
+        arr[n-1]=x;
         for (int xx:arr) System.out.print(xx+" ");
     }
 }
