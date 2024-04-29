@@ -14,8 +14,11 @@ public class LomutoPartition {
                 int x=arr[i];
                 arr[i]=arr[j];
                 arr[j]=x;
-                
+                i++;
+                j++;
             }
+            else j++;
         }
+        
     }
 }
