@@ -15,7 +15,7 @@ public class LomutoPartition {
                 arr[i]=arr[j];
                 arr[j]=x;
                 i++;
-                j++;
+//                j++;
             }
             else j++;
         }
