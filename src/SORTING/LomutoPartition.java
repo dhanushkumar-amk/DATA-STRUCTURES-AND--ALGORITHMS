@@ -18,6 +18,9 @@ public class LomutoPartition {
             }
             else j++;
         }
+        System.out.println(i);
+        System.out.println(j);
+        
         for (int xx:arr) System.out.print(xx+" ");
     }
 }
