@@ -23,6 +23,6 @@ public class HoaresPartition {
         int [] arr ={5,3,8,4,2,7,1,10};
         int n= arr.length-1;
         hores(arr,n);
-        for (int x:arr) System.out.print(x);
+        for (int x:arr) System.out.print(x+" ");
     }
 }
