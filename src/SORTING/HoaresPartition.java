@@ -9,7 +9,7 @@ public class HoaresPartition {
         int right=pivot-1;
         while(left<=right)
         {
-            if(arr[left]>arr[right])
+            if(arr[left]>arr[pivot])
             {
                 int x=arr[left];
                 arr[left]=arr[right];
