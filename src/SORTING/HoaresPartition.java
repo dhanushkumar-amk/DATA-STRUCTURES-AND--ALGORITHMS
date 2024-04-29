@@ -6,7 +6,7 @@ public class HoaresPartition {
         int n= arr.length;
         int left=0;
         int pivot=n-1;
-        int right=pivot-2;
+        int right=pivot-1;
         while(left<=right)
         {
             if(!(arr[left]<=arr[right]&& arr[left]<=arr[pivot]))
