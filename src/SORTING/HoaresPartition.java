@@ -9,23 +9,21 @@ public class HoaresPartition {
         int right=pivot-2;
         while(left<=right)
         {
-            if(arr[left]>=arr[pivot])
+            if(arr[left]<=arr[pivot])
             {
-                int x=arr[left];
+                int temp=arr[left];
                 arr[left]=arr[right];
-                arr[right]=x;
+                arr[right]=temp;
                 left++;
             }
-          else {
-                int x = arr[right];
-                arr[right] = arr[left];
-                arr[left] = x;
+            else if(arr[right]<=arr[pivot]){
+                int temp=arr[right];
+                arr[right]=arr[left];
+                arr[left]=temp;
                 right--;
             }
         }
-        int temp=arr[left];
-        arr[left]=arr[pivot];
-        arr[pivot]=temp;
+        
         for (int x:arr) System.out.print(x+" ");
     }
 }
