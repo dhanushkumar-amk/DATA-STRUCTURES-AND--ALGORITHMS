@@ -2,7 +2,7 @@ package SORTING;
 
 public class LomutoPartition {
     public static void main(String[] args) {
-        int [] arr= new int[] {12,9,7,15,10};
+        int [] arr= new int[] {12,9,7,15,1};
         int n=arr.length;
         int pivot=arr[n-1];
         int j=0;
