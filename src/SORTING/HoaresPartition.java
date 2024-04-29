@@ -20,6 +20,6 @@ public class HoaresPartition {
             arr[start]=arr[end];
             arr[end]=x;
         }
-        for (int temp:arr) System.out.print(temp);
+        for(int temp:arr) System.out.print(temp);
     }
 }
