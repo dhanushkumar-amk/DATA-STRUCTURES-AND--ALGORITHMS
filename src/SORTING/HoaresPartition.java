@@ -12,7 +12,7 @@ public class HoaresPartition {
             do {
                 end--;
             }while(arr[end]>pivot);
-            if(start<=end)
+            if(start>=end)
                 return;
             int x=arr[start];
             arr[start]=arr[end];
