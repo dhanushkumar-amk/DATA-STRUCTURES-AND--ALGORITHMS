@@ -16,11 +16,11 @@ public class HoaresPartition {
                 arr[right]=temp;
                 left++;
             }
-            else {
+            if((arr[right]>=arr[pivot]&&arr[right]>arr[left]))
+            {
                 int temp=arr[right];
                 arr[right]=arr[left];
-                arr[left]=temp;
-                right--;
+                arr[right]=temp;
             }
         }
         if(arr[left]>arr[pivot])
