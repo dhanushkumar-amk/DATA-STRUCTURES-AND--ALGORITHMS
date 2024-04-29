@@ -7,21 +7,17 @@ public class HoaresPartition {
         int left=0;
         int pivot=n-1;
         int right=pivot-1;
-        while(left<=right)
+        while(left<right)
         {
-            if(!(arr[left]<=arr[right]&& arr[left]<=arr[pivot]))
-            {
-                int temp=arr[left];
-                arr[left]=arr[right];
-                arr[right]=temp;
+            while(left<right && arr[left]<=arr[pivot])
                 left++;
-            }
-            if((arr[right]>=arr[pivot]&&arr[right]>=arr[left]))
-            {
-                int temp=arr[right];
-                arr[right]=arr[left];
-                arr[right]=temp;
+            while(left<right && arr[right]>=arr[pivot])
                 right--;
+            if(left<right)
+            {
+                int x=arr[left];
+                arr[left]=arr[right];
+                arr[right]=x;
             }
         }
         if(arr[left]>arr[pivot])
