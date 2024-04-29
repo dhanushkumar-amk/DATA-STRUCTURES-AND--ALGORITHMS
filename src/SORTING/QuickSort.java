@@ -1,2 +1,7 @@
-package SORTING;public class QuickSort {
+package SORTING;
+
+public class QuickSort {
+    public static void main(String[] args) {
+        
+    }
 }
