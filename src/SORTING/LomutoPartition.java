@@ -7,7 +7,7 @@ public class LomutoPartition {
         int pivot=n-1;
         int j=0;
         int i=0;
-        for (;j<n; j++)
+        for (;i<n; j++)
         {
             if(arr[j]<=arr[pivot])
             {
