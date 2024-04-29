@@ -5,7 +5,7 @@ public class HoaresPartition {
         int [] arr ={5,3,8,4,2,7,1,10};
         int n= arr.length;
         int left=0;
-        int pivot=n-1;
+        int pivot=0;
         int right=pivot-1;
         while(left<right)
         {
