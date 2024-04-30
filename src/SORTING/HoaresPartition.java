@@ -20,7 +20,7 @@ public class HoaresPartition {
         }
     }
         public static void main(String[] args) {
-            int [] arr ={100,3213,21,321,321,21};
+            int [] arr ={};
             int n= arr.length;
             hores(arr,n-1);
             for (int t:arr) System.out.print(t+" ");
