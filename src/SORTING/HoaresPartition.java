@@ -2,21 +2,19 @@ package SORTING;
 
 public class HoaresPartition {
     static void hores(int [] arr,int n) {
-        int start=-1;
-        int end=n+1;
+        int start=0;
+        int end=n-1;
         int pivot=arr[0];
         while(true) {
-            do {
+            while (arr[start] < pivot)
                 start++;
-            }while(arr[start]<pivot);
-            do {
+            while (arr[end] > pivot)
                 end--;
-            }while(arr[end]>pivot);
-            if(start>=end)
+            if (start >= end)
                 return;
-            int x=arr[start];
-            arr[start]=arr[end];
-            arr[end]=x;
+            int x = arr[start];
+            arr[start] = arr[end];
+            arr[end] = x;
         }
     }
     public static void main(String[] args) {
