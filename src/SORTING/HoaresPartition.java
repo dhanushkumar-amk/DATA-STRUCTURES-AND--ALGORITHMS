@@ -6,16 +6,17 @@ public class HoaresPartition {
         int right=n-1;
         int ind=2;
         int pivot=arr[ind];
-        while(true)
+        while(left<right)
         {
             while(arr[left]<pivot)
                 left++;
             while(arr[right]>pivot)
                 right--;
-            if(left>=right)return ;
-            int x=arr[left];
-            arr[left]=arr[right];
-            arr[right]=x;
+            if(left<=right) {
+                int x = arr[left];
+                arr[left] = arr[right];
+                arr[right] = x;
+            }
         }
     }
     public static void main(String[] args) {
