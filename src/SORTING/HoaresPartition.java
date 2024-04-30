@@ -32,7 +32,9 @@ public class HoaresPartition {
                 }
 
             }
+            System.out.println(j);
         }
+
         return 1;
     }
 }
