@@ -15,7 +15,7 @@ public class HoaresPartition {
     static int partition(int arr[], int low, int high) {
         int l = low- 1;
         int r = high + 1;
-        int pivot = arr[l]; // Choosing the first element as pivot
+        int pivot = arr[low]; // Choosing the first element as pivot
         while (l < r) {
             l++;
             while (arr[l] < pivot)
