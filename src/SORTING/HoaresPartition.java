@@ -2,7 +2,7 @@ package SORTING;
 
 public class HoaresPartition {
     public static void main(String[] args) {
-        int arr[] = new int[]{9,7,5,14,2,3,6,10};
+        int arr[] = new int[]{10,16,8,12,15,6,3,9,5};
         int n = arr.length;
        int j= partition(arr, 0, n - 1);
         System.out.println(j);
