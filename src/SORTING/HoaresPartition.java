@@ -6,6 +6,8 @@ public class HoaresPartition {
 
         int n = arr.length;
       int ind[] =  partition(arr, 0, n - 1);
+        System.out.println(" i "+ind[0]);
+        System.out.println(" j "+ind[1]);
 
         for (int x : arr)
             System.out.print(x + " ");
