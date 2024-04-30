@@ -2,28 +2,29 @@ package SORTING;
 
 public class HoaresPartition {
     static void hores(int [] arr,int n) {
-        int left=0;
-        int right=n-1;
-        int ind=2;
-        int pivot=arr[ind];
-        while(left<right)
-        {
-            while(arr[left]<pivot)
+        int left = -1;
+        int right = n + 1;
+        int ind = 2;
+        int pivot = arr[ind];
+        while (true) {
+            do {
                 left++;
-            while(arr[right]>pivot)
+            } while (arr[left] < pivot);
+            do {
                 right--;
-            if(left<right) {
-                int x = arr[left];
-                arr[left] = arr[right];
-                arr[right] = x;
-            }
+            } while (arr[right] > pivot);
+            if (left >= right) return;
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
         }
     }
-    public static void main(String[] args) {
-        int [] arr ={100,3213,21,321,321,21};
-        int n= arr.length;
-        hores(arr,n);
-        for (int t:arr) System.out.print(t+" ");
-        System.out.println();
+        public static void main(String[] args) {
+            int [] arr ={100,3213,21,321,321,21};
+            int n= arr.length;
+            hores(arr,n-1);
+            for (int t:arr) System.out.print(t+" ");
+            System.out.println();
+
     }
-}
+    }
