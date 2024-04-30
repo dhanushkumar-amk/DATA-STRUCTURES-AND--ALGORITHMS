@@ -18,6 +18,7 @@ public class HoaresPartition {
         int pivot=arr[l];
         while(i<j)
         {
+            i++;
             while(i<=h && arr[i]<pivot)
                 i++;
             while(j>=l && arr[j]<pivot)
