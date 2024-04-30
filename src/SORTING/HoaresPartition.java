@@ -21,7 +21,7 @@ public class HoaresPartition {
         while(i<j)
         {
             i++;
-            while(arr[i]<pivot)
+            while(low<=high&& arr[i]<pivot)
                 i++;
             while(arr[j]>pivot)
                 j--;
