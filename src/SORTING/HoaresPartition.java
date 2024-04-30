@@ -14,26 +14,24 @@ public class HoaresPartition {
         arr[x]=arr[j];
         arr[j]=temp;
     }
-    static void QuickSort(int[] arr,int low,int high) {
-        int i=low;
-        int j=high;
-        int pivot=arr[low];
-        while(i<j)
-        {
-            i++;
-            while(i<=high && arr[i]<pivot)
+    static void QuickSort(int[] arr,int l,int r) {
+        if(l<r) {
+            int i = l;
+            int j = r;
+            int pivot = arr[l];
+            while (i < j) {
                 i++;
-            while(j>=low && arr[j]>pivot)
-                j--;
-            if(i<j && i<=high)
-                swap(arr, i, j);
+                while (i <= r && arr[i] < pivot)
+                    i++;
+                while (j >= l && arr[j] > pivot)
+                    j--;
+                if (i < j && i <= r)
+                    swap(arr, i, j);
 
+            }
+            swap(arr, l, j);
+            QuickSort(arr, l, j - 1);
+            QuickSort(arr, j + 1, r);
         }
-        if(arr[j]<pivot)
-        swap(arr,low,j);
-
-            QuickSort(arr, low, j);
-            QuickSort(arr, j+1, high);
-
     }
 }
