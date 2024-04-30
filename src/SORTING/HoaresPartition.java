@@ -3,9 +3,9 @@ package SORTING;
 
 public class HoaresPartition {
     public static void main(String[] args) {
-        int arr[] = new int[]{5,3,8,4,2,7,1,10};
+        int arr[] = new int[]{3, 6, 2, 7, 4, 1};
         int n = arr.length;
-        partition(arr, 0, n-1 );
+        partition(arr, 4, n-1 );
         for (int temp : arr)
             System.out.print(temp + " ");
     }
