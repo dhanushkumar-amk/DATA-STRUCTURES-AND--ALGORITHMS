@@ -3,7 +3,7 @@ package SORTING;
 
 public class HoaresPartition {
     public static void main(String[] args) {
-        int arr[] = new int[]{9,7,5,14,2,3,6,10};
+        int arr[] = new int[]{3 ,7, 5, 6 ,2 ,9};//9,7,5,14,2,3,6,10
         int n = arr.length;
         partition(arr, 0, n-1 );
         for (int temp : arr)
