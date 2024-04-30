@@ -5,15 +5,16 @@ public class HoaresPartition {
         int arr[] = new int[]{9,7,5,14,2,3,6,10};
 
         int n = arr.length;
-      int ind=  partition(arr, 0, n - 1);
-        System.out.println(ind);
+      int ind[] =  partition(arr, 0, n - 1);
+        System.out.println(" i "+ind[0]);
+        System.out.println(" j "+ind[1]);
 
         for (int x : arr)
             System.out.print(x + " ");
 
     }
 
-    static int partition(int arr[], int l, int h)
+    static int[] partition(int arr[], int l, int h)
     {
         int pivot=arr[l];
         int i=l-1,j=h+1;
@@ -24,7 +25,7 @@ public class HoaresPartition {
             do{
                 j--;
             }while(arr[j]>pivot);
-            if(i>=j)return j;
+            if(i>=j)return new int[]{i,j};
             int temp=arr[i];
             arr[i]=arr[j];
             arr[j]=temp;
