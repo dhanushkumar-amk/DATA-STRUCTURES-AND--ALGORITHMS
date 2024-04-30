@@ -5,7 +5,7 @@ public class HoaresPartition {
         int arr[] = new int[]{10,16,8,12,15,6,3,9,5};
         int n = arr.length;
        int j= partition(arr, 0, n - 1);
-        System.out.println(j);
+//        System.out.println(j);
 
         for (int temp : arr)
             System.out.print(temp + " ");
