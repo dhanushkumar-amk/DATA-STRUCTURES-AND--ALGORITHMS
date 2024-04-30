@@ -11,6 +11,18 @@ public class HoaresPartition {
 
     static void  partition(int arr[], int l, int h)
     {
-        
+        int left=l-1;
+        int right=h+1;
+        int pivot=arr[l];
+        while(true)
+        {
+            do{
+                left++;
+            }
+            while(arr[left]<pivot);
+            do {
+                right--;
+            }while(arr[right]>pivot);
+        }
     }
 }
