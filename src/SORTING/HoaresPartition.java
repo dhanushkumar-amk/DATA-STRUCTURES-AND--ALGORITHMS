@@ -12,7 +12,6 @@ public class HoaresPartition {
                 left++;
             while(arr[right]>pivot)
                 right--;
-            if(left>=right)return new int[]{left,ind};
             int x=arr[left];
             arr[left]=arr[right];
             arr[right]=x;
@@ -22,9 +21,6 @@ public class HoaresPartition {
         int [] arr ={5,3,8,4,2,7,1,10};
         int n= arr.length;
      int temp[] = hores(arr,n);
-//        int x=arr[temp[0]];
-//        arr[temp[0]]=arr[temp[1]];
-//        arr[temp[1]]=x;
         System.out.println(temp[0]);
         System.out.println(temp[1]);
         for (int t:arr) System.out.print(t+" ");
