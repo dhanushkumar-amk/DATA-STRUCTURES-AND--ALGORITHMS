@@ -3,7 +3,7 @@ package SORTING;
 
 public class HoaresPartition {
     public static void main(String[] args) {
-        int arr[] = new int[]{3 ,7, 5, 6 ,2};//9,7,5,14,2,3,6,10
+        int arr[] = new int[]{9,7,5,14,2,3,6,10};//
         int n = arr.length;
         partition(arr, 0, n-1 );
         for (int temp : arr)
@@ -14,7 +14,7 @@ public class HoaresPartition {
         arr[x]=arr[j];
         arr[j]=temp;
     }
-    static void partition(int[] arr,int low,int high) {
+    static void QuickSort(int[] arr,int low,int high) {
         int i=low;
         int j=high;
         int pivot=arr[low];
@@ -32,5 +32,7 @@ public class HoaresPartition {
         if(arr[j]<pivot)
         swap(arr,low,j);
 
+        QuickSort(arr,low,j-1);
+        QuickSort(arr,j,);
     }
 }
