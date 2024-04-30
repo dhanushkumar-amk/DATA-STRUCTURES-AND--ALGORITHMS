@@ -14,7 +14,7 @@ public class HoaresPartition {
     {
         int left=l-1;
         int right=h+1;
-        int pivot=1000;
+        int pivot=arr[l];
         while(true)
         {
             do{
