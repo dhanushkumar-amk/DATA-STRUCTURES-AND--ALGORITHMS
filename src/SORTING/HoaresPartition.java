@@ -8,7 +8,7 @@ public class HoaresPartition {
         partition(arr, 0, n - 1);
 
         for (int x : arr)
-            System.out.println(x + " ");
+            System.out.print(x + " ");
 
     }
 
