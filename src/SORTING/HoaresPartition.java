@@ -29,7 +29,8 @@ public class HoaresPartition {
                 swap(arr, i, j);
 
         }
+        if(arr[j]<pivot)
         swap(arr,low,j);
-        
+
     }
 }
