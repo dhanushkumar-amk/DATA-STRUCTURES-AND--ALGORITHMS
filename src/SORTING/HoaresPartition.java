@@ -32,7 +32,9 @@ public class HoaresPartition {
                 }
 
             }
-            System.out.println(j);
+            int x=a[j];
+            a[j]=a[l];
+            a[l]=x;
         }
 
         return 1;
