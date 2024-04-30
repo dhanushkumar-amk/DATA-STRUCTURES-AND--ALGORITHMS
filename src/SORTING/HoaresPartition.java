@@ -31,6 +31,7 @@ public class HoaresPartition {
                 if (i < j && i <= r)
                     swap(a, i, j);
             }
+            swap(a,j,l);
         }
         return -1;
     }
