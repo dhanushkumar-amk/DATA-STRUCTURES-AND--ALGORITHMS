@@ -21,7 +21,7 @@ public class HoaresPartition {
 
             // If two pointers met.
             if (i >= j)
-                return j;
+                return ;
 
             // swap(arr[i], arr[j]);
             int temp = arr[i];
@@ -34,7 +34,7 @@ public class HoaresPartition {
         int [] arr ={5,3,8,4,2,7,1,10};
         int n= arr.length-1;
      hores(arr,n);
-        
+
         for (int t:arr) System.out.print(t+" ");
         System.out.println();
     }
