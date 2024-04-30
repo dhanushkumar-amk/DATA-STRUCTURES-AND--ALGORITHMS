@@ -25,8 +25,9 @@ public class HoaresPartition {
                 i++;
             while(arr[j]>pivot)
                 j--;
-            if(i>j)return j;
-            swap(arr,i,j);
+            if(i<j) {
+                swap(arr, i, j);
+            }
         }
         swap(arr,low,j);
        return 0;
