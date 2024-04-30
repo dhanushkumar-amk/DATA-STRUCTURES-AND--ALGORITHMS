@@ -23,7 +23,7 @@ public class HoaresPartition {
                 i++;
                 while (i <= r && arr[i] < pivot)
                     i++;
-                while (j > l && arr[j] > pivot)
+                while (j >= l && arr[j] > pivot)
                     j--;
                 if (i < j && i <= r)
                     swap(arr, i, j);
