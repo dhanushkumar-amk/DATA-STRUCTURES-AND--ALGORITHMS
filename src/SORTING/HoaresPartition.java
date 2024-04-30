@@ -30,5 +30,9 @@ public class HoaresPartition {
                     a[i] = a[j];
                     a[j] = temp;
                 }
+
             }
         }
+        return 1;
+    }
+}
