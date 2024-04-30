@@ -25,7 +25,7 @@ public class HoaresPartition {
         int x=arr[temp[0]];
         arr[temp[0]]=arr[temp[1]];
         arr[temp[1]]=x;
-        for (int t:arr) System.out.print(x+" ");
+        for (int t:arr) System.out.print(t+" ");
         System.out.println();
     }
 }
