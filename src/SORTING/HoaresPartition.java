@@ -13,7 +13,7 @@ public class HoaresPartition {
     }
 
     static int partition(int arr[], int l, int h) {
-        int i=l;
+        int i=l-1;
         int j=h-1;
         int pivot=arr[l];
         while(i<j)
