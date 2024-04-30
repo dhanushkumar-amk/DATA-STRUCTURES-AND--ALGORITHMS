@@ -4,7 +4,7 @@ public class HoaresPartition {
     static void hores(int [] arr,int n) {
         int i=-1;
         int j=n-1;
-        int ind=0;
+        int ind=1;
         int pivot=arr[ind];
         while(i<j)
         {
