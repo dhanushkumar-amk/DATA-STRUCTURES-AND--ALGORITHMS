@@ -13,22 +13,22 @@ public class HoaresPartition {
     }
 
     static int partition(int arr[], int l, int h) {
-        int left=l;
-        int right=h-1;
+        int i=l;
+        int j=h-1;
         int pivot=arr[l];
-        while(left<right)
+        while(i<j)
         {
-            while(left<=h && arr[left]<pivot)
-                left++;
-            while(right>=l && arr[right]<pivot)
-                right--;
-            if(left<right && l<=h)
+            while(i<=h && arr[i]<pivot)
+                i++;
+            while(j>=l && arr[j]<pivot)
+                j--;
+            if(i<j && l<=h)
             {
-                int x=arr[left];
-                arr[left]=arr[right];
-                arr[right]=x;
+                int x=arr[i];
+                arr[i]=arr[j];
+                arr[j]=x;
             }
         }
-        return right;
+        return j;
     }
 }
