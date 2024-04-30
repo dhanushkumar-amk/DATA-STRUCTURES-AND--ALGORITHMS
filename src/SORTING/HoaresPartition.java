@@ -30,6 +30,8 @@ public class HoaresPartition {
                 arr[right] = x;
             }
         }
+        System.out.println(left);
+        System.out.println(right);
         return right;
     }
 }
