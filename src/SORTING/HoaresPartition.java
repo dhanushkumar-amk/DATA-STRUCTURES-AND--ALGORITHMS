@@ -5,7 +5,7 @@ public class HoaresPartition {
     public static void main(String[] args) {
         int arr[] = new int[]{3, 6, 2, 7, 4, 1};
         int n = arr.length;
-        partition(arr, 4, n-1 );
+        partition(arr, 0, n-1 );
         for (int temp : arr)
             System.out.print(temp + " ");
     }
@@ -17,7 +17,7 @@ public class HoaresPartition {
     static void partition(int[] arr,int low,int high) {
         int i=low;
         int j=high;
-        int pivot=arr[low];
+        int pivot=arr[4];
         while(i<j)
         {
             i++;
