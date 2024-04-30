@@ -8,10 +8,10 @@ public class HoaresPartition {
         while(true) {
             do {
                 start++;
-            }while(arr[start]<=pivot);
+            }while(arr[start]<pivot);
             do {
                 end--;
-            }while(arr[end]>=pivot);
+            }while(arr[end]>pivot);
             if(start>=end)
                 return;
             int x=arr[start];
