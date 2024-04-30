@@ -23,9 +23,9 @@ public class HoaresPartition {
 
             while (i < j) {
                 i += 1;
-                while (i <= r && a[i] < pivot)
+                while ( a[i] < pivot)
                     i++;
-                while (j >= l && a[j] > pivot)
+                while (a[j] > pivot)
                     j--;
 
                 if (i < j && i <= r)
