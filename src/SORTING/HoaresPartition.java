@@ -14,7 +14,7 @@ public class HoaresPartition {
         arr[x]=arr[j];
         arr[j]=temp;
     }
-    static int partition(int[] arr,int low,int high) {
+    static void partition(int[] arr,int low,int high) {
         int i=low;
         int j=high;
         int pivot=arr[low];
@@ -30,6 +30,6 @@ public class HoaresPartition {
 
         }
         swap(arr,low,j);
-       return 0;
+        
     }
 }
