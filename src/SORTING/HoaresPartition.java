@@ -18,18 +18,17 @@ public class HoaresPartition {
             int i = l;
             int j = r;
 
-            while(i<j) {
+            while (i < j) {
                 i += 1;
-                while(i<=r && a[i] < pivot)
+                while (i <= r && a[i] < pivot)
                     i++;
-                while(j>=l && a[j] > pivot)
+                while (j >= l && a[j] > pivot)
                     j--;
 
-                if(i<j && i<=r){
-                    int temp = a[x];
-                    a[x] = a[y];
-                    a[y] = temp;
+                if (i < j && i <= r) {
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
                 }
             }
-
-}
+            
