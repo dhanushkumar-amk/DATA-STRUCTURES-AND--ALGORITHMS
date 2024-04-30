@@ -12,7 +12,7 @@ public class HoaresPartition {
 
     }
 
-    static int partition(int arr[], int low, int high) {
+    static int partition(int a[], int l, int r) {
         if (l < r) {
             int pivot = a[l];
             int i = l;
@@ -26,7 +26,9 @@ public class HoaresPartition {
                     j--;
 
                 if(i<j && i<=r){
-                    
+                    int temp = a[x];
+                    a[x] = a[y];
+                    a[y] = temp;
                 }
             }
 
