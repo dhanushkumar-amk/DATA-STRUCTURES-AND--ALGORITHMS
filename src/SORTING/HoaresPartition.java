@@ -9,10 +9,10 @@ public class HoaresPartition {
         for (int temp : arr)
             System.out.print(temp + " ");
     }
-    static void swap(int arr[] ,int pivot,int j) {
-        int x=arr[pivot];
-        arr[pivot]=arr[j];
-        arr[j]=x;
+    static void swap(int arr[] ,int x,int j) {
+        int temp=arr[x];
+        arr[x]=arr[j];
+        arr[j]=temp;
     }
     static int partition(int[] arr,int low,int high) {
         int i=low;
