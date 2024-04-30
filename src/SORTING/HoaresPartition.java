@@ -22,6 +22,9 @@ public class HoaresPartition {
         }
         System.out.println(i);
         System.out.println(j);
+        int x=arr[j];
+        arr[j]=arr[ind];
+        arr[ind]=x;
     }
     public static void main(String[] args) {
         int [] arr ={5,3,8,4,2,7,1,10};
