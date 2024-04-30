@@ -23,7 +23,10 @@ public class HoaresPartition {
             do {
                 right--;
             }while(arr[right]>pivot);
-            
+            if(left>=right)return;
+            int x=arr[left];
+            arr[left]=arr[right];
+            arr[right]=x;
         }
     }
 }
