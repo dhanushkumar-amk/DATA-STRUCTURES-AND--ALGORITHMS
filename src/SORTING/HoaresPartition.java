@@ -31,7 +31,7 @@ public class HoaresPartition {
         }
     }
     public static void main(String[] args) {
-        int [] arr ={5,3,8,4,2,7,1,10};
+        int [] arr ={10, 17, 18, 9, 11, 15};
         int n= arr.length-1;
      hores(arr,n);
 
