@@ -15,7 +15,7 @@ public class HoaresPartition {
         int left=l;
         int right=h;
         int pivot=arr[l];
-        while(true)
+        while(left<right)
         {
             do{
                 left++;
@@ -24,10 +24,13 @@ public class HoaresPartition {
             do {
                 right--;
             }while(arr[right]>pivot);
-            if(left>=right)return right;
-            int x=arr[left];
-            arr[left]=arr[right];
-            arr[right]=x;
+            if(left<right) {
+                int x = arr[left];
+                arr[left] = arr[right];
+                arr[right] = x;
+            }
         }
+        int x=arr[right];
+        arr[right]=
     }
 }
