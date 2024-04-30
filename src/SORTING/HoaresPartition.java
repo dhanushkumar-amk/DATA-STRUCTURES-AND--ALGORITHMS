@@ -18,14 +18,14 @@ public class HoaresPartition {
         int i=low;
         int j=high;
         int pivot=arr[low];
-        while(i<=j)
+        while(i<j)
         {
             i++;
             while(arr[i]<pivot)
                 i++;
             while(arr[j]>pivot)
                 j--;
-            if(i>=j)return j;
+            if(i>j)return j;
             swap(arr,i,j);
         }
         swap(arr,low,j);
