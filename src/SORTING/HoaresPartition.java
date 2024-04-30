@@ -24,5 +24,6 @@ public class HoaresPartition {
         int n= arr.length-1;
         hores(arr,n);
         for (int x:arr) System.out.print(x+" ");
+        System.out.println();
     }
 }
