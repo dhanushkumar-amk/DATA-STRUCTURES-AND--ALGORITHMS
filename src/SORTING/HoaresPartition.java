@@ -21,11 +21,11 @@ public class HoaresPartition {
         while(i<j)
         {
             i++;
-            while(low<=high&& arr[i]<pivot)
+            while(i<=high && arr[i]<pivot)
                 i++;
-            while(arr[j]>pivot)
+            while(j>=low && arr[j]>pivot)
                 j--;
-            if(i<j) {
+            if(i<j && low<=high) {
                 swap(arr, i, j);
             }
         }
