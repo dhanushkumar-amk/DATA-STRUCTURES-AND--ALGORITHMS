@@ -12,14 +12,14 @@ public class QuickSort {
             int i=low;
             int j=high;
             int pivot=arr[low];
-            while(low<high)
+            while(i<j)
             {
                 i++;
                 while(i<=high&&arr[i]<pivot)
                     i++;
                 while(j>=low&&arr[j]>pivot)
                     j--;
-                if(i<j&& i<=high){
+                if(i<j){
                     int x=arr[i];
                     arr[i]=arr[j];
                     arr[j]=x;
@@ -31,6 +31,5 @@ public class QuickSort {
             quickSort(arr,low,j-1);
             quickSort(arr,j+1,high);
         }
-
     }
 }
