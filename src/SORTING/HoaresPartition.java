@@ -20,7 +20,6 @@ public class HoaresPartition {
             l++;
             while (arr[l] < pivot)
                 l++;
-            r--;
             while (arr[r] > pivot)
                 r--;
             if (l < r) {
