@@ -21,9 +21,11 @@ public class HoaresPartition {
     public static void main(String[] args) {
         int [] arr ={5,3,8,4,2,7,1,10};
         int n= arr.length;
-        hores(arr,n);
-        int x=arr[ind];
-        for (int x:arr) System.out.print(x+" ");
+     int temp[] = hores(arr,n);
+        int x=arr[temp[0]];
+        arr[temp[0]]=arr[temp[1]];
+        arr[temp[1]]=x;
+        for (int t:arr) System.out.print(x+" ");
         System.out.println();
     }
 }
