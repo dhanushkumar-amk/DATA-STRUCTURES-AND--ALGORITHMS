@@ -20,8 +20,8 @@ public class HoaresPartition {
                 arr[j]=x;
             }
         }
-        System.out.println(i);
-        System.out.println(j);
+//        System.out.println(i);
+//        System.out.println(j);
         int x=arr[j];
         arr[j]=arr[ind];
         arr[ind]=x;
