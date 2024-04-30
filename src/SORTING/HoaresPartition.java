@@ -32,7 +32,7 @@ public class HoaresPartition {
         if(arr[j]<pivot)
         swap(arr,low,j);
 
-        QuickSort(arr,low,j);
-        QuickSort(arr,j, arr.length-1);
+        QuickSort(arr,low,j-1);
+        QuickSort(arr,j, arr.length);
     }
 }
