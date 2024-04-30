@@ -30,7 +30,6 @@ public class HoaresPartition {
                 arr[right] = x;
             }
         }
-        int x=arr[right];
-        arr[right]=
+        return right;
     }
 }
