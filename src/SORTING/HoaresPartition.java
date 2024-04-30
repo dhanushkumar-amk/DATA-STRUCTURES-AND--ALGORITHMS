@@ -8,31 +8,13 @@ public class HoaresPartition {
         for (int temp : arr)
             System.out.print(temp + " ");
     }
-
-    static void swap(int[] a, int x, int y) {
-        int temp = a[x];
-        a[x] = a[y];
-        a[y] = temp;
-    }
-
-    static int partition(int a[], int l, int r) {
-        if (l < r) {
-            int pivot = a[l];
-            int i = l;
-            int j = r;
-
-            while (i < j) {
-                i += 1;
-                while ( a[i] < pivot)
-                    i++;
-                while (a[j] > pivot)
-                    j--;
-
-                if (i < j )
-                    swap(a, i, j);
-            }
-            swap(a,j,l);
+    static int partition(int[] arr,int low,int high) {
+        int i=low;
+        int j=high;
+        int pivot=arr[low];
+        while(i<j)
+        {
+            
         }
-        return -1;
     }
 }
