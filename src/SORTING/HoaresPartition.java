@@ -36,7 +36,7 @@ import java.util.Random;
     }
 
     // Your original partition method
-    static void partition(int arr[], int low, int high) {
+    static int  partition(int arr[], int low, int high) {
         int l=-1;
         int r=high-1;
         int pivot=arr[0];
@@ -54,6 +54,7 @@ import java.util.Random;
                 arr[r]=x;
             }
         }
+        return r;
     }
 
     // Validate the partitioning
