@@ -2,7 +2,7 @@ package SORTING;
 
 public class HoaresPartition {
     static void hores(int [] arr,int n) {
-        int i=0;
+        int i=-1;
         int j=n-1;
         int ind=0;
         int pivot=arr[ind];
