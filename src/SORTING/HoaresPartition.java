@@ -20,6 +20,8 @@ public class HoaresPartition {
                 arr[right]=x;
             }
         }
+        System.out.println(left);
+        System.out.println(right);
     }
     public static void main(String[] args) {
         int [] arr ={5,3,8,4,2,7,1,10};
