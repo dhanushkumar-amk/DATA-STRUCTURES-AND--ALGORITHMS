@@ -6,15 +6,14 @@ public class HoaresPartition {
         int n = arr.length;
        int j= partition(arr, 0, n - 1);
 //        System.out.println(j);
-
         for (int temp : arr)
             System.out.print(temp + " ");
     }
 
     static int  partition(int arr[], int l, int h)
     {
-        int left=l-1;
-        int right=h+1;
+        int left=l;
+        int right=h;
         int pivot=arr[l];
         while(true)
         {
