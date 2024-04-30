@@ -2,8 +2,8 @@ package SORTING;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int [] arr ={}
-        quickSort();
+        int [] arr ={4 ,1 ,3, 9 ,7};
+        quickSort(arr,0, arr.length-1);
     }
     static void quickSort(int arr[], int low, int high)
     {
