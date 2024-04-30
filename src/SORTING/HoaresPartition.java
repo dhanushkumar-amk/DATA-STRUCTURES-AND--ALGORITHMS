@@ -13,6 +13,16 @@ public class HoaresPartition {
     }
 
     static int partition(int arr[], int l, int h) {
-        
+        int left=1;
+        int right=h-1;
+        int pivot=arr[l];
+        while(left<right)
+        {
+            while(arr[left]<pivot)
+                left++;
+            while(arr[right]<pivot)
+                right--;
+            
+        }
     }
 }
