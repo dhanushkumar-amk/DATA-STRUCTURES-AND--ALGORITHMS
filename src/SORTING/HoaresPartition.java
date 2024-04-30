@@ -33,6 +33,6 @@ public class HoaresPartition {
         swap(arr,low,j);
 
         QuickSort(arr,low,j-1);
-        QuickSort(arr,j, arr.length-1);
+        QuickSort(arr,j, arr.length);
     }
 }
