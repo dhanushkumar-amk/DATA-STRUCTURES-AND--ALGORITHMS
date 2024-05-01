@@ -8,10 +8,10 @@ public class ThreeWayPartition {
         {
             do{
                 left++;
-            }while(arr[left]<x);
+            }while(arr[left]<=x);
             do{
                 right--;
-            }while(arr[right]>x);
+            }while(arr[right]>=x);
             if(left>=right)return ;
             int temp=arr[left];
             arr[left]=arr[right];
