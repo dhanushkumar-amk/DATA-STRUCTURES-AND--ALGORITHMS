@@ -1,7 +1,5 @@
 package SORTING;
 
-import java.util.Arrays;
-
 public class ThreeWayPartition {
     static void partition(int[] arr,int a,int b) {
         int start=0;
@@ -32,15 +30,6 @@ public class ThreeWayPartition {
         int a=5;
         int b=5;
         partition(arr,a,b);
-        Arrays.sort(arr);
-        int Min=Integer.MIN_VALUE;
-        int n= arr.length;
-        for(int i=0; i<n; i++)
-        {
-            if(i>0 && arr[i]-arr[i-1]<Min)
-                Min=Math.min(arr[i]-arr[i-1]);
-        }
-//        return Min;
         for (int x:arr) System.out.print(x+" ");
     }
 }
