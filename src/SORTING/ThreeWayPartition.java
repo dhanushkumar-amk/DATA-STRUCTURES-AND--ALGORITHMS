@@ -1,34 +1,38 @@
 package SORTING;
 
 public class ThreeWayPartition {
-    static int partition(int[] arr, int low, int high,int a,int b) {
-        int pivot = Math.min(a,b); // Selecting the last element as the pivot
-        int i = low - 1; // Index of smaller element
-
-        for (int j = low; j < high; j++) {
-            // If current element is smaller than or equal to the pivot
-            if (arr[j] <= pivot) {
-                i++;
-
-                // Swap arr[i] and arr[j]
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+    static void partition(int[] arr,int a,int b) {
+        int start=0;
+        int n= arr.length;
+        int end=n-1;
+        int mid=0;
+        while(start<end)
+        {
+            if(arr[mid]<a){
+                if(start==mid){
+                    start++;mid++;
+                }else if(arr[mid]<a){
+                    int temp=arr[mid];
+                    arr[mid]=arr[start];
+                    arr[start]=temp;
+                    mid++;
+                    start++;
+                }
+            }
+            else if(arr[mid]>b){
+                int temp=arr[mid];
+                arr[mid]=arr[end];
+                arr[end]=temp;
+                mid++;
+                end--;
             }
         }
-
-        // Swap arr[i+1] and arr[high] (or pivot)
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-
-        return i + 1;
     }
     public static void main(String[] args) {
         int [] arr ={10 ,7, 6 ,1 ,4, 10 ,5 ,2 ,7, 5, 3, 3, 8, 3 ,8};
         int a=5;
         int b=5;
-        partition(arr,0, arr.length-1,a,b);
+        partition(arr,a,b);
         for (int x:arr) System.out.print(x+" ");
     }
 }
