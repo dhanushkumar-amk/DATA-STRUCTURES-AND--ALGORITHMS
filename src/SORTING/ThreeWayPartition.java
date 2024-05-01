@@ -23,6 +23,7 @@ public class ThreeWayPartition {
         int a=5;
         int b=5;
        int ans= partition(arr,a,0);
+       partition(arr,b,ans);
         System.out.println(ans);
 
 //        partition(arr,b);
