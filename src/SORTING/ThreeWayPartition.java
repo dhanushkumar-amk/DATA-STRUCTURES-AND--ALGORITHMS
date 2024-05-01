@@ -19,9 +19,9 @@ public class ThreeWayPartition {
         }
     }
     public static void main(String[] args) {
-        int [] arr ={10, 5, 6, 3, 20, 9, 30};
+        int [] arr ={10 ,7, 6 ,1 ,4, 10 ,5 ,2 ,7, 5, 3, 3, 8, 3 ,8};
         int a=5;
-        int b=20;
+        int b=5;
         partition(arr,a);
         partition(arr,b);
         for (int x:arr) System.out.print(x+" ");
