@@ -44,6 +44,7 @@ class KthSmallestElement {
         return QuickSort(arr, 0, arr.length - 1, k);
     }
     public static void main(String[] args) {
-        
+        int arr[] = {3,5,4,2,9};
+        kthSmallest(arr, arr.length,3);
     }
 }
