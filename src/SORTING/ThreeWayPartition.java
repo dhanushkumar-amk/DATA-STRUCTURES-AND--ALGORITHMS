@@ -28,8 +28,7 @@ public class ThreeWayPartition {
         int [] arr ={10 ,7, 6 ,1 ,4, 10 ,5 ,2 ,7, 5, 3, 3, 8, 3 ,8};
         int a=5;
         int b=5;
-        partition(arr,0,a);
-        partition(arr,0,b);
+        partition(arr,0,Math.min(a,b));
         for (int x:arr) System.out.print(x+" ");
     }
 }
