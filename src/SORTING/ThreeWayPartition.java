@@ -24,5 +24,6 @@ public class ThreeWayPartition {
         int b=20;
         partition(arr,a);
         partition(arr,b);
+        for (int x:arr) System.out.print(x);
     }
 }
