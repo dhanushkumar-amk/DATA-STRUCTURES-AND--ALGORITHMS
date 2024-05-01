@@ -6,7 +6,7 @@ public class ThreeWayPartition {
         int n= arr.length;
         int end=n-1;
         int mid=0;
-        while(start<end)
+        while(start<=end)
         {
             if(arr[mid]<a){
                 if(start==mid){
