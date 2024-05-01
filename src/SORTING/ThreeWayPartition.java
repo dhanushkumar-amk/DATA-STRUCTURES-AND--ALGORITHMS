@@ -5,24 +5,21 @@ public class ThreeWayPartition {
         int start=0;
         int n= arr.length;
         int end=n-1;
-        int mid=0;
-        while(start<=end)
-        {
-            if(arr[mid]<a){
-                int temp=arr[mid];
-                arr[mid]=arr[start];
+        int j=0;
+        while(j<=end){
+            if(arr[j]<a)
+            {
+                int temp=arr[j];
+                arr[j]=arr[start];
                 arr[start]=temp;
-                mid++;
+                j++;
                 start++;
             }
-            else if(arr[mid]>b){
-                int temp=arr[mid];
-                arr[mid]=arr[end];
-                arr[end]=temp;
-
-                end--;
+            else if(arr[j]>b)
+            {
+                int temp=arr[j];
+                
             }
-            else mid++;
         }
     }
     public static void main(String[] args) {
