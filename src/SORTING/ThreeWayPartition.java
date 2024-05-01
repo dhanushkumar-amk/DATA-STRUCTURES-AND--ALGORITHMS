@@ -9,7 +9,7 @@ public class ThreeWayPartition {
         while(start<=end)
         {
             if(arr[mid]<a){
-                if(start==mid){
+                if(start==0&&mid==0){
                     start++;mid++;
                 }else if(arr[mid]<a){
                     int temp=arr[mid];
