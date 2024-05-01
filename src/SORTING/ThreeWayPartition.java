@@ -12,7 +12,7 @@ public class ThreeWayPartition {
             do{
                 right--;
             }while(arr[right]>x);
-            if(left>=right)return i;
+            if(left>=right)return left;
             int temp=arr[left];
             arr[left]=arr[right];
             arr[right]=temp;
