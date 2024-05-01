@@ -19,7 +19,7 @@ public class ThreeWayPartition {
                 int temp=arr[mid];
                 arr[mid]=arr[end];
                 arr[end]=temp;
-                mid++;
+//                mid++;
                 end--;
             }
             else mid++;
@@ -28,7 +28,7 @@ public class ThreeWayPartition {
     public static void main(String[] args) {
         int [] arr ={10 ,7, 6 ,1 ,4, 10 ,5 ,2 ,7, 5, 3, 3, 8, 3 ,8};
         int a=5;
-        int b=11;
+        int b=5;
         partition(arr,a,b);
         for (int x:arr) System.out.print(x+" ");
     }
