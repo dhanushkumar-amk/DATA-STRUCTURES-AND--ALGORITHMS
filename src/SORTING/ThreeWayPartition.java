@@ -19,8 +19,8 @@ public class ThreeWayPartition {
         }
     }
     public static void main(String[] args) {
-        int [] arr ={15, 10, 17, 5, 12, 20, 25, 30};
-        int a=10;
+        int [] arr ={10, 5, 6, 3, 20, 9, 30};
+        int a=5;
         int b=20;
         partition(arr,a);
         partition(arr,b);
