@@ -1,31 +1,29 @@
 package SORTING;
 
 public class ThreeWayPartition {
-    static int partition(int[]arr,int x,int l) {
-        int left=l-1;
-        int right=arr.length;
-        while(true)
+    static int partition(int[]arr,int x) {
+        int l=0;
+        int r=arr.length-1;
+        int pivot=x;
+        while(l<r)
         {
-            do{
-                left++;
-            }while(arr[left]<x);
-            do{
-                right--;
-            }while(arr[right]>x);
-            if(left>=right)return left;
-            int temp=arr[left];
-            arr[left]=arr[right];
-            arr[right]=temp;
+            l++;
+            while(arr[l]<pivot)
+                l++;
+            while(arr[r]>pivot)
+                r--;
+            if(l>r)return 0;
+            int temp=arr[l];
+            arr[l]=arr[r];
+            arr[r]=temp;
         }
+        return -1;
     }
     public static void main(String[] args) {
         int [] arr ={10 ,7, 6 ,1 ,4, 10 ,5 ,2 ,7, 5, 3, 3, 8, 3 ,8};
         int a=5;
         int b=5;
-       int ans= partition(arr,a,0);
-        System.out.println(ans);
-
-//        partition(arr,b);
+        partition(arr,a);
         for (int x:arr) System.out.print(x+" ");
     }
 }
