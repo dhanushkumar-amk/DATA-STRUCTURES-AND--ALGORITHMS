@@ -18,8 +18,11 @@ public class ThreeWayPartition {
             else if(arr[j]>b)
             {
                 int temp=arr[j];
-                
+                arr[j]=arr[end];
+                arr[end]=temp;
+                end--;
             }
+            else j++;
         }
     }
     public static void main(String[] args) {
