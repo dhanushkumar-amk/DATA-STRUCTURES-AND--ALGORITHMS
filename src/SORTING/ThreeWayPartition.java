@@ -8,7 +8,6 @@ public class ThreeWayPartition {
         int mid=0;
         while(start<=end)
         {
-            if(arr[mid]<a){
                  if(arr[mid]<a){
                     int temp=arr[mid];
                     arr[mid]=arr[start];
@@ -16,7 +15,6 @@ public class ThreeWayPartition {
                     mid++;
                     start++;
                 }
-            }
             else if(arr[mid]>b){
                 int temp=arr[mid];
                 arr[mid]=arr[end];
