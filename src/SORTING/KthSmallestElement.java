@@ -45,6 +45,7 @@ class KthSmallestElement {
     }
     public static void main(String[] args) {
         int arr[] = {3,5,4,2,9};
-        kthSmallest(arr, arr.length,3);
+       int res= kthSmallest(arr, arr.length,3);
+        System.out.println(res);
     }
 }
