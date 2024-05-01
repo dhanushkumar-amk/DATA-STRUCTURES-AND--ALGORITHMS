@@ -26,6 +26,7 @@ public class ThreeWayPartition {
                 mid++;
                 end--;
             }
+            else mid++;
         }
     }
     public static void main(String[] args) {
