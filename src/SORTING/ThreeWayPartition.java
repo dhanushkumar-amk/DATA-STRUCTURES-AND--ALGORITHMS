@@ -1,8 +1,8 @@
 package SORTING;
 
 public class ThreeWayPartition {
-    static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high]; // Selecting the last element as the pivot
+    static int partition(int[] arr, int low, int high,int a,int b) {
+        int pivot = Math.min(a,b); // Selecting the last element as the pivot
         int i = low - 1; // Index of smaller element
 
         for (int j = low; j < high; j++) {
@@ -28,7 +28,7 @@ public class ThreeWayPartition {
         int [] arr ={10 ,7, 6 ,1 ,4, 10 ,5 ,2 ,7, 5, 3, 3, 8, 3 ,8};
         int a=5;
         int b=5;
-        partition(arr,0, arr.length-1);
+        partition(arr,0, arr.length-1,a,b);
         for (int x:arr) System.out.print(x+" ");
     }
 }
