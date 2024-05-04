@@ -10,7 +10,7 @@ public class ChocolateDistributionProblem {
         int left=0;
         int right=m-1;
         int max=Integer.MIN_VALUE;
-        while(left<right)
+        while(left<=right)
         {
             if(arr[right]-arr[left]>max)
                 max = Math.max(max, arr[right] - arr[left]);
