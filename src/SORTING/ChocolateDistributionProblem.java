@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ChocolateDistributionProblem {
     public static void main(String[] args) {
-        int [] arr={3,4,1,9,56,7,9,12};
+        int [] arr = {7, 3, 2, 4, 9, 12, 56};
         Arrays.sort(arr);
         int m=5;
         int left=0;
