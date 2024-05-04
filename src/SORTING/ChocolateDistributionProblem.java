@@ -14,7 +14,10 @@ public class ChocolateDistributionProblem {
         {
             if(arr[right]-arr[left]<min)
                 min=Math.min(min,arr[right]-arr[left]);
+            left++;
+            right--;
         }
-        
+        for (int x:arr)
+            System.out.print(x+" ");
     }
 }
