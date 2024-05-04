@@ -8,9 +8,9 @@ public class ChocolateDistributionProblem {
         Arrays.sort(arr);
         int m=3;
         int left=0;
-        int right=3;
+        int right=m;
         int max=Integer.MIN_VALUE;
-        while(left<right)
+        while(left<right-1)
         {
             if(arr[right]-arr[left]>max) {
                 max = Math.max(max, arr[right] - arr[left]);
