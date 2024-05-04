@@ -9,14 +9,14 @@ public class ChocolateDistributionProblem {
         int m=3;
         int left=0;
         int right=3;
-        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
         while(left<right)
         {
-            if(arr[right]-arr[left]<min)
-                min=Math.min(min,arr[right]-arr[left]);
+            if(arr[right]-arr[left]>max)
+                max=Math.min(max,arr[right]-arr[left]);
             left++;
             right--;
         }
-        System.out.println(min);
+        System.out.println(max);
     }
 }
