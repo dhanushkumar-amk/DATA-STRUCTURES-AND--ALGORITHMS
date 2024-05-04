@@ -12,6 +12,6 @@ public class ChocolateDistributionProblem {
         int max=Integer.MIN_VALUE;
         System.out.println(arr[m-1]);
         System.out.println(arr[0]);
-        System.out.println(arr[m-1]-arr[0]);
+        System.out.println(arr[m-1]-arr[0]-2);
     }
 }
