@@ -14,8 +14,10 @@ public class ChocolateDistributionProblem {
         System.out.println();
         while(left<=right)
         {
-            if(arr[right]-arr[left]>max)
+            if(arr[right]-arr[left]>max) {
                 max = Math.max(max, arr[right] - arr[left]);
+                
+            }
             left++;
             right--;
         }
