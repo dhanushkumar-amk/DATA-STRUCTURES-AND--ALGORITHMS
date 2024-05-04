@@ -6,7 +6,7 @@ public class ChocolateDistributionProblem {
     public static void main(String[] args) {
         int [] arr={3,4,1,9,56,7,9,12};
         Arrays.sort(arr);
-        int m=5;
+        int m=4;
         int left=0;
         int right=m-1;
         int max=Integer.MIN_VALUE;
@@ -16,7 +16,6 @@ public class ChocolateDistributionProblem {
         {
             if(arr[right]-arr[left]>max) {
                 max = Math.max(max, arr[right] - arr[left]);
-
             }
             left++;
             right--;
