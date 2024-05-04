@@ -10,6 +10,7 @@ public class ChocolateDistributionProblem {
         int left=0;
         int right=m-1;
         int max=Integer.MIN_VALUE;
+        for (int x:arr) System.out.print(x+" ");
         while(left<=right)
         {
             if(arr[right]-arr[left]>max)
