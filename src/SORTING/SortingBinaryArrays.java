@@ -1,5 +1,7 @@
 package SORTING;
 
+import java.util.Arrays;
+
 public class SortingBinaryArrays {
     public static void main(String[] args) {
 
@@ -20,6 +22,6 @@ public class SortingBinaryArrays {
                 arr2[right]=x;
             }
         }
-
+        System.out.println(Arrays.toString(arr2));
     }
 }
