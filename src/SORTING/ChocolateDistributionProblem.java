@@ -9,9 +9,13 @@ public class ChocolateDistributionProblem {
         int m=3;
         int left=0;
         int right=m-1;
-        int max=Integer.MIN_VALUE;
-        System.out.println(arr[m-1]);
-        System.out.println(arr[0]);
-        System.out.println(arr[m-1]-arr[0]);
+        int min=Integer.MIN_VALUE;
+        while(right< arr.length)
+        {
+            if(arr[right]-arr[left]>min)
+                min=Math.min(arr[right]-arr[left]);
+            left++;
+            right++;
+        }
     }
 }
