@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SortAnArrayOfZerosOnesTwos {
     public static void main(String[] args) {
-        int [] arr ={0,0,2,2,1,1,0,1,2,2,0};
+        int [] arr ={0,1,2,1,2,0};
         int start=0;
         int n= arr.length;;
         int a=0;
