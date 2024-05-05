@@ -20,6 +20,7 @@ public class SortAnArrayWithTwoTypesOfElements {
             }
         }
         for (int x:arr) System.out.print(x+" ");
+        System.out.println();
         for (int x:arr)
             System.out.print(x+" ");
         int [] arr2 ={15,14,13,12};
