@@ -2,8 +2,6 @@ package SORTING;
 
 public class SegregateEvenAndOddElements {
     public static void main(String[] args) {
-        int [] arr2={12,23,432,3};
-        for (int x:arr2) System.out.print(x+" ");
         int [] arr ={15,-3,-2,18};
         int lef=-1;
         int rig= arr.length-1;
