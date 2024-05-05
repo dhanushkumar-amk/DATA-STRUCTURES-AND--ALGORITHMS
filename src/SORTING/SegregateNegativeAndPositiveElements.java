@@ -1,6 +1,6 @@
 package SORTING;
 
-public class SegregateEvenAndOddElements {
+public class SegregateNegativeAndPositiveElements {
     public static void main(String[] args) {
         int [] arr ={15,-3,-2,18};
         int lef=-1;
