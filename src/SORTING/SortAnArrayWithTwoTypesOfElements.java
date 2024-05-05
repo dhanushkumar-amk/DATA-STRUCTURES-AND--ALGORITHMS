@@ -39,14 +39,14 @@ public class SortAnArrayWithTwoTypesOfElements {
         }
         System.out.println();
         for (int x:arr2) System.out.print(x+" ");
-        int [] binaryArr = {0,0};
+        int [] binaryArr = {0,0,0};
         int l=-1;
         int r= binaryArr.length-1;
         while(l<=r) {
             l++;
-            while(binaryArr[l]==0 && l<r)
+            while(binaryArr[l]==0)
                 l++;
-            while(binaryArr[r]==1 && r>=0)
+            while(binaryArr[r]==1)
                 r--;
             if(l<=r)
             {
