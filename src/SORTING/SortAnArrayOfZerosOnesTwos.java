@@ -1,5 +1,7 @@
 package SORTING;
 
+import java.util.Arrays;
+
 public class SortAnArrayOfZerosOnesTwos {
     public static void main(String[] args) {
         int [] arr ={0,1,1,0,1,0,1};
@@ -13,8 +15,13 @@ public class SortAnArrayOfZerosOnesTwos {
                 right--;
             if(left<right)
             {
-                
+                int x=arr[left];
+                arr[left]=arr[right];
+                arr[right]=x;
+                left++;
+                right--;
             }
         }
+        System.out.println(Arrays.toString(arr));
     }
 }
