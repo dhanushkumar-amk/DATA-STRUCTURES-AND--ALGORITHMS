@@ -42,7 +42,7 @@ public class SortAnArrayWithTwoTypesOfElements {
         int [] binaryArr = {1,0,1,0};
         int l=-1;
         int r= binaryArr.length-1;
-        while(l<=r) {
+        while(l<r) {
             l++;
             while(binaryArr[l]==0)
                 l++;
