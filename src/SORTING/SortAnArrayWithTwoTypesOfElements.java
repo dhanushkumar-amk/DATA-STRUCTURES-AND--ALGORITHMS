@@ -1,11 +1,15 @@
 package SORTING;
 
-import java.util.Arrays;
-
 public class SortAnArrayWithTwoTypesOfElements {
     public static void main(String[] args) {
         int [] arr ={15,-3,-2,18};
-        Arrays.sort(arr);
+        int lef=0;
+        int rig= arr.length-1;
+        while(lef<rig)
+        {
+            
+        }
+
         for (int x:arr)
             System.out.print(x+" ");
         int [] arr2 ={15,14,13,12};
