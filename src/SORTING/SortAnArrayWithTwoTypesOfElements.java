@@ -43,6 +43,7 @@ public class SortAnArrayWithTwoTypesOfElements {
                 binaryArr[r]=x;
             }
         }
+        System.out.println();
         for (int x:binaryArr) System.out.print(x+" ");
     }
 }
