@@ -14,7 +14,17 @@ public class SortAnArrayWithTwoTypesOfElements {
         int right=n2-1;
         while(left<right)
         {
-            while((arr[left]&1)==1)
+            while((arr2[left]&1)==1)
+                left++;
+            while(((arr2[right]&1)!=1)
+                right--;
+            if(left<right)
+            {
+                int x=arr2[left];
+                arr2[left]=arr2[right];
+                arr2[right]=x;
+            }
         }
+        for (int x:arr2) System.out.println();
     }
 }
