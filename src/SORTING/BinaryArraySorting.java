@@ -20,6 +20,6 @@ public class BinaryArraySorting {
             }
         }
         for (int x : arr)
-            System.out.println(x+" ");
+            System.out.print(x+" ");
     }
 }
