@@ -5,22 +5,26 @@ import java.util.Arrays;
 public class SortAnArrayOfZerosOnesTwos {
     public static void main(String[] args) {
         int [] arr ={0,0,2,2,1,1,0,1,2,2,0};
-        int left=0;
-        int right=arr.length-1;
-        int pivot=1;
-        while(left<right) {
-            while (left < right && arr[left] < pivot)
-                left++;
-            while(left< right && arr[right]>pivot)
-                right--;
-            if(left<right)
-            {
-                int x=arr[left];
-                arr[left]=arr[right];
-                arr[right]=x;
-                left++;
-                right--;
-            }
+        int start=0;
+        int n= arr.length;;
+        int a=0;
+        int b=1;
+        int c=2;
+        int end=n-1;
+        int j=0;
+        while(j<=end) {
+            if (arr[j] <= a) {
+                int x = arr[start];
+                arr[start] = arr[j];
+                arr[j] = x;
+                start++;
+                j++;
+            } else if (arr[j] >= c) {
+                int x = arr[j];
+                arr[j] = arr[end];
+                arr[end] = x;
+                end--;
+            } else j++;
         }
         System.out.println(Arrays.toString(arr));
     }
