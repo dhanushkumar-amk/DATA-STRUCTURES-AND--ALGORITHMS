@@ -9,11 +9,11 @@ public class ChocolateDistributionProblem {
         int m=3;
         int left=0;
         int right=m-1;
-        int min=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
         while(right< arr.length)
         {
-            if(arr[right]-arr[left]>min)
-                min=Math.min(arr[right]-arr[left]);
+            if(arr[right]-arr[left]<min)
+                min=Math.min(arr[right]-arr[left],min);
             left++;
             right++;
         }
