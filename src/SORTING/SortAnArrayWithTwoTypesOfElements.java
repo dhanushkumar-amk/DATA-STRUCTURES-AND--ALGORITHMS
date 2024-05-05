@@ -43,9 +43,9 @@ public class SortAnArrayWithTwoTypesOfElements {
         int l=0;
         int r= binaryArr.length-1;
         while(l<r) {
-            while(binaryArr[l]==0)
+            while(l<r && binaryArr[l]==0)
                 l++;
-            while(binaryArr[r]==1)
+            while(l<r && binaryArr[r]==1)
                 r--;
             if(l<=r)
             {
