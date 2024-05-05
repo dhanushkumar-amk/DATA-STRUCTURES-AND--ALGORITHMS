@@ -6,10 +6,8 @@ public class SortAnArrayOfZerosOnesTwos {
     public static void main(String[] args) {
         int [] arr ={0,1,2,1,2,0};
         int start=0;
-        int n= arr.length;;
-        int a=0;
+        int n= arr.length;
         int b=1;
-        int c=2;
         int end=n-1;
         int j=0;
         while(j<=end) {
