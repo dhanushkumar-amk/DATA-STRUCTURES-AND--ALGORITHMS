@@ -19,7 +19,7 @@ public class EgregateNegativeAndPositiveElements {
                 arr2[right]=x;
             }
         }
-        
+
         for (int x:arr2) System.out.print(x+" ");
 
     }
