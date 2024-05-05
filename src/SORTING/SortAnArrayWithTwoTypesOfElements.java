@@ -10,9 +10,12 @@ public class SortAnArrayWithTwoTypesOfElements {
             System.out.print(x+" ");
         int [] arr2 ={15,14,13,12};
         Arrays.sort(arr2);
+        // 12 13 14 15
+        // e   o  e  o
+        // 
         for (int i=0; i< arr2.length; i++)
         {
-            
+
         }
     }
 }
