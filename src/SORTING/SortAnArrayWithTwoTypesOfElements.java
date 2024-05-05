@@ -25,6 +25,6 @@ public class SortAnArrayWithTwoTypesOfElements {
                 arr2[right]=x;
             }
         }
-        for (int x:arr2) System.out.println(x+" ");
+        for (int x:arr2) System.out.print(x+" ");
     }
 }
