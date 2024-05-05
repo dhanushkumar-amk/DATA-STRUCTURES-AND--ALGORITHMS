@@ -13,13 +13,13 @@ public class SortAnArrayOfZerosOnesTwos {
         int end=n-1;
         int j=0;
         while(j<=end) {
-            if (arr[j] <=a) {
+            if (arr[j] <b) {
                 int x = arr[start];
                 arr[start] = arr[j];
                 arr[j] = x;
                 start++;
                 j++;
-            } else if (arr[j] >= c) {
+            } else if (arr[j] >b) {
                 int x = arr[j];
                 arr[j] = arr[end];
                 arr[end] = x;
