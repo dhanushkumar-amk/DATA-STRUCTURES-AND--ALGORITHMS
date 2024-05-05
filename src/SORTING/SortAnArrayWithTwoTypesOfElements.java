@@ -40,7 +40,7 @@ public class SortAnArrayWithTwoTypesOfElements {
         System.out.println();
         for (int x:arr2) System.out.print(x+" ");
         int [] binaryArr = {1,1,1,1};
-        int l=-1;
+        int l=0;
         int r= binaryArr.length-1;
         while(l<r) {
             while(binaryArr[l]==0)
