@@ -17,5 +17,6 @@ public class ChocolateDistributionProblem {
             left++;
             right++;
         }
+        System.out.println(min);
     }
 }
