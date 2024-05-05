@@ -9,12 +9,12 @@ public class SortAnArrayWithTwoTypesOfElements {
         for (int x:arr)
             System.out.print(x+" ");
         int [] arr2 ={15,14,13,12};
-        // 12 13 14 15
-        // e   o  e  o
-        //
-        for (int i=0; i< arr2.length; i++)
+        int n2= arr2.length;
+        int left=0;
+        int right=n2-1;
+        while(left<right)
         {
-            if((arr[i]&1)==1)
+            while((arr[left]&1)==1)
         }
     }
 }
