@@ -14,9 +14,9 @@ public class SortAnArrayWithTwoTypesOfElements {
         int right=n2-1;
         while(left<right)
         {
-            while((arr2[left]&1)==1)
+            while((arr2[left]%2)==0)
                 left++;
-            while(((arr2[right]&1)!=1)
+            while(((arr2[right]%2)==1))
                 right--;
             if(left<right)
             {
