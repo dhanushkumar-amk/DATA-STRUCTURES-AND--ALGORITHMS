@@ -1,25 +1,23 @@
 package SORTING;
 
-public class SortAnArrayWithTwoTypesOfElements {
+public class SegregateEvenAndOddElements {
     public static void main(String[] args) {
-        int [] arr ={15,-3,-2,18};
-        int lef=-1;
-        int rig= arr.length-1;
-        while(lef<rig)
+        int [] arr2 ={15,14,13,12};
+        int n2= arr2.length;
+        int left=0;
+        int right=n2-1;
+        while(left<right)
         {
-            lef++;
-            while(arr[lef]<0)
-                lef++;
-            while(arr[rig]>0)
-                rig--;
-            if(lef<rig)
+            while((arr2[left]%2)==0)
+                left++;
+            while(((arr2[right]%2)==1))
+                right--;
+            if(left<right)
             {
-                int x=arr[lef];
-                arr[lef]=arr[rig];
-                arr[rig]=x;
+                int x=arr2[left];
+                arr2[left]=arr2[right];
+                arr2[right]=x;
             }
         }
-        for (int x:arr) System.out.print(x+" ");
-
     }
 }
