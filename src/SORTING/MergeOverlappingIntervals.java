@@ -15,7 +15,7 @@ public class MergeOverlappingIntervals {
             int end=arr[ind][1];
             while(ind < arr.length-1 && end>=arr[ind+1][0]){
                 end=Math.max(end,arr[ind+1][1]);
-                ind=ind+2;
+                ind++;
             }
             arrayList.add(star);
             arrayList.add(end);
