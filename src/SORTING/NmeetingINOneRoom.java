@@ -3,20 +3,19 @@ package SORTING;
 import java.util.Arrays;
 
 public class NmeetingINOneRoom {
-    public static int maxMeetings(int start[], int end[], int n)
-    {
+    public static int maxMeetings(int start[], int end[], int n) {
         // add your code here
         Arrays.sort(end);
-        int count=1;
-        int ends=end[0];
-        for(int i=1;i<n; i++)
-        {
-            if(ends<start[i])
-            {
+        int count = 1;
+        int ends = end[0];
+        for (int i = 1; i < n; i++) {
+            if (ends < start[i]) {
                 count++;
-                ends=end[i - 1]; // Corrected this line
+                ends = end[i]; // Update to the end time of the current meeting
+            } else {
+                // If the current meeting overlaps, continue to the next meeting
+                continue;
             }
-            else continue;
         }
         return count;
     }
