@@ -12,18 +12,26 @@ public class NmeetingINOneRoom {
             this.start = start;
             this.end = end;
         }
+
+        @Override
+        public String toString() {
+            return "(" + start + ", " + end + ")";
+        }
     }
 
     public static int maxMeetings(int start[], int end[], int n) {
         // Create an array of meetings
         Meeting[] meetings = new Meeting[n];
+
+        // Insert meetings into the array and print details after insertion
+        System.out.println("Inserted Meetings:");
         for (int i = 0; i < n; i++) {
             meetings[i] = new Meeting(start[i], end[i]);
+            System.out.println(meetings[i]);
         }
-        for (Meeting  x  :meetings)
-            System.out.println(x+" ");
+
         // Sort meetings based on end times
-        Arrays.sort(meetings, Comparator.comparingInt(a -> a.end));
+        Arrays.sort(meetings, (a, b) -> Integer.compare(a.end, b.end));
 
         int count = 1;
         int currentEnd = meetings[0].end;
