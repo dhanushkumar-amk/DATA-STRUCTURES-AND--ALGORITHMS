@@ -1,5 +1,7 @@
 package SORTING;
 
+import java.util.Arrays;
+
 public class MergeOverlappingIntervals {
     public static void main(String[] args) {
         int[][] arr = {{2, 6}, {8, 10}, {2, 3}, {15, 18}};
@@ -8,6 +10,7 @@ public class MergeOverlappingIntervals {
         for (int [] temp1:arr)
             for (int temp2:temp1)
                 temp[ind++]=temp2;
+        Arrays.sort(temp);
         for (int x:temp) System.out.print(x+" ");
     }
 }
