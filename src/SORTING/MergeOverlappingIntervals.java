@@ -1,5 +1,6 @@
 package SORTING;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MergeOverlappingIntervals {
@@ -7,14 +8,17 @@ public class MergeOverlappingIntervals {
         int   [][] arr = {{2, 6}, {8, 10}, {15, 18}};
         Arrays.sort(arr,(a,b)->a[0]-b[0]);
         int ind=0;
+        ArrayList<Integer> arrayList =new ArrayList<>();
         while(ind< arr.length)
         {
             int star=arr[ind][0];
             int end=arr[ind][1];
             while(ind < arr.length-1 && end>=arr[ind+1][0]){
                 end=Math.max(end,arr[ind+1][1]);
-                ind++;
+                ind=ind+2;
             }
+            arrayList.add(star);
+            arrayList.add(end);
         }
     }
 }
