@@ -1,4 +1,8 @@
 package SORTING;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
 public  class NmeetingINOneRoom  {
     static class  meetings {
         int start;
@@ -9,7 +13,12 @@ public  class NmeetingINOneRoom  {
         }
     }
     static int maxMeetings(int [] start ,int [] end ,int n) {
-        meetings 
+        meetings [] meetingsList = new meetings[n];
+        for (int i=0;i<n; i++)
+        {
+            meetingsList[i]=new meetings(start[i],end[i]);
+        }
+        Arrays.sort(meetingsList, Comparator.comparing((a)->a.end));
     }
     public static void main(String[] args) {
         int [] start=  {1,3,0,5,8,5};
