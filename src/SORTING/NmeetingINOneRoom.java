@@ -19,7 +19,8 @@ public class NmeetingINOneRoom {
         return count;
     }
     public static void main(String[] args) {
-        int  [] 
+        int  [] start ={48, 43, 61, 54 ,99 ,84 ,3 ,3 ,59 ,30 ,45 ,72, 24, 87 ,21 ,48, 54, 88, 8, 67 ,41 ,64, 87, 54, 5 ,62, 87 ,33 ,74 ,92};
+        int []  end={};
      maxMeetings();
     }
 }
