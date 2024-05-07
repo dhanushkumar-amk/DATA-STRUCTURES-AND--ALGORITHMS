@@ -20,7 +20,7 @@ public class NmeetingINOneRoom {
         for (int i = 0; i < n; i++) {
             meetings[i] = new Meeting(start[i], end[i]);
         }
-        for (Object x  :meetings)
+        for (Meeting  x  :meetings)
             System.out.println(x+" ");
         // Sort meetings based on end times
         Arrays.sort(meetings, Comparator.comparingInt(a -> a.end));
