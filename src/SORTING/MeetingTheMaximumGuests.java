@@ -31,7 +31,7 @@ class Solution {
         // Iterate through the sorted meetings
         for (int i = 1; i < n; i++) {
             if (meetingsList[i].start > ends) {
-                list.add(i + 1); // Add i + 1 to indicate the 1-based index
+                list.add(i + 1); // Add i to indicate the 1-based index
                 ends = meetingsList[i].end;
             }
         }
