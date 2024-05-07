@@ -1,7 +1,15 @@
 package SORTING;
 public  class NmeetingINOneRoom  {
+    static class  meetings {
+        int start;
+        int end;
+        meetings(int start,int end) {
+            this.start=start;
+            this.end=end;
+        }
+    }
     static int maxMeetings(int [] start ,int [] end ,int n) {
-
+        meetings 
     }
     public static void main(String[] args) {
         int [] start=  {1,3,0,5,8,5};
