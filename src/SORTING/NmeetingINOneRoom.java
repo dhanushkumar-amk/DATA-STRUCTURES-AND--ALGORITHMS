@@ -4,6 +4,7 @@ public  class NmeetingINOneRoom  {
 
     }
     public static void main(String[] args) {
-        int [] start
+        int [] start=  {1,3,0,5,8,5};
+        int [] end  =  {}
     }
 }
