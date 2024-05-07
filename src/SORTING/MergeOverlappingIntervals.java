@@ -18,6 +18,7 @@ public class MergeOverlappingIntervals {
                 ind++;
             }
             arrayList.add(new int[]{star,end});
+            ind++;
         }
     }
 }
