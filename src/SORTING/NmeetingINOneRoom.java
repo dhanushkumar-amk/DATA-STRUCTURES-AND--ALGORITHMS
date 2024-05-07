@@ -1,29 +1,53 @@
 package SORTING;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class NmeetingINOneRoom {
+    static class Meeting {
+        int start;
+        int end;
+
+        public Meeting(int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+    }
+
     public static int maxMeetings(int start[], int end[], int n) {
-        // add your code here
-        Arrays.sort(end);
+        // Create an array of meetings
+        Meeting[] meetings = new Meeting[n];
+        for (int i = 0; i < n; i++) {
+            meetings[i] = new Meeting(start[i], end[i]);
+        }
+        for (Object x  :meetings)
+            System.out.println(x+" ");
+        // Sort meetings based on end times
+        Arrays.sort(meetings, Comparator.comparingInt(a -> a.end));
+
         int count = 1;
-        int ends = end[0];
+        int currentEnd = meetings[0].end;
+
+        // Iterate through the sorted meetings
         for (int i = 1; i < n; i++) {
-            if (ends < start[i]) {
+            if (meetings[i].start > currentEnd) {
                 count++;
-                ends = end[i]; // Update to the end time of the current meeting
-            } else {
-                // If the current meeting overlaps, continue to the next meeting
-                continue;
+                currentEnd = meetings[i].end;
             }
         }
+
         return count;
     }
 
     public static void main(String[] args) {
-        int  [] start ={48, 43, 61, 54 ,99 ,84 ,3 ,3 ,59 ,30 ,45 ,72, 24, 87 ,21 ,48, 54, 88, 8, 67 ,41 ,64, 87, 54, 5 ,62, 87 ,33 ,74 ,92};
-        int []  end={150 ,67 ,137, 131, 139 ,115 ,49, 6 ,117 ,126, 59 ,109, 27 ,96 ,73, 60, 99 ,108, 50, 145, 68 ,104 ,102, 82, 7 ,126 ,118 ,93, 148 ,150};
-         int res=  maxMeetings(start,end,start.length);
-        System.out.println(res);
+        int[] start1 = {1, 3, 0, 5, 8, 5};
+        int[] end1 = {2, 4, 6, 7, 9, 9};
+        int res1 = maxMeetings(start1, end1, start1.length);
+        System.out.println("Output for Example 1: " + res1);
+
+        int[] start2 = {10, 12, 20};
+        int[] end2 = {20, 25, 30};
+        int res2 = maxMeetings(start2, end2, start2.length);
+        System.out.println("Output for Example 2: " + res2);
     }
 }
