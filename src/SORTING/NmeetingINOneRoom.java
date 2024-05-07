@@ -13,12 +13,25 @@ public  class NmeetingINOneRoom  {
         }
     }
     static int maxMeetings(int [] start ,int [] end ,int n) {
+        if(n==1)
+            return 1;
         meetings [] meetingsList = new meetings[n];
         for (int i=0;i<n; i++)
         {
             meetingsList[i]=new meetings(start[i],end[i]);
         }
         Arrays.sort(meetingsList, Comparator.comparing((a)->a.end));
+        int count=1;
+        int ends=meetingsList[0].end;
+        for (int i=1; i<n; i++)
+        {
+            if(meetingsList[i].start>=ends)
+            {
+                count++;
+                ends=meetingsList[i].end;
+            }
+        }
+        return count;
     }
     public static void main(String[] args) {
         int [] start=  {1,3,0,5,8,5};
