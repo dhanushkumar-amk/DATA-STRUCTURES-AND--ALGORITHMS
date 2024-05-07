@@ -20,5 +20,15 @@ public class MergeOverlappingIntervals {
         for (int []x:arr)
             for (int xx:x)
                 System.out.print(xx+" ");
+        int [] result =new int[arr.length];
+        int start=0;
+        int end=start+1;
+        for (int i=0;i<arr.length; i++)
+        {
+            for (int j=0;j<arr[i].length;j++)
+            {
+                while(arr[i][end])
+            }
+        }
     }
 }
