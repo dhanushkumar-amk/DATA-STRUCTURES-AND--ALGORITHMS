@@ -8,7 +8,7 @@ public class MergeOverlappingIntervals {
         int   [][] arr = {{2, 6}, {8, 10}, {15, 18}};
         Arrays.sort(arr,(a,b)->a[0]-b[0]);
         int ind=0;
-        ArrayList<Integer> arrayList =new ArrayList<>();
+        ArrayList<int []> arrayList =new ArrayList<>();
         while(ind< arr.length)
         {
             int star=arr[ind][0];
@@ -17,8 +17,7 @@ public class MergeOverlappingIntervals {
                 end=Math.max(end,arr[ind+1][1]);
                 ind++;
             }
-            arrayList.add(star);
-            arrayList.add(end);
+            arrayList.add(new int[]{star,end});
         }
     }
 }
