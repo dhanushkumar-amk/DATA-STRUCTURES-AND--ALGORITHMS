@@ -20,6 +20,8 @@ public class MergeOverlappingIntervals {
             arrayList.add(new int[]{star,end});
             ind++;
         }
-        System.out.println(arrayList);
+        for (int [] temp:arrayList)
+            for (int x:temp)
+                System.out.print(x+" ");
     }
 }
