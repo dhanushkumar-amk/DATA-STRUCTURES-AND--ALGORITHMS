@@ -19,5 +19,6 @@ public class MergeOverlappingIntervals {
                 arr[i][j]=temp[index++];
             }
         }
+        System.out.println(Arrays.toString(arr));
     }
 }
