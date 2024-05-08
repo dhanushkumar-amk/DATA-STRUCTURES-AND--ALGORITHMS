@@ -1,6 +1,11 @@
 package SORTING;
+
+import java.util.Arrays;
+
 public class MeetingTheMaximumGuests {
   static int   MeetingMax(int [] start,int []end ,int n){
+      Arrays.sort(start);
+      Arrays.sort(end);
       
     }
     public static void main(String[] args) {
