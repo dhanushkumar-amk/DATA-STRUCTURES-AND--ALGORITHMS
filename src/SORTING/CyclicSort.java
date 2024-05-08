@@ -9,7 +9,7 @@ public class CyclicSort {
         int n= arr.length;
         while(i<n) {
             if(arr[i]>n)
-                throw new Exception("As per question i can only array them in 1 to n");
+                throw new Exception("As per question i can only arrange them in 1 to n");
             if(arr[i]!=i+1)
             {
                 int temp=arr[i];
