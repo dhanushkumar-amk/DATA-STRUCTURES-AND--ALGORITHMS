@@ -8,6 +8,8 @@ public class CyclicSort {
         int i=0;
         int n= arr.length;
         while(i<n) {
+            if(arr[i]>n)
+                throw 
             if(arr[i]!=i+1)
             {
                 int temp=arr[i];
