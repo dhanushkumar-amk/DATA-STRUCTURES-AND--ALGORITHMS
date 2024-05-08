@@ -6,7 +6,7 @@ class Solution
     {
         int arr[] = { 532,8,3,234,5};
         int n = arr.length;
-        cycleSortDistinct(arr, n);
+        cycleSort(arr, n);
 
         for (int i = 0; i < n; i++)
             System.out.print( arr[i] + " ");
