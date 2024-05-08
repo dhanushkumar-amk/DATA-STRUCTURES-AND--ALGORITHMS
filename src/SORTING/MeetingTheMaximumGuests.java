@@ -9,7 +9,7 @@ public class MeetingTheMaximumGuests {
       int i=1;
       int j=0;
       int count=1;
-      int maxGuest=0;
+      int maxGuest=Integer.MIN_VALUE;
       while(i<n&&j<n){
           if(end[j]>=start[i])
           {
