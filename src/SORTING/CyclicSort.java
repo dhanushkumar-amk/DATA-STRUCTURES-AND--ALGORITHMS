@@ -13,6 +13,9 @@ public class CyclicSort {
                 if(arr[j]<ele)
                     count++;
             }
+            int x=arr[i];
+            arr[i]=arr[count];
+            arr[count]=x;
             System.out.println(arr[i]+" "+count);
             count=0;
         }
