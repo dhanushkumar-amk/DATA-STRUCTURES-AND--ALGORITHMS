@@ -12,7 +12,7 @@ public class CyclicSort {
             int count=0;
             for (int j=0; j<n;j++)
             {
-                if(arr[j]<ele && i<j)
+                if(arr[j]<=ele && i<j)
                     count++;
             }
             int x=arr[i];
