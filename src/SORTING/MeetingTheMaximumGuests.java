@@ -14,12 +14,13 @@ public class MeetingTheMaximumGuests {
           if(end[j]>=start[i])
           {
               i++;count++;
+              maxGuest=Math.max(count,maxGuest);
           }
           else {
               count--;
               j++;
           }
-          maxGuest=Math.max(count,maxGuest);
+
       }
       return maxGuest;
     }
