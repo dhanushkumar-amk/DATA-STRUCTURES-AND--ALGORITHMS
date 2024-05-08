@@ -9,8 +9,8 @@ public class CyclicSort {
             if(arr[i]!=i+1)
             {
                 int temp=arr[i];
-                arr[i]=arr[temp-1];
-                arr[temp-1]=
+                arr[i]=arr[arr[i]-1];
+                arr[temp-1]=temp;
             }
             else i++;
         }
