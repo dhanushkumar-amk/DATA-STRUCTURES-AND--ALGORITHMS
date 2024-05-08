@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CyclicSort {
     public static void main(String[] args) throws Exception {
-        int [] arr ={10,8,123,123,23,434,43245454,434,123};
+        int [] arr ={532,8,3,234,532};
         int n= arr.length;
         for (int i=0; i<n; i++)
         {
