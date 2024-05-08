@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CyclicSort {
     public static void main(String[] args) {
-        int [] arr ={5,4,3,2,1};
+        int [] arr ={5,4,32,2,1};
         int i=0;
         int n= arr.length;
         while(i<n) {
