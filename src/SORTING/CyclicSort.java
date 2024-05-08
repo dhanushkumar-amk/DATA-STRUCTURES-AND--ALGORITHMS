@@ -15,7 +15,6 @@ public class CyclicSort {
                 arr[arr[i]-1]=x;
                 i++;
             }
-            i++;
         }
         System.out.println(Arrays.toString(arr));
     }
