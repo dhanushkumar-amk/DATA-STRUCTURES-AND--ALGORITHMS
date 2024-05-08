@@ -9,13 +9,14 @@ public class CyclicSort {
         int n= arr.length;
         while(i<n)
         {
+            if(arr[i]==i+1)
+                i++;
             if(arr[i]!=i+1){
                 int x=arr[i];
                 arr[i]=arr[arr[i]-1];
                 arr[arr[i]-1]=x;
             }
-            if(arr[i]==i+1)
-                i++;
+
         }
         System.out.println(Arrays.toString(arr));
     }
