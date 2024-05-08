@@ -4,12 +4,10 @@ import java.util.Arrays;
 
 public class CyclicSort {
     public static void main(String[] args) throws Exception {
-        int [] arr ={5,4,32,2,1};
+        int [] arr ={5,4,3,2,1};
         int i=0;
         int n= arr.length;
         while(i<n) {
-            if(arr[i]>n)
-                throw new Exception("As per question i can only arrange them in 1 to n");
             if(arr[i]!=i+1)
             {
                 int temp=arr[i];
