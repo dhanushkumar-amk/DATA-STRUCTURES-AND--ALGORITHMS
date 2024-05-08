@@ -14,7 +14,8 @@ public class CyclicSort {
                 arr[i]=arr[arr[i]-1];
                 arr[arr[i]-1]=x;
             }
-            else i++;
+            if(arr[i]==i+1)
+                i++;
         }
         System.out.println(Arrays.toString(arr));
     }
