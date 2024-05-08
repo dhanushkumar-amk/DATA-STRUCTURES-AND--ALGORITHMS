@@ -14,6 +14,7 @@ public class CyclicSort {
                     count++;
             }
             System.out.println(arr[i]+" "+count);
+            count=0;
         }
     }
 }
