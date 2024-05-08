@@ -9,7 +9,7 @@ public class CyclicSort {
             int ele=arr[i];
             for (int j=0; j<n;j++)
             {
-
+                if()
             }
         }
 
