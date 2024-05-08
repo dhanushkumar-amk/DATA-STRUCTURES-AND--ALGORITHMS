@@ -29,6 +29,12 @@ public class MinimumPlatforms {
     }
 
     public static void main(String[] args) {
-        
+
+        int arr[] = {0900, 0940, 0950, 1100, 1500, 1800};
+        int  dep[] = {0910, 1200, 1120, 1130, 1900, 2000};
+       int res= findPlatform(arr,dep, arr.length);
+        System.out.println(res);
+
     }
+
 }
