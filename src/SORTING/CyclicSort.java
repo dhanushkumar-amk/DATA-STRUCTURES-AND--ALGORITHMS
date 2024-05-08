@@ -1,5 +1,7 @@
 package SORTING;
 
+import java.util.Arrays;
+
 public class CyclicSort {
     public static void main(String[] args) {
         int [] arr ={5,4,3,2,1};
@@ -14,5 +16,6 @@ public class CyclicSort {
             }
             else i++;
         }
+        System.out.println(Arrays.sort(arr));
     }
 }
