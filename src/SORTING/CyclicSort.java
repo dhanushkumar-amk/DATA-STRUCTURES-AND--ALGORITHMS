@@ -4,7 +4,7 @@ class Solution
 {
     public static void main (String[] args)
     {
-        int arr[] = { 532,8,3,234,5,8};
+        int arr[] = { 532,8,3,234,5};
         int n = arr.length;
         cycleSort(arr, n);
 
