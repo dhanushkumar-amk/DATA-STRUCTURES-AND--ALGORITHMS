@@ -9,9 +9,19 @@ public class MeetingTheMaximumGuests {
       int i=1;
       int j=0;
       int count=1;
+      int maxGuest=0;
       while(i<n&&j<n){
-          if(start[])
+          if(end[j]>=start[i])
+          {
+              i++;count++;
+          }
+          else {
+              count--;
+              j++;
+          }
+          maxGuest=Math.max(count,maxGuest);
       }
+      return maxGuest;
     }
     public static void main(String[] args) {
         int [] start = {900,700,900};
