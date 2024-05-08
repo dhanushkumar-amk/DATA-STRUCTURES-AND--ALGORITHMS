@@ -1,2 +1,4 @@
-package SORTING;public class MinimumPlatforms {
+package SORTING;
+
+public class MinimumPlatforms {
 }
