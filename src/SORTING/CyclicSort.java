@@ -13,8 +13,7 @@ public class CyclicSort {
                 int x=arr[i];
                 arr[i]=arr[arr[i]-1];
                 arr[arr[i]-1]=x;
-                if(arr[i]==i+1)
-                    i++;
+                i++;
             }
             i++;
         }
