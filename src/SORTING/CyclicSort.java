@@ -13,7 +13,7 @@ public class CyclicSort {
                 if(ele<arr[j])
                     count++;
             }
-            System.out.println(count);
+            System.out.println(arr[i]+" "+count);
         }
     }
 }
