@@ -1,5 +1,7 @@
 package SORTING;
 
+import java.util.Arrays;
+
 public class CyclicSort {
     public static void main(String[] args) throws Exception {
         int [] arr ={40,30,20,10};
@@ -16,8 +18,9 @@ public class CyclicSort {
             int x=arr[i];
             arr[i]=arr[count];
             arr[count]=x;
-            System.out.println(arr[i]+" "+count);
-            count=0;
+//            System.out.println(arr[i]+" "+count);
+//            count=0;
         }
+        System.out.println(Arrays.toString(arr));
     }
 }
