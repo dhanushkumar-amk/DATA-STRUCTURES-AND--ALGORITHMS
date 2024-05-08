@@ -13,31 +13,44 @@ class Solution
 
     }
 
-    static void cycleSortDistinct(int arr[], int n)
-    {
-        for(int cs=0;cs<n-1;cs++){
-            int item=arr[cs];
-            int pos=cs;
-            for(int i=cs+1;i<n;i++)
-                if(arr[i]<item)
+    static void cycleSort(int arr[], int n) {
+        for (int cs = 0; cs < n - 1; cs++) {
+            int item = arr[cs];
+            int pos = cs;
+            for (int i = cs + 1; i < n; i++)
+                if (arr[i] < item)
                     pos++;
-            //swap(item,arr[pos])
 
-            int temp=item;
-            item=arr[pos];
-            arr[pos]=temp;
-            while(pos!=cs){
-                pos=cs;
-                for(int i=cs+1;i<n;i++)
-                    if(arr[i]<item)
+            if (pos == cs) // Skip if the current element is already at its correct position
+                continue;
+
+            // Handle duplicate elements
+            while (item == arr[pos])
+                pos++;
+
+            if (pos != cs) {
+                int temp = item;
+                item = arr[pos];
+                arr[pos] = temp;
+            }
+
+            while (pos != cs) {
+                pos = cs;
+                for (int i = cs + 1; i < n; i++)
+                    if (arr[i] < item)
                         pos++;
 
-                //swap(item,arr[pos])
-                temp=item;
-                item=arr[pos];
-                arr[pos]=temp;
+                while (item == arr[pos])
+                    pos++;
+
+                if (item != arr[pos]) {
+                    int temp = item;
+                    item = arr[pos];
+                    arr[pos] = temp;
+                }
             }
         }
     }
+
 }
 
