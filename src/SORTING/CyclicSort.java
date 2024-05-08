@@ -16,6 +16,6 @@ public class CyclicSort {
             }
             else i++;
         }
-        System.out.println(Arrays.sort(arr));
+        System.out.println(Arrays.toString(arr));
     }
 }
