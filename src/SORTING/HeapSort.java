@@ -1,2 +1,7 @@
-package SORTING;public class HeapSort {
+package SORTING;
+
+public class HeapSort {
+    public static void main(String[] args) {
+
+    }
 }
