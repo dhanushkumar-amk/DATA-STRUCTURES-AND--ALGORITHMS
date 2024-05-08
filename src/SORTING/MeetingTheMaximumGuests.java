@@ -25,7 +25,7 @@ public class MeetingTheMaximumGuests {
       return maxGuest;
     }
     public static void main(String[] args) {
-        int [] start = {900,700,900};
+        int [] start = {900,700,600};
         int [] end   = {1000,800,730};
          int res= MeetingMax(start,end,start.length);
         System.out.println(res);
