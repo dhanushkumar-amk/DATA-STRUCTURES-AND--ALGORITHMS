@@ -20,7 +20,7 @@ public class MeetingTheMaximumGuests {
               count--;
               j++;
           }
-          
+          maxGuest=Math.max(count,maxGuest);
       }
       return maxGuest;
     }
