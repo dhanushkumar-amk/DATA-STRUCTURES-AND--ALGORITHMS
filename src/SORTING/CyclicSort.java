@@ -10,7 +10,7 @@ public class CyclicSort {
             int count=0;
             for (int j=0; j<n;j++)
             {
-                if(ele<arr[j])
+                if(arr[j]<ele)
                     count++;
             }
             System.out.println(arr[i]+" "+count);
