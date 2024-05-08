@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class MinimumPlatforms {
     static int findPlatform(int start[], int stop[], int n)
     {
-        // add your code here
         Arrays.sort(start);
         Arrays.sort(stop);
         int j=0;
