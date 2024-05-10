@@ -12,7 +12,6 @@ public class ShellSort {
         int [] arr2 ={0,2,6,8,9};
         int gap=(arr1.length+arr2.length)/2+(arr1.length+arr2.length)%2;
         int len=arr1.length+arr2.length;
-        
         int len1=arr1.length;
         int len2=arr2.length;
         while(gap>=1)
