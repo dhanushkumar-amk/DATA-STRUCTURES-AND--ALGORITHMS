@@ -41,6 +41,5 @@ public class ShellSort {
         for (int x:arr1) System.out.print(x+" ");
         System.out.println();
         for (int y:arr2) System.out.print(y+" ");
-        System.out.println();
     }
 }
