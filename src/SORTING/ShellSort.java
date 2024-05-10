@@ -31,7 +31,6 @@ public class ShellSort {
 
                 }
                 else {
-
                         swap(arr1, arr1, left, right);
                 }
                 left++;right++;
@@ -41,5 +40,7 @@ public class ShellSort {
         for (int x:arr1) System.out.print(x+" ");
         System.out.println();
         for (int y:arr2) System.out.print(y+" ");
+
+        
     }
 }
