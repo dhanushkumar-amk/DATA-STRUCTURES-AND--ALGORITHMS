@@ -33,6 +33,7 @@ public class MinimumPlatforms {
         int  dep[] = {910, 1200, 1120, 1130, 1900, 2000};
        int res= findPlatform(arr,dep, arr.length);
         System.out.println(res);
+        System.out.println();
 
     }
 
